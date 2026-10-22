@@ -25,5 +25,11 @@ jobs:
       - run: npm run boundary:check
       - run: npm run release:check
       - run: npm run ui:check
+      - name: Browser environment
+        shell: pwsh
+        run: |
+          Get-Item "C:/Program Files/Google/Chrome/Application/chrome.exe" | Select-Object -ExpandProperty VersionInfo | Select-Object ProductVersion, FileVersion
       - run: npm run test:ui
+        env:
+          DEBUG: pw:browser
       - run: npm run source:export
