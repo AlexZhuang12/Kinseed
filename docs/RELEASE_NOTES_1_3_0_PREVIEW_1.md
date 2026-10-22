@@ -1,6 +1,6 @@
-# Kinseed 1.3.0-preview.1 — Windows預覽版發布說明草案
+# Kinseed 1.3.0-preview.1 — Windows預覽版
 
-狀態：本機最終候選，等待Owner授權；尚未在GitHub發布。本文件可作未來Release正文，正式庫網址／發行日期須在授權發布時補齊，不提供虛構下載連結。
+公開來源預覽版，非穩定版。[Repository](https://github.com/AlexZhuang12/Kinseed)／[Release](https://github.com/AlexZhuang12/Kinseed/releases/tag/v1.3.0-preview.1)。正式發行日期、提交與附件SHA以Release為準。
 
 ## 這個版本能做什麼
 
@@ -15,7 +15,7 @@
 
 ## 安裝及使用
 
-需要Windows x64、Node.js24.19.0（驗收版本；接受24系列後續版本但未逐版驗證）、瀏覽器及可下載依賴的網路。測試介面使用Chrome。解壓乾淨來源，雙擊「首次設定.cmd」，依序安裝套件、選大腦、準備工具、確認保存、啟動控制台。第一次用空資料，不附任何個體或登入資料。[安裝指南](FIRST_RUN_WINDOWS.md)／[四語入口](../README.md#language--語言--言語)。
+需要Windows x64、Node.js24.19.0（驗收版本；接受24系列後續版本但未逐版驗證）、瀏覽器及可下載依賴的網路。測試介面使用Chrome。解壓乾淨來源，雙擊「首次設定.cmd」，依序安裝套件、選大腦、準備工具、確認保存、啟動控制台。第一次用空資料，不附任何個體或登入資料。[安裝指南](FIRST_RUN_WINDOWS.md)／[四語入口](../README.md)。
 
 Codex已驗組合為CLI0.163.0-alpha.10.2、gpt-6.1-sol／low與使用者自己的登入；容量或帳號限制仍可能失敗，不自動換模型。本地接頭可連接不代表模型能力合格；Qwen3 1.7B Q4_K_M未通過完整自主生活任務，不能當作與已驗Codex等效。[相容性](COMPATIBILITY.md)。不附Codex／Ollama／模型權重；自行取得部分遵守各自條款。
 
@@ -25,11 +25,11 @@ Codex已驗組合為CLI0.163.0-alpha.10.2、gpt-6.1-sol／low與使用者自己�
 
 由AI全程執行專案自行驗收，沒有獨立第三方認證。最終10組PASS，包含562項Node及146項介面檢查；真實GPT／Codex／MCP驗證記憶接續、受控作品成果及取消本機收尾。故障／隱私子集不重複加總。[完整報告與機器結果](VALIDATION_INDEX.md)／[每項真正證明什麼](ACCEPTANCE_SCOPE.md)。
 
-初次取消結果被驗收器誤列BLOCKED，修正分類並保留原報告；補齊可公開產品回歸，修正合成崩潰helper與停用功能斷言後再完整重驗。[診斷經過](validation/1.3.0-preview.1/CORRECTIONS.md)。文件收尾未改執行程式，也不宣稱重新呼叫模型。
+初次取消結果被驗收器誤列BLOCKED，修正分類並保留原報告；補齊可公開產品回歸，修正合成崩潰helper與停用功能斷言後再完整重驗。[診斷經過](validation/1.3.0-preview.1/CORRECTIONS.md)。發布收尾只改文件、社群政策驗證及合成瀏覽器驗收啟動期限，不改生活控制邏輯，也不宣稱重新呼叫模型。
 
 ## 已知限制
 
-- 獨立人類、新手、母語及第二台實體Windows驗收未執行；翻譯是工程初稿。GitHub遠端CI尚未執行。
+- 獨立人類、新手、母語及第二台實體Windows驗收未執行；翻譯是工程初稿。GitHub託管Windows CI已驗證562項Node及146項UI，與另一台實體Windows人類驗收不同。
 - 停止真實CLI已確認本機收尾；遠端結果可能未知。故障注入不是自然供應商事故。
 - clone版每日LLM報告排程、個體封存管理仍停用；報告用途接頭通過不等於每日排程已提供。
 - 未支援雲端部署、Linux／macOS、任意第三方MCP、一般主機shell、私人帳號、付款或對外發布。不宣稱任意模型皆可用。
@@ -43,4 +43,4 @@ Apache-2.0只涵蓋原創程式／文件；第三方各依其授權。來源不�
 
 ## 維護及通報
 
-預覽版優先最新版，不承諾固定回覆期限。一般問題依[支援政策](../SUPPORT.md)，漏洞依[安全政策](../SECURITY.md)私下通報。GitHub私人通報尚未啟用，目前不可收件；正式發布前須啟用並核對入口。不要公開私人資料或完整Owner連結。
+預覽版優先最新版，不承諾固定回覆期限。一般問題依[支援政策](../SUPPORT.md)，漏洞依[安全政策](../SECURITY.md)私下通報。發布執行時啟用並核對GitHub私人通報；讀者應確認Report a vulnerability表單可用，不能只憑文件假定已啟用。不要公開私人資料或完整Owner連結。

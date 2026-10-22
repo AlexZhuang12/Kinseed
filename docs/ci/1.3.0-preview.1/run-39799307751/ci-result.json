@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "executor": "AI_PROJECT_SELF_ACCEPTANCE",
+  "repository": "AlexZhuang12/Kinseed",
+  "private": true,
+  "run_id": 39799307751,
+  "run_url": "https://github.com/AlexZhuang12/Kinseed/actions/runs/39799307751",
+  "commit": "ffc588d885bcc80bf514ba4e83031dc871bd40c7",
+  "source_digest": "4e00c1b25ebfa17f9bc9b8608627e57b44d1c52cf7a042a0b1ec217162663150",
+  "github_run_status": "completed",
+  "github_run_conclusion": "success",
+  "node_assertions": 562,
+  "ui_assertions": 146,
+  "verified_step_results": [
+    {
+      "name": "Run npm ci --ignore-scripts --no-audit --no-fund",
+      "status": "PASS"
+    },
+    {
+      "name": "Run npm test",
+      "status": "PASS"
+    },
+    {
+      "name": "Run npm run boundary:check",
+      "status": "PASS"
+    },
+    {
+      "name": "Run npm run release:check",
+      "status": "PASS"
+    },
+    {
+      "name": "Run npm run ui:check",
+      "status": "PASS"
+    },
+    {
+      "name": "Run npm run test:ui",
+      "status": "PASS"
+    },
+    {
+      "name": "Run npm run source:export",
+      "status": "PASS"
+    }
+  ],
+  "raw_job_log_sha256": "1507553e571734db399005182581fedee5139f402e218311d4d4c35f01e3b2b2",
+  "chromium_sandbox_preserved": true,
+  "production_unchanged": true,
+  "shared_services_unchanged": true,
+  "no_model_calls": true,
+  "independent_human_validation": false
+}

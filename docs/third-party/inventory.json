@@ -6,95 +6,110 @@
       "version": "0.32.0",
       "source": "node_modules/@jitl/quickjs-ffi-types/LICENSE",
       "file": "docs/third-party/@jitl--quickjs-ffi-types--LICENSE.txt",
-      "sha256": "3c6040aa318612a234cc951609b640c0c63d85ae5a98a9330d3116f1553a79db"
+      "sha256": "3c6040aa318612a234cc951609b640c0c63d85ae5a98a9330d3116f1553a79db",
+      "distributed_lf_sha256": "3c6040aa318612a234cc951609b640c0c63d85ae5a98a9330d3116f1553a79db"
     },
     {
       "package": "@jitl/quickjs-wasmfile-debug-asyncify",
       "version": "0.32.0",
       "source": "node_modules/@jitl/quickjs-wasmfile-debug-asyncify/LICENSE",
       "file": "docs/third-party/@jitl--quickjs-wasmfile-debug-asyncify--LICENSE.txt",
-      "sha256": "446a69ae534aa8612d8b16d3bfc670c5a5050597dca3ce9820441a60d5d04fbb"
+      "sha256": "446a69ae534aa8612d8b16d3bfc670c5a5050597dca3ce9820441a60d5d04fbb",
+      "distributed_lf_sha256": "446a69ae534aa8612d8b16d3bfc670c5a5050597dca3ce9820441a60d5d04fbb"
     },
     {
       "package": "@jitl/quickjs-wasmfile-debug-sync",
       "version": "0.32.0",
       "source": "node_modules/@jitl/quickjs-wasmfile-debug-sync/LICENSE",
       "file": "docs/third-party/@jitl--quickjs-wasmfile-debug-sync--LICENSE.txt",
-      "sha256": "446a69ae534aa8612d8b16d3bfc670c5a5050597dca3ce9820441a60d5d04fbb"
+      "sha256": "446a69ae534aa8612d8b16d3bfc670c5a5050597dca3ce9820441a60d5d04fbb",
+      "distributed_lf_sha256": "446a69ae534aa8612d8b16d3bfc670c5a5050597dca3ce9820441a60d5d04fbb"
     },
     {
       "package": "@jitl/quickjs-wasmfile-release-asyncify",
       "version": "0.32.0",
       "source": "node_modules/@jitl/quickjs-wasmfile-release-asyncify/LICENSE",
       "file": "docs/third-party/@jitl--quickjs-wasmfile-release-asyncify--LICENSE.txt",
-      "sha256": "446a69ae534aa8612d8b16d3bfc670c5a5050597dca3ce9820441a60d5d04fbb"
+      "sha256": "446a69ae534aa8612d8b16d3bfc670c5a5050597dca3ce9820441a60d5d04fbb",
+      "distributed_lf_sha256": "446a69ae534aa8612d8b16d3bfc670c5a5050597dca3ce9820441a60d5d04fbb"
     },
     {
       "package": "@jitl/quickjs-wasmfile-release-sync",
       "version": "0.32.0",
       "source": "node_modules/@jitl/quickjs-wasmfile-release-sync/LICENSE",
       "file": "docs/third-party/@jitl--quickjs-wasmfile-release-sync--LICENSE.txt",
-      "sha256": "446a69ae534aa8612d8b16d3bfc670c5a5050597dca3ce9820441a60d5d04fbb"
+      "sha256": "446a69ae534aa8612d8b16d3bfc670c5a5050597dca3ce9820441a60d5d04fbb",
+      "distributed_lf_sha256": "446a69ae534aa8612d8b16d3bfc670c5a5050597dca3ce9820441a60d5d04fbb"
     },
     {
       "package": "ipaddr.js",
       "version": "2.2.0",
       "source": "node_modules/ipaddr.js/LICENSE",
       "file": "docs/third-party/ipaddr.js--LICENSE.txt",
-      "sha256": "62568a2d1337b77171ecca9db10579163446de1ba6151678e81f06cdc199971b"
+      "sha256": "62568a2d1337b77171ecca9db10579163446de1ba6151678e81f06cdc199971b",
+      "distributed_lf_sha256": "62568a2d1337b77171ecca9db10579163446de1ba6151678e81f06cdc199971b"
     },
     {
       "package": "playwright-core",
       "version": "1.62.1",
       "source": "node_modules/playwright-core/LICENSE",
       "file": "docs/third-party/playwright-core--LICENSE.txt",
-      "sha256": "45873d00a0dd243596deb4aa23b2493b3d1f0671921bf2538ea431d7380220eb"
+      "sha256": "45873d00a0dd243596deb4aa23b2493b3d1f0671921bf2538ea431d7380220eb",
+      "distributed_lf_sha256": "7fab1461b41970ff376f1c9303a637076bfaaeb71cd12dd3a1c44aaf59a1a2b9"
     },
     {
       "package": "playwright-core",
       "version": "1.62.1",
       "source": "node_modules/playwright-core/NOTICE",
       "file": "docs/third-party/playwright-core--NOTICE.txt",
-      "sha256": "6d602191187b35b9b01d2cffa01c8469c2c8d9de8a96f1bf868e0f264f51c81d"
+      "sha256": "6d602191187b35b9b01d2cffa01c8469c2c8d9de8a96f1bf868e0f264f51c81d",
+      "distributed_lf_sha256": "6d602191187b35b9b01d2cffa01c8469c2c8d9de8a96f1bf868e0f264f51c81d"
     },
     {
       "package": "quickjs-emscripten",
       "version": "0.32.0",
       "source": "node_modules/quickjs-emscripten/LICENSE",
       "file": "docs/third-party/quickjs-emscripten--LICENSE.txt",
-      "sha256": "3c6040aa318612a234cc951609b640c0c63d85ae5a98a9330d3116f1553a79db"
+      "sha256": "3c6040aa318612a234cc951609b640c0c63d85ae5a98a9330d3116f1553a79db",
+      "distributed_lf_sha256": "3c6040aa318612a234cc951609b640c0c63d85ae5a98a9330d3116f1553a79db"
     },
     {
       "package": "quickjs-emscripten-core",
       "version": "0.32.0",
       "source": "node_modules/quickjs-emscripten-core/LICENSE",
       "file": "docs/third-party/quickjs-emscripten-core--LICENSE.txt",
-      "sha256": "3c6040aa318612a234cc951609b640c0c63d85ae5a98a9330d3116f1553a79db"
+      "sha256": "3c6040aa318612a234cc951609b640c0c63d85ae5a98a9330d3116f1553a79db",
+      "distributed_lf_sha256": "3c6040aa318612a234cc951609b640c0c63d85ae5a98a9330d3116f1553a79db"
     },
     {
       "package": "unpdf",
       "version": "1.9.1",
       "source": "node_modules/unpdf/LICENSE",
       "file": "docs/third-party/unpdf--LICENSE.txt",
-      "sha256": "4a57080b8ecdb3a53ec678828121849ce5df877a99b1ad8d50e165d8a2aded1b"
+      "sha256": "4a57080b8ecdb3a53ec678828121849ce5df877a99b1ad8d50e165d8a2aded1b",
+      "distributed_lf_sha256": "4a57080b8ecdb3a53ec678828121849ce5df877a99b1ad8d50e165d8a2aded1b"
     },
     {
       "package": "playwright-core",
       "source": "node_modules/playwright-core/lib/utilsBundle.js.LICENSE",
       "file": "docs/third-party/playwright-core--utilsBundle.js.LICENSE.txt",
-      "sha256": "57945338cba4878e373646733528017fbe3db1503ec2b431fd30d2a390c70c33"
+      "sha256": "57945338cba4878e373646733528017fbe3db1503ec2b431fd30d2a390c70c33",
+      "distributed_lf_sha256": "57945338cba4878e373646733528017fbe3db1503ec2b431fd30d2a390c70c33"
     },
     {
       "package": "playwright-core",
       "source": "node_modules/playwright-core/lib/serverRegistry.js.LICENSE",
       "file": "docs/third-party/playwright-core--serverRegistry.js.LICENSE.txt",
-      "sha256": "5cf540fe55a2ba9bcf0eb76e739b454faa8581e2f1a0f777602ef0855534302e"
+      "sha256": "5cf540fe55a2ba9bcf0eb76e739b454faa8581e2f1a0f777602ef0855534302e",
+      "distributed_lf_sha256": "5cf540fe55a2ba9bcf0eb76e739b454faa8581e2f1a0f777602ef0855534302e"
     },
     {
       "package": "playwright-core",
       "source": "node_modules/playwright-core/lib/webp_codec.LICENSE",
       "file": "docs/third-party/playwright-core--webp_codec.LICENSE.txt",
-      "sha256": "995c7ee35aceb7666829b7a501ca89c0864e12b493c1174b155774ab1e03d831"
+      "sha256": "995c7ee35aceb7666829b7a501ca89c0864e12b493c1174b155774ab1e03d831",
+      "distributed_lf_sha256": "995c7ee35aceb7666829b7a501ca89c0864e12b493c1174b155774ab1e03d831"
     }
-  ]
+  ],
+  "distribution_note": "sha256 records original copied upstream bytes; distributed_lf_sha256 records Git LF-normalized text. License wording is unchanged."
 }

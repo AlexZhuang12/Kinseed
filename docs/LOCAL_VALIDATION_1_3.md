@@ -1,22 +1,16 @@
-# 1.3.0-preview.1 目前本機驗收
+# 1.3.0-preview.1 驗收範圍
 
-最新為[AI完整驗收索引](VALIDATION_INDEX.md)的第三次執行：10組PASS，562項Node、146項介面、11項乾淨安裝／啟停／備份、真實Codex／MCP記憶承接與作品委派，以及本機取消收尾。故障與隱私測試與Node重疊，不加總。之前318項四語／時區階段紀錄在[歷史文件](LOCAL_VALIDATION_HISTORY_1_3.md)，不作為目前測試總數。
+[完整AI驗收索引](VALIDATION_INDEX.md)保留三次歷史執行；最後10組PASS，含562 Node、146 UI與真實GPT／Codex／MCP。故障與隱私子集重疊，不加總。早期318項四語階段數字保存在[歷史](LOCAL_VALIDATION_HISTORY_1_3.md)，不是目前總數。
 
-執行來源digest與原始三次報告不因文件收尾改寫；本次只修改文件，執行程式／設定／測試與依賴版本保持不變。文件、來源秘密形狀、第三方聲明及最終包另做收尾核對，見[候選安全紀錄](RELEASE_CANDIDATE_SECURITY.md)。沒有重新呼叫模型。
-
-## 可重現入口
-
-安裝Node24.19.0，於Windows x64、可用Chrome的乾淨副本執行：
+公開前另以GitHub託管Windows跑合成CI，562 Node與146 UI通過；Git換行及Chrome冷啟動問題的失敗與修正保留。[遠端紀錄](ci/1.3.0-preview.1/run-39799307751/REPORT.md)。最終文件及政策測試收尾另跑一次CI，確切提交與工作連結見Release。不同版本的來源hash與實測範圍不混用。
 
 ~~~powershell
 npm ci --ignore-scripts --no-audit --no-fund
 npm run acceptance:local -- --allow-install-network
-# 使用自己的Codex帳號，明確同意模型呼叫後才執行：
+# 明確選擇自己的模型帳號／容量後才執行：
 npm run acceptance:full
 ~~~
 
-細部方法、合成／真實區分及取消限制見[驗收範圍](ACCEPTANCE_SCOPE.md)。模型記憶由模型自己提出，沒有工程補寫。委派父端為合成驅動、子端Codex／MCP／WASM真實；本機退出不等於遠端取消確認。
+介面驗收使用Chrome，原Chromium沙箱保留。方法見[驗收範圍](ACCEPTANCE_SCOPE.md)。模型記憶由模型提出，不由工程補寫。歷史委派父端為合成驅動、子端Codex／MCP／WASM真實；本機退出不等於遠端取消確認。
 
-## NOT_RUN與範圍
-
-沒有獨立人類、新手、母語、第二台實體Windows或GitHub遠端CI驗收，不宣稱已完成。人類檢查不再是預覽版必須取得的簽核。未呼叫共用本地模型；Qwen3歷史完整生活資格未通過。每日LLM報告排程、個體封存管理停用；其他OS、任意MCP、一般shell、帳號、付款、發布不在範圍。
+獨立人類、新手、母語與第二台實體Windows未驗；託管CI不是人類實機研究。這些是披露，不是強制人類簽核。此輪發布沒有真實模型呼叫，Qwen3完整生活資格仍未通過。每日LLM報告排程、個體封存、其他OS、任意MCP、一般shell、帳號、付款、對外發布不在已提供範圍。

@@ -19,3 +19,7 @@ Per-version results are generated under `validation/<version>/<run-id>/REPORT.md
 Local regression and four-language browser journeys are available through `npm test` and `npm run test:ui`. `npm run acceptance:local -- --allow-install-network` additionally performs a clean install. `npm run acceptance:full` explicitly opts into real Codex account calls using synthetic data; it does not call shared local models or change existing individuals.
 
 No remote CI, human trial or second physical Windows test is implied by a local report. GitHub publication remains a separate Owner decision.
+
+## Hosted Windows CI before publication
+
+[562 Node and146 UI assertions, real GitHub run and corrections](ci/1.3.0-preview.1/run-39799307751/REPORT.md). This is synthetic acceptance on hosted Windows, not another physical-machine human study or a rerun of provider tests. Release-final documentation is checked in a subsequent CI run; see the Release for the exact source commit.

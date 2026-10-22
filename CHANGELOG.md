@@ -1,11 +1,11 @@
 # Changelog
 
-## 1.3.0-preview.1 — local final candidate, not published
+## 1.3.0-preview.1 — Windows preview
 
 - Four-language UI and core guides, per-installation timezone, safe continuation and community/release preparation completed for the tested scope.
 - Full AI acceptance: 562 Node assertions, 146 browser checks and ten passing groups including real Codex/MCP memory, workspace and local cancellation cases. Overlapping subsets are not added as unique tests.
 - Consolidated current documentation and retained earlier plans/reports as explicit history. Added release notes and dated security review. No runtime/dependency change in this final documentation pass.
-- GitHub creation, hosted CI, active private reporting and public Release remain unperformed pending authorization.
+- Private-stage hosted Windows CI passed562 Node and146 UI checks. Git checkout line endings and bounded browser cold-start verification were repaired with failures retained. Publication and security-channel activation follow the release checklist.
 
 ## AI acceptance records (local, unreleased)
 

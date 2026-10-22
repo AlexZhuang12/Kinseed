@@ -17,7 +17,7 @@
 | @jitl/quickjs-wasmfile-release-sync | 0.32.0 | MIT |
 | unpdf | 1.9.1 | MIT |
 
-`third-party/` 保存這些固定已安裝套件內附 LICENSE／NOTICE 的逐位副本，另保存 Playwright 三份內嵌第三方聲明。`third-party/inventory.json` 記錄來源與 SHA256。不要刪除上游套件內原有的聲明。
+`third-party/` 保存這些固定已安裝套件內附 LICENSE／NOTICE 的來源校對副本，另保存 Playwright 三份內嵌第三方聲明。`third-party/inventory.json` 記錄來源與 SHA256。不要刪除上游套件內原有的聲明。
 
 ## 不能只看鎖檔的部分
 
@@ -40,3 +40,5 @@ Acorn 8.18.0 (MIT) is vendored only for deterministic localization builds. Its d
 ## Build-time simplified Chinese converter
 
 OpenCC-JS 1.0.5 (MIT) supplies the offline Traditional-to-Simplified conversion for UI source strings only. No individual content is converted. The official npm package SHA-512 was verified; only its t2cn ESM build and license are distributed. See [license](third-party/opencc-js-LICENSE.txt) and [provenance](third-party/opencc-js-provenance.json). No install scripts or runtime network calls are used.
+
+Git散布會規範文字換行；inventory.json的sha256保留原始上游複製位元，distributed_lf_sha256另記LF散布位元，不改授權條文。完整來源附件的manifest也記錄實際散布檔案SHA。
