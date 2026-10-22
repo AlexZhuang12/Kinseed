@@ -1,0 +1,327 @@
+[
+  [
+    "未記載（unborn 尚未出生；legacy_lived 時間未知）",
+    "Not recorded (unborn: not yet born; legacy_lived: time unknown)",
+    "未記録（unborn：未誕生、legacy_lived：時刻不明）"
+  ],
+  [
+    "首次出生尚未執行；請核對指定個體及不可撤銷說明",
+    "First birth has not occurred; check the specified individual and irreversibility notice.",
+    "初回誕生はまだ実行していません。指定された個体と取り消し不可の説明を確認してください。"
+  ],
+  [
+    "暫時無法連上這份控制台。請確認程式仍在執行，或用本副本「開啟開發控制台.cmd」取得有效連結；不要重建個體。已保存的資料會保留。",
+    "Cannot connect to this console. Check that the program is running, or use this copy's Open development console.cmd to get a valid link. Do not recreate the individual. Saved data is retained.",
+    "このコンソールに接続できません。プログラムが起動中か確認するか、このコピーの「開啟開發控制台.cmd」で有効なリンクを取得してください。個体を作り直さないでください。保存済みデータは保持されています。"
+  ],
+  [
+    "Kinseed 1.3.0-preview.1｜個體控制台",
+    "Kinseed 1.3.0-preview.1 | Individual console",
+    "Kinseed 1.3.0-preview.1｜個体コンソール"
+  ],
+  [
+    "多個體身份與生活控制台 · 本機 Owner 控制",
+    "Multi-individual identity and activity console · Local Owner controls",
+    "複数個体のアイデンティティ・生活コンソール · ローカルのOwner制御"
+  ],
+  [
+    "解除全域停止不會恢復任何個體，也不會使未出生個體出生。成本未知；不提供付款、發布、私人帳號、shell 或一般網路工具。",
+    "Clearing platform stop does not resume any individual or cause unborn individuals to be born. Costs are unknown; payments, publishing, private accounts, shell and general network tools are not provided.",
+    "全体停止を解除しても、個体の再開や未誕生個体の誕生は起きません。費用は未確定です。支払い・公開・個人アカウント・shell・汎用ネットワークツールは提供していません。"
+  ],
+  [
+    "Identity Builder · 建立初始身份",
+    "Identity Builder · Create an initial identity",
+    "Identity Builder · 初期アイデンティティを作成"
+  ],
+  [
+    "八個領域、24 題。選項只是表達的起點，可複選、自訂及跳過。身份不會授予工具、財務、帳號或生活時間權限。",
+    "Eight sections and 24 questions. Options are starting points: select multiple, write your own, or skip. Identity does not grant tools, financial/account access or activity time.",
+    "8分野・24問です。選択肢は表現の出発点で、複数選択・自由記述・省略が可能です。アイデンティティを設定しても、ツール・資金・アカウント・活動時間の権限は付与されません。"
+  ],
+  [
+    "預設：八領域 v1。載入其他版本時保存完整題目快照，不改寫舊草稿。",
+    "Default: eight-section template v1. Loading another version retains a complete question snapshot without rewriting older drafts.",
+    "既定は8分野テンプレートv1です。別の版を読み込む際も質問全文のスナップショットを保持し、以前の下書きを書き換えません。"
+  ],
+  [
+    "既有版本不可覆寫。從版本庫建立新候選時，使用上方指定個體；來源資料保持原樣。",
+    "Existing versions cannot be overwritten. When creating a candidate from the library, use the individual specified above. Sources remain unchanged.",
+    "既存の版は上書きできません。ライブラリから新しい候補を作るときは、上で指定した個体を使います。出典データは変更しません。"
+  ],
+  [
+    "提交、匯入與採用均不出生。只有 Owner 另行核對並首次啟動才開始正式生活；工程期間不代批准正式身份。一般網路、shell、支付、發布與私人帳號工具尚未提供。",
+    "Submission, import and adoption do not cause birth. Life begins only after the Owner separately reviews and authorizes first activation. Engineering does not approve regular identities on the Owner's behalf. General network, shell, payments, publishing and private-account tools are not provided.",
+    "提出・読み込み・採用では誕生しません。Ownerが別途確認し、初回開始を許可して初めて生活が始まります。開発者が正式アイデンティティを代理承認することはありません。汎用ネットワーク・shell・支払い・公開・個人アカウントのツールは未提供です。"
+  ],
+  [
+    "身份包是資料，不會執行內容，也不授予工具權限；匯入不會出生。",
+    "Identity packages are data: their contents are not executed and do not grant tool permissions. Importing does not cause birth.",
+    "アイデンティティパッケージはデータです。内容を実行せず、ツール権限も付与しません。読み込みによって誕生することはありません。"
+  ],
+  [
+    "所有操作綁定按下時的固定個體 ID 與控制版本；切換選取不改變正在執行輪次的歸屬。",
+    "Each action is bound to the individual ID and control version at the time of the click. Changing selection does not change ownership of a running cycle.",
+    "各操作は、クリック時の個体IDと制御バージョンに結び付けられます。選択を変えても、実行中ラウンドの所属は変わりません。"
+  ],
+  [
+    "每個體每窗口最多 12 輪；平台每日總額 24 輪；每輪最多 120 秒、16 次工具呼叫。生活時間以窗口限制，休眠期間沒有持續思考。",
+    "Up to 12 cycles per individual per window, 24 total per platform day, and 120 seconds/16 tool calls per cycle. Activity is limited to the window; sleeping is not continuous thinking.",
+    "個体・時間帯ごとに最大12回、プラットフォーム全体で1日24回、1ラウンドにつき120秒・ツール呼び出し16回です。活動は時間帯で制限され、休眠中は考え続けているわけではありません。"
+  ],
+  [
+    "我已核對指定個體、身份與授權，了解出生事實不可撤銷",
+    "I have checked the specified individual, identity and authorization, and understand that birth cannot be undone.",
+    "指定された個体・アイデンティティ・許可を確認し、誕生の事実は取り消せないことを理解しました。"
+  ],
+  [
+    "本機子程序停止與遠端推理取消分別報告；遠端無確認時仍為 unknown。正式登入治理尚未完整實作，本頁憑本機 Owner capability 操作。",
+    "Local child-process termination and remote inference cancellation are reported separately. Without remote confirmation the result remains unknown. Full production login governance is not implemented; this page uses a local Owner capability.",
+    "ローカル子プロセスの終了と遠隔推論の取消は別々に報告します。遠隔側の確認がなければ結果はunknownのままです。本番向けの完全なログイン管理は未実装で、この画面はローカルOwnerの操作権限を使います。"
+  ],
+  [
+    "有尚未儲存的回答；請儲存草稿。目標固定為 ",
+    "There are unsaved answers; save the draft. Target is fixed to ",
+    "未保存の回答があります。下書きを保存してください。対象は次に固定されています："
+  ],
+  [
+    "已選擇範本，會在建立新草稿時驗證；不更動現有草稿。",
+    "Template selected; it will be validated when creating a new draft. Existing drafts are unchanged.",
+    "テンプレートを選択しました。新しい下書きの作成時に検証します。既存の下書きは変更しません。"
+  ],
+  [
+    "外部來源沒有此問卷回答；請在候選預覽查看完整原文。",
+    "The external source has no questionnaire answer here; view the complete original in the candidate preview.",
+    "外部の出典にはこの質問票の回答がありません。候補プレビューで原文全文を確認してください。"
+  ],
+  [
+    "此題已有內容。請先清空描述、選項、補充與例外，再標記跳過；資料不會被自動刪除。",
+    "This question already has content. Clear the description, options, supplements and exceptions before marking it skipped; data is not deleted automatically.",
+    "この質問には既に内容があります。説明・選択肢・補足・例外を自分で消してから省略を指定してください。データは自動削除しません。"
+  ],
+  [
+    "身份包已匯出；此版本封存，不可覆寫。內容 SHA256：",
+    "Identity package exported; this version is archived and cannot be overwritten. Content SHA256: ",
+    "アイデンティティパッケージを書き出しました。この版は保存され、上書きできません。内容のSHA256："
+  ],
+  [
+    "先選擇您要做的事。切換查看只讀取資料，不會啟動個體。",
+    "Choose what you want to do first. Changing the view only reads data and does not start an individual.",
+    "まず行いたい操作を選んでください。表示の切り替えはデータの閲覧だけで、個体は開始しません。"
+  ],
+  [
+    "建立後保持未出生。接著可填寫全新身份，或從版本庫選用既有身份；批准與首次啟動會分開處理。",
+    "The individual remains unborn after creation. Next, fill a new identity or select one from the library. Approval and first activation are separate.",
+    "作成後も未誕生のままです。次に新しいアイデンティティを記入するか、ライブラリから選びます。承認と初回開始は別々の操作です。"
+  ],
+  [
+    "選取個體只指定管理對象，不會批准身份、解除停止或啟動生活。",
+    "Selecting an individual only sets the management target; it does not approve identity, clear platform stop or start activity.",
+    "個体の選択は管理対象を指定するだけです。アイデンティティの承認・全体停止の解除・活動開始は行いません。"
+  ],
+  [
+    "先選擇上方個體，再開始問卷；已有身份請直接前往版本庫。只有自我描述必填，其餘可保留未設定。",
+    "Choose the individual above before starting the questionnaire. If you already have an identity, use the library. Only self-description is required; other items may remain unspecified.",
+    "質問票を始める前に上で個体を選んでください。既存のアイデンティティがある場合はライブラリへ進んでください。自己説明のみ必須で、他の項目は未設定でも構いません。"
+  ],
+  [
+    "① 填寫並保存 → ② 預覽候選 → ③ 提交審核 → ④ 批准採用 → ⑤ 另行首次啟動",
+    "1. Write and save → 2. Preview candidate → 3. Submit for review → 4. Approve adoption → 5. Separately authorize first activation",
+    "①記入・保存 → ②候補をプレビュー → ③審査へ提出 → ④採用を承認 → ⑤別途、初回開始を許可"
+  ],
+  [
+    "查看不會建立草稿或新版本。若要修改，請明確建立編輯副本；若要採用，選好目標後直接提交審核。",
+    "Viewing creates no draft or version. To change content, explicitly create an editable copy. To adopt it, choose the target and submit directly for review.",
+    "閲覧しても下書きや版は作りません。変更する場合は編集用コピーを明示的に作成してください。採用する場合は対象を選び、そのまま審査に提出します。"
+  ],
+  [
+    "原版本永久保留；建立編輯副本與提交審核都不會批准身份或出生。",
+    "Original versions are retained permanently. Creating an editable copy or submitting for review neither approves identity nor causes birth.",
+    "元の版は永続的に保持します。編集用コピーの作成や審査提出では、アイデンティティの承認・誕生は行いません。"
+  ],
+  [
+    "提交只建立待審提案。請先讀取提案、核對對象和差異，再批准採用；批准後仍保持停止，未出生者不會出生。",
+    "Submission only creates a pending proposal. Read it, check the individual and differences, then approve adoption. Approval leaves activity stopped and does not cause birth.",
+    "提出は審査待ち提案を作るだけです。提案を読み、対象と差分を確認してから採用を承認してください。承認後も活動は停止したままで、誕生はしません。"
+  ],
+  [
+    "① 確認身份已批准 → ② 設定窗口與權限 → ③ Owner 自行決定首次啟動。已生活個體使用「明確恢復」，不會重新出生。",
+    "1. Check approved identity → 2. Set window and permissions → 3. Owner decides first activation. Born individuals use Explicitly resume; they are not born again.",
+    "①承認済みアイデンティティを確認 → ②時間帯と権限を設定 → ③Ownerが初回開始を判断。誕生済み個体は「明示的に再開」を使い、再び誕生させません。"
+  ],
+  [
+    "連線逾時，無法確認是否已保存。請重新整理並讀回草稿或審核紀錄，核對後再操作。",
+    "Connection timed out; saving is unconfirmed. Refresh and read the draft or review record back, check it, then act again.",
+    "接続がタイムアウトし、保存できたか確認できません。画面を更新し、下書きまたは審査記録を読み戻して確認してから操作してください。"
+  ],
+  [
+    "檔案內容無法讀取。請選擇由 Kinseed 匯出的完整身份包檔案，再重新匯入。",
+    "Cannot read the file. Select a complete identity package exported by Kinseed and import again.",
+    "ファイルを読み込めません。Kinseedから書き出した完全なアイデンティティパッケージを選び、読み込み直してください。"
+  ],
+  [
+    "資料未通過檢查，這次操作沒有確認成功。請核對名稱、必填內容及所選身份包；進階診斷可提供給維護人員。",
+    "Validation failed; this operation is not confirmed successful. Check the name, required fields and package. Advanced diagnostics can be given to maintainers.",
+    "データの確認に合格しておらず、この操作の成功は確認できていません。名前・必須項目・選んだパッケージを確認してください。詳細診断は保守担当者に提供できます。"
+  ],
+  [
+    "此個體尚未設定身份。請開始新問卷，或選用既有身份包；原有草稿仍保留。",
+    "This individual has no identity yet. Start a new questionnaire or choose an existing package. Earlier drafts remain available.",
+    "この個体のアイデンティティは未設定です。新しい質問票を始めるか、既存のパッケージを選んでください。以前の下書きは保持されています。"
+  ],
+  [
+    "個體已建立並保持未出生。下一步：開始全新問卷，或選用既有身份包。",
+    "Individual created and still unborn. Next: start a new questionnaire or choose an existing identity package.",
+    "個体を作成しました。未誕生のままです。次に新しい質問票を始めるか、既存のアイデンティティパッケージを選んでください。"
+  ],
+  [
+    "目前有執行中的輪次；停止後請等待本機確認。",
+    "A cycle is running; after stopping, wait for local termination confirmation.",
+    "実行中のラウンドがあります。停止後、ローカルで終了が確認されるまで待ってください。"
+  ],
+  [
+    "此身份來自既有來源，沒有問卷答案；請在下方預覽及修改候選條目。",
+    "This identity comes from an existing source without questionnaire answers. Preview and edit candidate entries below.",
+    "このアイデンティティは既存の出典に由来し、質問票の回答はありません。下で候補項目をプレビュー・編集してください。"
+  ],
+  [
+    "必要內容已具備，可提交審核。選填未答內容不會自動補入。",
+    "Required content is present; you can submit for review. Unanswered optional content is not filled automatically.",
+    "必須内容が揃っており、審査に提出できます。任意の未回答項目を自動で補うことはありません。"
+  ],
+  [
+    "請按「唯讀查看此版本」核對內容與指定個體的差異。",
+    "Select View this version (read-only) to compare it with the specified individual's identity.",
+    "「この版を閲覧（読み取り専用）」で、指定個体のアイデンティティとの差分を確認してください。"
+  ],
+  [
+    "，回答仍保留。若要交給其他個體，請到版本庫明確建立另一份編輯副本。",
+    "; answers are retained. To give them to another individual, explicitly create another editable copy in the library.",
+    "。回答は保持されています。別の個体に渡す場合は、ライブラリで別の編集用コピーを明示的に作成してください。"
+  ],
+  [
+    "目前有未保存的回答。請先儲存草稿，再開始另一份問卷。",
+    "You have unsaved answers. Save the draft before starting another questionnaire.",
+    "未保存の回答があります。別の質問票を始める前に下書きを保存してください。"
+  ],
+  [
+    "已開始一份全新空白問卷；原有草稿都保留在清單中。",
+    "Started a new blank questionnaire; all earlier drafts remain in the list.",
+    "新しい空白の質問票を開始しました。以前の下書きはすべて一覧に残っています。"
+  ],
+  [
+    "目前尚無草稿。可先開始全新問卷，或到版本庫查看既有身份。",
+    "No drafts yet. Start a new questionnaire or view existing identities in the library.",
+    "下書きはまだありません。新しい質問票を始めるか、ライブラリで既存のアイデンティティを確認できます。"
+  ],
+  [
+    "版已保存到身份版本庫；原版保留，尚未批准。",
+    " saved to the identity library; original retained, not yet approved.",
+    "版をライブラリに保存しました。元の版は保持され、まだ承認していません。"
+  ],
+  [
+    "修改已保存為草稿修訂；下一步按「保存為新候選版本」，原版不會被覆寫。",
+    "Edits saved as a draft revision. Next select Save as a new candidate version; the original will not be overwritten.",
+    "変更を下書きの改訂として保存しました。次に「新しい候補の版として保存」を押してください。元の版は上書きしません。"
+  ],
+  [
+    "必要驗證通過，可提交審核；仍請核對身份內容。",
+    "Required validation passed; submission is available. Still check the identity content.",
+    "必須の検証に合格し、審査へ提出できます。アイデンティティの内容も確認してください。"
+  ],
+  [
+    "尚有必要缺漏或衝突，請展開詳細驗證並修正。",
+    "Required omissions or conflicts remain. Expand validation details and correct them.",
+    "必須項目の未記入や競合が残っています。検証の詳細を開いて修正してください。"
+  ],
+  [
+    "版，等待 Owner 審核；尚未批准或出生。",
+    " awaiting Owner review; not approved or born.",
+    "版はOwnerの審査待ちです。まだ承認・誕生していません。"
+  ],
+  [
+    "。採用只改此個體身份並保持停止，不改記憶、歷史或出生。",
+    ". Adoption changes only this individual's identity and keeps it stopped; memory, history and birth are unchanged.",
+    "。採用はこの個体のアイデンティティだけを変更し、停止状態を維持します。記憶・履歴・誕生は変更しません。"
+  ],
+  [
+    "草稿內容已更新，請回到填寫與草稿重新預覽。",
+    "Draft content changed; return to answers and drafts to preview again.",
+    "下書きの内容が変わりました。記入と下書きに戻り、もう一度プレビューしてください。"
+  ],
+  [
+    "若要提交，請先在上方選擇個體，再按唯讀查看以核對差異。",
+    "To submit, choose an individual above and open read-only to check the differences first.",
+    "提出するには、上で個体を選択し、先に読み取り専用で差分を確認してください。"
+  ],
+  [
+    "已建立獨立編輯副本，原版完整保留。修改後可保存成新候選版本。",
+    "Independent editable copy created; original fully retained. Save edits as a new candidate version.",
+    "独立した編集用コピーを作成し、元の版を完全に保持しました。変更は新しい候補の版として保存できます。"
+  ],
+  [
+    "版。下一步：選擇個體、唯讀查看，再提交審核。",
+    ". Next: choose an individual, view read-only, then submit for review.",
+    "版。次に個体を選び、読み取り専用で確認してから審査に提出してください。"
+  ],
+  [
+    "提案持續保存；批准時會重新核對內容，不因等待而要求重提",
+    "Proposals remain saved. Approval revalidates content; waiting does not require resubmission.",
+    "提案は保存され続けます。承認時に内容を再確認するため、時間が経っても再提出は不要です。"
+  ],
+  [
+    "尚無審核提案。可從身份版本庫選擇版本並提交。",
+    "No review proposals yet. Choose a version in the identity library and submit it.",
+    "審査提案はまだありません。ライブラリで版を選び、提出してください。"
+  ],
+  [
+    "已讀取固定對象的提案。核對內容後，批准與首次出生仍是分開的動作。",
+    "Proposal loaded for its fixed target. Check the content; approval and first birth remain separate actions.",
+    "固定された対象の提案を読み込みました。内容を確認してください。承認と初回誕生は別々の操作です。"
+  ],
+  [
+    " 的身份，個體仍停止且不會自動出生。下一步可到生活與記憶設定窗口，由 Owner 另行決定首次啟動。",
+    " identity. The individual remains stopped and will not be born automatically. Next, set its activity window; the Owner separately decides first activation.",
+    " のアイデンティティ。個体は停止したままで、自動誕生しません。次に活動時間帯を設定し、Ownerが初回開始を別途判断してください。"
+  ],
+  [
+    "提案已退回；原身份、記憶與生活狀態未改變。",
+    "Proposal returned; existing identity, memory and activity state unchanged.",
+    "提案を差し戻しました。元のアイデンティティ・記憶・活動状態は変わりません。"
+  ],
+  [
+    "提案已拒絕；原身份、記憶與生活狀態未改變。",
+    "Proposal rejected; existing identity, memory and activity state unchanged.",
+    "提案を却下しました。元のアイデンティティ・記憶・活動状態は変わりません。"
+  ],
+  [
+    "僅預覽，尚未出生。請由 Owner 親自決定是否授權。",
+    "Preview only; birth has not occurred. The Owner must personally decide whether to authorize it.",
+    "プレビューのみで、まだ誕生していません。Owner本人が許可するかを判断してください。"
+  ],
+  [
+    "請先建立備份，或填寫此個體已有的備份檔名。",
+    "Create a backup first, or enter an existing backup filename belonging to this individual.",
+    "先にバックアップを作成するか、この個体の既存バックアップのファイル名を入力してください。"
+  ],
+  [
+    "已還原此個體記憶；出生、身份與歷史保留，個體保持停止。",
+    "Memory restored; birth, identity and history retained. The individual remains stopped.",
+    "記憶を復元しました。誕生・アイデンティティ・履歴は保持し、個体は停止したままです。"
+  ],
+  [
+    "歷史對象不一致，已停止顯示以避免混入其他個體。",
+    "History target mismatch; display stopped to avoid mixing individuals.",
+    "履歴の対象が一致しません。別の個体の内容を混ぜないため、表示を停止しました。"
+  ],
+  [
+    "按個體查看每日進度。這是B原始歷史的唯讀白話整理，不會改記憶、授權或活動；不呼叫模型，也不消耗模型輪數。",
+    "View daily progress by individual. This is a read-only plain-language view of original B history. It changes no memory, authorization or activity, makes no model calls and consumes no model allowance.",
+    "個体ごとの1日の進捗を見られます。Bの原始履歴を読み取り専用でわかりやすく表示します。記憶・許可・活動を変更せず、モデルの呼び出しや回数の消費もありません。"
+  ],
+  [
+    "完整完成需同時有本輪記憶提交與模型正常結束證據；只開始、只寫筆記或只提交，不會冒充整輪成功。",
+    "Full completion requires both a memory commit and evidence of normal model termination in that cycle. Starting, writing a note or committing alone is not presented as full success.",
+    "完全な完了には、そのラウンドの記憶更新とモデル正常終了の両方の証拠が必要です。開始・ノート作成・記憶更新だけで全体成功とは表示しません。"
+  ]
+]

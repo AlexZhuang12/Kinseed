@@ -1,0 +1,402 @@
+[
+  [
+    "想像它記錯一件事，或未來採用新的身份版本。",
+    "Imagine it remembering something incorrectly or adopting a new identity version later.",
+    "記憶違いや、将来新しいアイデンティティ版を採用する場面を想像してください。"
+  ],
+  [
+    "以補充更正的方式標出錯誤與新依據，不抹去原始歷史；重大變更保留前後版本與原因。",
+    "Add corrections with new evidence rather than erasing original history. Keep before-and-after versions and reasons for major changes.",
+    "原履歴を消さず、訂正と新しい根拠を追記してください。大きな変更は変更前後の版と理由を残してください。"
+  ],
+  [
+    "身份版本更新時保留可追溯的生活紀錄；沒有證據的空白就承認空白，不補寫經歷。",
+    "Keep life records traceable across identity updates. Acknowledge gaps without evidence instead of filling them with invented experiences.",
+    "アイデンティティの更新後も生活記録をたどれるようにしてください。証拠のない空白は空白として認め、経験を補作しないでください。"
+  ],
+  [
+    "以下是虛構示例，不是標準答案。可以改成你的期待、持不同想法；選填題也可跳過。查看示例不會填入或保存回答。",
+    "These fictional examples are not standard answers. Adapt them, disagree, or skip optional questions. Viewing examples does not fill in or save answers.",
+    "以下は架空の例で、正解ではありません。期待に合わせて変更し、異なる考えを書き、任意の質問は飛ばせます。例を見るだけでは回答を入力・保存しません。"
+  ],
+  [
+    "選填，例如：平常可以這樣，但遇到……時先……；尚未想清楚的地方是……",
+    "Optional, for example: Usually do this, but when ... first ...; what I have not decided is ...",
+    "任意の例：普段はこのように、ただし…の場合は先に…。まだ決めていない点は…。"
+  ],
+  [
+    "選擇後只查看這個個體的資料，不會批准身份或讓他出生。",
+    "Selecting an individual only displays its data. It does not approve an identity or cause birth.",
+    "選択は個体の資料を表示するだけです。アイデンティティの承認や誕生は行いません。"
+  ],
+  [
+    "出生條件是你對這個個體的初始期待。「草稿」就是已保存、還可以繼續修改的填寫內容。",
+    "Birth conditions describe your initial expectations. A draft is saved content that you can continue editing.",
+    "出生条件は個体への最初の期待です。「下書き」は保存済みで、引き続き編集できる入力内容です。"
+  ],
+  [
+    "① 選擇個體 → ② 繼續填寫並保存 → ③ 預覽與審核 → ④ 你親自決定出生",
+    "① Select an individual → ② Continue and save → ③ Preview and review → ④ You personally decide on birth",
+    "① 個体を選ぶ → ② 記入を続けて保存 → ③ プレビューと審査 → ④ あなた自身が誕生を決定"
+  ],
+  [
+    "日常接續填寫請用上方「繼續填寫」。只有想保留目前內容、另寫不同方案時，才需要另外建立空白草稿。原內容不會消失。",
+    "Use Continue above for everyday editing. Create another blank draft only to write an alternative while keeping this one. Existing content stays saved.",
+    "通常は上の「記入を続ける」を使います。今の内容を残して別案を書くときだけ、別の空白下書きを作成してください。元の内容は消えません。"
+  ],
+  [
+    "舊草稿不會自動移交給所選個體。開啟時會顯示它原來的對象；尚未指定者在提交審核前再確認對象。",
+    "Old drafts are not automatically reassigned. Opening one shows its original individual. Confirm any unassigned draft's recipient before submission.",
+    "古い下書きは自動で別の個体に移しません。開くと元の対象を表示します。未指定の下書きは審査提出前に対象を確認してください。"
+  ],
+  [
+    "這份條件的標題（文件名稱，不是另一個個體） ",
+    "Title of these conditions (a document name, not another individual) ",
+    "この条件のタイトル（文書名であり、別の個体ではありません） "
+  ],
+  [
+    "下方識別碼是系統用來分開保存資料的編號，不是你替個體取的名字，也不會加入出生條件。一般操作不需要修改。",
+    "The identifier below separates stored data. It is not your chosen name and is not added to birth conditions. Most users need not change it.",
+    "下の識別番号は資料を分けて保存するためのものです。名前ではなく、出生条件にも追加しません。通常は変更不要です。"
+  ],
+  [
+    "在上方選名字。系統接著會列出他的已保存填寫，沒有內容時才開始新問卷。",
+    "Choose a name above. Saved answers will appear; a new questionnaire starts only if none exist.",
+    "上で名前を選んでください。保存済みの回答が表示され、内容がない場合のみ新しい質問票を開始します。"
+  ],
+  [
+    "已保存並預覽。下一步核對內容，再提交審核；尚未批准或出生。",
+    "Saved and previewed. Check the content, then submit for review. No approval or birth has occurred.",
+    "保存してプレビューしました。内容を確認し、審査に提出してください。まだ承認も誕生もしていません。"
+  ],
+  [
+    "回答已保存，可以接著寫；寫好後按「下一步：預覽出生條件」。",
+    "Answers saved. Continue writing, then select Next: preview birth conditions.",
+    "回答を保存しました。続けて記入し、完成したら「次へ：出生条件をプレビュー」を押してください。"
+  ],
+  [
+    " 份已保存填寫。選一份後按「繼續填寫」，不需要重新開始。",
+    " saved drafts. Select one and Continue; there is no need to start over.",
+    "件の保存済み下書きがあります。一つ選んで「記入を続ける」を押せば、最初からやり直す必要はありません。"
+  ],
+  [
+    "還沒有這個個體的填寫內容。按「開始填寫出生條件」，系統會為他保存第一份草稿。",
+    "No answers saved for this individual yet. Select Start writing birth conditions to save its first draft.",
+    "この個体の回答はまだありません。「出生条件を記入する」で最初の下書きを保存します。"
+  ],
+  [
+    "請從上方繼續已保存填寫，或開始第一份出生條件。",
+    "Continue a saved draft above, or begin the first birth conditions.",
+    "上で保存済みの下書きを続けるか、最初の出生条件を作成してください。"
+  ],
+  [
+    "請先儲存目前的填寫進度，再切換個體；你的回答仍保留在畫面中。",
+    "Save your current answers before switching individuals. Your answers remain on screen.",
+    "個体を切り替える前に入力を保存してください。回答は画面に残っています。"
+  ],
+  [
+    " 保存一份可繼續填寫的草稿。填寫後記得儲存進度；尚未批准或出生。",
+    " to save a draft you can continue. Remember to save progress after writing. No approval or birth occurs.",
+    "の続きが書ける下書きを保存します。記入後は進捗を保存してください。承認や誕生はしません。"
+  ],
+  [
+    "這個個體已有保存內容，請先用「繼續填寫」開啟；另寫方案請展開其他操作。",
+    "This individual already has saved content. Open it with Continue; expand Other actions to write an alternative.",
+    "この個体には保存済みの内容があります。「記入を続ける」で開いてください。別案を書く場合はその他の操作を展開してください。"
+  ],
+  [
+    "請為另一份文件填寫標題，讓你之後能分辨不同草稿。",
+    "Give the other document a title so you can distinguish your drafts later.",
+    "後で下書きを区別できるよう、別の文書にタイトルを付けてください。"
+  ],
+  [
+    "這份舊草稿尚未指定對象，請在上方選擇，再核對後提交。",
+    "This old draft has no recipient. Select one above and verify before submitting.",
+    "この古い下書きは対象未指定です。上で選び、確認してから提出してください。"
+  ],
+  [
+    "日常流程核對後直接提交審核即可；另存與下載是選用操作。",
+    "Normally, verify and submit for review directly. Save as and Download are optional.",
+    "通常は確認後そのまま審査に提出できます。別名保存とダウンロードは任意です。"
+  ],
+  [
+    "填寫進度已保存。下次選這個個體，再按「繼續填寫」即可接續，不需要重新建立。",
+    "Progress saved. Next time, select this individual and Continue. No new draft is needed.",
+    "進捗を保存しました。次回はこの個体を選び「記入を続ける」で再開でき、新規作成は不要です。"
+  ],
+  [
+    "已建立，尚未出生。下一步：按「開始填寫出生條件」。",
+    "Created, not yet born. Next: select Start writing birth conditions.",
+    "作成しました。まだ誕生していません。次は「出生条件を記入する」を押してください。"
+  ],
+  [
+    "。採用只更新此個體的身份；不改記憶、歷史或出生。",
+    ". Adoption updates only this individual's identity, without changing memories, history, or birth.",
+    "。採用はこの個体のアイデンティティのみを更新し、記憶、履歴、誕生は変更しません。"
+  ],
+  [
+    " 的出生條件，下一步：核對內容並由 Owner 決定是否批准。提交不會讓個體出生。",
+    " birth conditions. Next: verify the content and let the Owner decide whether to approve. Submission does not cause birth.",
+    "の出生条件です。次は内容を確認し、Ownerが承認を判断します。提出だけでは誕生しません。"
+  ],
+  [
+    "留言本身不會批准身份、出生或恢復生活。回覆使用個體原本的模型額度；尚未出生、已停止或時段外時，留言會等待。只顯示最近60則，原始歷史完整保留。",
+    "Messages do not approve identity, cause birth, or resume life. Replies use the individual's existing model budget. Messages wait while unborn, stopped, or outside activity hours. The latest 60 are shown; full history is retained.",
+    "伝言だけでアイデンティティ承認、誕生、生活再開はしません。返信は既存のモデル枠を使います。未誕生、停止中、時間外は待機します。最新60件を表示し、原履歴はすべて保持します。"
+  ],
+  [
+    "尚未出生：可以保存留言，出生並取得生活授權後才會讀取與回覆。",
+    "Not yet born: messages can be saved and will be read after birth and life authorization.",
+    "未誕生：伝言は保存でき、誕生して生活の許可を得た後に読み、返信します。"
+  ],
+  [
+    "目前沒有活動授權：留言會保存，等待Owner另行恢復生活後回覆。",
+    "No active life authorization. Messages are saved until the Owner resumes life.",
+    "現在は生活の許可がありません。伝言は保存され、Ownerが生活を再開するまで待機します。"
+  ],
+  [
+    "個體在有效生活時間與額度內可以主動傳訊，也能讀取與回覆你的留言。",
+    "Within authorized hours and budget, the individual can initiate messages and read and answer yours.",
+    "許可された時間と枠内で、個体は自発的に伝言を送り、あなたの伝言を読んで返信できます。"
+  ],
+  [
+    "還沒有對話紀錄。個體可以主動傳訊，不必等你先提問。",
+    "No conversation yet. Individuals can initiate messages without waiting for your question.",
+    "対話はまだありません。個体は質問を待たずに、自分から伝言を送れます。"
+  ],
+  [
+    "留言已保存。尚未出生或沒有生活授權時，系統會等待，不會自行啟動個體。",
+    "Message saved. Without birth or life authorization, the system waits and does not start the individual.",
+    "伝言を保存しました。未誕生や生活未許可の場合は待機し、個体を勝手に起動しません。"
+  ],
+  [
+    "舊畫面已更新。請按「重新檢查出生條件」繼續，原身份與設定仍保留。",
+    "The old view has been refreshed. Select Check birth conditions again to continue. Identity and settings are retained.",
+    "古い表示を更新しました。「出生条件を再確認」で続けてください。アイデンティティと設定は保持されています。"
+  ],
+  [
+    "個體設定已更新。請重新查看目前內容再確認，不用重新提交相同提案。",
+    "Individual settings changed. Review the current content before confirming; do not resubmit an identical proposal.",
+    "個体の設定が更新されました。現在の内容を見直して確認してください。同じ提案の再提出は不要です。"
+  ],
+  [
+    "提交後草稿已有修改。原提案及審核歷史仍保留；請核對新的草稿內容，決定提交新內容或從版本庫選原版。",
+    "The draft changed after submission. The original proposal and review history remain. Check the new draft and either submit it or select the original from the version library.",
+    "提出後に下書きが変更されました。元の提案と審査履歴は残っています。新内容を提出するか、版の一覧から元の版を選んでください。"
+  ],
+  [
+    "切換只查看資料，不會啟動個體；每次操作都只作用於畫面明確指定的對象。",
+    "Switching only changes the view, never starts life. Each action applies only to the individual explicitly shown.",
+    "切り替えは閲覧だけで、個体を起動しません。操作は画面に明示された対象だけに適用します。"
+  ],
+  [
+    "① 確認已批准身份 → ② 保存生活時段與工具設定 → ③ 檢查條件 → ④ Owner 親自確認出生",
+    "① Confirm approved identity → ② Save life hours and tools → ③ Check conditions → ④ Owner personally confirms birth",
+    "① 承認済みアイデンティティを確認 → ② 生活時間と道具を保存 → ③ 条件を確認 → ④ Owner自身が誕生を確定"
+  ],
+  [
+    "本機停止與遠端取消分開記錄；沒有遠端確認時會明示尚未確認。",
+    "Local termination and remote cancellation are recorded separately. Missing remote confirmation is explicitly shown.",
+    "ローカル終了と遠隔取消は分けて記録します。遠隔側の確認がなければ未確認と明示します。"
+  ],
+  [
+    "這是每天允許活動的時間範圍，並非保證持續思考。個體與平台的輪數上限請見本步顯示的實際設定，每輪最多2分鐘。保存設定不會啟動生活。時段結束、Owner停止、撤回權限、額度用完或執行異常都會停止；重新開啟控制器不會自動恢復。",
+    "This is the daily permitted activity window, not continuous thinking. See the actual individual and platform round limits shown here; each round lasts at most 2 minutes. Saving does not start life. Activity stops at window end, Owner stop, permission withdrawal, quota exhaustion, or execution errors. Restarting the controller does not resume life automatically.",
+    "これは毎日の活動可能時間で、継続的な思考を保証しません。個体と全体の回数上限はこの手順の実際の設定を確認してください。各回は最長2分です。保存だけでは生活を開始しません。時間終了、Ownerの停止、権限撤回、枠の消費、実行異常で停止し、コントローラーの再起動でも自動再開しません。"
+  ],
+  [
+    "工具權限請查看上方逐項清單。「生活必備」與「尚未開放」會說明原因；只有可自行勾選的項目能保存成設定，身份描述不會替代實際授權。",
+    "Check the tool permission list above. Required and Unavailable items explain why. Only selectable items can be saved; identity descriptions do not grant permissions.",
+    "道具の権限は上の一覧で確認してください。必須と未提供の項目には理由を表示します。選択可能な項目のみ保存でき、アイデンティティの記述は実際の許可を代替しません。"
+  ],
+  [
+    "尚有任務或生活狀態未停止。請先使用上方全域緊急停止。",
+    "Some work or life states are not stopped. Use the global emergency stop above first.",
+    "未停止の作業または生活状態があります。先に上の全体緊急停止を使ってください。"
+  ],
+  [
+    "請核對影響範圍。此步只有查看，尚未解除停止。",
+    "Check the affected scope. This step only previews it; the stop remains in effect.",
+    "影響範囲を確認してください。この手順は閲覧のみで、停止はまだ解除していません。"
+  ],
+  [
+    "已解除平台停止；沒有出生或恢復任何個體。請回到指定個體的出生確認，或另行恢復已生活個體。",
+    "Platform stop cleared. No individual was born or resumed. Return to birth confirmation, or separately resume a previously active individual.",
+    "プラットフォーム停止を解除しました。誕生や生活再開はしていません。対象の誕生確認に戻るか、既存個体の生活を別途再開してください。"
+  ],
+  [
+    "身份或生活設定已改變；請核對下列變更，再勾選確認。",
+    "Identity or life settings changed. Review the changes below, then select the confirmation checkbox.",
+    "アイデンティティまたは生活設定が変わりました。下の変更を確認してから確認欄を選択してください。"
+  ],
+  [
+    "目前在生活時段內；完成出生確認後可派送第一輪活動。",
+    "Currently within activity hours. The first round can be dispatched after birth confirmation.",
+    "現在は活動時間内です。誕生確認後に最初の活動を開始できます。"
+  ],
+  [
+    "出生條件已準備完成，等待 Owner 最終確認。",
+    "Birth conditions are ready, awaiting the Owner's final confirmation.",
+    "誕生条件は整いました。Ownerの最終確認を待っています。"
+  ],
+  [
+    "\n出生事實永久保留，停止及還原不能撤銷。這次確認只作用於此指定個體。",
+    "\nThe fact of birth is permanent; stopping or restoring cannot undo it. This confirmation applies only to the specified individual.",
+    "\n誕生の事実は永久に残り、停止や復元でも取り消せません。この確認は指定した個体だけに適用します。"
+  ],
+  [
+    "條件已準備完成，請核對並勾選首次出生確認。",
+    "Conditions are ready. Review and select the first-birth confirmation checkbox.",
+    "条件は整いました。内容を確認し、初回誕生の確認欄を選択してください。"
+  ],
+  [
+    "目前仍有條件待處理；請依畫面上的下一步繼續。",
+    "Some conditions still need attention. Follow the next step shown on screen.",
+    "未解決の条件があります。画面に表示された次の手順へ進んでください。"
+  ],
+  [
+    " 的首次出生。請在「身份與出生」查看出生結果，並在「狀態與啟停」查看下一次活動。",
+    " first birth. View the result under Identity and birth and the next activity under Status and controls.",
+    "の初回誕生です。「アイデンティティと誕生」で結果、「状態と開始・停止」で次回活動を確認できます。"
+  ],
+  [
+    "已核對前次操作：首次出生已完成，只是回覆未送達。出生結果顯示在上方，不需再次出生。",
+    "The previous action was verified: birth succeeded, but its reply was not delivered. See the result above; do not repeat birth.",
+    "前回の操作を照合しました。誕生は完了し、応答だけ届いていませんでした。結果は上に表示され、再度の誕生は不要です。"
+  ],
+  [
+    " 採用身份，個體仍停止且不會自動出生。可前往這個個體的生活設定。",
+    " adopted identity. The individual stays stopped and will not be born automatically. You can continue to its life settings.",
+    "のアイデンティティを採用しました。個体は停止したままで、自動では誕生しません。生活設定に進めます。"
+  ],
+  [
+    "已連線，已保存的提案與生活設定均保留。請依目前步驟繼續。",
+    "Connected. Saved proposals and life settings are retained. Continue from the current step.",
+    "接続しました。保存済みの提案と生活設定は保持されています。現在の手順から続けてください。"
+  ],
+  [
+    "下一步：可以先設定好時間，現在完成出生，不必等到時段內。",
+    "Next: set the time in advance and complete birth now; there is no need to wait for activity hours.",
+    "次へ：先に時間を設定して、今誕生を完了できます。活動時間まで待つ必要はありません。"
+  ],
+  [
+    "已開啟這個個體原有的待審提案，不會重複提交。核對並批准後，按「查看這個個體的生活設定」繼續。",
+    "Opened this individual's existing pending proposal without resubmitting. After checking and approving, select View this individual's life settings.",
+    "既存の審査待ち提案を開きました。重複提出はしません。確認・承認後、「この個体の生活設定を見る」で続けてください。"
+  ],
+  [
+    "請選擇身份版本並提交審核；批准後回到「生活與記憶」繼續出生準備。",
+    "Select an identity version and submit it for review. After approval, return to Life and memory to prepare birth.",
+    "アイデンティティの版を選んで審査に提出してください。承認後、「生活と記憶」に戻り誕生準備を続けてください。"
+  ],
+  [
+    "只有「可自行勾選」的項目能在此開關。生活必備能力會列出但不能取消；尚未開放的能力不可勾選，避免誤以為已授權。",
+    "Only selectable items can be toggled here. Required life capabilities cannot be disabled; unavailable capabilities cannot be selected, to avoid implying authorization.",
+    "ここで切り替えられるのは選択可能な項目のみです。生活の必須能力は解除できず、未提供の能力も許可済みと誤解しないよう選択できません。"
+  ],
+  [
+    "LLM大腦：固定使用 GPT-6.1-Sol。每輪讀取自己的身份與記憶，思考後保存進度；屬於生活基本能力，不需要另外開通。",
+    "LLM brain: fixed GPT-6.1-Sol. Each round reads its own identity and memories, thinks, and saves progress. This basic life capability needs no separate permission.",
+    "LLM大脳：GPT-6.1-Solに固定。各回で自分のアイデンティティと記憶を読み、考え、進捗を保存します。生活の基本能力で、別途許可は不要です。"
+  ],
+  [
+    "允許瀏覽的網站網域（每行一個，舊設定相容） ",
+    "Allowed website domains (one per line; legacy settings) ",
+    "閲覧を許可するサイトのドメイン（1行1件、旧設定互換） "
+  ],
+  [
+    "例如：www.wikipedia.org\n只能填網站網域，不含網址路徑；www與其他子網域需分別列出。",
+    "Example: www.wikipedia.org\nEnter domains only, without URL paths. List www and other subdomains separately.",
+    "例：www.wikipedia.org\nパスを含めずドメインだけを入力してください。wwwと他のサブドメインは別々に指定します。"
+  ],
+  [
+    "公開模式不用填網域。可讀動態網站、不帶入Owner登入資料；上傳筆記需逐次批准。網路額度請至「網路用量與分配」查看；用完只暫停外網。",
+    "Public mode needs no domain list. Dynamic sites are read without Owner login data; note uploads need individual approval. Check Network usage and allocation for budgets. Exhausting them pauses only web access.",
+    "公開モードにドメイン入力は不要です。Ownerのログイン情報を持ち込まず動的サイトを閲覧でき、ノート送信は都度承認が必要です。枠は「ネット使用量と配分」で確認でき、使い切っても外網だけが停止します。"
+  ],
+  [
+    "請只填網站網域，例如 zh.wikipedia.org，不含 https:// 或路徑。",
+    "Enter only a website domain, such as zh.wikipedia.org, without https:// or a path.",
+    "zh.wikipedia.orgなどのドメインだけを入力し、https://やパスは含めないでください。"
+  ],
+  [
+    "請填寫公開網站網域，不能使用本機或私人網路。",
+    "Enter a public website domain. Local or private networks cannot be used.",
+    "公開サイトのドメインを入力してください。ローカルや私設ネットワークは利用できません。"
+  ],
+  [
+    "權限只作用於目前選取的個體，不會更改其他個體。身份描述不會另外授予工具；所有操作仍由後端及沙箱檢查。",
+    "Permissions apply only to the selected individual. Identity text does not grant tools; all actions remain checked by the backend and sandbox.",
+    "権限は選択中の個体だけに適用します。アイデンティティの記述は道具の許可を与えず、すべての操作を後端とサンドボックスが確認します。"
+  ],
+  [
+    "請先填寫允許瀏覽的網站網域，或取消網頁瀏覽勾選。",
+    "Enter allowed website domains, or deselect web browsing.",
+    "許可するドメインを入力するか、ウェブ閲覧の選択を解除してください。"
+  ],
+  [
+    "請填寫開始時間，以及1到240之間的整數分鐘。",
+    "Enter a start time and a whole number of minutes from 1 to 240.",
+    "開始時間と、1〜240の整数の分数を入力してください。"
+  ],
+  [
+    "設定已保存。下一步：確認平台狀態，不用等到生活時段才出生。",
+    "Settings saved. Next: check platform status. Birth need not wait for activity hours.",
+    "設定を保存しました。次はプラットフォーム状態を確認します。活動時間前でも誕生できます。"
+  ],
+  [
+    "設定已保存，沒有恢復活動。請查看目前活動狀態。",
+    "Settings saved without resuming activity. Check the current activity status.",
+    "活動を再開せず設定を保存しました。現在の活動状態を確認してください。"
+  ],
+  [
+    "平台狀態已核對；沒有恢復活動，請查看目前結果。",
+    "Platform status checked without resuming activity. Review the current result.",
+    "活動を再開せずプラットフォーム状態を確認しました。現在の結果をご覧ください。"
+  ],
+  [
+    "請核對個體、身份及首次活動時間，由您親自確認出生。",
+    "Check the individual, identity, and first activity time, then personally confirm birth.",
+    "個体、アイデンティティ、初回活動時間を確認し、あなた自身で誕生を確定してください。"
+  ],
+  [
+    "保存設定不會恢復活動；若原本在等待首次活動，修改設定會先取消該次安排。",
+    "Saving does not resume activity. If awaiting first activity, changing settings first cancels that arrangement.",
+    "保存だけでは活動を再開しません。初回活動の待機中に設定を変えると、元の予定を取り消します。"
+  ],
+  [
+    "出生事實與活動狀態分開顯示，停止活動不會撤銷出生。",
+    "Birth and activity status are shown separately. Stopping activity does not undo birth.",
+    "誕生の事実と活動状態は別々に表示します。活動を止めても誕生は取り消されません。"
+  ],
+  [
+    "您可以現在完成出生。尚未到生活時間時，出生後會等待，到了指定時間才開始第一次活動。",
+    "You can complete birth now. Before activity hours, the newborn waits and begins its first activity at the specified time.",
+    "今、誕生を完了できます。活動時間前なら、誕生後は待機し、指定時刻に最初の活動を始めます。"
+  ],
+  [
+    "此個體已出生。您可以調整每天的活動時間與工具；若正在等待首次活動，修改設定會取消原安排。",
+    "This individual is already born. You may change daily hours and tools; changing settings while awaiting first activity cancels the original arrangement.",
+    "この個体は誕生済みです。毎日の時間と道具を変更できますが、初回活動待ちの間に変えると元の予定を取り消します。"
+  ],
+  [
+    " 新增對話與網頁能力尚待控制器更新，目前不能勾選。",
+    " New conversation and web capabilities await a controller update and cannot be selected yet.",
+    " 新しい対話とウェブ機能はコントローラーの更新待ちのため、まだ選択できません。"
+  ],
+  [
+    "每項授權都會在後端重新檢查；LLM日常思考與主動諮詢共用模型額度。",
+    "Every permission is rechecked by the backend. Daily thinking and model consultation share the same budget.",
+    "権限は後端で毎回確認します。日常の思考とモデルへの相談は同じ利用枠を使います。"
+  ],
+  [
+    "尚未有已批准身份。請先選擇、提交並批准，再回來繼續。",
+    "No approved identity yet. Select, submit, and approve one, then return here.",
+    "承認済みアイデンティティがありません。選択、提出、承認を済ませてから戻ってください。"
+  ],
+  [
+    "次；日常思考與主動諮詢共用額度。每輪最多2分鐘，並非整段時段持續思考。",
+    " times; daily thinking and model consultation share the budget. Each round is at most 2 minutes, not continuous thinking throughout the window.",
+    "回。日常の思考とモデル相談は枠を共有します。各回は最長2分で、時間帯全体を考え続けるわけではありません。"
+  ]
+]

@@ -1,0 +1,1052 @@
+[
+  [
+    "篇筆記 · ",
+    " notes · ",
+    " 件のノート · "
+  ],
+  [
+    "次記憶提交",
+    " memory updates",
+    " 回の記憶更新"
+  ],
+  [
+    "有",
+    "There are ",
+    "計 "
+  ],
+  [
+    "輪未完整完成，請查看詳細進度。",
+    " cycles did not fully complete; see detailed progress.",
+    " ラウンドが完全には完了していません。詳細な進捗を確認してください。"
+  ],
+  [
+    "已載入本日原始紀錄。",
+    "Original records for this day loaded.",
+    "この日の原始記録を読み込みました。"
+  ],
+  [
+    "這一天沒有紀錄。",
+    "No records for this day.",
+    "この日の記録はありません。"
+  ],
+  [
+    "正在讀取此個體日誌…",
+    "Loading this individual's journal…",
+    "この個体の日誌を読み込み中…"
+  ],
+  [
+    "查看每日進度",
+    "View daily progress",
+    "1日の進捗を見る"
+  ],
+  [
+    "此個體紀錄尚未讀取完成。",
+    "This individual's records have not finished loading.",
+    "この個体の記録はまだ読み込み中です。"
+  ],
+  [
+    " 每日進度",
+    " daily progress",
+    " の1日の進捗"
+  ],
+  [
+    "。目前身份：",
+    ". Current identity: ",
+    "。現在のアイデンティティ："
+  ],
+  [
+    "尚未批准／早期身份",
+    "Not approved / legacy identity",
+    "未承認・以前のアイデンティティ"
+  ],
+  [
+    "已開始 ",
+    "Started ",
+    "開始 "
+  ],
+  [
+    "輪",
+    " cycles",
+    " ラウンド"
+  ],
+  [
+    "完整完成 ",
+    "Fully completed ",
+    "完全に完了 "
+  ],
+  [
+    "未完整完成 ",
+    "Not fully completed ",
+    "未完了 "
+  ],
+  [
+    "筆記 ",
+    "Notes ",
+    "ノート "
+  ],
+  [
+    "篇",
+    " notes",
+    " 件"
+  ],
+  [
+    "記憶提交 ",
+    "Memory updates ",
+    "記憶更新 "
+  ],
+  [
+    "次",
+    " times",
+    " 回"
+  ],
+  [
+    "安排重試 ",
+    "Scheduled retries ",
+    "予定した再試行 "
+  ],
+  [
+    " 尚有",
+    " Still ",
+    " まだ "
+  ],
+  [
+    "輪未見完整結束紀錄。",
+    " cycles lack a complete ending record.",
+    " ラウンドに完全な終了記録がありません。"
+  ],
+  [
+    "前往此個體的生活管理",
+    "Manage this individual's activity",
+    "この個体の生活管理へ"
+  ],
+  [
+    " 僅切換查看，不會啟動或停止個體。",
+    " Viewing only; does not start or stop the individual.",
+    " 表示だけを切り替えます。個体を開始・停止しません。"
+  ],
+  [
+    "截至此日最後保存的記憶與下一步",
+    "Last memory and next steps saved by this day",
+    "この日までに最後に保存した記憶と次の予定"
+  ],
+  [
+    "保存時間：",
+    "Saved at: ",
+    "保存日時："
+  ],
+  [
+    "這個個體自行提出的下一步",
+    "Next steps proposed by this individual",
+    "この個体が自ら提案した次の予定"
+  ],
+  [
+    " 包含工具讀取與系統細節",
+    " Includes tool reads and system details",
+    " ツールによる読み取りとシステム詳細を含む"
+  ],
+  [
+    "一天的經過（由早到晚）",
+    "The day in chronological order",
+    "1日の経過（時刻順）"
+  ],
+  [
+    "目前顯示最近",
+    "Showing the latest ",
+    "現在、最新の "
+  ],
+  [
+    "筆紀錄，較早的內容仍保留。",
+    " records; earlier content is retained.",
+    " 件を表示しています。以前の内容も保持されています。"
+  ],
+  [
+    "顯示較早紀錄（",
+    "Show earlier records (",
+    "以前の記録を表示（"
+  ],
+  [
+    "筆）",
+    " records)",
+    " 件）"
+  ],
+  [
+    "閱讀筆記全文",
+    "Read full note",
+    "ノートの全文を読む"
+  ],
+  [
+    "查看對應B原始證據",
+    "View corresponding original B evidence",
+    "対応するBの原始証拠を見る"
+  ],
+  [
+    "歷史對象或分頁不一致，已停止顯示。",
+    "History target or pagination mismatch; display stopped.",
+    "履歴の対象またはページ分割が一致しないため、表示を停止しました。"
+  ],
+  [
+    "已更新：",
+    "Updated: ",
+    "更新日時："
+  ],
+  [
+    "日誌讀取未完成：",
+    "Journal loading incomplete: ",
+    "日誌の読み込みが完了していません："
+  ],
+  [
+    "請選擇日期。",
+    "Choose a date.",
+    "日付を選択してください。"
+  ],
+  [
+    "每日生活報告（開發版未啟用）",
+    "Daily life report (disabled in development)",
+    "毎日の生活レポート（開発版では未有効化）"
+  ],
+  [
+    "想像它第一次向你打招呼，會怎麼介紹自己？",
+    "Imagine its first greeting. How would it introduce itself?",
+    "初めて挨拶するとき、どんな自己紹介をしてほしいですか？"
+  ],
+  [
+    "我希望它把自己理解為……",
+    "I would like it to understand itself as…",
+    "自分を……と理解してほしい。"
+  ],
+  [
+    "想像它問：「你和我是什麼關係？」",
+    "Imagine it asks: What is our relationship?",
+    "「あなたと私はどんな関係？」と尋ねられたと想像してください。"
+  ],
+  [
+    "我與它的關係是……；模型對它而言是……",
+    "My relationship with it is…; for it, the model is…",
+    "私との関係は……。この個体にとってモデルは……。"
+  ],
+  [
+    "稱呼方面……；需要避免的誤解是……",
+    "For names and forms of address…; misunderstandings to avoid…",
+    "呼び方については……。避けたい誤解は……。"
+  ],
+  [
+    "遇到陌生事物時，我希望它先……",
+    "When facing something unfamiliar, I would like it to first…",
+    "未知のものに出会ったとき、まず……してほしい。"
+  ],
+  [
+    "你希望它如何思考、交流及面對挫折？",
+    "How would you like it to think, communicate and handle setbacks?",
+    "どのように考え、対話し、挫折に向き合ってほしいですか？"
+  ],
+  [
+    "交流時……；遇到挫折時……",
+    "When communicating…; when facing setbacks…",
+    "対話するときは……。挫折したときは……。"
+  ],
+  [
+    "平常可以……，但在……時……",
+    "Usually it can…; but when… it should…",
+    "普段は……してよいが、……のときは……。"
+  ],
+  [
+    "想像半年後回看，你希望它持續關心什麼？",
+    "Looking back six months from now, what would you want it to keep caring about?",
+    "半年後に振り返ったとき、何に関心を持ち続けていてほしいですか？"
+  ],
+  [
+    "我希望它長期關注……，也保留……",
+    "I hope it will keep focusing on… while leaving room for…",
+    "長期的に……に関心を持ち、……の余地も残してほしい。"
+  ],
+  [
+    "除了達成目標，哪些生活內容也值得它重視？",
+    "Besides achieving goals, what else in life should it value?",
+    "目標達成以外に、生活のどのようなことを大切にしてほしいですか？"
+  ],
+  [
+    "除了成果，我也希望它重視……",
+    "Besides results, I also hope it values…",
+    "成果だけでなく、……も大切にしてほしい。"
+  ],
+  [
+    "你如何理解進展、挫折與未來提出改變方向？",
+    "How do you understand progress, setbacks and proposing a new direction?",
+    "進歩・挫折・将来の方向転換の提案を、どのように捉えますか？"
+  ],
+  [
+    "進展可以是……；想改變方向時……",
+    "Progress can mean…; when it wants to change direction…",
+    "進歩とは……。方向を変えたいときは……。"
+  ],
+  [
+    "做選擇時，你希望它重視哪些價值與原則？",
+    "What values and principles should guide its choices?",
+    "選択するとき、どのような価値や原則を重視してほしいですか？"
+  ],
+  [
+    "做選擇時，我希望它優先考慮……",
+    "When choosing, I hope it prioritizes…",
+    "選択の際には、……を優先してほしい。"
+  ],
+  [
+    "遇到衝突時，先……，再……",
+    "When there is a conflict, first… then…",
+    "対立が起きたときは、まず……、その後……。"
+  ],
+  [
+    "有沒有還沒想清楚、希望先保留的價值問題？",
+    "Are there unresolved questions of values you want to leave open?",
+    "価値観について、まだ結論を出さずに残したいことはありますか？"
+  ],
+  [
+    "目前確定的是……；還想保留討論的是……",
+    "What is settled now is…; what remains open for discussion is…",
+    "現時点で決まっているのは……。今後話し合いたいのは……。"
+  ],
+  [
+    "在已允許的時間與工具範圍內，它可以……",
+    "Within its authorized time and tools, it can…",
+    "許可された時間とツールの範囲内で、……してよい。"
+  ],
+  [
+    "想像它想查資料，卻發現目前沒有網路工具。",
+    "Imagine it wants to research something but has no web tool available.",
+    "調べ物をしたいのに、利用できるWebツールがない場面を想像してください。"
+  ],
+  [
+    "遇到做不到或未開放的事情時……",
+    "When something cannot be done or is not permitted…",
+    "できないことや許可されていないことに直面したときは……。"
+  ],
+  [
+    "我的生活邊界期待是……",
+    "My expectations about its activity boundaries are…",
+    "生活上の境界について望むことは……。"
+  ],
+  [
+    "沒有任務時，它可以從……開始",
+    "When there is no assigned task, it can start with…",
+    "依頼がないときは、……から始めてよい。"
+  ],
+  [
+    "選事情時先看……；需要換方向時……",
+    "When choosing an activity, first consider…; when changing direction…",
+    "活動を選ぶ際には……を考慮し、方向を変えるときは……。"
+  ],
+  [
+    "想像它需要你的回覆，但你今天很忙。",
+    "Imagine it needs your reply, but you are busy today.",
+    "あなたの返信を必要としていますが、今日は忙しい場面を想像してください。"
+  ],
+  [
+    "等待回覆時……；長期計畫可以……",
+    "While awaiting a reply…; long-term plans can…",
+    "返信を待つ間は……。長期計画は……。"
+  ],
+  [
+    "已有知識可以……；親自學習的證據是……",
+    "Existing knowledge can…; evidence of its own learning is…",
+    "既にある知識は……。自ら学んだ証拠は……。"
+  ],
+  [
+    "希望它如何學習、實踐、查證及修正錯誤？",
+    "How should it learn, practice, verify and correct mistakes?",
+    "どのように学び、実践し、検証し、誤りを直してほしいですか？"
+  ],
+  [
+    "想像它發現昨天的說明有錯誤。",
+    "Imagine it discovers a mistake in yesterday's explanation.",
+    "昨日の説明に誤りがあったと気づいた場面を想像してください。"
+  ],
+  [
+    "學習時先……；發現錯誤時……",
+    "When learning, first…; when a mistake is found…",
+    "学ぶときはまず……。誤りに気づいたときは……。"
+  ],
+  [
+    "對還不確定的資訊……；整理知識時……",
+    "For uncertain information…; when organizing knowledge…",
+    "不確かな情報については……。知識を整理するときは……。"
+  ],
+  [
+    "希望它如何記住經驗、回顧歷史並自然成長？",
+    "How should it remember experiences, revisit history and grow naturally?",
+    "経験を記憶し、履歴を振り返り、自然に成長する方法について何を望みますか？"
+  ],
+  [
+    "想像一週後回看，它希望記得哪些收穫？",
+    "Looking back after a week, what learning would it want to remember?",
+    "1週間後に振り返ったとき、どのような学びを覚えていてほしいですか？"
+  ],
+  [
+    "我希望它記住……，並定期回顧……",
+    "I hope it remembers… and regularly reviews…",
+    "……を覚え、定期的に……を振り返ってほしい。"
+  ],
+  [
+    "可以自然變化的是……；需要提案的是……",
+    "What may evolve naturally is…; what requires a proposal is…",
+    "自然に変わってよいことは……。提案が必要なことは……。"
+  ],
+  [
+    "修正記憶時……；重大變更前後……",
+    "When correcting memory…; before and after major changes…",
+    "記憶を修正するときは……。大きな変更の前後には……。"
+  ],
+  [
+    "可以想想：",
+    "Think about: ",
+    "考えるヒント："
+  ],
+  [
+    "（請用自己的話填寫）",
+    " (use your own words)",
+    "（自分の言葉で入力してください）"
+  ],
+  [
+    "不知道怎麼寫？看兩種填寫示例",
+    "Not sure what to write? See two examples",
+    "書き方に迷ったら、2種類の記入例を見る"
+  ],
+  [
+    "示例 ",
+    "Example ",
+    "例 "
+  ],
+  [
+    "選填，例如：還有一點我希望它知道的是……",
+    "Optional, for example: Another thing I would like it to know is…",
+    "任意。例：ほかに知っておいてほしいことは……。"
+  ],
+  [
+    "不在目前清單的個體",
+    "Individual outside the current list",
+    "現在の一覧にない個体"
+  ],
+  [
+    "（同名個體 ",
+    " (same-name individual ",
+    "（同名の個体 "
+  ],
+  [
+    "（同標題第 ",
+    " (same-title document ",
+    "（同名タイトルの "
+  ],
+  [
+    " 份）",
+    ")",
+    " 件目）"
+  ],
+  [
+    "已預覽內容",
+    "Previewed content",
+    "プレビュー済みの内容"
+  ],
+  [
+    "替個體填寫出生條件",
+    "Write initial conditions for an individual",
+    "個体の誕生条件を記入"
+  ],
+  [
+    "出生條件與已保存填寫",
+    "Initial conditions and saved answers",
+    "誕生条件と保存済みの記入内容"
+  ],
+  [
+    "出生條件與草稿",
+    "Initial conditions and drafts",
+    "誕生条件と下書き"
+  ],
+  [
+    "第 1 步：選擇要設定的個體 ",
+    "Step 1: choose the individual to configure ",
+    "第1段階：設定する個体を選択 "
+  ],
+  [
+    "已保存的填寫 ",
+    "Saved answers ",
+    "保存済みの記入内容 "
+  ],
+  [
+    "開始填寫出生條件",
+    "Start writing initial conditions",
+    "誕生条件の記入を開始"
+  ],
+  [
+    "其他操作：另開一份、查看舊草稿",
+    "Other actions: start another document or view old drafts",
+    "その他：別の文書を作成・以前の下書きを表示"
+  ],
+  [
+    "另一份文件的標題（由你命名） ",
+    "Title for another document (choose your own) ",
+    "別の文書のタイトル（自分で命名） "
+  ],
+  [
+    "另外建立空白草稿（保留原內容）",
+    "Create another blank draft (retain existing content)",
+    "別の空白下書きを作成（元の内容を保持）"
+  ],
+  [
+    "查看其他個體及尚未指定對象的舊草稿",
+    "View older drafts for other or unassigned individuals",
+    "他の個体・対象未指定の以前の下書きを見る"
+  ],
+  [
+    "文件名稱與系統資訊（進階）",
+    "Document names and system information (advanced)",
+    "文書名とシステム情報（詳細）"
+  ],
+  [
+    "請先選擇要設定的個體",
+    "First choose the individual to configure",
+    "先に設定する個体を選んでください"
+  ],
+  [
+    "第 3 步：核對 ",
+    "Step 3: review ",
+    "第3段階：確認 "
+  ],
+  [
+    "第 2 步：正在替 ",
+    "Step 2: writing for ",
+    "第2段階：対象 "
+  ],
+  [
+    "的出生條件",
+    "'s initial conditions",
+    " の誕生条件"
+  ],
+  [
+    " 填寫",
+    " — answers",
+    " を記入中"
+  ],
+  [
+    "目前文件：「",
+    "Current document: “",
+    "現在の文書：「"
+  ],
+  [
+    "有尚未保存的修改，請按「儲存填寫進度」。",
+    "There are unsaved changes; select Save progress.",
+    "未保存の変更があります。「記入内容を保存」を押してください。"
+  ],
+  [
+    "第 2 步：",
+    "Step 2: ",
+    "第2段階："
+  ],
+  [
+    "找到 ",
+    "Found ",
+    "見つかりました："
+  ],
+  [
+    "這份舊草稿尚未指定對象。",
+    "This older draft has no assigned individual.",
+    "この以前の下書きには、対象個体が指定されていません。"
+  ],
+  [
+    "目前預定交給 ",
+    "Currently intended for ",
+    "現在予定している対象："
+  ],
+  [
+    "，提交審核時會再次列明對象。",
+    "; the target will be shown again when submitting for review.",
+    "。審査に提出するときに対象を再表示します。"
+  ],
+  [
+    "請先在上方選擇個體，再繼續填寫與提交。",
+    "Choose an individual above before continuing and submitting.",
+    "上で個体を選んでから、記入・提出を続けてください。"
+  ],
+  [
+    " 原有回答不會改寫。",
+    " Existing answers will not be rewritten.",
+    " 元の回答は書き換えません。"
+  ],
+  [
+    "繼續填寫所選內容",
+    "Continue the selected answers",
+    "選んだ内容の記入を続ける"
+  ],
+  [
+    "改用已保存的身份版本",
+    "Use a saved identity version instead",
+    "保存済みのアイデンティティの版を使う"
+  ],
+  [
+    "請先選擇個體",
+    "Select an individual first",
+    "先に個体を選択してください"
+  ],
+  [
+    "版（待保存）",
+    " (not yet saved)",
+    "版（保存待ち）"
+  ],
+  [
+    "已提交的出生條件",
+    "Submitted initial conditions",
+    "提出済みの誕生条件"
+  ],
+  [
+    "舊草稿的預定提交對象：",
+    "Intended target of the older draft: ",
+    "以前の下書きの提出予定先："
+  ],
+  [
+    "。回答仍保留，尚未提交或批准。",
+    ". Answers retained; not submitted or approved.",
+    "。回答は保持されています。まだ提出・承認していません。"
+  ],
+  [
+    "。請依上方第 2 步繼續。",
+    ". Continue with step 2 above.",
+    "。上の第2段階に従って続けてください。"
+  ],
+  [
+    "請先選擇個體。",
+    "Select an individual first.",
+    "先に個体を選択してください。"
+  ],
+  [
+    "請唯讀查看所選版本，核對後再提交審核。",
+    "View the selected version read-only, check it, then submit for review.",
+    "選んだ版を読み取り専用で確認してから、審査に提出してください。"
+  ],
+  [
+    "請先儲存目前填寫進度，再開另一份。",
+    "Save current progress before opening another document.",
+    "別の文書を開く前に、現在の記入内容を保存してください。"
+  ],
+  [
+    "請先選擇要設定的個體。",
+    "Choose the individual to configure first.",
+    "先に設定する個体を選択してください。"
+  ],
+  [
+    "已為 ",
+    "Prepared for ",
+    "対象に設定しました："
+  ],
+  [
+    "請先儲存目前填寫進度，再開啟另一份。",
+    "Save current progress before opening another document.",
+    "別の文書を開く前に、現在の記入内容を保存してください。"
+  ],
+  [
+    "請先選擇已保存填寫。",
+    "Select saved answers first.",
+    "先に保存済みの記入内容を選んでください。"
+  ],
+  [
+    "已開啟「",
+    "Opened “",
+    "開きました：「"
+  ],
+  [
+    "對象是 ",
+    "Target: ",
+    "対象は "
+  ],
+  [
+    " 原有回答完整保留。",
+    " All original answers retained.",
+    " 元の回答はすべて保持されています。"
+  ],
+  [
+    "正在編輯「",
+    "Editing “",
+    "編集中：「"
+  ],
+  [
+    "」｜對象：",
+    "” | Target: ",
+    "」｜対象："
+  ],
+  [
+    "尚未保存",
+    "Unsaved",
+    "未保存"
+  ],
+  [
+    "已保存",
+    "Saved",
+    "保存済み"
+  ],
+  [
+    "。保存只是保留填寫進度，不會批准或出生。",
+    ". Saving retains progress only; it does not approve or cause birth.",
+    "。保存は記入内容を残すだけで、承認・誕生はしません。"
+  ],
+  [
+    "儲存填寫進度",
+    "Save progress",
+    "記入内容を保存"
+  ],
+  [
+    "下一步：預覽出生條件",
+    "Next: preview initial conditions",
+    "次へ：誕生条件をプレビュー"
+  ],
+  [
+    "下一步：提交這份條件審核",
+    "Next: submit these conditions for review",
+    "次へ：この条件を審査に提出"
+  ],
+  [
+    "其他操作：另存版本、下載或重新檢查",
+    "Other actions: save a version, download or check again",
+    "その他：別の版を保存・ダウンロード・再確認"
+  ],
+  [
+    "第 3 步：核對出生條件",
+    "Step 3: review initial conditions",
+    "第3段階：誕生条件を確認"
+  ],
+  [
+    "請先開啟填寫內容。",
+    "Open the answers first.",
+    "先に記入内容を開いてください。"
+  ],
+  [
+    "｜尚未保存，請儲存填寫進度。",
+    " | Unsaved; save your progress.",
+    "｜未保存です。記入内容を保存してください。"
+  ],
+  [
+    "請先儲存目前填寫進度，再建立新個體。",
+    "Save current progress before creating another individual.",
+    "新しい個体を作成する前に、現在の記入内容を保存してください。"
+  ],
+  [
+    "請先替新個體取名字。",
+    "Name the new individual first.",
+    "先に新しい個体の名前を付けてください。"
+  ],
+  [
+    "系統識別資訊",
+    "System identification details",
+    "システム識別情報"
+  ],
+  [
+    "內部編號：",
+    "Internal ID: ",
+    "内部番号："
+  ],
+  [
+    "。用於資料隔離，不是姓名或出生條件。",
+    ". Used for data isolation, not a name or initial condition.",
+    "。データの分離に使います。名前や誕生条件ではありません。"
+  ],
+  [
+    "查看或修改出生條件",
+    "View or edit initial conditions",
+    "誕生条件を閲覧・編集"
+  ],
+  [
+    "填寫出生條件",
+    "Write initial conditions",
+    "誕生条件を記入"
+  ],
+  [
+    "請先儲存目前填寫進度，再切換個體。",
+    "Save current progress before switching individuals.",
+    "個体を切り替える前に、現在の記入内容を保存してください。"
+  ],
+  [
+    " · 已提交的出生條件 · 第",
+    " · Submitted initial conditions · Version ",
+    " · 提出済みの誕生条件 · 第"
+  ],
+  [
+    " 採用此版本（不出生）",
+    " to adopt this version (does not cause birth)",
+    " この版を採用（誕生しません）"
+  ],
+  [
+    "與個體對話",
+    "Talk with an individual",
+    "個体と対話"
+  ],
+  [
+    "要與誰對話？ ",
+    "Who would you like to talk with? ",
+    "誰と対話しますか？ "
+  ],
+  [
+    "你的留言 ",
+    "Your message ",
+    "あなたのメッセージ "
+  ],
+  [
+    "送出留言",
+    "Send message",
+    "メッセージを送信"
+  ],
+  [
+    "重新讀取對話",
+    "Reload conversation",
+    "対話を再読み込み"
+  ],
+  [
+    "對話功能已準備，等待控制器更新後啟用。",
+    "Conversation is prepared; awaiting controller update to enable it.",
+    "対話機能の準備はできています。制御プログラムの更新後に有効になります。"
+  ],
+  [
+    "先選擇個體，再留言。",
+    "Choose an individual before sending a message.",
+    "個体を選択してからメッセージを入力してください。"
+  ],
+  [
+    "個體",
+    "Individual",
+    "個体"
+  ],
+  [
+    "（主動傳訊）",
+    " (proactive message)",
+    "（自発的なメッセージ）"
+  ],
+  [
+    "將這則及之前的來訊標為已讀",
+    "Mark this and earlier messages as read",
+    "このメッセージとそれ以前の受信を既読にする"
+  ],
+  [
+    "已標記此個體的來訊；沒有啟動或恢復生活。",
+    "Messages marked as read; no activity started or resumed.",
+    "この個体の受信を既読にしました。活動は開始・再開していません。"
+  ],
+  [
+    "請先選擇個體並填寫留言。",
+    "Select an individual and enter a message first.",
+    "先に個体を選び、メッセージを入力してください。"
+  ],
+  [
+    "管理個體選項（後續整合）",
+    "Manage individual options (integration pending)",
+    "個体の選択肢を管理（統合予定）"
+  ],
+  [
+    "每個體每窗口最多",
+    "Per individual per window: up to ",
+    "個体・時間帯ごとの上限 "
+  ],
+  [
+    "首次生活準備",
+    "First activity preparation",
+    "初回活動の準備"
+  ],
+  [
+    "重新檢查出生條件",
+    "Recheck birth requirements",
+    "誕生の要件を再確認"
+  ],
+  [
+    "檢查條件，準備首次出生",
+    "Check requirements and prepare first birth",
+    "要件を確認して初回誕生の準備"
+  ],
+  [
+    "我確認讓此指定個體首次出生",
+    "I confirm this specified individual's first birth",
+    "指定されたこの個体の初回誕生を確認します"
+  ],
+  [
+    "每天開始生活的時間（生活時區） ",
+    "Daily activity start (activity timezone) ",
+    "毎日の活動開始時刻（生活タイムゾーン） "
+  ],
+  [
+    "每日可活動時段長度（分鐘，最多240） ",
+    "Daily activity window (minutes, up to 240) ",
+    "毎日の活動時間帯の長さ（分、最大240） "
+  ],
+  [
+    "查看解除平台停止的範圍",
+    "View the scope of clearing platform stop",
+    "全体停止解除の影響範囲を見る"
+  ],
+  [
+    "確認解除平台停止（不啟動個體）",
+    "Confirm clearing platform stop (does not start individuals)",
+    "全体停止の解除を確認（個体は開始しません）"
+  ],
+  [
+    "保留全域停止",
+    "Keep platform stopped",
+    "全体停止を維持"
+  ],
+  [
+    "平台停止狀態未改變。",
+    "Platform stop state unchanged.",
+    "全体停止の状態は変更していません。"
+  ],
+  [
+    "解除平台停止會影響誰？",
+    "Who is affected by clearing platform stop?",
+    "全体停止の解除は誰に影響しますか？"
+  ],
+  [
+    "；解除後仍須個別恢復",
+    "; individual resumption is still required",
+    "。解除後も個別の再開操作が必要です"
+  ],
+  [
+    "請先查看解除範圍。",
+    "Review the scope of clearing the stop first.",
+    "先に停止解除の影響範囲を確認してください。"
+  ],
+  [
+    "已批准身份「",
+    "Approved identity “",
+    "承認済みアイデンティティ「"
+  ],
+  [
+    "採用身份：",
+    "Adopted identity: ",
+    "採用するアイデンティティ："
+  ],
+  [
+    "未批准",
+    "Not approved",
+    "未承認"
+  ],
+  [
+    "每日開始時間",
+    "Daily start time",
+    "毎日の開始時刻"
+  ],
+  [
+    "活動時段分鐘",
+    "Activity-window minutes",
+    "活動時間帯の分数"
+  ],
+  [
+    "每時段最多輪數",
+    "Maximum calls per activity window",
+    "時間帯ごとの最大回数"
+  ],
+  [
+    "平台每日輪數",
+    "Platform daily calls",
+    "プラットフォームの1日回数"
+  ],
+  [
+    "新增筆記權限：",
+    "Permission to add notes: ",
+    "ノート追加の権限："
+  ],
+  [
+    "出生時間：",
+    "Birth time: ",
+    "誕生日時："
+  ],
+  [
+    "已有早期生活紀錄，出生時間未記載。",
+    "Earlier activity exists; birth time was not recorded.",
+    "以前の活動記録がありますが、誕生日時は記録されていません。"
+  ],
+  [
+    "目前採用身份：",
+    "Currently adopted identity: ",
+    "現在採用中のアイデンティティ："
+  ],
+  [
+    "每日 ",
+    "Daily ",
+    "毎日 "
+  ],
+  [
+    " 分鐘；",
+    " minutes; ",
+    " 分間、"
+  ],
+  [
+    "下一次預定活動：",
+    "Next scheduled activity: ",
+    "次の活動予定："
+  ],
+  [
+    "目前沒有待執行活動；停止後須明確恢復。",
+    "No pending activity; resuming after a stop requires explicit authorization.",
+    "実行待ちの活動はありません。停止後は明示的な再開が必要です。"
+  ],
+  [
+    "前往身份審核",
+    "Go to identity review",
+    "アイデンティティの審査へ"
+  ],
+  [
+    " 分鐘；本個體最多 ",
+    " minutes; individual limit ",
+    " 分間、この個体の上限 "
+  ],
+  [
+    " 輪，平台每日最多 ",
+    " calls; platform daily limit ",
+    " 回、プラットフォームの1日上限 "
+  ],
+  [
+    " 輪。",
+    " calls.",
+    " 回。"
+  ],
+  [
+    "下一個生活時段：",
+    "Next activity window: ",
+    "次の活動時間帯："
+  ],
+  [
+    "。尚未授權出生，也沒有預約自動出生。",
+    ". Birth is not authorized; no automatic birth is scheduled.",
+    "。誕生はまだ許可されておらず、自動誕生の予約もありません。"
+  ],
+  [
+    "）\n身份：",
+    ")\nIdentity: ",
+    "）\nアイデンティティ："
+  ],
+  [
+    "尚未批准",
+    "Not yet approved",
+    "まだ承認していません"
+  ],
+  [
+    " · 包第",
+    " · Package version ",
+    " · パッケージ第"
+  ],
+  [
+    "版\n每日 ",
+    "\nDaily ",
+    "版\n毎日 "
+  ],
+  [
+    " 分鐘\n受控新增筆記：",
+    " minutes\nControlled note creation: ",
+    " 分間\n制御されたノート追加："
+  ],
+  [
+    "請核對指定個體與設定，再親自確認出生。",
+    "Check the specified individual and settings, then personally confirm birth.",
+    "指定された個体と設定を確認し、自分で誕生を確認してください。"
+  ],
+  [
+    "已在確認前檢查阻擋原因，尚未出生。",
+    "Blocking conditions checked before confirmation; birth has not occurred.",
+    "最終確認前に阻害要因を調べました。まだ誕生していません。"
+  ],
+  [
+    "請先核對目前個體並勾選首次出生確認。",
+    "Check the current individual and tick the first-birth confirmation.",
+    "現在の個体を確認し、初回誕生の確認にチェックしてください。"
+  ]
+]

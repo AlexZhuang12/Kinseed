@@ -1,0 +1,1272 @@
+[
+  [
+    "待審",
+    "Pending review",
+    "審査待ち"
+  ],
+  [
+    "已批准",
+    "Approved",
+    "承認済み"
+  ],
+  [
+    "已拒絕",
+    "Rejected",
+    "拒否済み"
+  ],
+  [
+    "已退回",
+    "Returned for changes",
+    "修正依頼済み"
+  ],
+  [
+    "個體總覽",
+    "Individuals",
+    "個体一覧"
+  ],
+  [
+    "建立新個體",
+    "Create an individual",
+    "個体を作成"
+  ],
+  [
+    "填寫與草稿",
+    "Answers and drafts",
+    "記入と下書き"
+  ],
+  [
+    "審核與採用",
+    "Review and adopt",
+    "審査と採用"
+  ],
+  [
+    "生活與記憶",
+    "Life and memory",
+    "生活と記憶"
+  ],
+  [
+    "請先在上方「這份身份要交給誰？」選擇個體，再提交審核。",
+    "Select the recipient above before submitting for review.",
+    "審査提出前に、上の対象個体を選んでください。"
+  ],
+  [
+    "這份草稿屬於另一個體。請恢復原目標，或從版本庫建立給新目標的編輯副本；回答仍完整保留。",
+    "This draft belongs to another individual. Restore its target, or create an editable copy from the version library for the new target. All answers are retained.",
+    "この下書きは別の個体のものです。対象を戻すか、版の一覧から新しい対象向けの編集用コピーを作ってください。回答はすべて残っています。"
+  ],
+  [
+    "身份與個體的性質不同。測試身份只能交給測試個體，正式身份只能交給正式個體；請選擇相同性質的對象。",
+    "Identity and individual types differ. Test identities require test individuals, and formal identities require formal individuals. Select matching types.",
+    "アイデンティティと個体の種類が異なります。テストアイデンティティはテスト個体、正式アイデンティティは正式個体にのみ渡せます。同じ種類を選んでください。"
+  ],
+  [
+    "另一個頁面已保存這份草稿。您的未保存內容仍留在此頁；請先複製內容，再重新讀取最新草稿比對。",
+    "Another page saved this draft. Unsaved content remains here; copy it before loading the latest draft to compare.",
+    "別の画面で下書きが保存されました。未保存内容はここに残っています。コピーしてから最新版を読み、比較してください。"
+  ],
+  [
+    "提交後草稿已有修改。請重新提交最新候選，再讀取新的審核提案。",
+    "The draft changed after submission. Submit the latest candidate and open its review proposal.",
+    "提出後に下書きが変更されました。最新候補を提出し、新しい審査提案を開いてください。"
+  ],
+  [
+    "個體設定已改變，這份預覽已失效。請重新提交並預覽後再批准。",
+    "Settings changed and the preview is no longer current. Review the updated content before approving.",
+    "設定が変わり、プレビューが古くなりました。更新内容を確認してから承認してください。"
+  ],
+  [
+    "審核預覽已過期或不屬於這個個體。請重新提交並預覽。",
+    "The review preview is unavailable for this individual. Reopen the existing proposal and verify its recipient.",
+    "この個体の審査プレビューを利用できません。既存の提案を開き直し、対象を確認してください。"
+  ],
+  [
+    "身份仍有必要缺漏或衝突。請展開「詳細驗證與缺漏」，補上必要自我描述或修正衝突後再提交。",
+    "Required identity content is missing or conflicting. Expand validation details, provide the required self-description, or resolve conflicts before submitting.",
+    "アイデンティティに必須内容の不足や矛盾があります。詳細検証を開き、自己説明を補うか矛盾を直してから提出してください。"
+  ],
+  [
+    "回答已變更，請先按「預覽回答並產生候選」，再保存版本或提交。",
+    "Answers changed. Preview and generate a candidate before saving a version or submitting.",
+    "回答が変更されました。プレビューで候補を生成してから版を保存・提出してください。"
+  ],
+  [
+    "名稱或識別碼已使用。請換一個名稱，或回總覽查看既有個體。",
+    "Name or identifier already used. Choose another name or check existing individuals.",
+    "名前または識別番号は使用済みです。別の名前にするか既存個体を確認してください。"
+  ],
+  [
+    "請填寫身份名稱；進階識別碼只接受小寫英文、數字與連字號。",
+    "Enter an identity title. Advanced identifiers accept lowercase letters, digits, and hyphens only.",
+    "アイデンティティ名を入力してください。詳細識別番号は英小文字、数字、ハイフンのみ使用できます。"
+  ],
+  [
+    "請填寫個體名稱（最多100字）；進階識別碼只接受小寫英文、數字與連字號。",
+    "Enter a name up to 100 characters. Advanced identifiers accept lowercase letters, digits, and hyphens only.",
+    "100文字以内の個体名を入力してください。詳細識別番号は英小文字、数字、ハイフンのみです。"
+  ],
+  [
+    "平台目前全域停止。只有 Owner 自行決定解除後，才能另行首次啟動或恢復個體。",
+    "The platform is globally stopped. Only the Owner can clear it before separately authorizing birth or resuming life.",
+    "全体停止中です。Ownerが解除を決めた後、誕生や再開を別途許可してください。"
+  ],
+  [
+    "此個體尚未出生。先批准身份，再前往生活設定預覽「首次出生啟動」。",
+    "Not yet born. Approve an identity, then prepare first birth in life settings.",
+    "未誕生です。アイデンティティを承認し、生活設定で初回誕生を準備してください。"
+  ],
+  [
+    "現在不在生活窗口內。請檢查台北時間與窗口設定，或等待下一個有效窗口。",
+    "Outside life hours. Check the life timezone and schedule, or wait for the next window.",
+    "生活時間外です。生活のタイムゾーンと設定を確認するか、次の時間帯を待ってください。"
+  ],
+  [
+    "此個體尚未有已批准身份。請先從身份版本庫提交並完成審核。",
+    "No approved identity. Submit a saved version and complete review first.",
+    "承認済みアイデンティティがありません。保存済みの版を提出し、審査を完了してください。"
+  ],
+  [
+    "隔離工程模式禁止批准正式身份；請保留待審，日後由 Owner 在正式控制台親自操作。",
+    "Isolated engineering mode cannot approve a formal identity. Keep it pending for the Owner in the formal console.",
+    "隔離工程モードは正式アイデンティティを承認できません。審査待ちのままにし、正式制御画面でOwnerが操作してください。"
+  ],
+  [
+    "隔離工程模式禁止正式出生。正式個體仍保持未出生。",
+    "Formal birth is forbidden in isolated engineering mode. The formal individual remains unborn.",
+    "隔離工程モードでは正式個体を誕生させられません。未誕生のまま保持します。"
+  ],
+  [
+    "個體仍有任務尚未結束。請先停止，等待執行狀態顯示無任務，再重試。",
+    "Work has not finished. Stop the individual, wait until no work remains, then retry.",
+    "作業がまだ終わっていません。個体を停止し、作業なしの表示を待って再試行してください。"
+  ],
+  [
+    "此版本已有不同內容，不能覆寫。請從版本庫建立編輯副本並保存為新版本。",
+    "This version already contains different content and cannot be overwritten. Edit a copy and save a new version.",
+    "この版には異なる内容があり、上書きできません。コピーを編集し、新しい版として保存してください。"
+  ],
+  [
+    "回答與人工修訂有差異。請核對下方差異，再選擇保留人工修訂、採用新回答或取消。",
+    "Answers and manual edits differ. Review the differences, then keep edits, use new answers, or cancel.",
+    "回答と手動修正が異なります。差分を見て、修正を保持、新回答を採用、取消から選んでください。"
+  ],
+  [
+    "本機連線憑證已失效。請雙擊「開啟控制台.cmd」重新進入；已保存草稿仍在。",
+    "This local connection expired. Use this copy's Open console launcher for a new link. Saved drafts remain.",
+    "ローカル接続が失効しました。このコピーの制御画面を開く入口で新しいリンクを取得してください。下書きは残っています。"
+  ],
+  [
+    "這份提案已處理。請查看最新審核狀態，需要修改時另行提交。",
+    "This proposal has already been processed. Check its latest status and submit separately if changes are needed.",
+    "この提案は処理済みです。最新状態を確認し、変更が必要なら別途提出してください。"
+  ],
+  [
+    "找不到此身份版本。請重新整理版本庫，再選擇已保存的版本。",
+    "Identity version not found. Refresh the library and select a saved version.",
+    "アイデンティティの版が見つかりません。一覧を更新し、保存済みの版を選んでください。"
+  ],
+  [
+    "個體狀態已更新。請重新整理、核對對象後再操作。",
+    "Individual state changed. Refresh and verify the target before acting.",
+    "個体の状態が更新されました。再読込し、対象を確認してから操作してください。"
+  ],
+  [
+    "平台狀態已更新。請重新整理並核對停止狀態後再操作。",
+    "Platform state changed. Refresh and verify its stop state.",
+    "全体の状態が更新されました。再読込して停止状態を確認してください。"
+  ],
+  [
+    "執行環境尚未通過檢查。請執行「檢查環境.cmd」；身份與草稿仍可管理。",
+    "Environment checks have not passed. Run the environment checker. Identity and drafts can still be managed.",
+    "環境確認が未合格です。環境確認の入口を実行してください。アイデンティティと下書きは引き続き管理できます。"
+  ],
+  [
+    "請填寫拒絕或退回的原因，讓下次修改有清楚依據。",
+    "Enter a reason for rejection or requested changes.",
+    "拒否または修正依頼の理由を入力してください。"
+  ],
+  [
+    "草稿數已達上限。請從草稿清單繼續既有內容；資料不會被自動刪除。",
+    "Draft limit reached. Continue an existing draft; data will not be deleted automatically.",
+    "下書きの上限です。既存の下書きを続けてください。データは自動削除しません。"
+  ],
+  [
+    "已有生活歷史（早期版本）",
+    "Existing life history (legacy)",
+    "生活履歴あり（旧版）"
+  ],
+  [
+    "生活中",
+    "Living",
+    "生活中"
+  ],
+  [
+    "待審核",
+    "Awaiting review",
+    "審査待ち"
+  ],
+  [
+    "個體已建立",
+    "Individual created",
+    "個体を作成済み"
+  ],
+  [
+    "尚未出生，等待身份與Owner授權。",
+    "Not yet born; awaiting identity and Owner authorization.",
+    "未誕生で、アイデンティティとOwnerの許可を待っています。"
+  ],
+  [
+    "已採用身份",
+    "Identity adopted",
+    "アイデンティティを採用済み"
+  ],
+  [
+    "身份已批准；這個動作不代表出生。",
+    "Identity approved; this does not cause birth.",
+    "アイデンティティを承認しました。誕生を意味しません。"
+  ],
+  [
+    "首次出生已完成",
+    "First birth completed",
+    "初回誕生が完了"
+  ],
+  [
+    "出生事實已保存，活動仍依授權時間與權限進行。",
+    "Birth recorded; activity still follows authorized hours and permissions.",
+    "誕生を記録しました。活動は許可された時間と権限に従います。"
+  ],
+  [
+    "Owner恢復生活",
+    "Owner resumed life",
+    "Ownerが生活を再開"
+  ],
+  [
+    "重新開始本次有效生活授權。",
+    "Resumed the current valid life authorization.",
+    "現在有効な生活の許可を再開しました。"
+  ],
+  [
+    "Owner加開一次臨時生活",
+    "Owner added a temporary session",
+    "Ownerが臨時生活を追加"
+  ],
+  [
+    " 分鐘；每日時段及已用額度保留，到期自動結束。",
+    " minutes; daily hours and usage are retained. Ends automatically.",
+    "分。毎日の時間と使用量は保持し、期限に終了します。"
+  ],
+  [
+    "Owner停止此個體",
+    "Owner stopped this individual",
+    "Ownerがこの個体を停止"
+  ],
+  [
+    "後續活動與等待安排已停止。",
+    "Future activity and waiting arrangements stopped.",
+    "以後の活動と待機予定を停止しました。"
+  ],
+  [
+    "Owner暫停此個體",
+    "Owner paused this individual",
+    "Ownerがこの個体を一時停止"
+  ],
+  [
+    "目前不繼續派送活動。",
+    "No further activity is dispatched now.",
+    "現在は次の活動を開始しません。"
+  ],
+  [
+    "生活時間已保存",
+    "Life hours saved",
+    "生活時間を保存"
+  ],
+  [
+    "這次設定本身不代表啟動生活。",
+    "Saving alone does not start life.",
+    "保存だけで生活は始まりません。"
+  ],
+  [
+    "Owner留下訊息",
+    "Owner left a message",
+    "Ownerが伝言"
+  ],
+  [
+    "留言已保存；是否回覆仍受生活授權與權限限制。",
+    "Message saved; replies remain subject to life authorization and permissions.",
+    "伝言を保存しました。返信は生活許可と権限に従います。"
+  ],
+  [
+    "已回覆Owner",
+    "Replied to Owner",
+    "Ownerに返信済み"
+  ],
+  [
+    "個體已留下回覆，不代表取得額外授權。",
+    "Reply saved without granting additional authorization.",
+    "返信を保存しました。追加の許可を得たわけではありません。"
+  ],
+  [
+    "主動傳訊給Owner",
+    "Sent a message to Owner",
+    "Ownerへ自発的に伝言"
+  ],
+  [
+    "個體主動留下訊息；不代表Owner已讀或已授權任何操作。",
+    "Proactive message saved; it does not imply Owner reading or authorization.",
+    "自発的な伝言を保存しました。Ownerの既読や許可を意味しません。"
+  ],
+  [
+    "已讀取公開網頁",
+    "Public page read",
+    "公開ページを閲覧"
+  ],
+  [
+    "透過受控工具讀取允許網站；網頁內容不是系統指示。",
+    "Read an allowed site through a controlled tool. Page content is not system instructions.",
+    "制御された道具で許可されたサイトを読みました。ページ内容はシステム指示ではありません。"
+  ],
+  [
+    "網頁讀取未成功",
+    "Page read failed",
+    "ページ閲覧が未成功"
+  ],
+  [
+    "請查看原始紀錄中的實際原因。",
+    "Check the actual reason in the original records.",
+    "実際の原因は原記録を確認してください。"
+  ],
+  [
+    "已取得獨立LLM建議",
+    "Independent LLM advice received",
+    "独立LLMの助言を取得"
+  ],
+  [
+    "這是模型回答，不代表已查證事實。",
+    "A model answer is not a verified fact.",
+    "モデルの回答であり、検証済みの事実ではありません。"
+  ],
+  [
+    "獨立LLM諮詢未成功",
+    "LLM consultation failed",
+    "LLM相談が未成功"
+  ],
+  [
+    "已保留失敗原因，不把失敗寫成完成。",
+    "Failure recorded, not presented as completion.",
+    "失敗を記録し、完了とは表示しません。"
+  ],
+  [
+    "工具權限已調整",
+    "Tool permissions changed",
+    "道具の権限を変更"
+  ],
+  [
+    "後續活動必須遵守新權限。",
+    "Later activity must follow the new permissions.",
+    "以後の活動は新しい権限に従います。"
+  ],
+  [
+    "控制器關閉",
+    "Controller closed",
+    "コントローラーを終了"
+  ],
+  [
+    "下次啟動仍須明確恢復生活。",
+    "Life must be explicitly resumed after startup.",
+    "次回起動後は明示的な再開が必要です。"
+  ],
+  [
+    "控制器重新開啟",
+    "Controller reopened",
+    "コントローラーを再起動"
+  ],
+  [
+    "個體保持停止，沒有自動補跑。",
+    "Individual stays stopped; no automatic catch-up.",
+    "個体は停止したままで、自動補完実行はしません。"
+  ],
+  [
+    "開始一輪活動",
+    "Round started",
+    "活動を1回開始"
+  ],
+  [
+    "系統已登記本輪；尚不能當成活動完成。",
+    "Round registered, not yet completed.",
+    "活動を登録しましたが、まだ完了ではありません。"
+  ],
+  [
+    "已保存一篇筆記",
+    "Note saved",
+    "ノートを保存"
+  ],
+  [
+    "本機筆記已保存。",
+    "Local note saved.",
+    "ローカルノートを保存しました。"
+  ],
+  [
+    "已提交記憶與計畫",
+    "Memories and plans submitted",
+    "記憶と計画を提出"
+  ],
+  [
+    "記憶更新至第",
+    "Memory updated to version ",
+    "記憶の更新版："
+  ],
+  [
+    "版；等待本輪執行結束確認。",
+    "; waiting for execution-end confirmation.",
+    "。実行終了の確認待ちです。"
+  ],
+  [
+    "模型執行正常結束",
+    "Model execution ended normally",
+    "モデル実行が正常終了"
+  ],
+  [
+    "本輪執行未成功結束",
+    "Round did not end successfully",
+    "活動が正常終了せず"
+  ],
+  [
+    "請與本輪記憶提交一起核對完成結果。",
+    "Check together with this round's memory submission.",
+    "この回の記憶提出と合わせて確認してください。"
+  ],
+  [
+    "已有失敗紀錄，不能宣稱本輪成功。",
+    "A failure is recorded; this round cannot be called successful.",
+    "失敗記録があり、成功とは扱えません。"
+  ],
+  [
+    "本輪沒有完整完成",
+    "Round incomplete",
+    "活動が未完了"
+  ],
+  [
+    "原有結果保留；是否重試依安全條件判斷。",
+    "Existing results remain; retries depend on safety checks.",
+    "既存結果を保持し、安全条件によって再試行を判断します。"
+  ],
+  [
+    "模型繁忙，已安排自動重試",
+    "Model busy; retry scheduled",
+    "モデル繁忙、再試行を予定"
+  ],
+  [
+    "預定 ",
+    "Scheduled ",
+    "予定："
+  ],
+  [
+    "畫面所列時間",
+    "the time shown",
+    "画面の時刻"
+  ],
+  [
+    " 進行第",
+    " for retry ",
+    "、再試行："
+  ],
+  [
+    "自動重試已取消",
+    "Automatic retry cancelled",
+    "自動再試行を取消"
+  ],
+  [
+    "原授權或停止條件不允許繼續。",
+    "Authorization or stop conditions prevent continuation.",
+    "許可または停止条件により続行できません。"
+  ],
+  [
+    "首次活動安排已取消",
+    "First activity cancelled",
+    "初回活動予定を取消"
+  ],
+  [
+    "出生事實保留，活動不會擅自補跑。",
+    "Birth remains recorded; no automatic catch-up activity.",
+    "誕生は保持し、活動を勝手に補完しません。"
+  ],
+  [
+    "已還原記憶",
+    "Memory restored",
+    "記憶を復元"
+  ],
+  [
+    "身份、出生及原始歷史保留，這次還原另有紀錄。",
+    "Identity, birth, and original history remain; restoration has its own record.",
+    "アイデンティティ、誕生、原履歴は保持し、今回の復元は別に記録します。"
+  ],
+  [
+    "工具操作遭拒絕",
+    "Tool operation denied",
+    "道具の操作を拒否"
+  ],
+  [
+    "這次操作沒有取得執行許可，詳情保留在原始證據。",
+    "Operation not authorized; details remain in original evidence.",
+    "操作は許可されていません。詳細は原記録に残っています。"
+  ],
+  [
+    "操作不符合本輪權限，沒有因此擴張權限。",
+    "Operation exceeds this round's permissions; no permission expansion occurred.",
+    "この回の権限に適合せず、権限も拡張していません。"
+  ],
+  [
+    "本輪授權已失效",
+    "Round authorization invalid",
+    "今回の許可が失効"
+  ],
+  [
+    "系統已要求取消本輪，不能再沿用舊授權。",
+    "Cancellation requested; old authorization cannot be reused.",
+    "取消を要求しました。古い許可は再利用できません。"
+  ],
+  [
+    "系統詳細紀錄",
+    "Detailed system record",
+    "システム詳細記録"
+  ],
+  [
+    "可展開查看原始內容。",
+    "Expand to view original content.",
+    "展開すると原文を確認できます。"
+  ],
+  [
+    "尚未開啟Owner對話權限。請先到此個體的「管理個體 → 工具權限」勾選並保存。",
+    "Owner conversation is a basic capability. Refresh the console; no separate chat permission is required.",
+    "Ownerとの対話は基本能力です。制御画面を更新してください。個別の対話許可は不要です。"
+  ],
+  [
+    "請填寫網站網域，例如 zh.wikipedia.org；不要加入 https://、路徑、連接埠或萬用字元。",
+    "Enter a domain such as zh.wikipedia.org, without https://, paths, ports, or wildcards.",
+    "zh.wikipedia.orgのようなドメインを入力し、https://、パス、ポート、ワイルドカードは含めないでください。"
+  ],
+  [
+    "勾選網頁瀏覽前，請先填寫允許瀏覽的網站網域。",
+    "Enter allowed domains before selecting restricted-site browsing.",
+    "指定サイト閲覧を選ぶ前に、許可するドメインを入力してください。"
+  ],
+  [
+    "今天此個體已收到100則留言，請於明天再留言；既有內容保留。",
+    "This individual has received 100 messages today. Try tomorrow; existing messages remain saved.",
+    "この個体への本日の伝言は100件に達しました。翌日に送ってください。既存の伝言は保持します。"
+  ],
+  [
+    "建立與修改自己的作品",
+    "Create and edit own works",
+    "自分の作品を作成・編集"
+  ],
+  [
+    "只能建立自己隔離工作區的文字、CSV、HTML與程式作品。每次保存為新版本，舊版保留；不開放Owner檔案或其他個體。",
+    "Create text, CSV, HTML, and code only in its isolated workspace. Each save makes a new version; previous versions remain. No Owner or other individuals' files.",
+    "自分の隔離領域に文字、CSV、HTML、コードを作成します。保存ごとに新しい版を作り、旧版を残します。Ownerや他個体のファイルは対象外です。"
+  ],
+  [
+    "執行自己的隔離JavaScript工作",
+    "Run isolated JavaScript",
+    "隔離JavaScriptを実行"
+  ],
+  [
+    "需同時開放作品編輯。只處理明確選入自己的作品，使用return回傳同步JSON。每次最多5秒、引擎16MB、結果32000字元；無一般檔案、網路、shell、套件安裝與背景服務。",
+    "Requires editing permission. Processes only selected own works; return synchronous JSON. At most 5 seconds, 16 MB engine, 32,000 output characters. No general files, network, shell, package installs, or background services.",
+    "作品編集も必要です。自分の選択作品だけを処理し、returnで同期JSONを返します。最長5秒、16 MB、出力32,000文字。一般ファイル、ネット、shell、パッケージ導入、背景サービスは使えません。"
+  ],
+  [
+    "查看自己的作品與版本",
+    "Read own works and versions",
+    "自分の作品と版を閲覧"
+  ],
+  [
+    "唯讀查閱自己的作品及執行結果，不能修改或讀取別人的工作區。",
+    "Read only its own works and results, without editing or accessing others' workspaces.",
+    "自分の作品と結果のみ閲覧し、変更や他個体の領域へのアクセスはしません。"
+  ],
+  [
+    "新增自己的生活筆記",
+    "Add own life notes",
+    "自分の生活ノートを追加"
+  ],
+  [
+    "只能在自己的受控工作區新增筆記，不能覆寫舊筆記或任意存取電腦檔案。取消勾選不會刪除既有筆記。",
+    "Append notes only in its controlled workspace. No overwriting notes or arbitrary local files. Revoking permission does not delete existing notes.",
+    "制御された自分の領域にノートを追加するだけです。旧ノートの上書きや任意ファイルへのアクセスはできません。解除しても既存ノートは消えません。"
+  ],
+  [
+    "讀取自己的身份與原生條件來源",
+    "Read own identity and native sources",
+    "自分のアイデンティティと原生条件の出典を読む"
+  ],
+  [
+    "確認自己是誰及必須遵守的條件，屬於生活必備能力。",
+    "Required for understanding its identity and conditions.",
+    "自己のアイデンティティと守る条件を確認する生活必須能力です。"
+  ],
+  [
+    "讀取自己的記憶、計畫與原始歷史",
+    "Read own memories, plans, and history",
+    "自分の記憶・計画・履歴を読む"
+  ],
+  [
+    "只能讀取這個個體自己的紀錄，不能讀取其他個體的資料。",
+    "Reads only this individual's records, never another individual's data.",
+    "この個体の記録のみ読み、他個体の資料は読みません。"
+  ],
+  [
+    "查看自己的既有生活筆記",
+    "Read own life notes",
+    "自分の生活ノートを見る"
+  ],
+  [
+    "只讀取受控工作區中已保存的筆記，不等於開放一般檔案存取。",
+    "Reads saved controlled notes; not general file access.",
+    "保存済みの制御されたノートのみ読み、一般ファイルへのアクセスではありません。"
+  ],
+  [
+    "保存每輪記憶、進度與生活紀錄",
+    "Save round memories and life records",
+    "各回の記憶と生活記録を保存"
+  ],
+  [
+    "每輪必須留下可追溯的結果；原始歷史只能追加，不提供覆寫或刪除開關。",
+    "Each round leaves traceable results. Original history is append-only, without overwrite or deletion switches.",
+    "各回に追跡できる結果を残します。原履歴は追記専用で、上書きや削除の切替はありません。"
+  ],
+  [
+    "使用本環境指定模型進行日常思考",
+    "Think using this environment's model",
+    "この環境の指定モデルで思考"
+  ],
+  [
+    "每個活動輪次把身份與記憶交給同一個模型，再保存進度；等待期間沒有持續思考。受生活時間與模型額度限制。",
+    "Each round gives identity and memories to the selected model and saves progress. No continuous thinking during waits. Subject to time and model budgets.",
+    "各回でアイデンティティと記憶を指定モデルに渡し、進捗を保存します。待機中は考え続けません。時間とモデル枠に従います。"
+  ],
+  [
+    "主動請教獨立LLM",
+    "Consult an independent LLM",
+    "独立LLMに相談"
+  ],
+  [
+    "向本環境指定模型另開獨立對話請教；每輪最多一次，每次另占一個模型輪數，答案不當成已查證事實。",
+    "Separate conversation with this environment's model, at most once per round, costing another model request. Advice is not verified fact.",
+    "指定モデルと別の対話を各回最大1回行い、モデル枠を追加で1回使います。回答は検証済みの事実ではありません。"
+  ],
+  [
+    "與Owner雙向對話及主動傳訊（基本能力）",
+    "Owner conversation and proactive messages (basic)",
+    "Ownerとの双方向対話と自発的伝言（基本）"
+  ],
+  [
+    "適用所有個體，不需勾選開放。在有效生活授權內可主動提問、分享或回覆；Owner可隨時留言。停止或時段外不自行喚醒。",
+    "Available to all without a permission checkbox. During authorized life, initiate questions, sharing, or replies. Owner can leave messages anytime. No automatic wake when stopped or outside hours.",
+    "全員に適用し、チェックは不要です。有効な生活中は質問、共有、返信ができます。Ownerはいつでも伝言できます。停止中や時間外は勝手に起きません。"
+  ],
+  [
+    "瀏覽公開外網（隔離瀏覽器）",
+    "Browse the public web (isolated browser)",
+    "公開外網を閲覧（隔離ブラウザー）"
+  ],
+  [
+    "可搜尋及閱讀公開HTTPS網站、續讀網頁與自己的文字／CSV／PDF附件，不帶入Owner登入資料，不連本機及私人網路。下載計入額度，上傳自己筆記須逐次批准，不因此登入、發布或付款。",
+    "Search and read public HTTPS, continue pages, and read own text/CSV/PDF attachments. No Owner login, local/private network. Downloads count against budget; note uploads require approval each time, without login, publishing, or payments.",
+    "公開HTTPSの検索・閲覧・続き読み、自分の文字・CSV・PDFを読めます。Ownerのログインや私設網は使いません。受信は枠に数え、ノート送信は都度承認が必要です。ログイン、公開、支払いはしません。"
+  ],
+  [
+    "內容或生活設定已有變更，已重新讀取。請核對畫面上的變更後，再確認一次；不用重建提案。",
+    "Content or life settings changed and were reloaded. Review changes and confirm again without recreating the proposal.",
+    "内容や生活設定を再読込しました。変更を確認し、提案を作り直さず再確認してください。"
+  ],
+  [
+    "提案與保存的身份內容不一致，已停止採用。請保留提案並查看原始身份來源。",
+    "Proposal differs from stored identity. Adoption stopped; retain the proposal and inspect its original source.",
+    "提案と保存されたアイデンティティが異なるため採用を止めました。提案を残し、元の出典を確認してください。"
+  ],
+  [
+    "仍有個體尚未完成停止。請先按全域緊急停止，等待任務結束後，再查看解除範圍。",
+    "Some individuals are not fully stopped. Use global emergency stop and wait for work to end before viewing the clear-stop scope.",
+    "完全に停止していない個体があります。全体緊急停止を使い、作業終了後に解除範囲を確認してください。"
+  ],
+  [
+    "今天平台可用活動輪數已用完，請在明天的生活時段繼續。",
+    "Today's platform model budget is exhausted. Continue in tomorrow's life window.",
+    "本日の全体モデル枠を使い切りました。翌日の生活時間に続けてください。"
+  ],
+  [
+    "此個體本時段的活動輪數已用完，請在下一個有效時段繼續。",
+    "This individual's window budget is exhausted. Continue in the next valid window.",
+    "この個体の時間帯の活動枠を使い切りました。次の有効な時間帯に続けてください。"
+  ],
+  [
+    "此個體已出生或有生活歷史。請查看出生結果，之後使用恢復生活，不會再次出生。",
+    "This individual is already born or has life history. View its birth result and use Resume life later; birth will not repeat.",
+    "誕生済みか生活履歴があります。結果を確認し、以後は生活再開を使ってください。誕生は繰り返しません。"
+  ],
+  [
+    "Owner已保存分配",
+    "Owner saved allocation",
+    "Ownerが配分を保存"
+  ],
+  [
+    "提出上傳，尚未送出",
+    "Upload requested, not sent",
+    "送信を申請、未送信"
+  ],
+  [
+    "外站已回覆上傳成功",
+    "Destination confirmed upload success",
+    "外部サイトが送信成功を応答"
+  ],
+  [
+    "Owner拒絕上傳",
+    "Owner rejected upload",
+    "Ownerが送信を拒否"
+  ],
+  [
+    "已批准，開始送出",
+    "Approved, sending",
+    "承認済み、送信開始"
+  ],
+  [
+    "上傳結果未確認，不重送",
+    "Upload unconfirmed; not resent",
+    "送信結果未確認、再送せず"
+  ],
+  [
+    "附件已保存",
+    "Attachment saved",
+    "添付を保存"
+  ],
+  [
+    "已閱讀公開網頁",
+    "Public page read",
+    "公開ページを閲覧済み"
+  ],
+  [
+    "本次瀏覽未完成",
+    "Browsing incomplete",
+    "今回の閲覧は未完了"
+  ],
+  [
+    "請先停止指定個體並等待本輪結束；平台上限調整需要所有個體停止。",
+    "Stop the selected individual and wait for its round. Changing the platform limit requires everyone stopped.",
+    "対象個体を停止し、現在の活動終了を待ってください。全体上限の変更には全員の停止が必要です。"
+  ],
+  [
+    "活動輪數請填寫1到1000之間的整數。",
+    "Enter a whole-number round limit from 1 to 1000.",
+    "活動回数は1〜1000の整数を入力してください。"
+  ],
+  [
+    "此個體設定已由其他操作變更。未保存輸入保留，請先按「捨棄未保存修改，讀取最新設定」核對。",
+    "Another action changed this individual's settings. Unsaved input remains. Select Discard unsaved changes and read latest settings to compare.",
+    "別の操作で個体設定が変わりました。未保存入力は保持します。「未保存を破棄し最新設定を読む」で確認してください。"
+  ],
+  [
+    "平台設定已變更。請讀取最新設定後核對，未保存輸入仍保留。",
+    "Platform settings changed. Read and verify the latest settings; unsaved input remains.",
+    "全体設定が変わりました。最新設定を読んで確認してください。未保存入力は残っています。"
+  ],
+  [
+    "網路分配已由另一個頁面修改。請讀取最新設定後重新分配。",
+    "Another page changed network allocation. Read the latest settings before reallocating.",
+    "別の画面でネット配分が変わりました。最新設定を読んで再配分してください。"
+  ],
+  [
+    "狀態與啟停",
+    "Status and controls",
+    "状態と開始・停止"
+  ],
+  [
+    "時間與額度",
+    "Hours and budgets",
+    "時間と枠"
+  ],
+  [
+    "工具權限",
+    "Tool permissions",
+    "道具の権限"
+  ],
+  [
+    "身份與出生",
+    "Identity and birth",
+    "アイデンティティと誕生"
+  ],
+  [
+    "記憶與紀錄",
+    "Memories and records",
+    "記憶と記録"
+  ],
+  [
+    "委派Codex處理作品工作",
+    "Delegate work to Codex",
+    "作品作業をCodexに委任"
+  ],
+  [
+    "每輪最多一次，另計一次模型用量；只碰明確選入及本次新增作品。編輯與隔離執行仍需下方原權限，不開放身份、記憶、網路、shell或Owner檔案。",
+    "At most once per round, charged as another model request. Only selected and newly created works. Editing and execution still require their permissions. No identity, memory, network, shell, or Owner files.",
+    "各回最大1回、追加のモデル枠を使います。選択作品と今回の新作品だけに限定し、編集・実行には元の権限も必要です。アイデンティティ、記憶、ネット、shell、Ownerのファイルは扱えません。"
+  ],
+  [
+    "自己的作品與版本",
+    "Own works and versions",
+    "自分の作品と版"
+  ],
+  [
+    "本地隔離資料庫",
+    "Local isolated database",
+    "ローカル隔離DB"
+  ],
+  [
+    "不增加模型請求；歷代正文共10MB",
+    "No extra model request; total version text 10 MB",
+    "追加モデル要求なし、歴代本文合計10 MB"
+  ],
+  [
+    "建立或修改文字、CSV、HTML與程式，每次另存新版本",
+    "Create or edit text, CSV, HTML, and code; save a new version each time",
+    "文字、CSV、HTML、コードを作成・編集し、毎回新しい版で保存"
+  ],
+  [
+    "自己的作品，不接受本機路徑",
+    "Own works only; local paths not accepted",
+    "自分の作品のみ。ローカルパスは不可"
+  ],
+  [
+    "可追溯的作品版本",
+    "Traceable work versions",
+    "追跡可能な作品の版"
+  ],
+  [
+    "隔離JavaScript實作",
+    "Isolated JavaScript work",
+    "隔離JavaScript作業"
+  ],
+  [
+    "本地WebAssembly解譯器",
+    "Local WebAssembly interpreter",
+    "ローカルWebAssembly実行器"
+  ],
+  [
+    "在原活動內執行；最多5秒、引擎16MB、輸出32000字元",
+    "Within existing activity; 5 seconds, 16 MB engine, 32,000 output characters",
+    "既存活動内で最長5秒、16 MB、出力32,000文字"
+  ],
+  [
+    "執行自己的指定版本，回傳同步JSON。需另開作品編輯；不是一般Node、shell或桌面工具",
+    "Run a selected own version and return synchronous JSON. Editing permission also required. Not general Node, shell, or desktop access",
+    "自分の指定版を実行し同期JSONを返します。編集許可も必要で、一般Node、shell、デスクトップ操作ではありません"
+  ],
+  [
+    "只含明確選入自己的作品；沒有Owner檔案、帳號、憑證或網路",
+    "Only selected own works; no Owner files, accounts, credentials, or network",
+    "選んだ自分の作品のみ。Ownerのファイル、アカウント、認証情報、ネットは不可"
+  ],
+  [
+    "成功成果或明確失敗及收尾紀錄",
+    "Successful result or explicit failure and cleanup record",
+    "成功結果、または明示した失敗と収束記録"
+  ],
+  [
+    "自己的記憶與文件閱讀",
+    "Own memories and document reading",
+    "自分の記憶と文書の閲覧"
+  ],
+  [
+    "本地",
+    "Local",
+    "ローカル"
+  ],
+  [
+    "不新增模型請求或外部下載",
+    "No extra model request or external download",
+    "追加モデル要求・外部ダウンロードなし"
+  ],
+  [
+    "搜尋自己的筆記與記憶，分頁讀取紀錄、網頁快照、文字、CSV與PDF；不執行文件",
+    "Search own notes and memories; page through records, web snapshots, text, CSV, and PDF without executing documents",
+    "自分のノートと記憶を検索し、記録、ページ保存、文字、CSV、PDFを分割閲覧。文書は実行しません"
+  ],
+  [
+    "自己的紀錄event_id或文件document_id，不接受本機路徑",
+    "Own event_id or document_id; no local paths",
+    "自分のevent_idまたはdocument_id。ローカルパスは不可"
+  ],
+  [
+    "原文、分頁位置與來源雜湊",
+    "Original text, page position, and source hash",
+    "原文、読取位置、出典ハッシュ"
+  ],
+  [
+    "公開網路搜尋",
+    "Public web search",
+    "公開ウェブ検索"
+  ],
+  [
+    "線上",
+    "Online",
+    "オンライン"
+  ],
+  [
+    "計入既有下載額度，不登入或付費",
+    "Counts against download budget; no login or payment",
+    "受信枠に計上。ログイン・支払いなし"
+  ],
+  [
+    "以Bing公開HTTPS搜尋公開問題；外站結果尚需逐頁核對",
+    "Public HTTPS Bing search; verify each destination page separately",
+    "公開HTTPSのBing検索。結果先は個別に確認が必要"
+  ],
+  [
+    "不含私人資料的公開問題",
+    "Public query without private data",
+    "私的資料を含まない公開の問い"
+  ],
+  [
+    "公開搜尋結果或明確的服務限制",
+    "Public search results or explicit service limits",
+    "公開検索結果または明示したサービス制限"
+  ],
+  [
+    "模型思考",
+    "Model thinking",
+    "モデルによる思考"
+  ],
+  [
+    "共用模型用量；費用未完整量測",
+    "Shared model budget; cost not fully measured",
+    "モデル枠を共有。金額は完全には未計測"
+  ],
+  [
+    "讀取自身身份與記憶，完成本輪活動",
+    "Read own identity and memories and complete the round",
+    "自分のアイデンティティと記憶を読み、この回の活動を実施"
+  ],
+  [
+    "自己的身份、記憶與允許的工作資料",
+    "Own identity, memories, and permitted work data",
+    "自分のアイデンティティ、記憶、許可された作業資料"
+  ],
+  [
+    "本輪結果與記憶紀錄",
+    "Round results and memory records",
+    "今回の結果と記憶記録"
+  ],
+  [
+    "受控筆記",
+    "Controlled notes",
+    "制御されたノート"
+  ],
+  [
+    "無額外服務呼叫",
+    "No additional service call",
+    "追加サービス要求なし"
+  ],
+  [
+    "建立自己的筆記；不開放任意檔案操作",
+    "Create own notes without arbitrary file access",
+    "任意ファイル操作を許可せず自分のノートを作成"
+  ],
+  [
+    "個體產生並允許保存的內容",
+    "Individual-generated content permitted for saving",
+    "個体が生成し保存を許可された内容"
+  ],
+  [
+    "自己的筆記成品",
+    "Own note outputs",
+    "自分のノート成果"
+  ],
+  [
+    "獨立模型請教",
+    "Independent model consultation",
+    "独立モデルへの相談"
+  ],
+  [
+    "計入個體與平台模型輪數",
+    "Counts against individual and platform model budgets",
+    "個体と全体のモデル枠に計上"
+  ],
+  [
+    "向獨立模型提出問題",
+    "Ask an independent model",
+    "独立モデルに質問"
+  ],
+  [
+    "允許送出的問題內容",
+    "Permitted question content",
+    "送信を許可された質問内容"
+  ],
+  [
+    "建議回答；不是已查證事實",
+    "Advice, not verified fact",
+    "助言であり検証済み事実ではない"
+  ],
+  [
+    "與 Owner 雙向對話（基本能力）",
+    "Owner conversation (basic capability)",
+    "Ownerとの双方向対話（基本）"
+  ],
+  [
+    "平台內",
+    "Within the platform",
+    "プラットフォーム内"
+  ],
+  [
+    "傳訊在原活動內進行，不另外呼叫模型",
+    "Messages within existing activity, without another model request",
+    "元の活動内で送信し、追加モデル要求なし"
+  ],
+  [
+    "所有個體皆可主動傳訊、提問、分享及回覆，不需Owner另開對話權限",
+    "All individuals may proactively ask, share, and reply without separate chat permission",
+    "全個体が個別の対話許可なしで自発的に質問、共有、返信可能"
+  ],
+  [
+    "本個體的對話",
+    "This individual's conversation",
+    "この個体の対話"
+  ],
+  [
+    "對話紀錄與Owner收件匣",
+    "Conversation records and Owner inbox",
+    "対話記録とOwner受信箱"
+  ],
+  [
+    "公開網頁瀏覽",
+    "Public web browsing",
+    "公開ウェブ閲覧"
+  ],
+  [
+    "計入下載額度",
+    "Counts against download budget",
+    "受信枠に計上"
+  ],
+  [
+    "閱讀已允許範圍的公開 HTTPS 網頁",
+    "Read public HTTPS pages within the allowed scope",
+    "許可範囲の公開HTTPSページを読む"
+  ],
+  [
+    "允許公開的網址與查詢；不帶 Owner 本機資料",
+    "Public URLs and queries, without Owner local data",
+    "公開できるURLと質問。Ownerのローカル資料を含まない"
+  ],
+  [
+    "網頁閱讀紀錄",
+    "Web reading records",
+    "ウェブ閲覧記録"
+  ],
+  [
+    "公開附件下載",
+    "Public attachment download",
+    "公開添付の取得"
+  ],
+  [
+    "保存支援格式的公開附件，不執行附件",
+    "Save supported public attachments without executing them",
+    "対応形式の公開添付を保存し、実行しない"
+  ],
+  [
+    "公開附件網址",
+    "Public attachment URL",
+    "公開添付URL"
+  ],
+  [
+    "自己的附件成品",
+    "Own saved attachments",
+    "自分の添付成果"
+  ],
+  [
+    "筆記上傳申請",
+    "Note upload request",
+    "ノート送信申請"
+  ],
+  [
+    "計入共用上傳額度",
+    "Counts against shared upload budget",
+    "共用送信枠に計上"
+  ],
+  [
+    "提出自己的筆記上傳申請，每次仍須 Owner 核准",
+    "Request own note upload; Owner approval required each time",
+    "自分のノートの送信を申請し、毎回Ownerの承認が必要"
+  ],
+  [
+    "自己的指定筆記全文與目的網址",
+    "Selected own note text and destination URL",
+    "自分の指定ノート全文と送信先URL"
+  ],
+  [
+    "申請及外站回覆紀錄",
+    "Request and destination response records",
+    "申請と外部応答の記録"
+  ],
+  [
+    "作品版本保存",
+    "Work version saved",
+    "作品の版を保存"
+  ],
+  [
+    "完成",
+    "Completed",
+    "完了"
+  ],
+  [
+    "已取消",
+    "Cancelled",
+    "取消済み"
+  ],
+  [
+    "重啟中斷",
+    "Interrupted by restart",
+    "再起動で中断"
+  ],
+  [
+    "文件閱讀",
+    "Document reading",
+    "文書閲覧"
+  ],
+  [
+    "自己的記憶搜尋",
+    "Own memory search",
+    "自分の記憶検索"
+  ],
+  [
+    "原始紀錄閱讀",
+    "Original record reading",
+    "原記録の閲覧"
+  ],
+  [
+    "回覆 Owner",
+    "Reply to Owner",
+    "Ownerに返信"
+  ],
+  [
+    "主動傳訊給 Owner",
+    "Proactive message to Owner",
+    "Ownerへ自発的に伝言"
+  ],
+  [
+    "已保存；不代表已讀",
+    "Saved; not necessarily read",
+    "保存済み。既読とは限らない"
+  ],
+  [
+    "外網工作",
+    "Web work",
+    "外網の作業"
+  ],
+  [
+    "已回報結果",
+    "Result reported",
+    "結果を報告済み"
+  ],
+  [
+    "工具使用",
+    "Tool use",
+    "道具の使用"
+  ],
+  [
+    "模型活動",
+    "Model activity",
+    "モデル活動"
+  ],
+  [
+    "筆記上傳：",
+    "Note upload:",
+    "ノート送信："
+  ],
+  [
+    "等待 Owner 確認；尚未上傳",
+    "Awaiting Owner confirmation; not uploaded",
+    "Owner確認待ち、未送信"
+  ],
+  [
+    "執行中",
+    "Running",
+    "実行中"
+  ],
+  [
+    "正在確認收尾，尚未釋放工作",
+    "Confirming cleanup; work slot retained",
+    "収束を確認中、作業枠を保持"
+  ],
+  [
+    "已完成",
+    "Completed",
+    "完了済み"
+  ],
+  [
+    "超時，已停止",
+    "Timed out and stopped",
+    "時間超過で停止"
+  ],
+  [
+    "重啟中斷，沒有自動重跑",
+    "Interrupted by restart; not automatically rerun",
+    "再起動で中断、自動再実行なし"
+  ],
+  [
+    "先建立你的第一個個體",
+    "Create your first individual",
+    "最初の個体を作成してください"
+  ],
+  [
+    "已出生；出生與活動是兩件事",
+    " is born; birth and activity are separate",
+    "は誕生済みです。誕生と活動は別です"
+  ],
+  [
+    "查看活動狀態",
+    "View activity status",
+    "活動状態を見る"
+  ],
+  [
+    "尚未採用身份",
+    " has no adopted identity",
+    "のアイデンティティは未採用です"
+  ],
+  [
+    "繼續身份與出生準備",
+    "Continue identity and birth preparation",
+    "アイデンティティと誕生準備を続ける"
+  ],
+  [
+    "有尚未保存的設定，請先保存再繼續",
+    "Unsaved settings remain; save before continuing",
+    "未保存の設定があります。保存して続けてください"
+  ],
+  [
+    "返回時間與額度並保存",
+    "Return to hours and budgets to save",
+    "時間と枠に戻って保存"
+  ],
+  [
+    "返回工具權限並保存",
+    "Return to tool permissions to save",
+    "道具の権限に戻って保存"
+  ],
+  [
+    "身份已批准；大腦尚未連接成功",
+    "Identity approved; brain connection not ready",
+    "アイデンティティは承認済み、大脳は未接続です"
+  ],
+  [
+    "查看大腦連線操作說明",
+    "View brain connection instructions",
+    "大脳の接続方法を見る"
+  ],
+  [
+    "身份已批准，尚未出生",
+    " identity approved; not yet born",
+    "のアイデンティティは承認済み、未誕生です"
+  ],
+  [
+    "繼續核對設定與出生",
+    "Continue settings and birth checks",
+    "設定と誕生の確認を続ける"
+  ]
+]

@@ -1,0 +1,229 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Kinseed Windows development configuration",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "environment",
+    "dataDirectory",
+    "http",
+    "reports",
+    "inference"
+  ],
+  "properties": {
+    "version": {
+      "enum": [
+        1,
+        2,
+        3
+      ]
+    },
+    "environment": {
+      "const": "development"
+    },
+    "dataDirectory": {
+      "type": "string",
+      "pattern": "^\\.private/[a-z0-9][a-z0-9-]{0,47}$"
+    },
+    "http": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "host",
+        "port"
+      ],
+      "properties": {
+        "host": {
+          "const": "127.0.0.1"
+        },
+        "port": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 65535,
+          "not": {
+            "enum": [
+              47429,
+              47430,
+              47431,
+              62372
+            ]
+          }
+        }
+      }
+    },
+    "reports": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "enabled"
+      ],
+      "properties": {
+        "enabled": {
+          "const": false
+        }
+      }
+    },
+    "inference": {
+      "type": "object"
+    },
+    "tools": {
+      "additionalProperties": false,
+      "type": "object",
+      "properties": {
+        "codex": {
+          "additionalProperties": false,
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "enabled"
+          ]
+        }
+      },
+      "required": [
+        "codex"
+      ]
+    },
+    "timezone": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80,
+      "description": "IANA timezone for new installations; existing runtime remains locked to its original timezone."
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "version": {
+            "const": 1
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "inference": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "enabled"
+            ],
+            "properties": {
+              "enabled": {
+                "const": false
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "version": {
+            "const": 2
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "inference": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "enabled",
+              "adapter",
+              "model",
+              "reasoning"
+            ],
+            "properties": {
+              "enabled": {
+                "type": "boolean"
+              },
+              "adapter": {
+                "const": "codex-cli"
+              },
+              "model": {
+                "const": "gpt-6.1-sol"
+              },
+              "reasoning": {
+                "const": "low"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "version": {
+            "const": 3
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "inference": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "enabled",
+              "adapter",
+              "model",
+              "endpoint",
+              "context_tokens",
+              "max_output_tokens",
+              "think"
+            ],
+            "properties": {
+              "enabled": {
+                "type": "boolean"
+              },
+              "adapter": {
+                "const": "ollama-local"
+              },
+              "model": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 128,
+                "pattern": "^[-a-zA-Z0-9][a-zA-Z0-9_./:-]{0,127}$"
+              },
+              "endpoint": {
+                "type": "string",
+                "pattern": "^http://127\\.0\\.0\\.1:[0-9]+/?$"
+              },
+              "context_tokens": {
+                "type": "integer",
+                "minimum": 8192,
+                "maximum": 65536
+              },
+              "max_output_tokens": {
+                "type": "integer",
+                "minimum": 128,
+                "maximum": 8192
+              },
+              "think": {
+                "const": false
+              },
+              "tool_protocol": {
+                "type": "string",
+                "enum": [
+                  "native",
+                  "schema",
+                  "staged",
+                  "guided",
+                  "stepwise"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

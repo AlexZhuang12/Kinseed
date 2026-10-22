@@ -1,0 +1,1052 @@
+[
+  [
+    "已完成 ",
+    "Completed ",
+    "完了しました："
+  ],
+  [
+    "生活時段已保存；沒有啟動或出生。",
+    "Activity window saved; no activation or birth.",
+    "活動時間帯を保存しました。活動の開始・誕生はしていません。"
+  ],
+  [
+    "工具設定已保存；沒有啟動或出生。",
+    "Tool settings saved; no activation or birth.",
+    "ツール設定を保存しました。活動の開始・誕生はしていません。"
+  ],
+  [
+    "請先查看目前提案內容。",
+    "View the current proposal first.",
+    "先に現在の提案内容を確認してください。"
+  ],
+  [
+    "一步一步完成首次出生",
+    "Complete first birth step by step",
+    "初回誕生を順に進める"
+  ],
+  [
+    "出生準備進度",
+    "Birth preparation progress",
+    "誕生準備の進捗"
+  ],
+  [
+    "確認對象與身份",
+    "Check individual and identity",
+    "対象とアイデンティティを確認"
+  ],
+  [
+    "設定時間與工具",
+    "Set time and tools",
+    "時間とツールを設定"
+  ],
+  [
+    "確認平台狀態",
+    "Check platform status",
+    "プラットフォームの状態を確認"
+  ],
+  [
+    "親自確認出生",
+    "Personally confirm birth",
+    "自分で誕生を確認"
+  ],
+  [
+    "出生結果",
+    "Birth result",
+    "誕生の結果"
+  ],
+  [
+    "第",
+    "Step ",
+    "第"
+  ],
+  [
+    "步｜",
+    " | ",
+    "段階｜"
+  ],
+  [
+    "下一步：設定生活時間與工具",
+    "Next: set activity time and tools",
+    "次へ：活動時間とツールを設定"
+  ],
+  [
+    "選擇身份或繼續既有審核",
+    "Choose identity or continue existing review",
+    "アイデンティティを選ぶ・既存の審査を続ける"
+  ],
+  [
+    "管理對象已切換，請重新核對。",
+    "Management target changed; check it again.",
+    "管理対象が切り替わりました。もう一度確認してください。"
+  ],
+  [
+    "這個個體可以做什麼？",
+    "What can this individual do?",
+    "この個体に何を許可しますか？"
+  ],
+  [
+    "可自行勾選",
+    "Optional permissions",
+    "任意で選択可能"
+  ],
+  [
+    "生活必備（固定啟用）",
+    "Basic abilities (always enabled)",
+    "生活の基本機能（常に有効）"
+  ],
+  [
+    "尚未開放（目前無法授權）",
+    "Unavailable (cannot currently be granted)",
+    "未提供（現在は許可できません）"
+  ],
+  [
+    "（生活必備）",
+    " (basic ability)",
+    "（生活の基本機能）"
+  ],
+  [
+    "所有公開HTTPS網站（隔離瀏覽器）",
+    "All public HTTPS sites (isolated browser)",
+    "すべての公開HTTPSサイト（分離ブラウザ）"
+  ],
+  [
+    "沿用指定網站清單",
+    "Use specified-site list",
+    "指定サイト一覧を使用"
+  ],
+  [
+    "瀏覽範圍 ",
+    "Browsing scope ",
+    "閲覧範囲 "
+  ],
+  [
+    "請檢查網站網域的寫法。",
+    "Check the website domain format.",
+    "サイトのドメインの形式を確認してください。"
+  ],
+  [
+    "每天何時開始活動（生活時區） ",
+    "Daily activity start (activity timezone) ",
+    "毎日の活動開始時刻（生活タイムゾーン） "
+  ],
+  [
+    "每天最多可活動多久（分鐘，1–240） ",
+    "Maximum daily activity duration (1–240 minutes) ",
+    "1日の最大活動時間（1～240分） "
+  ],
+  [
+    "可用工具及何時停止",
+    "Available tools and stopping conditions",
+    "利用可能なツールと停止条件"
+  ],
+  [
+    "保存設定，下一步：檢查平台",
+    "Save settings; next: check platform",
+    "設定を保存して次へ：プラットフォームを確認"
+  ],
+  [
+    "時間與工具設定已保存。",
+    "Time and tool settings saved.",
+    "時間とツールの設定を保存しました。"
+  ],
+  [
+    "下一步：最後核對",
+    "Next: final review",
+    "次へ：最終確認"
+  ],
+  [
+    "請先處理本步畫面顯示的原因，再繼續。",
+    "Resolve the reasons shown in this step before continuing.",
+    "この段階に表示された原因を解消してから続けてください。"
+  ],
+  [
+    "確認讓畫面指定的個體首次出生",
+    "Confirm first birth of the individual shown",
+    "画面に示された個体の初回誕生を確認"
+  ],
+  [
+    "調整生活時間與工具",
+    "Adjust activity time and tools",
+    "活動時間とツールを調整"
+  ],
+  [
+    "上一步",
+    "Back",
+    "前へ"
+  ],
+  [
+    "出生後的活動控制",
+    "Activity controls after birth",
+    "誕生後の活動制御"
+  ],
+  [
+    "重新讀取目前狀態",
+    "Reload current state",
+    "現在の状態を再読み込み"
+  ],
+  [
+    "查看記憶、歷史、備份及執行詳情",
+    "View memory, history, backups and execution details",
+    "記憶・履歴・バックアップ・実行詳細を見る"
+  ],
+  [
+    "尚未保存；請按「保存設定，下一步」繼續。",
+    "Unsaved; select Save settings, then continue.",
+    "未保存です。「設定を保存して次へ」を押してください。"
+  ],
+  [
+    "目前顯示已保存的設定；可直接按下一步。",
+    "Saved settings are shown; you may continue.",
+    "保存済みの設定を表示しています。そのまま次へ進めます。"
+  ],
+  [
+    "首次出生準備",
+    "First-birth preparation",
+    "初回誕生の準備"
+  ],
+  [
+    "出生與活動狀態",
+    "Birth and activity status",
+    "誕生と活動の状態"
+  ],
+  [
+    "目前第",
+    "Currently step ",
+    "現在は第"
+  ],
+  [
+    "／4步。",
+    " of 4. ",
+    "／4段階。"
+  ],
+  [
+    "；已保存的內容會保留，可稍後繼續。",
+    "; saved content is retained, so you can continue later.",
+    "。保存済みの内容は保持されるため、後で続けられます。"
+  ],
+  [
+    "調整已出生個體的設定；保存不會恢復活動。",
+    "Editing a born individual's settings; saving does not resume activity.",
+    "誕生済み個体の設定変更です。保存しても活動は再開しません。"
+  ],
+  [
+    "目前設定對象：",
+    "Settings target: ",
+    "現在の設定対象："
+  ],
+  [
+    "。勾選後請按下方保存，才會生效。",
+    ". Selections take effect only after saving below.",
+    "。チェック後、下の保存ボタンを押すと有効になります。"
+  ],
+  [
+    "保存設定，返回活動狀態",
+    "Save settings and return to activity status",
+    "設定を保存して活動状態へ戻る"
+  ],
+  [
+    "已批准身份：「",
+    "Approved identity: “",
+    "承認済みアイデンティティ：「"
+  ],
+  [
+    "」第",
+    "”, version ",
+    "」第"
+  ],
+  [
+    "版。批准身份不會自動出生。",
+    ". Identity approval does not cause automatic birth.",
+    "版。アイデンティティを承認しても自動誕生しません。"
+  ],
+  [
+    "此個體每個生活時段最多",
+    "Per activity window, this individual may make up to ",
+    "この個体の活動時間帯ごとの上限は "
+  ],
+  [
+    "次模型請求，平台全體每天最多",
+    " model calls; the platform daily limit is ",
+    " 回のモデル呼び出し。全体の1日上限は "
+  ],
+  [
+    "目前時間與工具設定已保存。",
+    "Current time and tool settings are saved.",
+    "現在の時間とツールの設定は保存済みです。"
+  ],
+  [
+    "查看解除平台停止的影響範圍",
+    "Review the impact of clearing platform stop",
+    "全体停止解除の影響範囲を確認"
+  ],
+  [
+    "返回活動狀態",
+    "Return to activity status",
+    "活動状態へ戻る"
+  ],
+  [
+    "對象：",
+    "Target: ",
+    "対象："
+  ],
+  [
+    "）\n已批准身份：「",
+    ")\nApproved identity: “",
+    "）\n承認済みアイデンティティ：「"
+  ],
+  [
+    " 起，最多 ",
+    " onward, for up to ",
+    " から、最大 "
+  ],
+  [
+    " 分鐘\n此個體活動上限：",
+    " minutes\nIndividual activity limit: ",
+    " 分間\nこの個体の活動上限："
+  ],
+  [
+    "輪；平台每日共用上限：",
+    " calls; platform shared daily limit: ",
+    " 回。プラットフォーム共用の1日上限："
+  ],
+  [
+    "輪\n受控新增筆記：",
+    " calls\nControlled note creation: ",
+    " 回\n制御されたノート追加："
+  ],
+  [
+    "\n這次第一次活動：",
+    "\nThis first activity: ",
+    "\n今回の初回活動："
+  ],
+  [
+    "\n這次授權最晚結束：",
+    "\nThis authorization ends no later than: ",
+    "\n今回の許可の最終終了時刻："
+  ],
+  [
+    "\n允許公開網頁：",
+    "\nPublic-web access: ",
+    "\n公開Webの閲覧："
+  ],
+  [
+    "是，所有公開HTTPS網站",
+    "Yes, all public HTTPS sites",
+    "許可、すべての公開HTTPSサイト"
+  ],
+  [
+    "是，指定網站清單",
+    "Yes, specified-site list",
+    "許可、指定サイト一覧"
+  ],
+  [
+    "否",
+    "No",
+    "いいえ"
+  ],
+  [
+    "\n允許主動請教LLM：",
+    "\nIndependent LLM consultation: ",
+    "\nLLMへの自発的な相談："
+  ],
+  [
+    "是，每次另計模型輪數",
+    "Yes, each consultation consumes an additional model call",
+    "許可、相談ごとに別途モデル回数を消費"
+  ],
+  [
+    "\nOwner雙向互動：所有個體的基本能力",
+    "\nTwo-way Owner communication: a basic ability of all individuals",
+    "\nOwnerとの双方向対話：すべての個体の基本機能"
+  ],
+  [
+    "按下確認後立即記錄出生。",
+    "Confirmation immediately records birth. ",
+    "確認すると直ちに誕生を記録します。"
+  ],
+  [
+    "目前在時段內，可開始第一輪活動。",
+    "The window is open; the first cycle may begin.",
+    "現在は活動時間帯内なので、最初のラウンドを開始できます。"
+  ],
+  [
+    "目前條件尚未完成，身份與設定均保留。",
+    "Requirements are not yet complete; identity and settings are retained.",
+    "要件はまだ整っていません。アイデンティティと設定は保持されています。"
+  ],
+  [
+    "回第3步處理原因",
+    "Return to step 3 to resolve the cause",
+    "第3段階へ戻り、原因を解消"
+  ],
+  [
+    "已出生，出生時間：",
+    "Born; birth time: ",
+    "誕生済み。誕生日時："
+  ],
+  [
+    "身份：「",
+    "Identity: “",
+    "アイデンティティ：「"
+  ],
+  [
+    " 分鐘",
+    " minutes",
+    " 分間"
+  ],
+  [
+    "目前活動已停止，不會自動恢復。",
+    "Activity is stopped and will not resume automatically.",
+    "現在の活動は停止中です。自動では再開しません。"
+  ],
+  [
+    "模型繁忙，等待於 ",
+    "Model busy; waiting until ",
+    "モデルが混雑中です。再試行予定："
+  ],
+  [
+    " 自動重試，不需手動恢復。",
+    " for automatic retry; manual resumption is not needed.",
+    " に自動再試行します。手動再開は不要です。"
+  ],
+  [
+    "已出生，等待於 ",
+    "Born; waiting until ",
+    "誕生済み。開始予定の "
+  ],
+  [
+    " 開始第一次活動。",
+    " to begin first activity.",
+    " から初回活動を開始します。"
+  ],
+  [
+    "正在執行本輪活動。",
+    "This activity cycle is running.",
+    "この活動ラウンドを実行中です。"
+  ],
+  [
+    "目前沒有待執行活動。",
+    "There is no pending activity.",
+    "現在、実行待ちの活動はありません。"
+  ],
+  [
+    "模型與活動狀態",
+    "Model and activity status",
+    "モデルと活動の状態"
+  ],
+  [
+    "固定模型：",
+    "Selected fixed model: ",
+    "指定された固定モデル："
+  ],
+  [
+    "更新前未指定",
+    "Not specified before update",
+    "更新前は未指定"
+  ],
+  [
+    "；不自動切換其他模型。",
+    "; no automatic model switching.",
+    "。別のモデルへ自動切り替えしません。"
+  ],
+  [
+    "正在執行第",
+    "Running retry ",
+    "第"
+  ],
+  [
+    "次重試。",
+    ".",
+    "回の再試行を実行中です。"
+  ],
+  [
+    "模型暫時繁忙；預定 ",
+    "Model temporarily busy; scheduled for ",
+    "モデルが一時的に混雑しています。予定時刻："
+  ],
+  [
+    " 自動進行第",
+    " for automatic retry ",
+    " に自動で第"
+  ],
+  [
+    "次重試，您不必按恢復。",
+    "; no need to select Resume.",
+    "回の再試行をします。再開ボタンを押す必要はありません。"
+  ],
+  [
+    "控制器已關閉；下次需明確恢復",
+    "Controller closed; explicit resumption required next time",
+    "制御プログラムは終了しました。次回は明示的な再開が必要です"
+  ],
+  [
+    "下一步：",
+    "Next: ",
+    "次の操作："
+  ],
+  [
+    "查看生活與記憶",
+    "View activity and memory",
+    "生活と記憶を見る"
+  ],
+  [
+    "查看狀態／繼續出生準備",
+    "View status / continue birth preparation",
+    "状態を見る・誕生準備を続ける"
+  ],
+  [
+    "網路用量與分配",
+    "Network usage and allocation",
+    "ネットワーク使用量と配分"
+  ],
+  [
+    "查看用量／調整分配",
+    "View usage / adjust allocation",
+    "使用量を確認・配分を調整"
+  ],
+  [
+    "今日網路用量",
+    "Today's network usage",
+    "本日のネットワーク使用量"
+  ],
+  [
+    "調整每日預算與個體分配",
+    "Adjust daily budget and individual allocation",
+    "1日の上限と個体別配分を調整"
+  ],
+  [
+    "查看使用依據與最近紀錄",
+    "View usage evidence and recent records",
+    "使用の根拠と最近の記録を見る"
+  ],
+  [
+    "查看個體保存的下載附件",
+    "View downloaded attachments saved by individuals",
+    "個体が保存したダウンロード添付を見る"
+  ],
+  [
+    "今日瀏覽與附件傳輸",
+    "Today's browsing and attachment transfers",
+    "本日の閲覧と添付転送"
+  ],
+  [
+    "｜已用 ",
+    " | Used ",
+    "｜使用済み "
+  ],
+  [
+    "／可計量額度 ",
+    " / metered allowance ",
+    "／計測対象の上限 "
+  ],
+  [
+    "平台每日預算 ",
+    "Platform daily budget ",
+    "プラットフォームの1日上限 "
+  ],
+  [
+    "；模型通訊與傳輸開銷另預留 ",
+    "; separately reserved for model communication and overhead ",
+    "。モデル通信と転送の付加分として別途確保 "
+  ],
+  [
+    "今日瀏覽與附件傳輸：",
+    "Today's browsing and attachment transfers: ",
+    "本日の閲覧と添付転送："
+  ],
+  [
+    "：下載 ",
+    ": downloaded ",
+    "：ダウンロード "
+  ],
+  [
+    "，外網額度已用完",
+    ", public-web allowance exhausted",
+    "。外部ネットワークの上限に達しました"
+  ],
+  [
+    "，已達80%，請留意剩餘用量",
+    ", 80% reached; monitor remaining usage",
+    "。80%に達しました。残量に注意してください"
+  ],
+  [
+    "共用上傳：",
+    "Shared uploads: ",
+    "共用アップロード："
+  ],
+  [
+    "，每次須Owner批准。",
+    ", each requiring Owner approval.",
+    "。毎回Ownerの承認が必要です。"
+  ],
+  [
+    "平台每日總預算",
+    "Platform total daily budget",
+    "プラットフォームの1日の総上限"
+  ],
+  [
+    "每日下載",
+    "Daily downloads",
+    "1日のダウンロード"
+  ],
+  [
+    "全體共用每日上傳",
+    "Shared daily uploads",
+    "全体共用の1日のアップロード"
+  ],
+  [
+    "模型通訊與開銷預留",
+    "Reserve for model communication and overhead",
+    "モデル通信と付加分の予備枠"
+  ],
+  [
+    "進階：大型下載與上傳保護",
+    "Advanced: large download/upload protection",
+    "詳細：大容量ダウンロードとアップロードの保護"
+  ],
+  [
+    "單一下載檔案",
+    "Single downloaded file",
+    "ダウンロード1ファイル"
+  ],
+  [
+    "單頁含圖片及程式",
+    "Single page including images and scripts",
+    "画像とスクリプトを含む1ページ"
+  ],
+  [
+    "單一上傳筆記",
+    "Single uploaded note",
+    "アップロードするノート1件"
+  ],
+  [
+    "保存分配",
+    "Save allocation",
+    "配分を保存"
+  ],
+  [
+    "等待你核對的上傳申請",
+    "Upload requests awaiting your review",
+    "あなたの確認待ちのアップロード申請"
+  ],
+  [
+    "目的網站：",
+    "Destination site: ",
+    "送信先サイト："
+  ],
+  [
+    "大小：",
+    "Size: ",
+    "サイズ："
+  ],
+  [
+    "｜原因：",
+    " | Reason: ",
+    "｜理由："
+  ],
+  [
+    "核對將送出的完整內容",
+    "Review all content to be sent",
+    "送信される内容の全文を確認"
+  ],
+  [
+    "批准本次上傳",
+    "Approve this upload",
+    "今回のアップロードを承認"
+  ],
+  [
+    "拒絕",
+    "Reject",
+    "却下"
+  ],
+  [
+    "已處理本次申請，請查看紀錄。",
+    "Request processed; check the records.",
+    "この申請を処理しました。記録を確認してください。"
+  ],
+  [
+    "目前沒有等待批准的上傳。",
+    "No uploads awaiting approval.",
+    "現在、承認待ちのアップロードはありません。"
+  ],
+  [
+    "下載此附件",
+    "Download this attachment",
+    "この添付をダウンロード"
+  ],
+  [
+    "附件無法讀取，請重新整理後再試。",
+    "Cannot read attachment; refresh and try again.",
+    "添付を読み込めません。画面を更新して再試行してください。"
+  ],
+  [
+    "尚未保存。",
+    "Not saved yet.",
+    "まだ保存していません。"
+  ],
+  [
+    "已保存。",
+    "Saved.",
+    "保存しました。"
+  ],
+  [
+    "超出總預算 ",
+    "Over total budget by ",
+    "総上限を超過："
+  ],
+  [
+    "，請減少分配。",
+    "; reduce the allocation.",
+    "。配分を減らしてください。"
+  ],
+  [
+    "尚可分配 ",
+    "Still available to allocate: ",
+    "配分可能な残量："
+  ],
+  [
+    " 保存不清除今日用量、不改模型輪數。",
+    " Saving does not reset today's usage or change model-call limits.",
+    " 保存しても本日の使用量はリセットされず、モデル回数も変わりません。"
+  ],
+  [
+    "分配超過總額，請先減少。",
+    "Allocation exceeds the total; reduce it first.",
+    "配分が総量を超えています。先に減らしてください。"
+  ],
+  [
+    "個體控制：時間與額度",
+    "Individual controls: time and allowances",
+    "個体の制御：時間と上限"
+  ],
+  [
+    "要管理哪個個體？",
+    "Which individual do you want to manage?",
+    "どの個体を管理しますか？"
+  ],
+  [
+    "調整這個個體的時間、活動輪數與網路額度",
+    "Adjust this individual's time, model calls and network allowance",
+    "この個体の時間・活動回数・ネットワーク上限を調整"
+  ],
+  [
+    "1．生活時間",
+    "1. Activity time",
+    "1．活動時間"
+  ],
+  [
+    "2．活動輪數",
+    "2. Activity-call limit",
+    "2．活動回数"
+  ],
+  [
+    "3．網路額度",
+    "3. Network allowance",
+    "3．ネットワーク上限"
+  ],
+  [
+    "平台全體共用的模型輪數上限",
+    "Shared platform model-call limit",
+    "プラットフォーム共用のモデル回数上限"
+  ],
+  [
+    "每天開始時間（生活時區）",
+    "Daily start (activity timezone)",
+    "毎日の開始時刻（生活タイムゾーン）"
+  ],
+  [
+    "每次生活最多幾分鐘（1–240）",
+    "Maximum activity minutes per session (1–240)",
+    "1回の活動の最大分数（1～240）"
+  ],
+  [
+    "這個個體每日下載（MB）",
+    "This individual's daily downloads (MB)",
+    "この個体の1日ダウンロード（MB）"
+  ],
+  [
+    "平台每天最多幾次模型請求（1–1000）",
+    "Platform daily model-call limit (1–1000)",
+    "プラットフォームの1日モデル回数上限（1～1000）"
+  ],
+  [
+    "保存生活時間",
+    "Save activity time",
+    "活動時間を保存"
+  ],
+  [
+    "請選擇有效的開始時間。",
+    "Choose a valid start time.",
+    "有効な開始時刻を選んでください。"
+  ],
+  [
+    "保存個體活動輪數",
+    "Save individual activity-call limit",
+    "個体の活動回数を保存"
+  ],
+  [
+    "保存個體網路額度",
+    "Save individual network allowance",
+    "個体のネットワーク上限を保存"
+  ],
+  [
+    "請先重新讀取網路用量。",
+    "Reload network usage first.",
+    "先にネットワーク使用量を再読み込みしてください。"
+  ],
+  [
+    "分配超過平台總預算 ",
+    "Allocation exceeds the platform total budget ",
+    "配分がプラットフォームの総上限を超えています："
+  ],
+  [
+    "保存平台模型輪數上限",
+    "Save platform model-call limit",
+    "プラットフォームのモデル回数上限を保存"
+  ],
+  [
+    "調整全體網路預算／上傳限制",
+    "Adjust shared network budget / upload limits",
+    "全体のネットワーク上限・アップロード制限を調整"
+  ],
+  [
+    "三種設定有什麼不同？",
+    "How do these three settings differ?",
+    "3つの設定はどう違いますか？"
+  ],
+  [
+    "請先選擇要管理的個體。",
+    "Choose the individual to manage first.",
+    "先に管理する個体を選択してください。"
+  ],
+  [
+    "請填寫 ",
+    "Enter an integer from ",
+    "整数を入力してください："
+  ],
+  [
+    " 到 ",
+    " to ",
+    " ～ "
+  ],
+  [
+    " 之間的整數。",
+    ".",
+    "。"
+  ],
+  [
+    "正在保存目前個體，請等結果顯示後再切換。",
+    "Saving this individual; wait for the result before switching.",
+    "現在の個体を保存中です。結果が表示されてから切り替えてください。"
+  ],
+  [
+    "正在執行活動",
+    "Activity running",
+    "活動を実行中"
+  ],
+  [
+    "已取得活動授權",
+    "Activity authorized",
+    "活動許可あり"
+  ],
+  [
+    "平台：",
+    "Platform: ",
+    "プラットフォーム："
+  ],
+  [
+    "全域停止",
+    "Platform-wide stop",
+    "全体停止"
+  ],
+  [
+    "可接受個別活動授權",
+    "Individual activity authorization available",
+    "個別の活動許可を受け付け可能"
+  ],
+  [
+    "。本次授權最晚至：",
+    ". Authorization ends no later than: ",
+    "。今回の許可の最終終了時刻："
+  ],
+  [
+    "尚無生活授權",
+    "No activity authorization",
+    "活動許可はまだありません"
+  ],
+  [
+    "先停止此個體，以調整設定",
+    "Stop this individual before changing settings",
+    "設定を変更する前にこの個体を停止"
+  ],
+  [
+    "前往生活狀態（不會啟動）",
+    "View activity status (does not start activity)",
+    "活動状態へ（活動は開始しません）"
+  ],
+  [
+    "已保存：每日 ",
+    "Saved: daily ",
+    "保存済み：毎日 "
+  ],
+  [
+    " 分鐘。",
+    " minutes.",
+    " 分間。"
+  ],
+  [
+    "有未保存修改。",
+    "There are unsaved changes.",
+    "未保存の変更があります。"
+  ],
+  [
+    "臨時生活沿用原額度（",
+    "Temporary activity uses the existing allowance (",
+    "臨時活動は元の上限を引き継ぎます（"
+  ],
+  [
+    "歸屬），已用 ",
+    " budget day), used ",
+    " の集計）、使用済み "
+  ],
+  [
+    "本生活時段（",
+    "This activity window (",
+    "今回の活動時間帯（"
+  ],
+  [
+    "開始）已用 ",
+    " start), used ",
+    " 開始）の使用済み "
+  ],
+  [
+    " 次，剩餘 ",
+    " calls, remaining ",
+    " 回、残り "
+  ],
+  [
+    " 次。",
+    " calls.",
+    " 回。"
+  ],
+  [
+    "台北今日平台已用 ",
+    "Platform usage today (Taipei): ",
+    "プラットフォームの本日使用量（台北）："
+  ],
+  [
+    "現在可以調整平台上限。",
+    "You can now adjust the platform limit.",
+    "現在、プラットフォームの上限を調整できます。"
+  ],
+  [
+    "今日已用 ",
+    "Used today: ",
+    "本日使用済み："
+  ],
+  [
+    " MB；剩餘 ",
+    " MB; remaining ",
+    " MB、残り "
+  ],
+  [
+    " MB。外網權限：",
+    " MB. Public-web permission: ",
+    " MB。外部Web権限："
+  ],
+  [
+    "已開啟",
+    "Enabled",
+    "有効"
+  ],
+  [
+    "未開啟",
+    "Disabled",
+    "無効"
+  ],
+  [
+    "正在保存，請稍候；不會自動啟動任何個體。",
+    "Saving; please wait. No individual will start automatically.",
+    "保存中です。お待ちください。どの個体も自動では開始しません。"
+  ],
+  [
+    "捨棄未保存修改，讀取最新設定",
+    "Discard unsaved changes and load latest settings",
+    "未保存の変更を破棄して最新設定を読む"
+  ],
+  [
+    "已讀取最新設定，沒有修改任何個體。",
+    "Latest settings loaded; no individuals changed.",
+    "最新の設定を読み込みました。個体は変更していません。"
+  ],
+  [
+    "管理個體",
+    "Manage individuals",
+    "個体を管理"
+  ],
+  [
+    "前往管理此個體",
+    "Manage this individual",
+    "この個体の管理へ"
+  ],
+  [
+    "個體管理分類",
+    "Individual management tabs",
+    "個体管理の分類"
+  ],
+  [
+    "捨棄未保存修改",
+    "Discard unsaved changes",
+    "未保存の変更を破棄"
+  ],
+  [
+    "捨棄未保存",
+    "Discard unsaved",
+    "未保存を破棄"
+  ],
+  [
+    "這個個體可以使用哪些工具？",
+    "Which tools may this individual use?",
+    "この個体にどのツールを許可しますか？"
+  ],
+  [
+    "其他工具，可由Owner開關",
+    "Optional tools controlled by Owner",
+    "Ownerが切り替える任意ツール"
+  ],
+  [
+    "所有公開HTTPS網站",
+    "All public HTTPS sites",
+    "すべての公開HTTPSサイト"
+  ],
+  [
+    "指定網站清單（僅相容模式需要） ",
+    "Specified-site list (compatibility mode only) ",
+    "指定サイト一覧（互換モードのみ必要） "
+  ],
+  [
+    "生活基本能力與尚未開放的能力",
+    "Basic abilities and unavailable capabilities",
+    "生活の基本機能と未提供の機能"
+  ],
+  [
+    "保存此個體的工具權限",
+    "Save this individual's tool permissions",
+    "この個体のツール権限を保存"
+  ],
+  [
+    "捨棄權限修改，讀取已保存設定",
+    "Discard permission edits and load saved settings",
+    "権限の変更を破棄して保存済み設定を読む"
+  ],
+  [
+    "查看這個個體的生活日誌",
+    "View this individual's activity journal",
+    "この個体の生活日誌を見る"
+  ],
+  [
+    "第2步｜確認生活設定",
+    "Step 2 | Check activity settings",
+    "第2段階｜生活設定を確認"
+  ]
+]

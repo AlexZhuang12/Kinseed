@@ -1,0 +1,4 @@
+import test from'node:test';import assert from'node:assert/strict';import{summarizeJournal,journalDay}from'../src/v1_2/journal-model.mjs';
+import{firstActivityLabel}from'../src/v1_2/owner-guide-model.mjs';
+test('TZ11 journal uses life timezone without changing raw event times or text',()=>{const row={individual_id:'synthetic',seq:1,event_id:'event',utc:'2026-10-22T15:30:00Z',type:'tool.note.result',result:{text:'原文 exact'}},before=JSON.stringify(row);assert.equal(summarizeJournal('synthetic','2026-10-23',[row],'Asia/Tokyo').notes,1);assert.equal(summarizeJournal('synthetic','2026-10-22',[row],'Asia/Taipei').notes,1);assert.equal(JSON.stringify(row),before);assert.equal(journalDay(row.utc,'Asia/Tokyo'),'2026-10-23');});
+test('TZ12 tomorrow label follows calendar day across spring DST',()=>{assert(firstActivityLabel(Date.parse('2026-03-08T13:00Z'),Date.parse('2026-03-08T04:30Z'),'America/New_York').startsWith('明天'));});

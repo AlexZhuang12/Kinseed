@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "method": "AI_LOCAL_BEFORE_AFTER_READ_ONLY_AUDIT",
+  "formal_sources_unchanged": true,
+  "formal_identity_birth_memory_history_settings_preserved": true,
+  "formal_events_added": 0,
+  "formal_controller_not_restarted": true,
+  "shared_chat_not_restarted": true,
+  "shared_model_not_changed_or_called": true,
+  "private_raw_evidence_published": false,
+  "independent_attestation": false
+}

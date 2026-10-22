@@ -1,0 +1,22 @@
+{
+  "version": 3,
+  "environment": "development",
+  "dataDirectory": ".private/development",
+  "http": {
+    "host": "127.0.0.1",
+    "port": 0
+  },
+  "reports": {
+    "enabled": false
+  },
+  "inference": {
+    "enabled": false,
+    "adapter": "ollama-local",
+    "model": "owner-selected-local-model",
+    "endpoint": "http://127.0.0.1:11434",
+    "context_tokens": 32768,
+    "max_output_tokens": 2048,
+    "think": false,
+    "tool_protocol": "stepwise"
+  }
+}

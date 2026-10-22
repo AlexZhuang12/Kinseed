@@ -1,0 +1,10 @@
+{
+  "name": "opencc-js",
+  "version": "1.0.5",
+  "license": "MIT",
+  "integrity": "sha512-LD+1SoNnZdlRwtYTjnQdFrSVCAaYpuDqL5CkmOaHOkKoKh7mFxUicLTRVNLU5C+Jmi1vXQ3QL4jWdgSaa4sKjg==",
+  "source": "https://registry.npmjs.org/opencc-js/-/opencc-js-1.0.5.tgz",
+  "files": {
+    "dist/esm/t2cn.js": "477542b4c9e2b64ddfa90c971b29d221216b604165ef2c6b1eb6e929f69d9f23"
+  }
+}

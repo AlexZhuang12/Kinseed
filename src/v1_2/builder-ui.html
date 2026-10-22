@@ -1,0 +1,17 @@
+<section id="identityBuilder">
+ <h2>Identity Builder · 建立初始身份</h2>
+ <p>八個領域、24 題。選項只是表達的起點，可複選、自訂及跳過。身份不會授予工具、財務、帳號或生活時間權限。</p>
+ <div class="row"><label>指定個體（可先不指定）<select id="builderTarget"><option value="">僅建立候選</option></select></label><label>身份包 ID <input id="builderPackage" placeholder="例如 my-identity"></label><label>標題 <input id="builderTitle" placeholder="給新個體的初始身份"></label><label><input id="builderTest" type="checkbox" checked>測試身份</label></div>
+ <details><summary>範本版本（進階選填）</summary><p>預設：八領域 v1。載入其他版本時保存完整題目快照，不改寫舊草稿。</p><input type="file" id="templateFile" accept=".json"></details>
+ <button id="newDraft" class="primary">建立身份草稿</button><label>恢復草稿 <select id="draftList"></select></label><button id="loadDraft">讀取草稿</button><button id="draftHistory">查看修訂歷史</button>
+ <p id="draftStatus" role="status">尚未建立草稿；建立候選不會使個體出生。</p>
+ <div id="wizard" hidden><div id="domainTabs" class="row"></div><h3 id="domainName"></h3><div id="questions"></div><button id="prevDomain">上一領域</button><button id="nextDomain">下一領域</button><button id="saveDraft">儲存草稿</button><button id="compileDraft" class="primary">產生候選身份</button></div>
+ <div id="compileConflict" hidden><h3>重新編譯與人工修訂衝突</h3><pre id="conflictData"></pre><button id="keepEdits">保留人工修訂並重新編譯</button><button id="replaceEdits">採用新編譯版</button><button id="cancelCompile">取消，保留目前版本</button></div>
+ <div id="candidatePanel" hidden><h3>候選身份預覽與來源</h3><p id="candidateMeta"></p><div id="domainPreview"></div><h4>驗證、缺漏與不確定性</h4><pre id="candidateIssues"></pre>
+ <details><summary>編輯候選條目（不改寫原始回答）</summary><label>條目 <select id="statementList"></select></label><label>完整修訂內容 <textarea id="statementText"></textarea></label><label>修訂原因 <input id="editReason"></label><button id="editCandidate">保存條目修訂</button></details>
+ <p><button id="validateCandidate">重新驗證</button><button id="exportCandidate">匯出身份包</button><button id="submitCandidate" class="primary">提交指定個體的 Owner 審核</button></p>
+ <details><summary>完整候選資料與來源映射（可回查原文）</summary><pre id="candidateJson"></pre></details></div>
+ <h3>身份版本庫</h3><label>已保存版本 <select id="versionList"></select></label><button id="openVersion">預覽／編輯為新候選</button><button id="exportVersion">匯出所選版本</button><button id="convertVersion">將舊格式轉成新標準候選</button><p>既有版本不可覆寫。從版本庫建立新候選時，使用上方指定個體；來源資料保持原樣。</p>
+ <h3>Owner 審核</h3><label>提案 <select id="reviewList"></select></label><button id="loadReview">完整預覽提案與差異</button><pre id="reviewData">尚未預覽提案</pre><label>拒絕／退回原因 <input id="reviewReason"></label><p><button id="approveReview" class="primary">批准採用已預覽的提案</button><button id="rejectReview">拒絕提案</button><button id="returnReview">退回修改</button><button id="cancelReview">取消審核預覽</button></p>
+ <small>提交、匯入與採用均不出生。只有 Owner 另行核對並首次啟動才開始正式生活；工程期間不代批准正式身份。一般網路、shell、支付、發布與私人帳號工具尚未提供。</small>
+</section>

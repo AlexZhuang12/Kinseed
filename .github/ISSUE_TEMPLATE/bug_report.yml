@@ -1,0 +1,31 @@
+name: Bug report / 錯誤回報
+description: Report a reproducible problem using synthetic data only.
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include identities, memories, account files, databases, full Owner links or unredacted logs. Report security vulnerabilities privately; see SECURITY.md."
+  - type: input
+    id: version
+    attributes:
+      label: Kinseed version
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Windows, Node, CLI, browser and brain type
+      description: Version numbers only; no account names, credentials or private paths.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps with a new synthetic individual
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected behavior and actual result
+    validations:
+      required: true

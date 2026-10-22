@@ -1,0 +1,8 @@
+{
+  "version":2,
+  "environment":"development",
+  "dataDirectory":".private/development",
+  "http":{"host":"127.0.0.1","port":0},
+  "reports":{"enabled":false},
+  "inference":{"enabled":true,"adapter":"codex-cli","model":"gpt-6.1-sol","reasoning":"low"}
+}

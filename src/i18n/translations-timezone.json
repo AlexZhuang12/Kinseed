@@ -1,0 +1,22 @@
+[
+  [
+    "日期（生活時區） ",
+    "Date (life timezone) ",
+    "日付（生活のタイムゾーン） "
+  ],
+  [
+    "。失敗或被中止前已收到的內容仍計量；剛超限的在途資料可能造成少量超出。額度每日生活時區00:00更新，已停止個體不會自動恢復。",
+    ". Content received before failure or cancellation still counts; in-flight data may cause a small overrun. Budgets reset at midnight in the life timezone. Stopped individuals never resume automatically.",
+    "。失敗・中止前に受信した内容も計上し、転送中のデータで少し超過する場合があります。枠は生活のタイムゾーンの午前0時に更新し、停止個体は自動再開しません。"
+  ],
+  [
+    "生活時間決定什麼時候能活動；活動輪數決定能呼叫模型幾次；網路額度決定能收送多少資料。任一額度增加，都不會自動恢復生活。網路額度按生活時區每日00:00更新；個體活動輪數按生活時段的開始日期計數，跨午夜仍屬同一時段；平台模型總量則按生活時區每日計數。",
+    "Life hours determine when activity is allowed; rounds limit model requests; network budgets limit data transfer. Increasing a budget never resumes life. Network and platform budgets use the life timezone day. Individual rounds use the window start date, even across midnight.",
+    "生活時間は活動可能な時刻、回数はモデル要求数、ネット枠は送受信量を決めます。枠の増加で自動再開しません。ネットと全体枠は生活のタイムゾーンの日付、個体の回数は時間帯の開始日で数え、日付をまたいでも同じ時間帯に属します。"
+  ],
+  [
+    "本生活時區今日平台已用 ",
+    "Platform usage today in this life timezone ",
+    "この生活タイムゾーンの本日の全体使用量 "
+  ]
+]

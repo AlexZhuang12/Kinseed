@@ -1,0 +1,1202 @@
+[
+  [
+    "調整生活時間與額度",
+    "Adjust activity time and limits",
+    "活動時間と上限を調整"
+  ],
+  [
+    "調整工具權限",
+    "Adjust tool permissions",
+    "ツール権限を調整"
+  ],
+  [
+    "設定已確認，下一步：檢查平台",
+    "Settings checked; next: check platform",
+    "設定を確認しました。次へ：プラットフォームを確認"
+  ],
+  [
+    "前往同一個體的設定",
+    "Go to this individual's settings",
+    "同じ個体の設定へ"
+  ],
+  [
+    "平台設定與共用額度",
+    "Platform settings and shared limits",
+    "プラットフォーム設定と共用上限"
+  ],
+  [
+    "共用網路與上傳核准",
+    "Shared network and upload approvals",
+    "共用ネットワークとアップロード承認"
+  ],
+  [
+    "共用模型輪數",
+    "Shared model-call limit",
+    "共用のモデル回数"
+  ],
+  [
+    "平台停止與解除",
+    "Platform stop and clearing",
+    "全体停止と解除"
+  ],
+  [
+    "平台安全控制",
+    "Platform safety controls",
+    "プラットフォームの安全制御"
+  ],
+  [
+    "查看平台設定",
+    "View platform settings",
+    "プラットフォーム設定を見る"
+  ],
+  [
+    "建立與身份",
+    "Creation and identity",
+    "作成とアイデンティティ"
+  ],
+  [
+    "閱讀紀錄",
+    "Read records",
+    "記録を読む"
+  ],
+  [
+    "個體選項管理（進階）",
+    "Individual list management (advanced)",
+    "個体一覧の管理（詳細）"
+  ],
+  [
+    "設定對象：",
+    "Settings target: ",
+    "設定対象："
+  ],
+  [
+    "有未保存的權限修改。",
+    "There are unsaved permission changes.",
+    "未保存の権限変更があります。"
+  ],
+  [
+    "目前顯示已保存權限。",
+    "Saved permissions are shown.",
+    "保存済みの権限を表示しています。"
+  ],
+  [
+    " 保存不會自動恢復生活。",
+    " Saving does not automatically resume activity.",
+    " 保存しても活動は自動再開しません。"
+  ],
+  [
+    "目前操作尚未完成，請等結果顯示後再切換。",
+    "Wait for the current operation's result before switching.",
+    "現在の操作結果が表示されてから切り替えてください。"
+  ],
+  [
+    "等待模型容量重試",
+    "Waiting to retry model availability",
+    "モデル容量の再試行待ち"
+  ],
+  [
+    "等待首次活動時間",
+    "Waiting for the first activity time",
+    "初回活動の時刻待ち"
+  ],
+  [
+    "目前沒有活動授權",
+    "No current activity authorization",
+    "現在の活動許可はありません"
+  ],
+  [
+    "停止此個體",
+    "Stop this individual",
+    "この個体を停止"
+  ],
+  [
+    "明確恢復此個體生活",
+    "Explicitly resume this individual's activity",
+    "この個体の活動を明示的に再開"
+  ],
+  [
+    "此個體已暫停，沒有影響其他個體。",
+    "This individual is paused; others are unaffected.",
+    "この個体を一時停止しました。他の個体への影響はありません。"
+  ],
+  [
+    "目前身份與生活進度",
+    "Current identity and activity progress",
+    "現在のアイデンティティと活動進捗"
+  ],
+  [
+    "身份：",
+    "Identity: ",
+    "アイデンティティ："
+  ],
+  [
+    "模型：",
+    "Model: ",
+    "モデル："
+  ],
+  [
+    "依目前模型設定",
+    "According to current model settings",
+    "現在のモデル設定に従う"
+  ],
+  [
+    "工具使用紀錄",
+    "Tool-use records",
+    "ツール使用記録"
+  ],
+  [
+    "紀錄時間：",
+    "Recorded at: ",
+    "記録日時："
+  ],
+  [
+    "排程與故障處理",
+    "Scheduling and failure handling",
+    "スケジュールと障害対応"
+  ],
+  [
+    "本輪截止：",
+    "Cycle deadline: ",
+    "今回のラウンドの期限："
+  ],
+  [
+    "有效身份與出生",
+    "Effective identity and birth",
+    "有効なアイデンティティと誕生"
+  ],
+  [
+    "目前採用：「",
+    "Currently adopted: “",
+    "現在の採用内容：「"
+  ],
+  [
+    "版。",
+    ".",
+    "版。"
+  ],
+  [
+    "查看已採用身份的內容與來源",
+    "View adopted identity content and sources",
+    "採用したアイデンティティの内容と出典を見る"
+  ],
+  [
+    "前往身份版本庫，為這個個體選擇身份",
+    "Choose an identity for this individual from the library",
+    "ライブラリでこの個体のアイデンティティを選ぶ"
+  ],
+  [
+    "目前對象：",
+    "Current target: ",
+    "現在の対象："
+  ],
+  [
+    "；生活時區：",
+    "; activity timezone: ",
+    "。生活タイムゾーン："
+  ],
+  [
+    " 分鐘；每時段 ",
+    " minutes; per window ",
+    " 分間、時間帯ごとに "
+  ],
+  [
+    " 次模型請求。",
+    " model calls.",
+    " 回のモデル呼び出し。"
+  ],
+  [
+    "已保存工具：",
+    "Saved tool permissions: ",
+    "保存済みのツール権限："
+  ],
+  [
+    "的記憶與計畫",
+    "'s memory and plans",
+    " の記憶と計画"
+  ],
+  [
+    "目前記憶版本：",
+    "Current memory version: ",
+    "現在の記憶バージョン："
+  ],
+  [
+    "已保存記憶",
+    "Saved memory",
+    "保存済みの記憶"
+  ],
+  [
+    "目前沒有已保存記憶。",
+    "No saved memory yet.",
+    "現在、保存済みの記憶はありません。"
+  ],
+  [
+    "個體提出的下一步",
+    "Next steps proposed by the individual",
+    "個体が提案した次の予定"
+  ],
+  [
+    "返回目前個體",
+    "Return to current individual",
+    "現在の個体へ戻る"
+  ],
+  [
+    "管理此個體",
+    "Manage this individual",
+    "この個体を管理"
+  ],
+  [
+    "未授權",
+    "Not authorized",
+    "未許可"
+  ],
+  [
+    "需公開外網模式",
+    "Public-web mode required",
+    "公開Webモードが必要"
+  ],
+  [
+    "已授權；執行仍受生活與額度限制",
+    "Authorized; activity and allowance limits still apply",
+    "許可済み。活動時間と上限の制約は引き続き有効"
+  ],
+  [
+    "既有基本能力；執行仍受生活與額度限制",
+    "Existing basic ability; activity and allowance limits still apply",
+    "既存の基本機能。活動時間と上限の制約は引き続き有効"
+  ],
+  [
+    "工具與服務",
+    "Tools and services",
+    "ツールとサービス"
+  ],
+  [
+    "可做：",
+    "Can do: ",
+    "できること："
+  ],
+  [
+    "可用資料：",
+    "Available data: ",
+    "利用できるデータ："
+  ],
+  [
+    "結果：",
+    "Result: ",
+    "結果："
+  ],
+  [
+    "前往目前個體的工具權限",
+    "Go to this individual's tool permissions",
+    "現在の個体のツール権限へ"
+  ],
+  [
+    "後續接入",
+    "Future integrations",
+    "今後の接続"
+  ],
+  [
+    "工具目錄 ",
+    "Tool catalog: ",
+    "ツール一覧："
+  ],
+  [
+    " 項。模型環境：",
+    " items. Model environment: ",
+    " 件。モデル環境："
+  ],
+  [
+    "最近預檢通過；不是即時容量保證",
+    "Latest precheck passed; not a guarantee of current capacity",
+    "直近の事前確認に合格。現在の容量を保証するものではありません"
+  ],
+  [
+    "尚未確認可用，請查看平台診斷",
+    "Availability unconfirmed; see platform diagnostics",
+    "利用可能か未確認です。プラットフォームの診断を確認してください"
+  ],
+  [
+    "工具工作與成品",
+    "Tool jobs and outputs",
+    "ツールの作業と成果物"
+  ],
+  [
+    "最近工作",
+    "Recent jobs",
+    "最近の作業"
+  ],
+  [
+    "我的成品",
+    "My outputs",
+    "自分の成果物"
+  ],
+  [
+    "更新這個個體的工作紀錄",
+    "Refresh this individual's job records",
+    "この個体の作業記録を更新"
+  ],
+  [
+    "繼續讀取較後面的紀錄",
+    "Continue loading later records",
+    "後の記録を続けて読み込む"
+  ],
+  [
+    "調整此個體的工具權限",
+    "Adjust this individual's tool permissions",
+    "この個体のツール権限を調整"
+  ],
+  [
+    "查看依據（原始紀錄）",
+    "View evidence (original records)",
+    "根拠を見る（原始記録）"
+  ],
+  [
+    "尚未讀取這個個體的紀錄。",
+    "This individual's records have not been loaded.",
+    "この個体の記録はまだ読み込んでいません。"
+  ],
+  [
+    "查看已保存的工具使用範圍",
+    "View saved tool-access scope",
+    "保存済みのツール使用範囲を見る"
+  ],
+  [
+    "工作結果",
+    "Job results",
+    "作業結果"
+  ],
+  [
+    "等待下一輪活動：",
+    "Waiting for next activity cycle: ",
+    "次の活動ラウンドを待機："
+  ],
+  [
+    "。這不是工具已開始執行的證據。",
+    ". This does not show that a tool has started.",
+    "。これはツールの実行開始を示す証拠ではありません。"
+  ],
+  [
+    "請先讀取紀錄。",
+    "Load the records first.",
+    "先に記録を読み込んでください。"
+  ],
+  [
+    "已讀範圍內尚無工具結果。",
+    "No tool results in the loaded records.",
+    "読み込んだ範囲にツール結果はありません。"
+  ],
+  [
+    "未完成",
+    "Incomplete",
+    "未完了"
+  ],
+  [
+    "遭拒絕",
+    "Denied",
+    "拒否"
+  ],
+  [
+    "未確認完成",
+    "Completion unconfirmed",
+    "完了未確認"
+  ],
+  [
+    "前往平台核對上傳申請",
+    "Review upload requests in platform settings",
+    "プラットフォームでアップロード申請を確認"
+  ],
+  [
+    "顯示更多已讀工作",
+    "Show more loaded jobs",
+    "読み込み済みの作業をさらに表示"
+  ],
+  [
+    "自己的成品",
+    "Own outputs",
+    "自分の成果物"
+  ],
+  [
+    "已讀範圍內尚無筆記或附件。",
+    "No notes or attachments in the loaded records.",
+    "読み込んだ範囲にノートや添付はありません。"
+  ],
+  [
+    "筆記：",
+    "Note: ",
+    "ノート："
+  ],
+  [
+    "附件：",
+    "Attachment: ",
+    "添付："
+  ],
+  [
+    "下載筆記",
+    "Download note",
+    "ノートをダウンロード"
+  ],
+  [
+    "下載附件",
+    "Download attachment",
+    "添付をダウンロード"
+  ],
+  [
+    "附件讀取失敗",
+    "Attachment could not be loaded",
+    "添付の読み込みに失敗"
+  ],
+  [
+    "顯示更多已讀成品",
+    "Show more loaded outputs",
+    "読み込み済みの成果物をさらに表示"
+  ],
+  [
+    "正在讀取 ",
+    "Loading ",
+    "読み込み中："
+  ],
+  [
+    "此個體",
+    "this individual",
+    "この個体"
+  ],
+  [
+    " 的紀錄；不呼叫模型、不占活動輪數。",
+    " records; no model call or activity allowance used.",
+    " の記録。モデルを呼び出さず、活動回数も消費しません。"
+  ],
+  [
+    "資料對象不一致",
+    "Data target mismatch",
+    "データの対象が一致しません"
+  ],
+  [
+    " 筆原始事件。",
+    " original events.",
+    " 件の原始イベント。"
+  ],
+  [
+    "已讀至本次取得的最新紀錄。",
+    "Loaded through the latest available record.",
+    "今回取得できた最新の記録まで読み込みました。"
+  ],
+  [
+    "個體來訊",
+    "Messages from individuals",
+    "個体からのメッセージ"
+  ],
+  [
+    "更新來訊",
+    "Refresh incoming messages",
+    "受信を更新"
+  ],
+  [
+    "查看個體來訊",
+    "View messages from individuals",
+    "個体からのメッセージを見る"
+  ],
+  [
+    "等待控制器更新，原對話紀錄保留。",
+    "Awaiting controller update; existing conversations retained.",
+    "制御プログラムの更新を待っています。元の対話記録は保持されています。"
+  ],
+  [
+    " 未讀）",
+    " unread)",
+    " 件未読）"
+  ],
+  [
+    " 則未讀來訊。",
+    " unread incoming messages.",
+    " 件の未読メッセージ。"
+  ],
+  [
+    " 則未讀",
+    " unread",
+    " 件未読"
+  ],
+  [
+    "尚無來訊。",
+    "No incoming messages yet.",
+    "まだ受信メッセージはありません。"
+  ],
+  [
+    "閱讀與回覆",
+    "Read and reply",
+    "読んで返信"
+  ],
+  [
+    "將此個體目前來訊全部標為已讀",
+    "Mark all current messages from this individual as read",
+    "この個体からの現在のメッセージをすべて既読にする"
+  ],
+  [
+    "未能標記已讀，請確認連線再試。",
+    "Could not mark as read; check the connection and retry.",
+    "既読にできませんでした。接続を確認して再試行してください。"
+  ],
+  [
+    "目前沒有日常顯示的個體。",
+    "No individuals currently shown in the daily list.",
+    "現在、通常の一覧に表示する個体はありません。"
+  ],
+  [
+    "來訊狀態暫時無法更新。",
+    "Message status cannot currently be refreshed.",
+    "現在、受信状態を更新できません。"
+  ],
+  [
+    "臨時生活｜現在開始，只開這一次",
+    "Temporary activity | Start now, this time only",
+    "臨時活動｜今から今回だけ開始"
+  ],
+  [
+    "這次最多生活幾分鐘？（1–240） ",
+    "Maximum minutes this time (1–240)? ",
+    "今回の活動は最大何分ですか？（1～240） "
+  ],
+  [
+    "檢查這次臨時生活",
+    "Check this temporary activity session",
+    "今回の臨時活動を確認"
+  ],
+  [
+    "確認，現在開始這一次",
+    "Confirm: start this session now",
+    "確認して今回の活動を今すぐ開始"
+  ],
+  [
+    "重新核對這一次",
+    "Recheck this session",
+    "今回の内容を再確認"
+  ],
+  [
+    "恢復這一次臨時生活（原截止不延長）",
+    "Resume this temporary session (original deadline unchanged)",
+    "今回の臨時活動を再開（元の期限は延長しません）"
+  ],
+  [
+    "恢復每日時段生活",
+    "Resume activity in the daily window",
+    "毎日の時間帯内で活動を再開"
+  ],
+  [
+    "。每天的原時段：",
+    ". Original daily window: ",
+    "。元の毎日の時間帯："
+  ],
+  [
+    "起 ",
+    "from ",
+    "から "
+  ],
+  [
+    "最近一次臨時生活：",
+    "Latest temporary session: ",
+    "直近の臨時活動："
+  ],
+  [
+    " 至 ",
+    " to ",
+    " ～ "
+  ],
+  [
+    "目前已用 ",
+    "Currently used ",
+    "現在の使用済み "
+  ],
+  [
+    "我確認只為「",
+    "I confirm that only “",
+    "私は「"
+  ],
+  [
+    "」從最終確認時起，臨時生活 ",
+    "” will have temporary activity from final confirmation for ",
+    "」だけに、最終確認の時点から臨時活動を "
+  ],
+  [
+    "等待控制器更新後使用，原有設定保留。",
+    "Available after controller update; current settings retained.",
+    "制御プログラムの更新後に利用できます。元の設定は保持されています。"
+  ],
+  [
+    "上次已確認 ",
+    "Previously confirmed ",
+    "前回確認済み："
+  ],
+  [
+    "這一次臨時生活已授權至 ",
+    "This temporary session is authorized until ",
+    "今回の臨時活動は次の時刻まで許可されています："
+  ],
+  [
+    "不用再次確認；到期自動結束。",
+    "No further confirmation needed; ends automatically at expiry.",
+    "再確認は不要です。期限になると自動終了します。"
+  ],
+  [
+    "原有生活與每日設定不變，請重新核對。",
+    "Existing activity and daily settings unchanged; check again.",
+    "元の活動と毎日の設定は変わりません。もう一度確認してください。"
+  ],
+  [
+    "正在核對，尚未啟動任何生活。",
+    "Checking; no activity has started.",
+    "確認中です。活動はまだ開始していません。"
+  ],
+  [
+    "｜身份第",
+    " | Identity version ",
+    "｜アイデンティティ第"
+  ],
+  [
+    "本次 ",
+    "This session: ",
+    "今回 "
+  ],
+  [
+    " 分鐘，最終確認時起算；目前估計至 ",
+    " minutes from final confirmation; estimated end ",
+    " 分間。最終確認から開始し、現在の終了見込みは "
+  ],
+  [
+    "個體剩餘 ",
+    "Individual allowance remaining ",
+    "個体の残り上限 "
+  ],
+  [
+    " 輪；平台今日已用 ",
+    " calls; platform used today ",
+    " 回、プラットフォームの本日使用済み "
+  ],
+  [
+    " 輪。啟動時會再核對。",
+    " calls. Checked again at start.",
+    " 回。開始時に再確認します。"
+  ],
+  [
+    "這次請求已有紀錄，但授權已於 ",
+    "This request is recorded, but its authorization ended at ",
+    "このリクエストの記録はありますが、許可は "
+  ],
+  [
+    " 結束；沒有重新開啟生活。",
+    "; activity was not restarted.",
+    " に終了しました。活動は再開していません。"
+  ],
+  [
+    "已授權「",
+    "Authorized “",
+    "許可しました：「"
+  ],
+  [
+    "」這一次至 ",
+    "” for this session until ",
+    "」の今回の活動期限は "
+  ],
+  [
+    "；每日時段及已用額度保留。",
+    "; daily window and used allowance retained.",
+    "。毎日の時間帯と使用済み回数は保持されます。"
+  ],
+  [
+    "請先核對這個個體並勾選本次確認。",
+    "Check this individual and tick this session's confirmation first.",
+    "先にこの個体を確認し、今回の確認欄にチェックしてください。"
+  ],
+  [
+    "作品版本與隔離執行結果",
+    "Work versions and isolated execution results",
+    "作品の版と分離実行の結果"
+  ],
+  [
+    "更新自己的作品與執行結果",
+    "Refresh own works and execution results",
+    "自分の作品と実行結果を更新"
+  ],
+  [
+    "作品與執行",
+    "Works and execution",
+    "作品と実行"
+  ],
+  [
+    "閱讀作品與版本",
+    "Read works and versions",
+    "作品と版を読む"
+  ],
+  [
+    "讀取這一版",
+    "Read this version",
+    "この版を読む"
+  ],
+  [
+    "接續閱讀",
+    "Continue reading",
+    "続きを読む"
+  ],
+  [
+    "第 ",
+    "Version ",
+    "第 "
+  ],
+  [
+    " 版",
+    " ",
+    " 版"
+  ],
+  [
+    "尚未讀取選定版本。",
+    "Selected version not yet loaded.",
+    "選択した版はまだ読み込んでいません。"
+  ],
+  [
+    " 第 ",
+    " version ",
+    " 第 "
+  ],
+  [
+    " 版；只讀文字，沒有執行作品。",
+    "; text only, work not executed.",
+    " 版。文字を読むだけで、作品は実行していません。"
+  ],
+  [
+    "作品暫時無法讀取：",
+    "Work temporarily unavailable: ",
+    "現在、作品を読み込めません："
+  ],
+  [
+    "這是隔離合成驗證台，不是正式生活控制台。",
+    "This is an isolated synthetic test console, not the regular-life console.",
+    "これは分離された合成テスト用コンソールで、正式な生活用コンソールではありません。"
+  ],
+  [
+    "已接入模型，僅依本環境的明確授權執行。",
+    "Model connected; runs only with explicit authorization in this environment.",
+    "モデルに接続済みです。この環境の明示的な許可に従ってのみ実行します。"
+  ],
+  [
+    "大腦未啟用。",
+    "Brain disabled.",
+    "思考モデルは無効です。"
+  ],
+  [
+    "不會連接任何既有正式個體。",
+    "Does not connect to existing regular individuals.",
+    "既存の正式個体には接続しません。"
+  ],
+  [
+    "隔離驗證台不連接正式報告服務。",
+    "Isolated test console does not connect to the regular report service.",
+    "分離テスト用コンソールは正式レポートサービスに接続しません。"
+  ],
+  [
+    "目前個體",
+    "Current individual",
+    "現在の個体"
+  ],
+  [
+    "自己的作品",
+    "Own works",
+    "自分の作品"
+  ],
+  [
+    "歷代正文已保存 ",
+    "Total saved content across versions ",
+    "全バージョンの保存本文量 "
+  ],
+  [
+    "｜第 ",
+    " | Version ",
+    "｜第 "
+  ],
+  [
+    "；每次保存另建版本，原版保留。",
+    "; each save creates a new version and retains the original.",
+    "。保存ごとに新しい版を作り、元の版を保持します。"
+  ],
+  [
+    "最近50項執行工作",
+    "Latest 50 execution jobs",
+    "最近50件の実行作業"
+  ],
+  [
+    "自己的程式",
+    "Own program",
+    "自分のプログラム"
+  ],
+  [
+    "需要核對的工作",
+    "Job requiring review",
+    "確認が必要な作業"
+  ],
+  [
+    "程式第 ",
+    "Program version ",
+    "プログラム第 "
+  ],
+  [
+    " 版；開始：",
+    "; started: ",
+    " 版。開始："
+  ],
+  [
+    "；結束：",
+    "; ended: ",
+    "。終了："
+  ],
+  [
+    "本次輸入：",
+    "Inputs this time: ",
+    "今回の入力："
+  ],
+  [
+    "原因：",
+    "Reason: ",
+    "理由："
+  ],
+  [
+    "已保存成果：",
+    "Saved result: ",
+    "保存済みの成果："
+  ],
+  [
+    "查看工作依據",
+    "View job evidence",
+    "作業の根拠を見る"
+  ],
+  [
+    " 的作品；不呼叫模型。",
+    " works; no model calls.",
+    " の作品。モデルは呼び出しません。"
+  ],
+  [
+    "暫時無法更新，已讀資料保留：",
+    "Cannot refresh now; loaded data retained: ",
+    "現在更新できません。読み込み済みの内容は保持されています："
+  ],
+  [
+    "記憶用量與版本",
+    "Memory usage and versions",
+    "記憶の使用量とバージョン"
+  ],
+  [
+    "這裡只查閱，不修改記憶，也不啟動生活。",
+    "Read-only: does not modify memory or start activity.",
+    "ここでは閲覧のみ行い、記憶の変更や活動の開始はしません。"
+  ],
+  [
+    "更新記憶與版本",
+    "Refresh memory and versions",
+    "記憶とバージョンを更新"
+  ],
+  [
+    "讀取選定版本與差異",
+    "Read selected version and differences",
+    "選択した版と差分を読む"
+  ],
+  [
+    "載入更早版本",
+    "Load earlier versions",
+    "以前の版を読み込む"
+  ],
+  [
+    "查看這次讀取的累積記憶、計畫與總結",
+    "View loaded cumulative memory, plans and summary",
+    "読み込んだ累積記憶・計画・要約を見る"
+  ],
+  [
+    "舊版與內容差異（歷史完整保留）",
+    "Older versions and differences (full history retained)",
+    "旧版と内容の差分（履歴を完全保持）"
+  ],
+  [
+    "選擇記憶紀錄 ",
+    "Select memory record ",
+    "記憶の記録を選択 "
+  ],
+  [
+    "沒有內容。",
+    "No content.",
+    "内容はありません。"
+  ],
+  [
+    "當輪總結",
+    "Cycle summary",
+    "そのラウンドの要約"
+  ],
+  [
+    "沒有總結。",
+    "No summary.",
+    "要約はありません。"
+  ],
+  [
+    " · 備份恢復",
+    " · Restored from backup",
+    " · バックアップから復元"
+  ],
+  [
+    "請讀取這個個體的記憶。",
+    "Load this individual's memory.",
+    "この個体の記憶を読み込んでください。"
+  ],
+  [
+    "正在唯讀查閱記憶。",
+    "Reading memory without changes.",
+    "記憶を読み取り専用で閲覧中です。"
+  ],
+  [
+    "記憶對象不一致，沒有顯示資料。",
+    "Memory target mismatch; data not displayed.",
+    "記憶の対象が一致しないため、データを表示していません。"
+  ],
+  [
+    "記憶 ",
+    "Memory ",
+    "記憶 "
+  ],
+  [
+    "條（",
+    " entries (",
+    " 件（"
+  ],
+  [
+    "字元）；計畫 ",
+    " characters); plans ",
+    " 文字）、計画 "
+  ],
+  [
+    "字元）。目前記憶版本：",
+    " characters). Current memory version: ",
+    " 文字）。現在の記憶バージョン："
+  ],
+  [
+    "查看第",
+    "View version ",
+    "第"
+  ],
+  [
+    "版的累積記憶、計畫與總結",
+    " cumulative memory, plans and summary",
+    "版の累積記憶・計画・要約を見る"
+  ],
+  [
+    "暫時無法讀取，請重新整理連線後再試：",
+    "Cannot load now; refresh the connection and retry: ",
+    "現在読み込めません。接続を更新して再試行してください："
+  ],
+  [
+    "尚未讀取這筆版本。",
+    "This version has not been loaded.",
+    "この版はまだ読み込んでいません。"
+  ],
+  [
+    "正在讀取所選版本。",
+    "Loading selected version.",
+    "選択した版を読み込み中です。"
+  ],
+  [
+    "記憶對象不一致。",
+    "Memory target mismatch.",
+    "記憶の対象が一致しません。"
+  ],
+  [
+    "與前一筆紀錄（第",
+    "Compared with the previous record (version ",
+    "前の記録（第"
+  ],
+  [
+    "版）比較",
+    ")",
+    "版）との比較"
+  ],
+  [
+    "第一筆紀錄，沒有更早版本",
+    "First record; no earlier version",
+    "最初の記録のため、以前の版はありません"
+  ],
+  [
+    "差異",
+    "Differences",
+    "差分"
+  ],
+  [
+    "內容沒有變更。",
+    "Content unchanged.",
+    "内容に変更はありません。"
+  ],
+  [
+    "僅順序變更，文字沒有新增或移出。",
+    "Order changed only; no text added or removed.",
+    "順序だけが変わり、文字の追加・削除はありません。"
+  ],
+  [
+    "新增／改寫後（",
+    "Added / after revision (",
+    "追加・変更後（"
+  ],
+  [
+    "條）",
+    " entries)",
+    " 件）"
+  ],
+  [
+    "移出／改寫前（",
+    "Removed / before revision (",
+    "削除・変更前（"
+  ],
+  [
+    "條，原紀錄仍保留）",
+    " entries; original records retained)",
+    " 件、元の記録は保持）"
+  ],
+  [
+    "無法讀取所選版本：",
+    "Cannot read selected version: ",
+    "選択した版を読み込めません："
+  ],
+  [
+    "請先檢查出生條件，取得實際日期",
+    "Check birth requirements to obtain the actual date first",
+    "先に誕生要件を確認し、実際の日付を取得してください"
+  ],
+  [
+    "今天",
+    "Today",
+    "今日"
+  ],
+  [
+    "明天",
+    "Tomorrow",
+    "明日"
+  ],
+  [
+    "指定日期",
+    "Specified date",
+    "指定日"
+  ],
+  [
+    "操作導引｜從設定到第一次活動",
+    "User guide | From setup to first activity",
+    "操作ガイド｜設定から初回活動まで"
+  ],
+  [
+    "先分清楚兩個畫面",
+    "Understand the two screens first",
+    "まず2つの画面を区別する"
+  ],
+  [
+    "1．建立個體，再準備他的出生條件",
+    "1. Create an individual, then prepare its initial conditions",
+    "1．個体を作成して誕生条件を準備"
+  ],
+  [
+    "2．預覽、提交與批准",
+    "2. Preview, submit and approve",
+    "2．プレビュー・提出・承認"
+  ],
+  [
+    "3．設定第一次生活",
+    "3. Set up the first activity session",
+    "3．最初の活動を設定"
+  ],
+  [
+    "4．大腦未連上時怎麼辦？",
+    "4. What if the brain is not connected?",
+    "4．思考モデルにつながらない場合は？"
+  ],
+  [
+    "5．檢查平台，由你親自確認出生",
+    "5. Check the platform and personally confirm birth",
+    "5．プラットフォームを確認し、自分で誕生を確認"
+  ],
+  [
+    "6．出生之後",
+    "6. After birth",
+    "6．誕生した後"
+  ],
+  [
+    "7．閱讀成果與互動",
+    "7. Read outputs and communicate",
+    "7．成果物を読んで交流"
+  ],
+  [
+    "網頁斷線或更換瀏覽器",
+    "Disconnected page or switching browsers",
+    "画面の接続切れ・ブラウザの変更"
+  ],
+  [
+    "返回目前個體的出生或活動狀態",
+    "Return to current individual's birth or activity status",
+    "現在の個体の誕生・活動状態に戻る"
+  ],
+  [
+    "操作導引",
+    "User guide",
+    "操作ガイド"
+  ],
+  [
+    "第一次使用：依這個順序完成",
+    "First use: follow this sequence",
+    "初めて使う方：この順序で進める"
+  ],
+  [
+    "閱讀完整操作導引",
+    "Read the full user guide",
+    "操作ガイドの全文を読む"
+  ],
+  [
+    "目前個體的下一步",
+    "Next step for the current individual",
+    "現在の個体の次の操作"
+  ],
+  [
+    "時間與輪數確認後，下一步：工具權限",
+    "Time and calls checked; next: tool permissions",
+    "時間と回数の確認後、次へ：ツール権限"
+  ],
+  [
+    "權限確認後，下一步：返回出生準備",
+    "Permissions checked; next: return to birth preparation",
+    "権限の確認後、次へ：誕生準備に戻る"
+  ],
+  [
+    " 依目前已保存設定，第一次活動：",
+    " Based on saved settings, first activity: ",
+    " 保存済み設定による初回活動："
+  ],
+  [
+    "；最晚結束：",
+    "; latest end: ",
+    "。最終終了時刻："
+  ],
+  [
+    "尚有未保存的修改，請先保存。",
+    "There are unsaved changes; save first.",
+    "未保存の変更があります。先に保存してください。"
+  ],
+  [
+    "此頁目前顯示已保存設定，可以繼續。",
+    "This page shows saved settings; you may continue.",
+    "このページは保存済み設定を表示しています。続けられます。"
+  ],
+  [
+    "Kinseed｜初次設定",
+    "Kinseed | First setup",
+    "Kinseed｜初回設定"
+  ],
+  [
+    "Kinseed｜平台首次設定",
+    "Kinseed | Platform first setup",
+    "Kinseed｜プラットフォームの初回設定"
+  ],
+  [
+    "複製可在其他瀏覽器開啟的設定連結",
+    "Copy setup link for another browser",
+    "別のブラウザで開く設定リンクをコピー"
+  ],
+  [
+    "1．檢查與安裝",
+    "1. Check and install",
+    "1．確認とインストール"
+  ]
+]

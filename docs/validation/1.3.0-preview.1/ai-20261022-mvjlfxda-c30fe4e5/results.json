@@ -1,0 +1,399 @@
+{
+  "schema": 2,
+  "version": "1.3.0-preview.1",
+  "run_id": "ai-20261022-mvjlfxda-c30fe4e5",
+  "executor": "AI_PROJECT_SELF_ACCEPTANCE",
+  "independent_human_validation": false,
+  "source_digest": "eac1057f428d65693d9f44857a2b5a6de5f657dd108d1f79ab4e7901e008ee4d",
+  "environment": {
+    "os": "win32",
+    "arch": "x64",
+    "node": "24.19.0",
+    "physical_machine_count": 1
+  },
+  "cases": [
+    {
+      "id": "V01",
+      "status": "PASS",
+      "assertions": 562,
+      "passed": 562,
+      "failed": 0,
+      "reason": "NONE",
+      "evidence_hash": "be7b98df5b51a84a45a7b0bb7e971cff55e38dc504286e21335976363b5ea6e7",
+      "started_at": "2026-10-22T13:45:34.970Z",
+      "finished_at": "2026-10-22T13:47:01.509Z",
+      "checks": []
+    },
+    {
+      "id": "V02",
+      "status": "PASS",
+      "assertions": 3,
+      "passed": 3,
+      "failed": 0,
+      "reason": "NONE",
+      "evidence_hash": "7e4179513cf6bd5e82c55c202dc0729e1c481af492bfb8639abc97135ab886ea",
+      "started_at": "2026-10-22T13:47:01.510Z",
+      "finished_at": "2026-10-22T13:47:02.502Z",
+      "checks": []
+    },
+    {
+      "id": "V03",
+      "status": "PASS",
+      "assertions": 146,
+      "passed": 146,
+      "failed": 0,
+      "reason": "NONE",
+      "evidence_hash": "2f26213c7fda0c2b22ac6433577872e47a0ec89c5bc19e9bedc3872e0adec119",
+      "started_at": "2026-10-22T13:47:02.504Z",
+      "finished_at": "2026-10-22T13:47:59.039Z",
+      "checks": []
+    },
+    {
+      "id": "V04",
+      "status": "PASS",
+      "assertions": 4,
+      "passed": 4,
+      "failed": 0,
+      "reason": "NONE",
+      "evidence_hash": "178ea121380d99649cc080d11a7c390aafcbbd6a43da9a4e5edebfa6df303047",
+      "started_at": "2026-10-22T13:47:59.040Z",
+      "finished_at": "2026-10-22T13:47:59.287Z",
+      "checks": [
+        {
+          "id": "c0",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "c1",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "c2",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "c3",
+          "expected": true,
+          "actual": true
+        }
+      ]
+    },
+    {
+      "id": "V05",
+      "status": "PASS",
+      "assertions": 11,
+      "passed": 11,
+      "failed": 0,
+      "reason": "NONE",
+      "evidence_hash": "9dc23512a24cd5c2e699279f99123e134ccb512546bd659bde67d7772fce9ca7",
+      "started_at": "2026-10-22T13:47:59.288Z",
+      "finished_at": "2026-10-22T13:48:19.020Z",
+      "checks": [
+        {
+          "id": "locked_install",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "no_inherited_private_config",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "empty_runtime",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "stopped_empty_platform",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "requested_timezone",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "unborn_and_no_delegate",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "backup",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "backup_verified",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "restart_preserves_data",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "restart_does_not_resume",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "session_closed",
+          "expected": true,
+          "actual": true
+        }
+      ]
+    },
+    {
+      "id": "V06",
+      "status": "PASS",
+      "assertions": 13,
+      "passed": 13,
+      "failed": 0,
+      "reason": "NONE",
+      "evidence_hash": "fee947072ae8ecb152ed81fd62d65108112684b0e4e7586b458a42be95d7350f",
+      "started_at": "2026-10-22T13:48:27.544Z",
+      "finished_at": "2026-10-22T13:49:47.522Z",
+      "checks": [
+        {
+          "id": "first_model_completed",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "first_model_exit_confirmed",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "first_memory",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "real_note",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "second_model_completed",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "second_model_exit_confirmed",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "second_memory_continuity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "real_consult",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "one_birth",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "neighbor_unchanged",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "worker_released",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "real_report_purpose",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "own_services_closed",
+          "expected": true,
+          "actual": true
+        }
+      ]
+    },
+    {
+      "id": "V07",
+      "status": "PASS",
+      "assertions": 12,
+      "passed": 12,
+      "failed": 0,
+      "reason": "NONE",
+      "evidence_hash": "7eb43255dbd5e99c72e9b10532dc8bd2a3ed7b1d0e716db998d96827c02c6b38",
+      "started_at": "2026-10-22T13:49:47.524Z",
+      "finished_at": "2026-10-22T13:50:34.325Z",
+      "checks": [
+        {
+          "id": "parent_mcp_closed",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "real_cli_spawned",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "worker_released",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "neighbor_unchanged",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "no_parent_memory",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "one_delegation",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "real_save",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "real_execution",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "real_sum_10",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "delegate_completed",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "exit_confirmed",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "own_services_closed",
+          "expected": true,
+          "actual": true
+        }
+      ]
+    },
+    {
+      "id": "V08",
+      "status": "PASS",
+      "assertions": 64,
+      "passed": 64,
+      "failed": 0,
+      "reason": "NONE",
+      "evidence_hash": "3a3d0ed5f38b7cc76850a9ae719cc95e6781a616a5180272c36c8fe02c16b72f",
+      "started_at": "2026-10-22T13:48:19.021Z",
+      "finished_at": "2026-10-22T13:48:27.419Z",
+      "checks": []
+    },
+    {
+      "id": "V09",
+      "status": "PASS",
+      "assertions": 10,
+      "passed": 10,
+      "failed": 0,
+      "reason": "NONE",
+      "evidence_hash": "fd1027cba477a23d553d39a7e06cf71e8efc00b64b5b6a3ae297b791472b1fe9",
+      "started_at": "2026-10-22T13:50:34.326Z",
+      "finished_at": "2026-10-22T13:50:37.385Z",
+      "checks": [
+        {
+          "id": "parent_mcp_closed",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "real_cli_spawned",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "worker_released",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "neighbor_unchanged",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "no_parent_memory",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "one_delegation",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "cancelled",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "local_exit_confirmed",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "no_late_success",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "own_services_closed",
+          "expected": true,
+          "actual": true
+        }
+      ]
+    },
+    {
+      "id": "V10",
+      "status": "PASS",
+      "assertions": 12,
+      "passed": 12,
+      "failed": 0,
+      "reason": "NONE",
+      "evidence_hash": "ab7b63cfca7e56bedcbe34311fa107ef4eb90c49567b30ee477ed5fa86f538ee",
+      "started_at": "2026-10-22T13:48:27.420Z",
+      "finished_at": "2026-10-22T13:48:27.543Z",
+      "checks": []
+    }
+  ],
+  "disclosures": [
+    "NO_INDEPENDENT_HUMAN_TEST",
+    "NO_NATIVE_HUMAN_REVIEW",
+    "NO_SECOND_PHYSICAL_MACHINE",
+    "NO_REMOTE_GITHUB_CI",
+    "NO_SHARED_LOCAL_MODEL_TEST",
+    "NO_GITHUB_UPLOAD"
+  ]
+}

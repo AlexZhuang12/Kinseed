@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "phase": "0-3",
+  "public_candidate": [
+    "src",
+    "scripts",
+    "tests",
+    "docs",
+    "config/development.example.json",
+    "config/development.schema.json",
+    "packages/identity-schema-v2.json",
+    "config/codex.example.json"
+  ],
+  "private": [
+    ".private/**",
+    "config/development.local.json",
+    "credentials",
+    "model transcripts",
+    "individual identities and memories",
+    "raw history",
+    "owner conversations",
+    "artifacts",
+    "reports"
+  ],
+  "never_import_automatically": [
+    "legacy runtime directories",
+    "existing identity packages",
+    "governance source texts",
+    "real individuals",
+    "existing sessions"
+  ],
+  "development_defaults": {
+    "empty_registry": true,
+    "global_stopped": true,
+    "engineering": true,
+    "model_calls": false,
+    "report_scheduler": false,
+    "automatic_restore": false
+  },
+  "publication": "original source and documentation: Apache-2.0; local package only; no GitHub upload authorized",
+  "isolation": "path and lifecycle guards for accidental cross-environment access; not a hostile administrator security boundary",
+  "model_activation": "explicit version 2 config and preflight; no automatic birth or restore",
+  "brain_contract": 1
+}

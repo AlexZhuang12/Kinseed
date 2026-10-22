@@ -1,0 +1,1002 @@
+[
+  [
+    "：本版本移除（舊版本仍保留）",
+    ": removed in this version (previous version retained)",
+    "：この版では削除（旧版は保持）"
+  ],
+  [
+    "\n\n與上一版本差異／映射：\n",
+    "\n\nDifferences and mappings from the previous version:\n",
+    "\n\n前の版との差分・対応関係：\n"
+  ],
+  [
+    "\n\n完整原始來源（含原有未確認標記）：\n",
+    "\n\nComplete original sources, including existing unconfirmed markers:\n",
+    "\n\n未確認の印を含む出典の全文：\n"
+  ],
+  [
+    "請選擇或貼上 JSON 身份包",
+    "Select or paste an identity package as JSON.",
+    "JSONのアイデンティティパッケージを選択または貼り付けてください。"
+  ],
+  [
+    "預覽尚未採用；請核對完整來源及上一版本",
+    "Preview only; check the complete sources and previous version before adoption.",
+    "プレビュー段階で、まだ採用していません。出典全文と前の版を確認してください。"
+  ],
+  [
+    "預覽已取消，身份與生活狀態未改變",
+    "Preview closed; identity and activity state unchanged.",
+    "プレビューを閉じました。アイデンティティと活動状態は変わりません。"
+  ],
+  [
+    "尚未建立草稿；建立候選不會使個體出生。",
+    "No draft yet. Creating a candidate does not cause birth.",
+    "下書きはまだありません。候補を作成しても個体は誕生しません。"
+  ],
+  [
+    "修改候選內容（保留原始回答與修訂原因）",
+    "Edit candidate content (keep original answers and revision reasons)",
+    "候補を修正（元の回答と修正理由を保持）"
+  ],
+  [
+    "提交指定個體的 Owner 審核",
+    "Submit for Owner review for the specified individual",
+    "指定個体のOwner審査に提出"
+  ],
+  [
+    "完整候選資料與來源映射（可回查原文）",
+    "Full candidate data and source mapping (original text available)",
+    "候補の全データと出典の対応関係（原文を確認可能）"
+  ],
+  [
+    "還原此個體 A（保留出生與 B）",
+    "Restore this individual's A memory (retain birth and B history)",
+    "この個体のA記憶を復元（誕生とB履歴を保持）"
+  ],
+  [
+    "例如 my-identity",
+    "For example: my-identity",
+    "例：my-identity"
+  ],
+  [
+    "例如 kinseed-alpha",
+    "For example: kinseed-alpha",
+    "例：kinseed-alpha"
+  ],
+  [
+    " · 匯入來源保留唯讀，可編輯候選條目",
+    " · Imported sources remain read-only; candidate entries can be edited",
+    " · 読み込んだ出典は読み取り専用のまま、候補項目を編集できます"
+  ],
+  [
+    "補充說明與例外限制（選填）",
+    "Extra details, exceptions and limits (optional)",
+    "補足説明・例外・制限（任意）"
+  ],
+  [
+    " · 候選（非批准／出生）",
+    " · Candidate (not approved or born)",
+    " · 候補（未承認・未誕生）"
+  ],
+  [
+    "候選已產生，尚未批准或出生",
+    "Candidate created; not approved or born.",
+    "候補を作成しました。まだ承認・誕生していません。"
+  ],
+  [
+    "已取消重新編譯，保留人工版與回答",
+    "Rebuild cancelled; manual version and answers retained.",
+    "再生成を取り消し、手動修正版と回答を保持しました。"
+  ],
+  [
+    "修訂已保留來源與差異，尚未批准",
+    "Revision saved with sources and differences; not approved.",
+    "出典と差分を残して修正を保存しました。まだ承認していません。"
+  ],
+  [
+    "已提交待審；尚未批准或出生",
+    "Submitted for review; not approved or born.",
+    "審査待ちとして提出しました。まだ承認・誕生していません。"
+  ],
+  [
+    "已建立候選修訂，不改原版本",
+    "Candidate revision created; original version unchanged.",
+    "候補の改訂を作成しました。元の版は変更していません。"
+  ],
+  [
+    "已轉換為新標準候選；未捏造問卷答案",
+    "Converted to a new-standard candidate; no questionnaire answers were fabricated.",
+    "新しい標準候補に変換しました。質問票の回答は補作していません。"
+  ],
+  [
+    "已預覽指定提案；請核對差異與來源",
+    "Proposal preview loaded; check differences and sources.",
+    "対象提案のプレビューを読み込みました。差分と出典を確認してください。"
+  ],
+  [
+    "建立未出生個體，繼續設定身份",
+    "Create unborn individual and continue identity setup",
+    "未誕生の個体を作成し、アイデンティティ設定へ"
+  ],
+  [
+    "詳細驗證與缺漏",
+    "Validation details and omissions",
+    "検証の詳細と未記入項目"
+  ],
+  [
+    "建立可編輯副本",
+    "Create an editable copy",
+    "編集用のコピーを作成"
+  ],
+  [
+    "將此版本提交審核",
+    "Submit this version for review",
+    "この版を審査に提出"
+  ],
+  [
+    "進階：審核原始資料",
+    "Advanced: original review data",
+    "詳細：審査の元データ"
+  ],
+  [
+    "查看這個個體的生活設定",
+    "View this individual's activity settings",
+    "この個体の生活設定を見る"
+  ],
+  [
+    "進階：個體完整資料",
+    "Advanced: complete individual data",
+    "詳細：個体の全データ"
+  ],
+  [
+    "進階：執行與取消診斷",
+    "Advanced: execution and cancellation diagnostics",
+    "詳細：実行と取消の診断"
+  ],
+  [
+    "平台控制與使用限制",
+    "Platform controls and usage limits",
+    "プラットフォームの制御と利用制限"
+  ],
+  [
+    "平台安全狀態",
+    "Platform safety status",
+    "プラットフォームの安全状態"
+  ],
+  [
+    "操作已完成；請查看目前頁面的已保存狀態。",
+    "Operation completed; check the saved state on this page.",
+    "操作が完了しました。この画面の保存済み状態を確認してください。"
+  ],
+  [
+    "操作未完成：",
+    "Operation incomplete: ",
+    "操作が完了していません："
+  ],
+  [
+    "進階診斷",
+    "Advanced diagnostics",
+    "詳細診断"
+  ],
+  [
+    "已更新目前狀態",
+    "Current status refreshed.",
+    "現在の状態を更新しました。"
+  ],
+  [
+    "請先儲存目前草稿，再建立新個體。",
+    "Save the current draft before creating another individual.",
+    "別の個体を作成する前に、現在の下書きを保存してください。"
+  ],
+  [
+    "請先為新個體取一個名稱。",
+    "Give the new individual a name first.",
+    "先に新しい個体の名前を付けてください。"
+  ],
+  [
+    "的初始身份",
+    "'s initial identity",
+    "の初期アイデンティティ"
+  ],
+  [
+    "稍後指定個體",
+    "Assign an individual later",
+    "個体は後で指定"
+  ],
+  [
+    "候選第",
+    "Candidate v",
+    "候補第"
+  ],
+  [
+    "版",
+    " version",
+    "版"
+  ],
+  [
+    "回答草稿",
+    "Answer draft",
+    "回答の下書き"
+  ],
+  [
+    "尚未指定個體",
+    "Individual not yet assigned",
+    "個体はまだ指定されていません"
+  ],
+  [
+    " · 第",
+    " · Version ",
+    " · 第"
+  ],
+  [
+    "版（已保存）",
+    " (saved)",
+    "版（保存済み）"
+  ],
+  [
+    "版候選（尚未封存）",
+    " candidate (not archived)",
+    "版候補（未アーカイブ）"
+  ],
+  [
+    " 第",
+    " version ",
+    " 第"
+  ],
+  [
+    "版 · ",
+    " · ",
+    "版 · "
+  ],
+  [
+    "目前身份：",
+    "Current identity: ",
+    "現在のアイデンティティ："
+  ],
+  [
+    "早期身份",
+    "Legacy identity",
+    "以前のアイデンティティ"
+  ],
+  [
+    "尚未批准身份",
+    "Identity not yet approved",
+    "アイデンティティは未承認"
+  ],
+  [
+    "繼續出生準備",
+    "Continue birth preparation",
+    "誕生の準備を続ける"
+  ],
+  [
+    "管理生活與記憶",
+    "Manage activity and memory",
+    "生活と記憶を管理"
+  ],
+  [
+    "選擇其他身份",
+    "Choose another identity",
+    "別のアイデンティティを選ぶ"
+  ],
+  [
+    "設定身份",
+    "Set up identity",
+    "アイデンティティを設定"
+  ],
+  [
+    "已有生活歷史",
+    "Has activity history",
+    "活動履歴あり"
+  ],
+  [
+    "尚未出生",
+    "Unborn",
+    "未誕生"
+  ],
+  [
+    "已出生",
+    "Born",
+    "誕生済み"
+  ],
+  [
+    "已批准身份：",
+    "Approved identity: ",
+    "承認済みアイデンティティ："
+  ],
+  [
+    "記憶",
+    "Memory",
+    "記憶"
+  ],
+  [
+    "計畫",
+    "Plans",
+    "計画"
+  ],
+  [
+    "目前狀態：",
+    "Current state: ",
+    "現在の状態："
+  ],
+  [
+    "尚未開始",
+    "Not started",
+    "未開始"
+  ],
+  [
+    "累計活動時間：",
+    "Total active time: ",
+    "累計活動時間："
+  ],
+  [
+    " 秒",
+    " seconds",
+    " 秒"
+  ],
+  [
+    "工作區筆記",
+    "Workspace notes",
+    "作業領域のノート"
+  ],
+  [
+    "目前沒有執行中的輪次。",
+    "No activity cycle is running.",
+    "現在実行中の活動ラウンドはありません。"
+  ],
+  [
+    " 發現執行問題，請查看診斷。",
+    " An execution issue was detected; see diagnostics.",
+    " 実行上の問題を検出しました。診断を確認してください。"
+  ],
+  [
+    "本次生活已結束，等待 Owner 授權",
+    "This activity session has ended; awaiting Owner authorization",
+    "今回の活動は終了しました。Ownerの許可を待っています"
+  ],
+  [
+    "模型繁忙，等待自動重試",
+    "Model busy; waiting for automatic retry",
+    "モデルが混雑中です。自動再試行を待っています"
+  ],
+  [
+    "等待首次活動",
+    "Waiting for first activity",
+    "初回活動を待っています"
+  ],
+  [
+    "等待下一次活動",
+    "Waiting for next activity",
+    "次の活動を待っています"
+  ],
+  [
+    "尚無內容",
+    "No content yet",
+    "まだ内容はありません"
+  ],
+  [
+    "已處理 ",
+    "Completed ",
+    "入力済み "
+  ],
+  [
+    " 題（含明確跳過）",
+    " questions (including explicitly skipped)",
+    " 問（明示的な省略を含む）"
+  ],
+  [
+    " · 尚未保存",
+    " · Unsaved",
+    " · 未保存"
+  ],
+  [
+    " · 已保存",
+    " · Saved",
+    " · 保存済み"
+  ],
+  [
+    "目前草稿：",
+    "Current draft: ",
+    "現在の下書き："
+  ],
+  [
+    "指定 ",
+    "Assigned to ",
+    "対象 "
+  ],
+  [
+    "尚未指定，可在提交前選擇",
+    "Not assigned; choose before submitting",
+    "未指定です。提出前に選択できます"
+  ],
+  [
+    "有未保存內容",
+    "There are unsaved changes",
+    "未保存の内容があります"
+  ],
+  [
+    "回答已保存，下一步預覽候選",
+    "Answers saved; next, preview the candidate",
+    "回答は保存済みです。次に候補をプレビューしてください"
+  ],
+  [
+    "候選已保存，下一步提交審核",
+    "Candidate saved; next, submit for review",
+    "候補は保存済みです。次に審査へ提出してください"
+  ],
+  [
+    " · 最後保存 ",
+    " · Last saved ",
+    " · 最終保存 "
+  ],
+  [
+    "版候選 · 尚未批准或出生",
+    " candidate · Not approved or born",
+    "版候補 · 未承認・未誕生"
+  ],
+  [
+    "有 ",
+    "There are ",
+    "計 "
+  ],
+  [
+    " 項必要缺漏／衝突，修正後才能提交。",
+    " required omissions/conflicts; fix them before submission.",
+    " 件の必須未記入・競合があります。修正してから提出してください。"
+  ],
+  [
+    "需修正：",
+    "Needs correction: ",
+    "修正が必要："
+  ],
+  [
+    "提醒：",
+    "Reminder: ",
+    "注意："
+  ],
+  [
+    "沒有驗證問題",
+    "No validation issues",
+    "検証上の問題はありません"
+  ],
+  [
+    "目前草稿屬於 ",
+    "Current draft belongs to ",
+    "現在の下書きの対象は "
+  ],
+  [
+    "請先填寫身份名稱。",
+    "Enter an identity name first.",
+    "先にアイデンティティ名を入力してください。"
+  ],
+  [
+    "請先儲存目前回答，再繼續其他草稿。",
+    "Save these answers before continuing another draft.",
+    "別の下書きへ移る前に、現在の回答を保存してください。"
+  ],
+  [
+    "已恢復原有回答與候選，沒有建立空白問卷。",
+    "Existing answers and candidate restored; no blank questionnaire created.",
+    "元の回答と候補を再開しました。空白の質問票は作成していません。"
+  ],
+  [
+    "請先開始或讀取草稿。",
+    "Start or load a draft first.",
+    "先に下書きを開始するか、読み込んでください。"
+  ],
+  [
+    "回答已保存，可稍後從草稿清單繼續。",
+    "Answers saved; continue later from the draft list.",
+    "回答を保存しました。後で下書き一覧から再開できます。"
+  ],
+  [
+    "已取消重新編譯，保留現有內容。",
+    "Rebuild cancelled; existing content retained.",
+    "再生成を取り消し、現在の内容を保持しました。"
+  ],
+  [
+    "請先讀取草稿。",
+    "Load a draft first.",
+    "先に下書きを読み込んでください。"
+  ],
+  [
+    "已保存紀錄 · ",
+    "Saved records · ",
+    "保存済みの記録 · "
+  ],
+  [
+    " 次",
+    " times",
+    " 回"
+  ],
+  [
+    "已保存回答",
+    "Saved answers",
+    "保存済みの回答"
+  ],
+  [
+    "已保存候選",
+    "Saved candidate",
+    "保存済みの候補"
+  ],
+  [
+    "保存紀錄已展開；原始修訂未變更。",
+    "Saved records expanded; original revisions unchanged.",
+    "保存記録を展開しました。元の改訂は変更していません。"
+  ],
+  [
+    "請先預覽回答並產生候選。",
+    "Preview the answers and create a candidate first.",
+    "先に回答をプレビューして候補を作成してください。"
+  ],
+  [
+    "請先保存回答並重新預覽，再修改候選內容。",
+    "Save answers and preview again before editing the candidate.",
+    "回答を保存して再プレビューした後、候補を修正してください。"
+  ],
+  [
+    "已提交 ",
+    "Submitted ",
+    "提出しました："
+  ],
+  [
+    " 的 ",
+    " / ",
+    " の "
+  ],
+  [
+    "請先儲存回答並重新產生候選，再提交。",
+    "Save answers and rebuild the candidate before submitting.",
+    "回答を保存し、候補を再生成してから提出してください。"
+  ],
+  [
+    "請先讀取草稿或從版本庫選用既有身份。",
+    "Load a draft or choose an existing identity from the library first.",
+    "先に下書きを読み込むか、ライブラリから既存のアイデンティティを選んでください。"
+  ],
+  [
+    "正式身份",
+    "Regular identity",
+    "正式アイデンティティ"
+  ],
+  [
+    " 項條件 · 此處唯讀",
+    " conditions · Read-only",
+    " 条件 · 読み取り専用"
+  ],
+  [
+    "驗證與來源狀態 · ",
+    "Validation and source status · ",
+    "検証と出典の状態 · "
+  ],
+  [
+    " 項需修正、",
+    " corrections, ",
+    " 件の修正、"
+  ],
+  [
+    " 項提醒",
+    " reminders",
+    " 件の注意"
+  ],
+  [
+    "舊包未提供，請核對來源",
+    "Not provided in legacy package; check sources",
+    "旧パッケージにはありません。出典を確認してください"
+  ],
+  [
+    "項",
+    " entries",
+    "件"
+  ],
+  [
+    " · 完整內容",
+    " · Full content",
+    " · 全文"
+  ],
+  [
+    "條文的來源對應",
+    "Source mapping for the condition",
+    "条文と出典の対応関係"
+  ],
+  [
+    "完整身份條件",
+    "Complete identity conditions",
+    "アイデンティティ条件の全文"
+  ],
+  [
+    "來源原文與完整驗證資料（進階）",
+    "Original sources and full validation data (advanced)",
+    "出典原文と検証の全データ（詳細）"
+  ],
+  [
+    "完整身份包 JSON",
+    "Full identity package JSON",
+    "アイデンティティパッケージの完全なJSON"
+  ],
+  [
+    "與目前有效身份比較：新增 ",
+    "Compared with current identity: added ",
+    "現在有効なアイデンティティとの比較：追加 "
+  ],
+  [
+    "、變更 ",
+    ", changed ",
+    "、変更 "
+  ],
+  [
+    "、相同 ",
+    ", unchanged ",
+    "、同一 "
+  ],
+  [
+    "、移除 ",
+    ", removed ",
+    "、削除 "
+  ],
+  [
+    " 項",
+    " entries",
+    " 件"
+  ],
+  [
+    "變更",
+    "Changed",
+    "変更"
+  ],
+  [
+    "相同",
+    "Unchanged",
+    "同じ"
+  ],
+  [
+    "移除（舊版仍保留）",
+    "Removed (old version retained)",
+    "削除（旧版は保持）"
+  ],
+  [
+    " · 修改前後原文",
+    " · Original text before and after changes",
+    " · 変更前後の原文"
+  ],
+  [
+    "目前身份",
+    "Current identity",
+    "現在のアイデンティティ"
+  ],
+  [
+    "提交身份",
+    "Submitted identity",
+    "提出されたアイデンティティ"
+  ],
+  [
+    " · 提交／查看時",
+    " · At submission/viewing",
+    " · 提出・閲覧時"
+  ],
+  [
+    "已有批准身份",
+    "Has approved identity",
+    "承認済みアイデンティティあり"
+  ],
+  [
+    "請先選擇身份包版本。",
+    "Select an identity package version first.",
+    "先にアイデンティティパッケージの版を選択してください。"
+  ],
+  [
+    "已唯讀開啟；沒有建立草稿、修訂或新版本。",
+    "Opened read-only; no draft, revision or new version created.",
+    "読み取り専用で開きました。下書き・改訂・新しい版は作成していません。"
+  ],
+  [
+    "版本已切換；請按唯讀查看，核對後再提交。",
+    "Version switched; open read-only, check it, then submit.",
+    "版を切り替えました。読み取り専用で確認した後に提出してください。"
+  ],
+  [
+    "繼續編輯這份候選草稿",
+    "Continue editing this candidate draft",
+    "この候補下書きの編集を続ける"
+  ],
+  [
+    "請先保存目前草稿回答。",
+    "Save the current draft answers first.",
+    "先に現在の下書きの回答を保存してください。"
+  ],
+  [
+    "已恢復原候選草稿；沒有新增空白問卷。",
+    "Original candidate draft restored; no new blank questionnaire.",
+    "元の候補下書きを再開しました。空白の質問票は追加していません。"
+  ],
+  [
+    "請先為這個個體唯讀查看所選版本，再提交。",
+    "View the selected version read-only for this individual before submitting.",
+    "この個体に対する選択版を読み取り専用で確認してから提出してください。"
+  ],
+  [
+    "候選已保存並下載；原始內容保留。",
+    "Candidate saved and downloaded; original content retained.",
+    "候補を保存・ダウンロードしました。原文は保持されています。"
+  ],
+  [
+    "已下載所選身份包；沒有新增版本。",
+    "Selected identity package downloaded; no new version created.",
+    "選択したパッケージをダウンロードしました。新しい版は作成していません。"
+  ],
+  [
+    "請先選擇身份包檔案，再按驗證並保存。",
+    "Choose an identity package file, then validate and save.",
+    "先にパッケージのファイルを選び、検証・保存を押してください。"
+  ],
+  [
+    "已匯入 ",
+    "Imported ",
+    "読み込み済み："
+  ],
+  [
+    "身份包已保存；不會自動批准或出生。",
+    "Identity package saved; no automatic approval or birth.",
+    "アイデンティティパッケージを保存しました。自動で承認・誕生はしません。"
+  ],
+  [
+    "找不到提案預覽，請重新提交。",
+    "Proposal preview not found; submit again.",
+    "提案のプレビューが見つかりません。再提出してください。"
+  ],
+  [
+    "提案狀態：",
+    "Proposal status: ",
+    "提案の状態："
+  ],
+  [
+    "身份已採用，出生仍須另行確認。",
+    "Identity adopted; birth still requires separate confirmation.",
+    "アイデンティティを採用しました。誕生は別途確認が必要です。"
+  ],
+  [
+    "提案與處理原因持續保留。",
+    "The proposal and decision reasons remain available.",
+    "提案と処理理由は引き続き保存されます。"
+  ],
+  [
+    "批准 ",
+    "Approve ",
+    "承認："
+  ],
+  [
+    " 採用第",
+    " to adopt version ",
+    " 第"
+  ],
+  [
+    "版（不出生）",
+    " (does not cause birth)",
+    "版を採用（誕生しません）"
+  ],
+  [
+    "請先完整預覽所選提案，核對對象與內容。",
+    "Preview the full proposal and check the individual and content first.",
+    "先に提案全文をプレビューし、対象個体と内容を確認してください。"
+  ],
+  [
+    "請先完整預覽所選提案。",
+    "Preview the selected proposal in full first.",
+    "先に選択した提案の全文をプレビューしてください。"
+  ],
+  [
+    "已批准 ",
+    "Approved ",
+    "承認しました："
+  ],
+  [
+    "已關閉預覽，提案仍保留。",
+    "Preview closed; proposal retained.",
+    "プレビューを閉じました。提案は保持されています。"
+  ],
+  [
+    "即將首次啟動：",
+    "Preparing first activation: ",
+    "初回の開始準備："
+  ],
+  [
+    "）\n已批准身份：",
+    ")\nApproved identity: ",
+    "）\n承認済みアイデンティティ："
+  ],
+  [
+    "版\n台北時間窗口：",
+    "\nTaipei activity window: ",
+    "版\n台北時間の活動時間帯："
+  ],
+  [
+    " 起 ",
+    " from ",
+    " から "
+  ],
+  [
+    " 分鐘\n受控筆記：",
+    " minutes\nControlled notes: ",
+    " 分間\n制御されたノート："
+  ],
+  [
+    "允許",
+    "Allowed",
+    "許可"
+  ],
+  [
+    "不允許",
+    "Not allowed",
+    "許可しない"
+  ],
+  [
+    "\n每窗口最多 ",
+    "\nPer-window limit: ",
+    "\n時間帯ごとの上限："
+  ],
+  [
+    " 輪；平台每日最多 ",
+    " calls; platform daily limit: ",
+    " 回、プラットフォームの1日上限："
+  ],
+  [
+    " 輪。\n",
+    " calls.\n",
+    " 回。\n"
+  ],
+  [
+    "目前全域停止；尚不能首次啟動。",
+    "Platform stopped; first activation is currently blocked.",
+    "全体停止中のため、まだ初回開始はできません。"
+  ],
+  [
+    "此動作會讓指定個體開始生活。",
+    "This action starts life for the specified individual.",
+    "この操作で、指定された個体の生活が始まります。"
+  ],
+  [
+    "請先閱讀出生預覽並勾選確認。",
+    "Read the birth preview and check the confirmation first.",
+    "先に誕生プレビューを読み、確認にチェックしてください。"
+  ],
+  [
+    "請重新預覽目前個體。",
+    "Preview the current individual again.",
+    "現在の個体をもう一度プレビューしてください。"
+  ],
+  [
+    "已記錄指定個體首次出生：",
+    "First birth recorded for the specified individual: ",
+    "指定個体の初回誕生を記録しました："
+  ],
+  [
+    "歷史事件",
+    "History event",
+    "履歴イベント"
+  ],
+  [
+    "沒有更多歷史",
+    "No more history",
+    "これ以上の履歴はありません"
+  ],
+  [
+    "已讀取 ",
+    "Loaded ",
+    "読み込みました："
+  ],
+  [
+    " 的歷史；完整原始內容保留。",
+    " history; full original content retained.",
+    " の履歴。原文の全文は保持されています。"
+  ],
+  [
+    "指定個體備份已建立，檔名已填入下方欄位。",
+    "Backup created; its filename is filled in below.",
+    "対象個体のバックアップを作成し、下の欄にファイル名を入力しました。"
+  ],
+  [
+    "目前查看 ",
+    "Currently viewing ",
+    "現在の表示対象："
+  ],
+  [
+    "；切換不會啟動個體。",
+    "; switching does not start activity.",
+    "。表示を切り替えても活動は開始しません。"
+  ],
+  [
+    "需要檢查執行環境",
+    "Execution environment needs checking",
+    "実行環境の確認が必要"
+  ],
+  [
+    "平台停止中",
+    "Platform stopped",
+    "プラットフォーム停止中"
+  ],
+  [
+    "已停止",
+    "Stopped",
+    "停止中"
+  ],
+  [
+    "已暫停",
+    "Paused",
+    "一時停止中"
+  ],
+  [
+    "本次生活授權已結束",
+    "This activity authorization has ended",
+    "今回の活動許可は終了しました"
+  ],
+  [
+    "正在活動",
+    "Active",
+    "活動中"
+  ],
+  [
+    "可用活動輪數已用完",
+    "Activity-call allowance exhausted",
+    "活動回数の上限に達しました"
+  ],
+  [
+    "等待下一輪活動",
+    "Waiting for the next cycle",
+    "次の活動ラウンドを待っています"
+  ],
+  [
+    "目前沒有待派送活動",
+    "No activity awaiting dispatch",
+    "現在、実行待ちの活動はありません"
+  ],
+  [
+    "請選擇有效日期。",
+    "Choose a valid date.",
+    "有効な日付を選択してください。"
+  ],
+  [
+    "歷史分頁重複或順序異常，請重新載入。",
+    "History pages are duplicated or out of order; reload them.",
+    "履歴ページの重複または順序異常があります。再読み込みしてください。"
+  ],
+  [
+    "生活日誌",
+    "Activity journal",
+    "生活日誌"
+  ],
+  [
+    "日期（台北） ",
+    "Date (Taipei) ",
+    "日付（台北） "
+  ],
+  [
+    "更新每日進度",
+    "Refresh daily progress",
+    "1日の進捗を更新"
+  ],
+  [
+    "返回所有個體",
+    "Back to all individuals",
+    "全個体の一覧へ戻る"
+  ],
+  [
+    "出生：",
+    "Birth: ",
+    "誕生："
+  ],
+  [
+    "尚未出生；不會因查看而啟動。",
+    "Unborn; viewing does not start life.",
+    "未誕生です。閲覧によって開始することはありません。"
+  ],
+  [
+    "已有早期生活紀錄。",
+    "Earlier activity records exist.",
+    "以前の活動記録があります。"
+  ],
+  [
+    "輪完成 · ",
+    " cycles completed · ",
+    " ラウンド完了 · "
+  ]
+]

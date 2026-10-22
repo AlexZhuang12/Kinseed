@@ -1,0 +1,557 @@
+[
+  [
+    "2．選擇大腦",
+    "2. Choose a brain",
+    "2．思考モデルを選択"
+  ],
+  [
+    "3．準備工具",
+    "3. Prepare tools",
+    "3．ツールを準備"
+  ],
+  [
+    "4．確認保存",
+    "4. Review and save",
+    "4．確認して保存"
+  ],
+  [
+    "5．開啟控制台",
+    "5. Open the console",
+    "5．コンソールを開く"
+  ],
+  [
+    "正在讀取這份副本的狀態…",
+    "Reading this copy's state…",
+    "このコピーの状態を読み込み中…"
+  ],
+  [
+    "1．檢查這台電腦",
+    "1. Check this computer",
+    "1．このパソコンを確認"
+  ],
+  [
+    "安裝程式需要的套件",
+    "Install required packages",
+    "必要なパッケージをインストール"
+  ],
+  [
+    "重新檢查",
+    "Check again",
+    "再確認"
+  ],
+  [
+    "停止這份副本的控制台（會停止本副本個體）",
+    "Stop this copy's console (stops its individuals)",
+    "このコピーのコンソールを停止（このコピーの個体も停止）"
+  ],
+  [
+    "取得 Node.js（請選24系列）",
+    "Get Node.js (choose the 24.x series)",
+    "Node.jsを入手（24系を選択）"
+  ],
+  [
+    "已有設定或遇到安裝問題？",
+    "Existing settings or installation trouble?",
+    "既存の設定がある・インストールに問題がある場合"
+  ],
+  [
+    "重新讀取已保存設定（捨棄未保存選擇）",
+    "Reload saved settings (discard unsaved choices)",
+    "保存済み設定を再読み込み（未保存の選択を破棄）"
+  ],
+  [
+    "2．選擇誰提供思考能力",
+    "2. Choose what provides thinking ability",
+    "2．思考能力の提供元を選択"
+  ],
+  [
+    "新安裝的生活時區",
+    "Activity timezone for a new installation",
+    "新しいインストールの生活タイムゾーン"
+  ],
+  [
+    "這份控制台使用的大腦",
+    "Brain used by this console",
+    "このコンソールで使用する思考モデル"
+  ],
+  [
+    "先不接大腦",
+    "Do not connect a brain yet",
+    "今は思考モデルに接続しない"
+  ],
+  [
+    "使用自己的 Codex 登入",
+    "Use your own Codex login",
+    "自分のCodexログインを使用"
+  ],
+  [
+    "使用本機已有的 Ollama 模型",
+    "Use an already installed local Ollama model",
+    "インストール済みのローカルOllamaモデルを使用"
+  ],
+  [
+    "Ollama服務位址",
+    "Ollama service address",
+    "Ollamaサービスのアドレス"
+  ],
+  [
+    "檢查服務並列出已安裝模型",
+    "Check service and list installed models",
+    "サービスを確認し、インストール済みモデルを一覧表示"
+  ],
+  [
+    "選擇本機模型",
+    "Choose a local model",
+    "ローカルモデルを選択"
+  ],
+  [
+    "請先檢查服務",
+    "Check the service first",
+    "先にサービスを確認してください"
+  ],
+  [
+    "進階：模型資源與工具流程",
+    "Advanced: model resources and tool workflow",
+    "詳細：モデルのリソースとツールの流れ"
+  ],
+  [
+    "每次可處理的文字容量",
+    "Text capacity per request",
+    "1回に処理できるテキスト容量"
+  ],
+  [
+    "每次回答預留",
+    "Reserved for each response",
+    "各回答用の予約容量"
+  ],
+  [
+    "工具互動方式",
+    "Tool interaction protocol",
+    "ツールとのやり取りの方式"
+  ],
+  [
+    "一次選一個工具，取得結果後繼續",
+    "Choose one tool at a time, then continue after its result",
+    "ツールを1つずつ選び、結果を得てから続ける"
+  ],
+  [
+    "使用模型原生工具格式",
+    "Use the model's native tool format",
+    "モデルのネイティブなツール形式を使用"
+  ],
+  [
+    "依工具格式逐次回覆",
+    "Respond step by step using the tool schema",
+    "ツール形式に従って順に応答"
+  ],
+  [
+    "分開行動、工具內容與記憶",
+    "Separate actions, tool content and memory",
+    "行動・ツール内容・記憶を分ける"
+  ],
+  [
+    "既有引導格式（相容舊設定）",
+    "Legacy guided format (old-setting compatibility)",
+    "既存の誘導形式（旧設定と互換）"
+  ],
+  [
+    "3．準備可以使用的工具",
+    "3. Prepare available tools",
+    "3．使用するツールを準備"
+  ],
+  [
+    "準備 Codex 作品工具接頭",
+    "Prepare the Codex work-tool adapter",
+    "Codex作品ツールの接続口を準備"
+  ],
+  [
+    "準備 Codex",
+    "Prepare Codex",
+    "Codexを準備"
+  ],
+  [
+    "支援CLI版本：",
+    "Supported CLI version: ",
+    "対応CLIバージョン："
+  ],
+  [
+    "檢查版本與登入",
+    "Check version and login",
+    "バージョンとログインを確認"
+  ],
+  [
+    "安裝指定版本（僅此副本）",
+    "Install specified version (this copy only)",
+    "指定バージョンをインストール（このコピーのみ）"
+  ],
+  [
+    "開啟登入視窗，讓我自行登入",
+    "Open login window so I can sign in",
+    "ログイン画面を開き、自分でログイン"
+  ],
+  [
+    "官方安裝說明",
+    "Official installation instructions",
+    "公式インストール手順"
+  ],
+  [
+    "官方登入說明",
+    "Official login instructions",
+    "公式ログイン手順"
+  ],
+  [
+    "4．確認這份設定",
+    "4. Review these settings",
+    "4．この設定を確認"
+  ],
+  [
+    "確認並保存設定",
+    "Confirm and save settings",
+    "確認して設定を保存"
+  ],
+  [
+    "5．開啟自己的控制台",
+    "5. Open your own console",
+    "5．自分のコンソールを開く"
+  ],
+  [
+    "啟動我的控制台",
+    "Start my console",
+    "自分のコンソールを起動"
+  ],
+  [
+    "開啟已在執行的控制台",
+    "Open the running console",
+    "起動中のコンソールを開く"
+  ],
+  [
+    "進入我的控制台",
+    "Enter my console",
+    "自分のコンソールに入る"
+  ],
+  [
+    "複製控制台連結",
+    "Copy console link",
+    "コンソールのリンクをコピー"
+  ],
+  [
+    "停止這個導引啟動的控制台",
+    "Stop the console started by this setup",
+    "このガイドで起動したコンソールを停止"
+  ],
+  [
+    "下一步：選擇大腦",
+    "Next: choose a brain",
+    "次へ：思考モデルを選択"
+  ],
+  [
+    "設定進度",
+    "Setup progress",
+    "設定の進捗"
+  ],
+  [
+    "前一個操作仍在進行，已等待 ",
+    "The previous operation is still running; waited ",
+    "前の操作が進行中です。待機時間 "
+  ],
+  [
+    " 秒。選擇已保留，不必重按。",
+    " seconds. Choices are retained; do not press again.",
+    " 秒。選択は保持されています。押し直す必要はありません。"
+  ],
+  [
+    "前一個操作已結束。請依目前檢查結果繼續。",
+    "The previous operation ended. Continue according to the current checks.",
+    "前の操作は終了しました。現在の確認結果に従って進めてください。"
+  ],
+  [
+    "暫時無法更新進度：",
+    "Cannot refresh progress now: ",
+    "現在、進捗を更新できません："
+  ],
+  [
+    " 請按重新檢查。",
+    " Select Check again.",
+    " 再確認を押してください。"
+  ],
+  [
+    "操作未完成，請重新檢查。",
+    "Operation incomplete; check again.",
+    "操作が完了していません。再確認してください。"
+  ],
+  [
+    "下一步：準備工具",
+    "Next: prepare tools",
+    "次へ：ツールを準備"
+  ],
+  [
+    "下一步：確認設定",
+    "Next: review settings",
+    "次へ：設定を確認"
+  ],
+  [
+    "下一步",
+    "Next",
+    "次へ"
+  ],
+  [
+    "下一步：安裝完成後，選擇大腦。",
+    "Next: after installation, choose a brain.",
+    "次の操作：インストール後、思考モデルを選択してください。"
+  ],
+  [
+    "下一步：按下「確認並保存設定」。",
+    "Next: select Confirm and save settings.",
+    "次の操作：「確認して設定を保存」を押してください。"
+  ],
+  [
+    "作業系統：",
+    "Operating system: ",
+    "OS："
+  ],
+  [
+    "Windows，符合此版本範圍",
+    "Windows, within this release's scope",
+    "Windows、この版の対象範囲内"
+  ],
+  [
+    "目前僅驗證Windows",
+    "Only Windows has been validated",
+    "現在はWindowsのみ検証済み"
+  ],
+  [
+    "，符合版本",
+    ", version supported",
+    "、対応バージョン"
+  ],
+  [
+    "，請安裝24.19以上的24系列",
+    ", install version 24.19 or later in the 24.x series",
+    "、24.19以降の24系をインストールしてください"
+  ],
+  [
+    "必要套件：",
+    "Required packages: ",
+    "必要なパッケージ："
+  ],
+  [
+    " 項已準備",
+    " ready",
+    " 件準備済み"
+  ],
+  [
+    "資料：",
+    "Data: ",
+    "データ："
+  ],
+  [
+    "；不會匯入其他環境的資料。",
+    "; no data is imported from other environments.",
+    "。他の環境のデータは読み込みません。"
+  ],
+  [
+    "檢查完成。選擇保留，沒有保存或啟動。",
+    "Check complete. Choices retained; nothing saved or started.",
+    "確認が完了しました。選択は保持していますが、保存・起動はしていません。"
+  ],
+  [
+    "已讀取保存的設定，未保存的選擇已捨棄。",
+    "Saved settings loaded; unsaved choices discarded.",
+    "保存済み設定を読み込み、未保存の選択を破棄しました。"
+  ],
+  [
+    "套件安裝完成。下一步：選擇大腦。",
+    "Packages installed. Next: choose a brain.",
+    "パッケージのインストールが完了しました。次に思考モデルを選択してください。"
+  ],
+  [
+    "請選擇一個已安裝模型",
+    "Choose an installed model",
+    "インストール済みモデルを選んでください"
+  ],
+  [
+    "服務 ",
+    "Service ",
+    "サービス "
+  ],
+  [
+    "；找到 ",
+    "; found ",
+    "、見つかったモデル "
+  ],
+  [
+    " 個本機模型。尚未驗證完整生活能力。",
+    " local models. Full life-task capability is not yet validated.",
+    " 件。完全な生活タスクの能力はまだ検証していません。"
+  ],
+  [
+    "請選擇模型後繼續。",
+    "Choose a model, then continue.",
+    "モデルを選んでから続けてください。"
+  ],
+  [
+    "正在檢查版本與登入，不呼叫模型。",
+    "Checking version and login without calling the model.",
+    "モデルを呼び出さずに、バージョンとログインを確認中です。"
+  ],
+  [
+    "正在下載Codex：",
+    "Downloading Codex: ",
+    "Codexをダウンロード中："
+  ],
+  [
+    " MB。片段會保留，可於中斷後繼續。",
+    " MB. Partial data is retained for resuming after interruption.",
+    " MB。部分データは保持され、中断後に続けられます。"
+  ],
+  [
+    "完整性校驗已通過，正在安裝到本副本。",
+    "Integrity verified; installing into this copy.",
+    "整合性の検証に合格しました。このコピーにインストール中です。"
+  ],
+  [
+    "正在準備指定版本，已等待 ",
+    "Preparing the specified version; waited ",
+    "指定バージョンを準備中です。待機時間 "
+  ],
+  [
+    " 秒。最多等待10分鐘；不必重按。",
+    " seconds. Maximum 10 minutes; do not press again.",
+    " 秒。最大10分です。押し直す必要はありません。"
+  ],
+  [
+    "正在安裝指定版本；不更新全域或共用程式。",
+    "Installing the specified version; global and shared programs are unchanged.",
+    "指定バージョンをインストール中です。全体や共用プログラムは更新しません。"
+  ],
+  [
+    " 已安裝。下一步：自行登入，然後檢查。",
+    " installed. Next: sign in yourself, then check.",
+    " をインストールしました。次に自分でログインし、確認してください。"
+  ],
+  [
+    "檢查選定的大腦接頭；不執行推理。",
+    "Check the selected brain adapter without inference.",
+    "推論せずに、選んだ思考モデルの接続口を確認します。"
+  ],
+  [
+    "正在檢查並準備設定摘要…",
+    "Checking and preparing the settings summary…",
+    "確認して設定の要約を準備中…"
+  ],
+  [
+    "大腦",
+    "Brain",
+    "思考モデル"
+  ],
+  [
+    "工具",
+    "Tools",
+    "ツール"
+  ],
+  [
+    "自己的資料位置",
+    "Your data location",
+    "自分のデータの保存先"
+  ],
+  [
+    "報告",
+    "Reports",
+    "レポート"
+  ],
+  [
+    "這次影響",
+    "Effect of this operation",
+    "今回の操作の影響"
+  ],
+  [
+    "正在核對並保存設定…",
+    "Checking and saving settings…",
+    "設定を確認して保存中…"
+  ],
+  [
+    "設定已保存。",
+    "Settings saved.",
+    "設定を保存しました。"
+  ],
+  [
+    " 原設定已有備份。",
+    " Previous settings were backed up.",
+    " 元の設定はバックアップ済みです。"
+  ],
+  [
+    "保存完成。下一步：啟動自己的控制台。",
+    "Saved. Next: start your own console.",
+    "保存が完了しました。次に自分のコンソールを起動してください。"
+  ],
+  [
+    "請先回到確認步驟保存目前選擇。",
+    "Return to the review step and save current choices first.",
+    "先に確認の段階へ戻り、現在の選択を保存してください。"
+  ],
+  [
+    "正在啟動自己的控制台…",
+    "Starting your console…",
+    "自分のコンソールを起動中…"
+  ],
+  [
+    "請先使用首次設定命令視窗顯示的完整連結。",
+    "Use the complete link shown in the first-setup command window.",
+    "初回設定のコマンド画面に表示された完全なリンクを使ってください。"
+  ],
+  [
+    "身份與自我認知",
+    "Identity and self-understanding",
+    "アイデンティティと自己認識"
+  ],
+  [
+    "人格與天生傾向",
+    "Personality and initial tendencies",
+    "性格と生来の傾向"
+  ],
+  [
+    "願意探索",
+    "Willing to explore",
+    "進んで探索する"
+  ],
+  [
+    "先了解風險",
+    "Understand risks first",
+    "まずリスクを理解する"
+  ],
+  [
+    "行動前了解主要風險；不要求所有資訊確定。",
+    "Understand the main risks before acting; complete certainty is not required.",
+    "行動前に主なリスクを理解します。すべてが確実である必要はありません。"
+  ],
+  [
+    "人生使命與意義",
+    "Purpose and meaning in life",
+    "人生の使命と意味"
+  ],
+  [
+    "價值觀與道德原則",
+    "Values and ethical principles",
+    "価値観と倫理原則"
+  ],
+  [
+    "自主性與生活邊界",
+    "Autonomy and activity boundaries",
+    "自律性と生活上の境界"
+  ],
+  [
+    "內在驅動與決策",
+    "Motivation and decision-making",
+    "内的動機と意思決定"
+  ],
+  [
+    "知識起點與學習方式",
+    "Starting knowledge and learning methods",
+    "知識の出発点と学習方法"
+  ],
+  [
+    "成長記憶與演化",
+    "Growth, memory and development",
+    "成長・記憶・変化"
+  ]
+]

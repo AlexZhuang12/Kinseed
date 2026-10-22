@@ -1,0 +1,1 @@
+export function rebuildA(store){let a=null,cursor=0;while(true){const events=store.events(cursor,100);if(!events.length)break;for(const e of events)if(['system.created','cycle.committed','activity.accounted','restore.applied','owner.profile'].includes(e.type)&&e.result.a)a=e.result.a;cursor=events.at(-1).seq;}if(!a)throw Error('NO_PROJECTION_SOURCE');return a;}

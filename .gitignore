@@ -1,0 +1,10 @@
+.private/
+node_modules/
+config/development.local.json
+*.log
+*.sqlite*
+.env
+.env.*
+
+config/.setup-*
+

@@ -1,0 +1,18 @@
+name: Usage question / 使用問題
+description: Ask about setup or behavior without sharing private data.
+body:
+  - type: markdown
+    attributes:
+      value: "Read SUPPORT.md and the Owner guide first. Never paste full control links, personal histories, credentials or private model transcripts."
+  - type: input
+    id: version
+    attributes:
+      label: Version and selected interface language
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: What are you trying to do, and where did you get stuck?
+    validations:
+      required: true

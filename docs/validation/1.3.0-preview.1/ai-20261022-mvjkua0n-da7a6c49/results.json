@@ -1,0 +1,134 @@
+{
+  "schema": 1,
+  "version": "1.3.0-preview.1",
+  "run_id": "ai-20261022-mvjkua0n-da7a6c49",
+  "executor": "AI_PROJECT_SELF_ACCEPTANCE",
+  "independent_human_validation": false,
+  "source_digest": "a1c0df202dab01e7c6e0df184d7c1dd624dfe39956e9a05a70601b0e84f28f0e",
+  "environment": {
+    "os": "win32",
+    "arch": "x64",
+    "node": "24.19.0",
+    "physical_machine_count": 1
+  },
+  "cases": [
+    {
+      "id": "V01",
+      "status": "PASS",
+      "assertions": 326,
+      "passed": 326,
+      "failed": 0,
+      "reason": "NONE",
+      "evidence_hash": "5e3a3f993dbaf1a8604543be40bcae1d5b15059e0dda459321fb10d69d57456b",
+      "started_at": "2026-10-22T13:28:44.914Z",
+      "finished_at": "2026-10-22T13:29:47.689Z"
+    },
+    {
+      "id": "V02",
+      "status": "PASS",
+      "assertions": 3,
+      "passed": 3,
+      "failed": 0,
+      "reason": "NONE",
+      "evidence_hash": "7e4179513cf6bd5e82c55c202dc0729e1c481af492bfb8639abc97135ab886ea",
+      "started_at": "2026-10-22T13:29:47.691Z",
+      "finished_at": "2026-10-22T13:29:48.682Z"
+    },
+    {
+      "id": "V03",
+      "status": "PASS",
+      "assertions": 146,
+      "passed": 146,
+      "failed": 0,
+      "reason": "NONE",
+      "evidence_hash": "2f26213c7fda0c2b22ac6433577872e47a0ec89c5bc19e9bedc3872e0adec119",
+      "started_at": "2026-10-22T13:29:48.683Z",
+      "finished_at": "2026-10-22T13:30:45.487Z"
+    },
+    {
+      "id": "V04",
+      "status": "PASS",
+      "assertions": 4,
+      "passed": 4,
+      "failed": 0,
+      "reason": "NONE",
+      "evidence_hash": "b1be2b3d1ed06b843166aa01f187f968de00bcd6a83ce58b164ef4b549fb126c",
+      "started_at": "2026-10-22T13:30:45.488Z",
+      "finished_at": "2026-10-22T13:30:45.705Z"
+    },
+    {
+      "id": "V05",
+      "status": "PASS",
+      "assertions": 11,
+      "passed": 11,
+      "failed": 0,
+      "reason": "NONE",
+      "evidence_hash": "2b97d3ebb306c6f1488a3f4f47f9edb4abe6bef3af5f3b0d2a39ba5142419038",
+      "started_at": "2026-10-22T13:30:45.706Z",
+      "finished_at": "2026-10-22T13:31:03.575Z"
+    },
+    {
+      "id": "V06",
+      "status": "PASS",
+      "assertions": 13,
+      "passed": 13,
+      "failed": 0,
+      "reason": "NONE",
+      "evidence_hash": "d03883c5b632362b9f90fbadfc283f22740c09486432d3614f8d47caa15cff18",
+      "started_at": "2026-10-22T13:31:12.106Z",
+      "finished_at": "2026-10-22T13:32:28.777Z"
+    },
+    {
+      "id": "V07",
+      "status": "PASS",
+      "assertions": 11,
+      "passed": 11,
+      "failed": 0,
+      "reason": "NONE",
+      "evidence_hash": "91c8a11dd2be894b18aef802861608faad2c4810864c0e558f9b39d882b23456",
+      "started_at": "2026-10-22T13:32:28.779Z",
+      "finished_at": "2026-10-22T13:32:53.583Z"
+    },
+    {
+      "id": "V08",
+      "status": "PASS",
+      "assertions": 64,
+      "passed": 64,
+      "failed": 0,
+      "reason": "NONE",
+      "evidence_hash": "7355f4b55d0e64ffaafc93fd5ec4931ea304b24e14ab5d705031f27387641583",
+      "started_at": "2026-10-22T13:31:03.577Z",
+      "finished_at": "2026-10-22T13:31:11.987Z"
+    },
+    {
+      "id": "V09",
+      "status": "BLOCKED",
+      "assertions": 10,
+      "passed": 10,
+      "failed": 0,
+      "reason": "PROVIDER_UNAVAILABLE",
+      "evidence_hash": "4a979e8a3602e1a82c958ef08451b76b469e64a501912cabc8317e9fb115a54c",
+      "started_at": "2026-10-22T13:32:53.584Z",
+      "finished_at": "2026-10-22T13:32:56.692Z"
+    },
+    {
+      "id": "V10",
+      "status": "PASS",
+      "assertions": 8,
+      "passed": 8,
+      "failed": 0,
+      "reason": "NONE",
+      "evidence_hash": "498cd439c1862f8df54e44d08820c7af0d830b77d4d97bf2bd630970c17bd7f7",
+      "started_at": "2026-10-22T13:31:11.988Z",
+      "finished_at": "2026-10-22T13:31:12.104Z"
+    }
+  ],
+  "disclosures": [
+    "NO_INDEPENDENT_HUMAN_TEST",
+    "NO_NATIVE_HUMAN_REVIEW",
+    "NO_SECOND_PHYSICAL_MACHINE",
+    "NO_REMOTE_GITHUB_CI",
+    "NO_SHARED_LOCAL_MODEL_TEST",
+    "NO_GITHUB_UPLOAD"
+  ]
+}

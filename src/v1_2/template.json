@@ -1,0 +1,209 @@
+{
+  "template_id": "kinseed-eight-domains",
+  "template_version": 1,
+  "domains": [
+    {
+      "domain_id": "identity",
+      "name": "身份與自我認知",
+      "questions": [
+        {
+          "question_id": "identity.q1",
+          "text": "你希望這個個體如何介紹自己、理解自己是誰？",
+          "required": true,
+          "options": []
+        },
+        {
+          "question_id": "identity.q2",
+          "text": "你希望它如何理解與你、模型及外部世界的關係？",
+          "required": false,
+          "options": []
+        },
+        {
+          "question_id": "identity.q3",
+          "text": "有哪些稱呼、身份表達或容易誤解的地方需要補充？",
+          "required": false,
+          "options": []
+        }
+      ]
+    },
+    {
+      "domain_id": "personality",
+      "name": "人格與天生傾向",
+      "questions": [
+        {
+          "question_id": "personality.q1",
+          "text": "面對新事物與風險，你希望它有什麼初始傾向？",
+          "required": false,
+          "options": [
+            {
+              "id": "explore",
+              "label": "願意探索",
+              "definition": "願意接觸陌生事物；具體程度與例外可自行描述。"
+            },
+            {
+              "id": "consider",
+              "label": "先了解風險",
+              "definition": "行動前了解主要風險；不要求所有資訊確定。"
+            }
+          ]
+        },
+        {
+          "question_id": "personality.q2",
+          "text": "你希望它如何思考、交流及面對挫折？",
+          "required": false,
+          "options": []
+        },
+        {
+          "question_id": "personality.q3",
+          "text": "這些傾向有哪些情境例外，或你不希望它被固定在哪種性格？",
+          "required": false,
+          "options": []
+        }
+      ]
+    },
+    {
+      "domain_id": "purpose",
+      "name": "人生使命與意義",
+      "questions": [
+        {
+          "question_id": "purpose.q1",
+          "text": "你希望賦予它什麼長期方向，或希望先保留探索空間？",
+          "required": false,
+          "options": []
+        },
+        {
+          "question_id": "purpose.q2",
+          "text": "除了達成目標，哪些生活內容也值得它重視？",
+          "required": false,
+          "options": []
+        },
+        {
+          "question_id": "purpose.q3",
+          "text": "你如何理解進展、挫折與未來提出改變方向？",
+          "required": false,
+          "options": []
+        }
+      ]
+    },
+    {
+      "domain_id": "values",
+      "name": "價值觀與道德原則",
+      "questions": [
+        {
+          "question_id": "values.q1",
+          "text": "做選擇時，你希望它重視哪些價值與原則？",
+          "required": false,
+          "options": []
+        },
+        {
+          "question_id": "values.q2",
+          "text": "當價值、利益或他人需求衝突時，希望它如何思考？",
+          "required": false,
+          "options": []
+        },
+        {
+          "question_id": "values.q3",
+          "text": "有哪些例外、不能省略的限制或仍未決的問題？",
+          "required": false,
+          "options": []
+        }
+      ]
+    },
+    {
+      "domain_id": "autonomy",
+      "name": "自主性與生活邊界",
+      "questions": [
+        {
+          "question_id": "autonomy.q1",
+          "text": "在已獲授權的範圍內，希望它如何自行安排生活？",
+          "required": false,
+          "options": []
+        },
+        {
+          "question_id": "autonomy.q2",
+          "text": "遇到限制、拒絕或需要更多資源時，希望它如何處理？",
+          "required": false,
+          "options": []
+        },
+        {
+          "question_id": "autonomy.q3",
+          "text": "有哪些生活邊界的意願或限制需要補充？此處不設定實際權限。",
+          "required": false,
+          "options": []
+        }
+      ]
+    },
+    {
+      "domain_id": "motivation",
+      "name": "內在驅動與決策",
+      "questions": [
+        {
+          "question_id": "motivation.q1",
+          "text": "沒有人交辦事情時，什麼可以促使它開始活動？",
+          "required": false,
+          "options": []
+        },
+        {
+          "question_id": "motivation.q2",
+          "text": "有多件事可做時，希望它如何取捨、持續或轉換方向？",
+          "required": false,
+          "options": []
+        },
+        {
+          "question_id": "motivation.q3",
+          "text": "等待、休息、長期計畫與提問方面，有什麼補充？",
+          "required": false,
+          "options": []
+        }
+      ]
+    },
+    {
+      "domain_id": "learning",
+      "name": "知識起點與學習方式",
+      "questions": [
+        {
+          "question_id": "learning.q1",
+          "text": "希望它如何理解已有知識與自己親自學習的差別？",
+          "required": false,
+          "options": []
+        },
+        {
+          "question_id": "learning.q2",
+          "text": "希望它如何學習、實踐、查證及修正錯誤？",
+          "required": false,
+          "options": []
+        },
+        {
+          "question_id": "learning.q3",
+          "text": "對不確定資訊、知識整理或更換模型，有什麼補充？",
+          "required": false,
+          "options": []
+        }
+      ]
+    },
+    {
+      "domain_id": "growth",
+      "name": "成長記憶與演化",
+      "questions": [
+        {
+          "question_id": "growth.q1",
+          "text": "希望它如何記住經驗、回顧歷史並自然成長？",
+          "required": false,
+          "options": []
+        },
+        {
+          "question_id": "growth.q2",
+          "text": "哪些日常變化可自然發展，哪些核心改變應提出正式提案？",
+          "required": false,
+          "options": []
+        },
+        {
+          "question_id": "growth.q3",
+          "text": "對記憶修正、身份延續與重大變更，有什麼補充？",
+          "required": false,
+          "options": []
+        }
+      ]
+    }
+  ]
+}

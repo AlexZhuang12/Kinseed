@@ -1,0 +1,25 @@
+import test from'node:test';import assert from'node:assert/strict';
+import{ownerGuide,firstActivityLabel}from'../src/v1_2/owner-guide-model.mjs';import{activityHealth}from'../src/v1_2/controller-health.mjs';import{codexLoginProblem}from'../src/brain/preflight.mjs';
+const e=(born=false)=>({name:'合成小禾',life:{state:born?'born':'unborn',identity_version:1}});
+test('UX01 no individual points to create',()=>assert.equal(ownerGuide(null,{}).destination,'create'));
+test('UX02 missing identity leads to identity preparation',()=>{const a=e();a.life.identity_version=null;assert.equal(ownerGuide(a,{}).phase,'identity');});
+test('UX03 unsaved time blocks progress before model checks',()=>assert.equal(ownerGuide(e(),{brain:{ready:false}},{settings:true}).destination,'settings'));
+test('UX04 unsaved permissions lead back to their own form',()=>assert.equal(ownerGuide(e(),{}, {permissions:true}).destination,'permissions'));
+test('UX05 absent brain has a recoverable help route',()=>assert.equal(ownerGuide(e(),{brain:{ready:false}}).destination,'help'));
+test('UX06 ready brain never produces automatic birth action',()=>assert.equal(ownerGuide(e(),{brain:{ready:true}}).destination,'identity'));
+test('UX07 born individual goes to activity, not another birth',()=>assert.equal(ownerGuide(e(true),{}).destination,'status'));
+test('UX08 exact first date distinguishes today and tomorrow in Taipei',()=>{const now=Date.parse('2026-10-22T10:00:00Z');assert.match(firstActivityLabel(now+1800000,now),/^今天/);assert.match(firstActivityLabel(now+86400000,now),/^明天/);});
+function health({now=1000,wake=2000,end=3000,mode='running',stopped=false,born=true,lease=null}={}){const c={mode,stop_lock:mode==='stopped',authorization_until:end,next_wake:{source:'birth-scheduled',at:wake},window_start:'18:30',window_minutes:30,cycles_used:0,max_cycles:3};return activityHealth({now:()=>now,store:{get:k=>({control:c,lease,life:{state:born?'born':'unborn'}})[k]},platform:{global:()=>({stopped,used:0,limit:24}),individuals:new Map()}});}
+test('UX09 before first start is scheduled rather than ended',()=>assert.equal(health().phase,'scheduled'));
+test('UX10 expired scheduled authorization cannot pretend to be waiting',()=>assert.equal(health({now:4000}).phase,'ended'));
+test('UX11 global stop takes precedence over future activity',()=>assert.equal(health({stopped:true}).phase,'global_stopped'));
+test('UX12 individual stop takes precedence over future activity',()=>assert.equal(health({mode:'stopped'}).phase,'stopped'));
+test('UX13 unborn does not become scheduled',()=>assert.equal(health({born:false}).phase,'unborn'));
+test('UX14 worker remains executing before scheduling projection',()=>assert.equal(health({lease:{deadline:3000}}).phase,'executing'));
+test('UX15 wake past cutoff is not a valid scheduled activity',()=>assert.equal(health({wake:4000}).phase,'ended'));
+test('UX16 Codex missing home is not described as logged out',()=>assert.match(codexLoginProblem({status:1,stderr:'Could not find home directory'}),/不代表帳號尚未登入/));
+test('UX17 timeout tells owner to recheck without reauthentication',()=>assert.match(codexLoginProblem({error:{code:'ETIMEDOUT'}}),/不必重新登入/));
+test('UX18 explicit logged out has an actionable login route',()=>assert.match(codexLoginProblem({status:1,stderr:'Not logged in'}),/開啟登入視窗/));
+test('UX19 access failure does not suggest bypassing safeguards',()=>assert.match(codexLoginProblem({error:{code:'EACCES'}}),/勿停用安全防護/));
+test('UX20 successful ChatGPT login remains accepted',()=>assert.equal(codexLoginProblem({status:0,stderr:'Logged in using ChatGPT'}),null));
+test('UX21 unsupported auth is not silently replaced',()=>assert.match(codexLoginProblem({status:0,stdout:'Using API key'}),/不會代你切換/));

@@ -1,0 +1,5 @@
+import {parentPort,workerData} from 'node:worker_threads';
+// Only bytes from the scoped document database enter this worker. PDF actions,
+// scripts, rendering, system fonts and external fetches are never enabled.
+globalThis.fetch=()=>Promise.reject(Error('PDF_NETWORK_DISABLED'));
+try{const {getDocumentProxy}=await import('unpdf');const pdf=await getDocumentProxy(new Uint8Array(workerData),{isEvalSupported:false,useSystemFonts:false,disableFontFace:true,disableAutoFetch:true,disableStream:true,stopAtErrors:true});if(pdf.numPages>200)throw Error('PDF超過目前200頁解析範圍，請改用較小文件。');let text='';for(let n=1;n<=pdf.numPages;n++){const page=await pdf.getPage(n),content=await page.getTextContent();text+='[第'+n+'頁]\n'+content.items.map(x=>x.str??'').join(' ')+'\n';if(text.length>2000000)throw Error('PDF文字過長，請改用較小文件。');page.cleanup();}await pdf.cleanup?.();if(!text.replace(/\[第\d+頁\]/g,'').trim())throw Error('PDF沒有可抽取文字；掃描頁面尚未開放OCR，不代表文件沒有內容。');parentPort.postMessage({text,pages:pdf.numPages});}catch(err){parentPort.postMessage({error:String(err.message).slice(0,500)});}

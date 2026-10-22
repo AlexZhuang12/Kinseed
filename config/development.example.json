@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "environment": "development",
+  "dataDirectory": ".private/development",
+  "http": {
+    "host": "127.0.0.1",
+    "port": 0
+  },
+  "reports": {
+    "enabled": false
+  },
+  "inference": {
+    "enabled": false
+  }
+}

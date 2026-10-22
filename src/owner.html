@@ -1,0 +1,39 @@
+<!doctype html><html lang="zh-Hant"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kinseed · 本機控制</title>
+<style>body{margin:0;background:#10201f;color:#eef3ed;font:16px/1.7 system-ui}main{max-width:1080px;margin:36px auto;padding:24px}header{display:flex;justify-content:space-between;align-items:center}small,.muted{color:#a9bcb4}h1{font-weight:500;margin:0;font-size:34px}h2{font-size:18px;font-weight:500}.badge{border:1px solid #658b78;border-radius:30px;padding:6px 14px;color:#c8e2a9}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:28px 0}.card,section{background:#1a2e2b;border:1px solid #345049;border-radius:14px;padding:22px;margin-bottom:18px}.value{font-size:24px}button,input{font:inherit;border:1px solid #749682;border-radius:8px;padding:8px 16px;background:#d6e8bf;color:#18261f;margin:4px;cursor:pointer}button.secondary,input{background:#233f35;color:#eff6ed}.danger{background:#c34f42;color:#fff;border-color:#c34f42}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px;color:#c8d6cd}#message{min-height:28px;color:#ffdda6}article{border-top:1px solid #345049;padding:10px 0}label{display:inline-block;margin-right:16px}a{color:#d6e8bf}@media(max-width:700px){.cards{grid-template-columns:1fr}header{display:block}}</style>
+<main><header><div><small>本機生活控制 · DRAFT / NOT FROZEN</small><h1>Kinseed</h1></div><span class="badge">測試個體，非正式 Kinseed 個體</span></header>
+<p class="muted">生活、記憶與觀察，保存在這台電腦。等待與關機期間不代表持續思考。</p>
+<div id="message" role="status"></div><div class="cards"><div class="card"><small>有效狀態</small><div class="value" id="mode">讀取中</div><small id="reason"></small></div><div class="card"><small>窗口剩餘 · Asia/Taipei</small><div class="value" id="remaining">—</div><small id="window"></small></div><div class="card"><small>本日已派送 / 上限</small><div class="value" id="budget">—</div><small>實際成本：未知</small></div></div>
+<section><h2>Owner 控制入口</h2><button data-action="start">開始</button><button data-action="pause" class="secondary">暫停</button><button data-action="stop" class="danger">緊急停止</button><button data-action="resume">明確恢復</button><button id="backup" class="secondary">備份</button><p><label>每日起點 <input type="time" id="start" value="09:00"></label><label>窗口分鐘（最多 240）<input type="number" min="1" max="240" id="minutes" value="240"></label><button id="setWindow" class="secondary">更新窗口</button></p><label><input type="checkbox" id="note">允許新增本地筆記</label><button id="setPermission" class="secondary">更新權限</button><p class="muted">變更權限或窗口不會解除緊急停止，也不會延長既有授權期限。首次開始前請設定適用窗口。</p></section>
+<section><h2>替換簡單測試身份</h2><label>測試配置 <select id="profile"><option value="kinseed-test-v1">測試個體 001</option><option value="kinseed-test-v2">測試個體 002</option></select></label><button id="setProfile" class="secondary">切換測試身份</button><p class="muted">先停止再切換。新個體不繼承舊個體記憶；舊版本與歷史保留。</p></section>
+<section><h2>目前活動與測試身份</h2><pre id="identity"></pre><pre id="task"></pre><p id="wake"></p><details><summary>執行環境預檢</summary><pre id="preflight"></pre></details></section>
+<section><h2>持久記憶與計畫</h2><pre id="memory"></pre></section><section><h2>筆記產物</h2><div id="notes"></div><small>檔案投影位於 runtime/workspace；原始產物保存在 B 事件，可重建。</small></section><section><h2>最近 B 事件</h2><div id="events"></div></section><p class="muted">備援停止：專案內「停止.cmd」。完整登入治理能力與限制請見 ARCHITECTURE.md。</p></main>
+<script>
+let token=location.hash.slice(1);history.replaceState(null,'',location.pathname);if(!token)token=sessionStorage.getItem('kinseed-owner')||'';else sessionStorage.setItem('kinseed-owner',token);
+const $=id=>document.getElementById(id);let initialized=false;
+async function api(route,body){const r=await fetch('/owner/'+route,{method:body?'POST':'GET',headers:{Authorization:'Bearer '+token,...(body?{'Content-Type':'application/json'}:{})},...(body?{body:JSON.stringify(body)}:{})});const data=await r.json();if(!r.ok)throw Error(data.error+(data.preflight?'：'+JSON.stringify(data.preflight):''));return data;}
+async function command(action,extra={}){try{await api('command',{action,scope:'individual',request_id:crypto.randomUUID(),...extra});$('message').textContent='控制命令已持久化。';await refresh();}catch(e){$('message').textContent='操作未生效：'+e.message;}}
+document.querySelectorAll('[data-action]').forEach(b=>b.onclick=()=>command(b.dataset.action));
+$('setProfile').onclick=()=>command('profile',{profile_id:$('profile').value});
+$('setWindow').onclick=()=>command('window',{start:$('start').value,minutes:Number($('minutes').value)});$('setPermission').onclick=()=>command('permissions',{note:$('note').checked});
+$('backup').onclick=async()=>{try{const r=await api('backup',{});$('message').textContent='備份完成：runtime/backups/'+r.name;}catch(e){$('message').textContent='備份失敗：'+e.message;}};
+function detail(title,text){const d=document.createElement('details'),summary=document.createElement('summary'),pre=document.createElement('pre');summary.textContent=title;pre.textContent=text;d.append(summary,pre);return d;}
+function showDetails(target,items){const element=$(target),opened=new Set([...element.children].filter(d=>d.open).map(d=>d.firstChild.textContent));element.replaceChildren(...items.map(([title,text])=>{const d=detail(title,text);d.open=opened.has(title);return d;}));}
+async function refresh(){try{
+ const s=await api('status');
+ $('mode').textContent=({stopped:'已停止',paused:'已暫停',running:'已授權活動'})[s.control.mode];
+ $('reason').textContent=s.fatal?'安全停等：'+s.fatal:s.control.reason;
+ $('remaining').textContent=s.window.open?Math.floor(s.window.remaining_ms/60000)+' 分 '+Math.floor(s.window.remaining_ms/1000)%60+' 秒':'窗口外';
+ $('window').textContent=s.control.window_start+' 起 '+s.control.window_minutes+' 分鐘（牆鐘）';
+ $('budget').textContent=s.control.cycles_used+' / '+s.control.max_cycles;
+ $('identity').textContent=s.label+'\n'+s.profile.individual_id+' · '+s.profile.profile_id+' v'+s.profile.profile_version+'\n'+s.profile.goal;
+ const labels={running:'執行中',cancel_requested:'取消請求已送出',confirmed_local_stopped:'已確認本機程序停止',completed:'本輪完成',failed:'本輪失敗'};
+ $('task').textContent=(s.lease?'目前輪次：'+s.lease.cycle_id+'（'+s.lease.source+'）':'目前無執行輪次')+'\n'+s.tasks.map(t=>'任務 '+t.id.slice(0,8)+'：'+labels[t.status]+'；遠端結果 '+(t.remote_result==='unknown'?'未知':t.remote_result)).join('\n')+'\n實際累積活動：'+Math.floor(s.a.active_ms/1000)+' 秒';
+ $('wake').textContent='下次喚醒：'+(s.control.next_wake?new Date(s.control.next_wake.at).toLocaleString('zh-TW',{timeZone:'Asia/Taipei'})+' / '+s.control.next_wake.source:'無');
+ $('memory').textContent='記憶／計畫版本：'+s.a.version+'\n\n記憶\n'+s.a.memory.map(x=>'• '+x).join('\n')+'\n\n下一步計畫\n'+s.a.plan.map(x=>'• '+x).join('\n')+'\n\n上次結果\n'+(s.a.last_result||'尚無');
+ $('preflight').textContent=JSON.stringify(s.preflight,null,2);
+ showDetails('notes',(s.notes||[]).map(e=>[e.result.name+' · '+new Date(e.utc).toLocaleString('zh-TW',{timeZone:'Asia/Taipei'}),e.result.text]));
+ showDetails('events',s.last_events.map(e=>[e.utc+' · '+e.type+' #'+e.seq,JSON.stringify(e.result,null,2)]));
+ if(!initialized){$('start').value=s.control.window_start;$('minutes').value=s.control.window_minutes;$('note').checked=s.control.permissions.note;$('profile').value=s.profile.profile_id;initialized=true;}
+ }catch(e){$('message').textContent='控制連線失敗：'+e.message+'。可執行「停止.cmd」備援停止。';}}
+refresh();setInterval(refresh,1500);
+</script></html>

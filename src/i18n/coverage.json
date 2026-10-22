@@ -1,0 +1,19 @@
+{
+  "messages": 1771,
+  "locales": [
+    "zh-Hant",
+    "zh-Hans",
+    "en",
+    "ja"
+  ],
+  "translated": {
+    "en": 1771,
+    "ja": 1771
+  },
+  "missing": {
+    "en": [],
+    "ja": []
+  },
+  "review": "AI-authored translation draft; independent human language review pending",
+  "timezone": "per installation; existing data locked to original timezone"
+}

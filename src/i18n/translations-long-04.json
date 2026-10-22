@@ -1,0 +1,402 @@
+[
+  [
+    " 此個體已出生；修改等待中的首次活動設定會先取消原安排，保存不會恢復活動。",
+    " This individual is born. Changing pending first-activity settings cancels that arrangement; saving does not resume activity.",
+    " この個体は誕生済みです。初回活動待ちの設定変更は元の予定を取り消し、保存だけでは再開しません。"
+  ],
+  [
+    "尚有未保存的修改；請按「保存設定，下一步」繼續。",
+    "There are unsaved changes. Select Save settings, next to continue.",
+    "未保存の変更があります。「設定を保存して次へ」で続けてください。"
+  ],
+  [
+    "平台目前全域停止。先查看解除範圍，再由您決定是否解除。",
+    "The platform is globally stopped. Preview the affected scope, then decide whether to clear it.",
+    "プラットフォームは全体停止中です。影響範囲を確認してから、解除するか判断してください。"
+  ],
+  [
+    "平台已可接受個別授權；其他個體不會因下一步而出生或恢復。",
+    "The platform can accept individual authorization. The next step does not cause other individuals to be born or resumed.",
+    "個別の許可を受け付けられる状態です。次の手順で他の個体が誕生したり再開したりはしません。"
+  ],
+  [
+    "尚未到時段，出生後會等待到上述時間，不會提前活動。",
+    "Before activity hours, the newborn waits until the time above without acting early.",
+    "まだ活動時間前のため、誕生後も上記時刻まで待機し、前倒しで活動しません。"
+  ],
+  [
+    " 這次只授權此個體與上述時段。出生事實永久保留；停止會取消活動，但不會撤銷出生。錯過此時段或重啟控制器不會自動補跑。",
+    " This authorizes only this individual and the time above. Birth is permanent; stopping cancels activity but not birth. A missed window or controller restart does not trigger a catch-up run.",
+    " 今回の許可はこの個体と上記の時間だけに適用します。誕生は永久に残り、停止しても取り消されません。時間帯を逃したりコントローラーを再起動したりしても自動で補完実行しません。"
+  ],
+  [
+    "停止或重啟控制器後，請另行明確恢復；不用再次出生。",
+    "After stopping or restarting the controller, explicitly resume life separately. Birth need not be repeated.",
+    "停止やコントローラーの再起動後は、別途明示的に再開してください。誕生を繰り返す必要はありません。"
+  ],
+  [
+    "控制器已重新開啟；此個體保持停止，等待 Owner 明確恢復",
+    "Controller restarted; this individual remains stopped until the Owner explicitly resumes life",
+    "コントローラーを再起動しました。Ownerが明示的に再開するまで、この個体は停止したままです"
+  ],
+  [
+    "容量不足最多重試3次，分別等待30秒、90秒、180秒；每次都計入活動輪數。停止、時段結束或權限變更會取消等待。可確認程序結束且未寫入的暫時斷線也可有限重試；已有記憶提交則核對後接續，不重做本輪。部分寫入、結果不明、登入或額度問題保留紀錄並停止重送。",
+    "Capacity failures allow up to 3 retries after 30, 90, and 180 seconds; each counts as a round. Stop, window end, or permission changes cancel waiting. Temporary disconnections may be retried only after confirmed process exit with no writes. Committed memory is reconciled, not repeated. Partial writes, unknown outcomes, login issues, or quota problems are recorded without resending.",
+    "容量不足は30秒、90秒、180秒後の最大3回まで再試行し、毎回活動枠に数えます。停止、時間終了、権限変更で待機を取り消します。一時切断は処理終了と未書込を確認できる場合のみ有限再試行します。提出済み記憶は照合し、同じ回を繰り返しません。一部書込、結果不明、ログインや枠の問題は記録して再送を止めます。"
+  ],
+  [
+    "先看今日剩餘，再決定是否調整。調整額度不會開啟權限、出生或恢復生活。",
+    "Check today's remaining budget first. Changing a budget does not grant permission, cause birth, or resume life.",
+    "まず本日の残り枠を確認してください。枠を変えても権限の追加、誕生、生活再開はしません。"
+  ],
+  [
+    "單位為MB（1 MB＝1,000,000 bytes）。新個體不自動增加預算；總分配不能超過平台總額。",
+    "Units are MB (1 MB = 1,000,000 bytes). New individuals do not automatically increase the budget; allocations cannot exceed the platform total.",
+    "単位はMB（1 MB＝1,000,000 bytes）です。新しい個体で予算は自動追加されず、配分合計は全体の枠を超えられません。"
+  ],
+  [
+    "（尚無完整量測，不代表已使用或一定足夠）。",
+    " (not fully measured; this does not indicate actual usage or guarantee sufficiency).",
+    "（完全には計測しておらず、使用済みの量や十分な量を意味しません）。"
+  ],
+  [
+    "。失敗或被中止前已收到的內容仍計量；剛超限的在途資料可能造成少量超出。額度每日台北00:00更新，已停止個體不會自動恢復。",
+    ". Content received before failure or cancellation still counts. In-flight data may cause a small overrun. Budgets reset at Taipei midnight; stopped individuals do not resume automatically.",
+    "。失敗や中止前に受信した内容も計上します。転送中のデータで少し超過する場合があります。枠は台北時間の午前0時に更新し、停止個体は自動再開しません。"
+  ],
+  [
+    "只有個體自己的筆記。請核對目的網站與全文；批准不會恢復已停止個體，也不會自動登入或發布。",
+    "Only the individual's own notes. Verify the destination and full text. Approval does not resume a stopped individual, log in, or publish automatically.",
+    "個体自身のノートのみです。送信先と全文を確認してください。承認しても停止個体の再開、自動ログイン、公開は行いません。"
+  ],
+  [
+    "網路分配已保存；身份、歷史與生活授權沒有改變。",
+    "Network allocation saved. Identity, history, and life authorization are unchanged.",
+    "ネット枠を保存しました。アイデンティティ、履歴、生活の許可は変わりません。"
+  ],
+  [
+    "另一個畫面已修改分配。請重新讀取後核對；本頁輸入仍保留。",
+    "Another view changed the allocation. Reload and verify it; your input remains on this page.",
+    "別の画面で配分が変更されました。再読込して確認してください。このページの入力は残っています。"
+  ],
+  [
+    "分配或單檔限制不合理，請核對總額與進階限制。",
+    "Check the total allocation and advanced limits; an allocation or per-file limit is invalid.",
+    "配分またはファイル上限が不適切です。全体枠と詳細制限を確認してください。"
+  ],
+  [
+    "請填寫有效的整數MB額度；單檔不能超過單頁或每日總額。",
+    "Enter a whole number of MB. A file limit cannot exceed the per-page or daily total.",
+    "MBの整数を入力してください。1ファイルの上限は1ページまたは1日の総枠を超えられません。"
+  ],
+  [
+    "網路用量暫時無法讀取，請確認控制器已更新。",
+    "Network usage cannot be read. Check that the controller is up to date.",
+    "ネット使用量を読み込めません。コントローラーが更新済みか確認してください。"
+  ],
+  [
+    "先選個體，再調整生活時間、模型活動輪數或網路額度。保存不會出生、恢復生活或清除已用量。",
+    "Select an individual before changing life hours, model rounds, or network budget. Saving does not cause birth, resume life, or reset usage.",
+    "個体を選んでから、生活時間、モデル回数、ネット枠を変更してください。保存で誕生、生活再開、使用量の初期化はしません。"
+  ],
+  [
+    "決定每天何時開始、最多活動多久。調整前先停止此個體；保存後不會自動恢復，也不會延長目前已授權的截止時間。",
+    "Choose the daily start time and maximum duration. Stop this individual before changing them. Saving neither resumes life nor extends its currently authorized deadline.",
+    "毎日の開始時刻と最長時間を決めます。変更前にこの個体を止めてください。保存で自動再開せず、現在許可された終了時刻も延長しません。"
+  ],
+  [
+    "一次日常思考算一次模型請求，主動請教獨立LLM也另算一次。上限涵蓋每個生活時段，保存保留已用輪數。",
+    "One everyday thinking round counts as one model request; consulting a separate LLM counts separately. The limit applies to each life window, and saving keeps used rounds.",
+    "日常の思考1回はモデル要求1回、別LLMへの相談も別に1回と数えます。上限は各生活時間帯に適用し、保存しても使用済み回数を残します。"
+  ],
+  [
+    "單位為MB。此處調整這個個體每日下載分配；不改其他個體、不開啟網路權限，也不改模型輪數。",
+    "Units are MB. This changes only this individual's daily download allocation, not other individuals, web permissions, or model rounds.",
+    "単位はMBです。この個体の毎日のダウンロード枠だけを変更し、他の個体、閲覧権限、モデル回数は変えません。"
+  ],
+  [
+    "個體與平台上限同時有效。兩個個體各150輪時，平台可設300輪；平台總額較少時，可能先用完。調整平台上限必須先停止所有個體並等待活動結束。",
+    "Individual and platform limits both apply. For two individuals with 150 rounds each, a platform total of 300 is possible. A lower platform total may run out first. Stop all individuals and wait for active work before changing the total.",
+    "個体と全体の上限が同時に適用します。各150回の個体が二人なら全体300回に設定できます。全体枠が少ないと先に尽きる場合があります。全体枠の変更前は全員を止め、活動終了を待ってください。"
+  ],
+  [
+    "有尚未保存的修改。請按該項目的保存按鈕；其他項目不會連帶變更。",
+    "Unsaved changes remain. Use the relevant Save button; other settings will not change with it.",
+    "未保存の変更があります。該当項目の保存ボタンを使ってください。他の項目は連動して変わりません。"
+  ],
+  [
+    "每個生活時段最多幾次模型請求（1–1000）",
+    "Maximum model requests per life window (1–1000)",
+    "各生活時間帯のモデル要求上限（1〜1000回）"
+  ],
+  [
+    "生活時間已保存；請保存活動輪數，再按本頁下方「下一步：工具權限」。尚未出生。",
+    "Life hours saved. Save the round limit, then select Next: tool permissions below. Not yet born.",
+    "生活時間を保存しました。回数を保存し、下の「次へ：道具の権限」へ進んでください。未誕生のままです。"
+  ],
+  [
+    "生活時間已保存，沒有恢復生活。下一步：核對時段及額度，再由您明確恢復。",
+    "Life hours saved without resuming life. Verify hours and budget, then explicitly resume when ready.",
+    "生活を再開せず時間を保存しました。時間と枠を確認し、明示的に再開してください。"
+  ],
+  [
+    "活動輪數已保存；請按本頁下方「下一步：工具權限」繼續。尚未出生。",
+    "Round limit saved. Select Next: tool permissions below. Not yet born.",
+    "活動回数を保存しました。下の「次へ：道具の権限」で続けてください。まだ誕生していません。"
+  ],
+  [
+    "活動輪數已保存，已用量保留。下一步：確認平台仍有額度，再明確恢復此個體。",
+    "Round limit saved, preserving usage. Check the remaining platform budget, then explicitly resume this individual.",
+    "活動回数を保存し、使用量は保持しました。全体の残り枠を確認し、この個体を明示的に再開してください。"
+  ],
+  [
+    " MB。請到「網路用量與分配」重新分配；其他個體不會被自動扣額。",
+    " MB. Reallocate under Network usage and allocation. Other individuals will not lose their budgets automatically.",
+    " MB。「ネット使用量と配分」で再配分してください。他の個体の枠は自動では減りません。"
+  ],
+  [
+    "這個個體的網路額度已保存；原已用量、網路權限與其他個體分配保留。",
+    "This individual's network budget is saved. Usage, web permissions, and other individuals' allocations are retained.",
+    "この個体のネット枠を保存しました。使用量、閲覧権限、他の個体の配分は保持しています。"
+  ],
+  [
+    "平台模型輪數上限已保存，今日已用量保留；沒有恢復任何個體。",
+    "Platform model limit saved, preserving today's usage. No individual resumed.",
+    "全体のモデル回数上限を保存し、本日の使用量は保持しました。個体は再開していません。"
+  ],
+  [
+    "生活時間決定什麼時候能活動；活動輪數決定能呼叫模型幾次；網路額度決定能收送多少資料。任一額度增加，都不會自動恢復生活。網路額度按台北每日00:00更新；個體活動輪數按生活時段的開始日期計數，跨午夜仍屬同一時段；平台模型總量則按台北每日計數。",
+    "Life hours determine when activity is permitted; model rounds limit requests; network budgets limit data transfer. Increasing a budget does not resume life. Network and platform totals reset at Taipei midnight. Individual rounds use the window's start date, including activity past midnight.",
+    "生活時間は活動可能な時刻、活動回数はモデル要求数、ネット枠は送受信量を決めます。枠を増やしても自動再開しません。ネットと全体枠は台北時間の午前0時で更新します。個体の回数は開始日で数え、日付をまたいでも同じ時間帯に属します。"
+  ],
+  [
+    "目前網路只量測下載內容與保守扣除的上傳內容，模型通訊及TLS等開銷尚未完整量測；不能把1 GB預算當成電信流量硬上限。",
+    "Network measurement currently covers downloaded content and conservative upload deductions, not all model traffic or TLS overhead. A 1 GB budget is not a hard telecom data cap.",
+    "現在計測するのは受信内容と保守的に差し引く送信内容で、モデル通信やTLS等の全負荷は未計測です。1 GBの枠は回線の厳密な通信上限ではありません。"
+  ],
+  [
+    "已恢復這個個體尚未保存的輸入。核對後再保存；沒有自動變更設定。",
+    "Restored this individual's unsaved input. Verify before saving; settings were not changed automatically.",
+    "この個体の未保存入力を復元しました。確認してから保存してください。設定は自動変更していません。"
+  ],
+  [
+    "目前顯示已保存設定；選取個體不會啟動生活。",
+    "Showing saved settings. Selecting an individual does not start life.",
+    "保存済み設定を表示しています。個体を選んでも生活を開始しません。"
+  ],
+  [
+    "無法讀取網路額度，請重新整理；未保存輸入仍保留。",
+    "Network budget could not be read. Refresh; unsaved input is retained.",
+    "ネット枠を読み込めません。再読込してください。未保存入力は保持しています。"
+  ],
+  [
+    "現在可以修改時間與活動輪數；保存後不會自動恢復。",
+    "You can now edit hours and round limits. Saving will not resume life automatically.",
+    "時間と回数を変更できます。保存だけでは生活を自動再開しません。"
+  ],
+  [
+    "調整時間或活動輪數前，請先停止此個體並等待本輪結束。網路分配可以獨立調整。",
+    "Stop this individual and wait for its round to finish before changing hours or rounds. Network allocation can be changed separately.",
+    "時間や回数の変更前はこの個体を止め、現在の活動終了を待ってください。ネット配分は別に変更できます。"
+  ],
+  [
+    "此個體已停止。等執行中活動結束，即可保存時間或輪數；其他個體不會停止。",
+    "This individual is stopped. After active work ends, hours and rounds can be saved. Others remain unaffected.",
+    "この個体を停止しました。実行中の活動が終われば時間と回数を保存できます。他の個体は停止しません。"
+  ],
+  [
+    "平台今日額度已用完，還需調整平台上限或等待下一日。",
+    "Today's platform budget is exhausted. Adjust its limit or wait for the next day.",
+    "本日の全体枠を使い切りました。全体上限を調整するか、翌日まで待ってください。"
+  ],
+  [
+    "如需調整，請先在平台控制中停止全體並等本輪結束。",
+    "To adjust it, stop everyone in platform controls and wait for the current round to finish.",
+    "変更するには、全体制御で全員を停止し、現在の活動終了を待ってください。"
+  ],
+  [
+    "選定名字後，在這裡查看狀態、啟停生活、調整時間與額度、設定權限，以及閱讀這個個體的紀錄。切換查看不會啟動生活。",
+    "Choose a name to view status, start or stop life, adjust hours and budgets, set permissions, and read its records. Switching views does not start life.",
+    "名前を選び、状態確認、生活の開始・停止、時間と枠、権限、記録を管理します。閲覧の切り替えで生活は始まりません。"
+  ],
+  [
+    "勾選只是未保存的輸入。先停止此個體，再保存權限；保存不會恢復生活或更改時間與額度。",
+    "Checkbox changes are not saved yet. Stop this individual before saving permissions. Saving does not resume life or change hours and budgets.",
+    "チェック変更は未保存です。この個体を止めてから権限を保存してください。保存で再開したり、時間や枠を変えたりはしません。"
+  ],
+  [
+    "與Owner雙向對話及主動傳訊是所有個體的基本能力，不需要勾選開放；下方只設定其他工具。",
+    "Two-way Owner conversation and proactive messages are basic capabilities for all individuals. No permission checkbox is needed; the options below cover other tools.",
+    "Ownerとの双方向の会話と自発的な伝言は全個体の基本能力で、許可のチェックは不要です。以下は他の道具だけを設定します。"
+  ],
+  [
+    "一般本機檔案、shell、私人帳號、發布及付款仍未開放。外網開啟也不能自行上傳；自己的筆記仍須逐次Owner核准。",
+    "General local files, shell, private accounts, publishing, and payments remain unavailable. Web access does not allow automatic uploads; each note upload still requires Owner approval.",
+    "一般のローカルファイル、shell、個人アカウント、公開、支払いは未提供です。外網を許可しても自動送信はできず、自分のノートも都度Ownerの承認が必要です。"
+  ],
+  [
+    "還有未保存的時間、輪數或工具權限。請先到相應頁面保存，再繼續檢查。",
+    "Hours, rounds, or permissions have unsaved changes. Save on the relevant page before continuing the checks.",
+    "時間、回数、権限に未保存の変更があります。該当ページで保存してから確認を続けてください。"
+  ],
+  [
+    "大腦尚未連接成功。請依操作導引第4項完成連線；身份與設定不需重填。",
+    "Brain connection is not ready. Complete item 4 of the guide; identity and settings need not be entered again.",
+    "大脳の接続がまだ成功していません。操作ガイドの第4項で接続してください。アイデンティティと設定の再入力は不要です。"
+  ],
+  [
+    "這裡的設定影響整個平台，不只目前選取的個體。個體自己的時間、輪數與權限請到「管理個體」。",
+    "Settings here affect the whole platform. For one individual's hours, rounds, and permissions, go to Manage individuals.",
+    "ここの設定は全体に影響します。個体ごとの時間、回数、権限は「個体を管理」で設定してください。"
+  ],
+  [
+    "全域停止立即阻擋所有個體；解除全域停止不會出生或恢復任何個體。操作前先核對影響範圍。",
+    "Global stop immediately blocks all individuals. Clearing it does not cause birth or resume anyone. Verify the affected scope first.",
+    "全体停止は全個体を直ちに阻止します。解除しても誕生や再開はしません。先に影響範囲を確認してください。"
+  ],
+  [
+    "封存只移除日常選項，身份與歷史保留；不會停止活動中的個體。",
+    "Archiving removes an everyday option while keeping identity and history. It does not stop active life.",
+    "保管は日常の選択肢から外すだけで、アイデンティティと履歴は保持します。活動中の個体を止める操作ではありません。"
+  ],
+  [
+    " 請先在上方停止此個體，等本輪結束後再保存。",
+    " Stop this individual above and wait for its current round before saving.",
+    " 上でこの個体を停止し、現在の活動が終わってから保存してください。"
+  ],
+  [
+    " Codex工具接頭尚未準備；請先停止控制台，再執行首次設定。個體權限不會自行啟用接頭。",
+    " Codex tool connection is not prepared. Stop this console and run First setup. Individual permissions cannot enable the connection themselves.",
+    " Codex道具接続は未準備です。制御画面を止めて初回設定を実行してください。個体の権限だけでは接続を有効にできません。"
+  ],
+  [
+    "指定網站模式需要填寫網域；也可以選擇所有公開HTTPS網站。",
+    "Specified-sites mode needs domains. Alternatively choose all public HTTPS sites.",
+    "指定サイト方式ではドメインが必要です。すべての公開HTTPSサイトも選べます。"
+  ],
+  [
+    "工具權限已保存；請按本頁下方「下一步：返回出生準備」。尚未出生。",
+    "Tool permissions saved. Select Next: return to birth preparation below. Not yet born.",
+    "道具の権限を保存しました。下の「次へ：誕生準備に戻る」で続けてください。まだ誕生していません。"
+  ],
+  [
+    "這個個體的工具權限已保存；身份、時間、額度與其他個體權限保留。需要生活時請到「狀態與啟停」明確恢復。",
+    "Tool permissions saved for this individual. Identity, hours, budgets, and others' permissions are unchanged. Explicitly resume under Status and controls when needed.",
+    "この個体の道具の権限を保存しました。アイデンティティ、時間、枠、他の個体の権限は保持します。必要なときに「状態と開始・停止」で明示的に再開してください。"
+  ],
+  [
+    "可以修改時間、輪數與工具權限；保存後不會自動恢復。",
+    "Hours, rounds, and tool permissions can be edited. Saving does not resume life automatically.",
+    "時間、回数、道具の権限を変更できます。保存だけでは生活を自動再開しません。"
+  ],
+  [
+    "調整時間、輪數或工具權限前，請先停止此個體並等待本輪結束。網路分配可獨立調整。",
+    "Stop this individual and wait for its round before changing hours, rounds, or permissions. Network allocation can be adjusted separately.",
+    "時間、回数、権限の変更前はこの個体を止め、現在の活動終了を待ってください。ネット配分は別途変更できます。"
+  ],
+  [
+    "此個體已停止。等本輪結束後即可保存設定；其他個體不受影響。",
+    "This individual is stopped. Save settings once its current round ends. Other individuals are unaffected.",
+    "この個体を停止しました。現在の活動終了後に設定を保存できます。他の個体には影響しません。"
+  ],
+  [
+    "已明確恢復這個個體；仍受有效時段、權限與額度限制。",
+    "This individual was explicitly resumed, within its valid hours, permissions, and budgets.",
+    "この個体を明示的に再開しました。有効な時間、権限、枠の制限は引き続き適用します。"
+  ],
+  [
+    "尚未出生；批准身份與首次出生是分開的動作。",
+    "Not yet born. Identity approval and first birth are separate actions.",
+    "未誕生です。アイデンティティ承認と初回誕生は別の操作です。"
+  ],
+  [
+    "；這是最近紀錄，不代表個體正在執行或已被啟動。",
+    "; this is a recent record, not proof that the individual is currently running or started.",
+    "。これは最近の記録で、現在実行中または起動済みであることを示しません。"
+  ],
+  [
+    "尚未有已批准身份。請先選擇身份並提交審核。",
+    "No approved identity yet. Select an identity and submit it for review first.",
+    "承認済みアイデンティティがありません。先にアイデンティティを選び、審査に提出してください。"
+  ],
+  [
+    "下方保留首次出生逐步流程；設定統一在同一個管理區，最後仍由Owner親自確認。",
+    "The step-by-step first-birth process remains below. Settings share one management area, and the Owner personally makes the final confirmation.",
+    "下に初回誕生の手順を残しています。設定は同じ管理エリアにまとめ、最後はOwner自身が確認します。"
+  ],
+  [
+    "已完成出生，不需要再次出生。調整設定後，到「狀態與啟停」恢復即可。",
+    "Already born; birth need not be repeated. After editing settings, resume under Status and controls.",
+    "誕生済みで、再び誕生する必要はありません。設定変更後は「状態と開始・停止」で再開してください。"
+  ],
+  [
+    "請依序完成：①時間與輪數 → ②工具權限 → ③回此處檢查平台。每頁下方都有下一步；不必自行尋找返回入口。",
+    "Follow the sequence: ① Hours and rounds → ② Tool permissions → ③ Return here to check the platform. Each page has a Next button below.",
+    "順番に進んでください：①時間と回数 → ②道具の権限 → ③ここに戻って全体確認。各ページ下に次へのボタンがあり、戻り先を探す必要はありません。"
+  ],
+  [
+    "平台接入工具與個體使用權分開管理。本頁列出既有能力，不會開新權限、啟動工作或恢復生活。",
+    "Platform tool connections and individual permissions are managed separately. This page lists existing capabilities without granting permissions, starting work, or resuming life.",
+    "道具の接続と個体の利用権は別に管理します。このページは既存能力を表示するだけで、権限追加、作業開始、生活再開はしません。"
+  ],
+  [
+    "已接入既有受控工具；沒有新增外部帳號連接。",
+    "Existing controlled tools are connected. No external account connections were added.",
+    "既存の制御された道具を接続済みです。外部アカウント接続は追加していません。"
+  ],
+  [
+    "一般Node／Python、套件安裝、桌面軟體、外部帳號、付費服務與發布尚未接入。之後依 Owner 指定工具逐項實作；目前沒有安裝、登入、儲存密鑰或付款的入口。",
+    "General Node/Python, package installation, desktop apps, external accounts, paid services, and publishing are not connected. Future tools will be implemented individually as the Owner requests. No install, login, secret-storage, or payment entry exists yet.",
+    "一般のNode／Python、パッケージ導入、デスクトップアプリ、外部アカウント、有料サービス、公開は未接続です。今後Ownerが指定した道具ごとに実装します。今は導入、ログイン、鍵の保存、支払いの入口はありません。"
+  ],
+  [
+    "目前帳號與費用：沿用原控制器的模型連接，沒有新增帳號設定。網路預算及模型輪數仍在平台原有頁籤；金額尚無完整量測。",
+    "Accounts and costs: uses the controller's existing model connection, without new account settings. Network and model budgets stay in their platform tabs; monetary costs are not fully measured.",
+    "アカウントと費用：コントローラーの既存モデル接続を使い、新しいアカウント設定はありません。ネットとモデル枠は全体の既存タブで管理し、金額は完全には計測していません。"
+  ],
+  [
+    "。授權與當下可執行狀態不同，仍需通過原生活、停止與額度檢查。",
+    ". Permission does not mean an action can run now; life authorization, stop state, and budget checks still apply.",
+    "。許可済みでも今すぐ実行可能とは限りません。生活許可、停止状態、枠の確認が必要です。"
+  ],
+  [
+    "。這裡唯讀呈現既有紀錄，不會派送工作。筆記與附件屬於這個個體；尚未提供任意本機檔案匯入或操作。下方另可查看作品版本與隔離執行結果。",
+    ". This read-only view displays existing records without dispatching work. Notes and attachments belong to this individual. Arbitrary local file import or operation is unavailable. Work versions and isolated execution results appear below.",
+    "。ここは既存記録の読み取り専用表示で、作業を開始しません。ノートと添付はこの個体のものです。任意のローカルファイル取込・操作は未提供です。下で作品の版と隔離実行結果を確認できます。"
+  ],
+  [
+    "目前沒有執行中的模型活動；工具結果以原始紀錄為準。",
+    "No model activity is running. Original records are the source of truth for tool results.",
+    "現在実行中のモデル活動はありません。道具の結果は原記録を基準にしてください。"
+  ],
+  [
+    "目前正在進行模型活動；個別工具是否完成，以下方實際紀錄為準。",
+    "Model activity is running. Check the records below for each tool's actual completion.",
+    "モデルが活動中です。各道具の完了状況は下の実際の記録で確認してください。"
+  ],
+  [
+    "這筆工作沒有確認完成；請查看依據及「狀態與啟停」中的目前原因。更新紀錄只重新讀取，不會重送工作或恢復生活。",
+    "This job has no confirmed completion. See its evidence and the current reason under Status and controls. Refreshing only reads records; it does not resend work or resume life.",
+    "この作業の完了は未確認です。根拠と「状態と開始・停止」の現在の理由を確認してください。更新は再読込のみで、作業の再送や生活再開はしません。"
+  ],
+  [
+    "附件暫時無法讀取，請確認控制器連線後再試。",
+    "Attachment unavailable. Check the controller connection and try again.",
+    "添付を読み込めません。コントローラーの接続を確認して再試行してください。"
+  ],
+  [
+    "紀錄較多，請按「繼續讀取」；目前顯示部分結果。",
+    "More records remain. Select Continue reading; these are partial results.",
+    "記録が続きます。「続きを読む」を押してください。現在は一部の結果です。"
+  ],
+  [
+    " 附件清單為平台最近50份中屬於此個體的項目。",
+    " Attachments shown are this individual's items among the platform's latest 50.",
+    " 添付一覧は全体の最新50件のうち、この個体に属するものです。"
+  ],
+  [
+    "紀錄尚未完整更新。請確認控制器連線，再按更新接續讀取；已讀內容保留，沒有重新執行工具。",
+    "Records are not fully updated. Check the controller connection and refresh to continue. Loaded records remain; no tools were rerun.",
+    "記録の更新が未完了です。コントローラーの接続を確認し、更新で続きを読んでください。読込済み内容は残り、道具は再実行しません。"
+  ]
+]

@@ -1,0 +1,802 @@
+[
+  [
+    "新增",
+    "Added",
+    "追加"
+  ],
+  [
+    "原文相同",
+    "Original unchanged",
+    "原文は同じ"
+  ],
+  [
+    "原文變更",
+    "Original changed",
+    "原文に変更あり"
+  ],
+  [
+    "；來源 ",
+    "; source ",
+    "；出典 "
+  ],
+  [
+    "測試個體",
+    "Test individual",
+    "テスト個体"
+  ],
+  [
+    "正式個體",
+    "Regular individual",
+    "正式個体"
+  ],
+  [
+    "指定個體：",
+    "Target individual: ",
+    "対象個体："
+  ],
+  [
+    "\n性質：",
+    "\nType: ",
+    "\n区分："
+  ],
+  [
+    "\n身份：",
+    "\nIdentity: ",
+    "\nアイデンティティ："
+  ],
+  [
+    "\n包 SHA256：",
+    "\nPackage SHA256: ",
+    "\nパッケージSHA256："
+  ],
+  [
+    "\n控制版本：",
+    "\nControl version: ",
+    "\n制御バージョン："
+  ],
+  [
+    "；目前批准身份 v",
+    "; current approved identity v",
+    "；現在の承認済みアイデンティティ v"
+  ],
+  [
+    "\n權限：",
+    "\nPermissions: ",
+    "\n権限："
+  ],
+  [
+    "\n窗口：",
+    "\nActivity window: ",
+    "\n活動時間帯："
+  ],
+  [
+    "\n有限預算：",
+    "\nResource limits: ",
+    "\nリソース上限："
+  ],
+  [
+    "請先選取個體",
+    "Select an individual first.",
+    "先に個体を選択してください。"
+  ],
+  [
+    "尚未預覽",
+    "Not yet previewed",
+    "まだプレビューしていません"
+  ],
+  [
+    "來源狀態：",
+    "Source status: ",
+    "出典の状態："
+  ],
+  [
+    "全域已停止",
+    "Platform stopped",
+    "プラットフォーム停止中"
+  ],
+  [
+    "平台可排程",
+    "Platform scheduling available",
+    "プラットフォームのスケジュール実行が可能"
+  ],
+  [
+    "大腦服務預檢通過",
+    "Brain connection precheck passed",
+    "思考モデルの接続事前確認に合格"
+  ],
+  [
+    "大腦服務預檢受阻：",
+    "Brain precheck blocked: ",
+    "思考モデルの事前確認が進められません："
+  ],
+  [
+    " · 今日 ",
+    " · Today ",
+    " · 本日 "
+  ],
+  [
+    " 輪 · ",
+    " calls · ",
+    " 回 · "
+  ],
+  [
+    "測試",
+    "Test",
+    "テスト"
+  ],
+  [
+    "正式",
+    "Regular",
+    "正式"
+  ],
+  [
+    "｜出生：",
+    " | Birth: ",
+    "｜誕生："
+  ],
+  [
+    "｜身份 v",
+    " | Identity v",
+    "｜アイデンティティ v"
+  ],
+  [
+    "操作未執行：",
+    "Action not performed: ",
+    "操作は実行されていません："
+  ],
+  [
+    "請先預覽",
+    "Preview first.",
+    "先にプレビューしてください。"
+  ],
+  [
+    "請先批准身份版本",
+    "Approve an identity version first.",
+    "先にアイデンティティのバージョンを承認してください。"
+  ],
+  [
+    "請閱讀並勾選首次出生確認",
+    "Read and check the first-birth confirmation.",
+    "初回誕生の確認内容を読み、チェックを入れてください。"
+  ],
+  [
+    "已讀取指定個體歷史",
+    "Loaded this individual's history.",
+    "対象個体の履歴を読み込みました。"
+  ],
+  [
+    "載入中",
+    "Loading",
+    "読み込み中"
+  ],
+  [
+    "平台",
+    "Platform",
+    "プラットフォーム"
+  ],
+  [
+    "全域緊急停止",
+    "Emergency stop all",
+    "全体を緊急停止"
+  ],
+  [
+    "解除全域停止",
+    "Clear platform stop",
+    "全体停止を解除"
+  ],
+  [
+    "重新整理",
+    "Refresh",
+    "更新"
+  ],
+  [
+    "指定個體（可先不指定）",
+    "Target individual (may be chosen later)",
+    "対象個体（後で指定も可能）"
+  ],
+  [
+    "僅建立候選",
+    "Create a candidate only",
+    "候補のみ作成"
+  ],
+  [
+    "身份包 ID ",
+    "Identity package ID ",
+    "アイデンティティパッケージID "
+  ],
+  [
+    "標題 ",
+    "Title ",
+    "タイトル "
+  ],
+  [
+    "測試身份",
+    "Test identity",
+    "テスト用アイデンティティ"
+  ],
+  [
+    "範本版本（進階選填）",
+    "Template version (advanced, optional)",
+    "テンプレートのバージョン（詳細・任意）"
+  ],
+  [
+    "開始一份全新問卷",
+    "Start a new questionnaire",
+    "新しい質問票を開始"
+  ],
+  [
+    "恢復草稿 ",
+    "Resume draft ",
+    "下書きを再開 "
+  ],
+  [
+    "讀取草稿",
+    "Load draft",
+    "下書きを読み込む"
+  ],
+  [
+    "查看修訂歷史",
+    "View revision history",
+    "改訂履歴を見る"
+  ],
+  [
+    "上一領域",
+    "Previous section",
+    "前の分野"
+  ],
+  [
+    "下一領域",
+    "Next section",
+    "次の分野"
+  ],
+  [
+    "儲存草稿",
+    "Save draft",
+    "下書きを保存"
+  ],
+  [
+    "預覽回答並產生候選",
+    "Preview answers and create candidate",
+    "回答をプレビューして候補を作成"
+  ],
+  [
+    "重新編譯與人工修訂衝突",
+    "Rebuilding conflicts with manual edits",
+    "再生成と手動修正が競合しています"
+  ],
+  [
+    "保留人工修訂並重新編譯",
+    "Rebuild while keeping manual edits",
+    "手動修正を残して再生成"
+  ],
+  [
+    "採用新編譯版",
+    "Use the rebuilt version",
+    "再生成した版を使用"
+  ],
+  [
+    "取消，保留目前版本",
+    "Cancel and keep current version",
+    "キャンセルして現在の版を保持"
+  ],
+  [
+    "候選身份預覽與來源",
+    "Candidate identity preview and sources",
+    "アイデンティティ候補のプレビューと出典"
+  ],
+  [
+    "驗證、缺漏與不確定性",
+    "Validation, omissions and uncertainties",
+    "検証・未記入・不確かな点"
+  ],
+  [
+    "條目 ",
+    "Entry ",
+    "項目 "
+  ],
+  [
+    "完整修訂內容 ",
+    "Full revised content ",
+    "修正後の全文 "
+  ],
+  [
+    "修訂原因 ",
+    "Reason for revision ",
+    "修正の理由 "
+  ],
+  [
+    "保存條目修訂",
+    "Save revised entry",
+    "項目の修正を保存"
+  ],
+  [
+    "重新驗證",
+    "Validate again",
+    "再検証"
+  ],
+  [
+    "匯出身份包",
+    "Export identity package",
+    "アイデンティティパッケージを書き出す"
+  ],
+  [
+    "身份版本庫",
+    "Identity library",
+    "アイデンティティの版ライブラリ"
+  ],
+  [
+    "已保存版本 ",
+    "Saved versions ",
+    "保存済みの版 "
+  ],
+  [
+    "唯讀查看此版本",
+    "View this version (read-only)",
+    "この版を閲覧（読み取り専用）"
+  ],
+  [
+    "匯出所選版本",
+    "Export selected version",
+    "選択した版を書き出す"
+  ],
+  [
+    "將舊格式轉成新標準候選",
+    "Convert legacy format to a new candidate",
+    "旧形式を新しい標準候補に変換"
+  ],
+  [
+    "Owner 審核",
+    "Owner review",
+    "Ownerによる審査"
+  ],
+  [
+    "提案 ",
+    "Proposal ",
+    "提案 "
+  ],
+  [
+    "完整預覽提案與差異",
+    "Preview full proposal and differences",
+    "提案の全文と差分をプレビュー"
+  ],
+  [
+    "尚未預覽提案",
+    "Proposal not yet previewed",
+    "提案はまだプレビューしていません"
+  ],
+  [
+    "拒絕／退回原因 ",
+    "Reason for rejection or return ",
+    "却下・差し戻しの理由 "
+  ],
+  [
+    "批准採用已預覽的提案",
+    "Approve adoption of the previewed proposal",
+    "プレビューした提案の採用を承認"
+  ],
+  [
+    "拒絕提案",
+    "Reject proposal",
+    "提案を却下"
+  ],
+  [
+    "退回修改",
+    "Return for revision",
+    "修正のため差し戻す"
+  ],
+  [
+    "取消審核預覽",
+    "Close review preview",
+    "審査プレビューを閉じる"
+  ],
+  [
+    "新增獨立個體",
+    "Create an independent individual",
+    "独立した個体を作成"
+  ],
+  [
+    "固定 ID ",
+    "Permanent ID ",
+    "固定ID "
+  ],
+  [
+    "顯示名稱 ",
+    "Display name ",
+    "表示名 "
+  ],
+  [
+    "建立並保存為未出生",
+    "Create and save as unborn",
+    "未誕生として作成・保存"
+  ],
+  [
+    "匯入原生條件包",
+    "Import initial-conditions package",
+    "初期条件パッケージを読み込む"
+  ],
+  [
+    "或貼上 JSON 身份包",
+    "Or paste an identity package as JSON",
+    "またはJSONのアイデンティティパッケージを貼り付ける"
+  ],
+  [
+    "驗證並保存身份包",
+    "Validate and save identity package",
+    "アイデンティティパッケージを検証・保存"
+  ],
+  [
+    "選取個體 ",
+    "Select individual ",
+    "個体を選択 "
+  ],
+  [
+    "身份預覽與批准",
+    "Identity preview and approval",
+    "アイデンティティのプレビューと承認"
+  ],
+  [
+    "包版本 ",
+    "Package version ",
+    "パッケージの版 "
+  ],
+  [
+    "完整預覽／差異",
+    "Full preview / differences",
+    "全文プレビュー・差分"
+  ],
+  [
+    "批准採用此版本",
+    "Approve adoption of this version",
+    "この版の採用を承認"
+  ],
+  [
+    "取消預覽",
+    "Close preview",
+    "プレビューを閉じる"
+  ],
+  [
+    "生活窗口與授權",
+    "Activity window and authorization",
+    "活動時間帯と許可"
+  ],
+  [
+    "台北時間 ",
+    "Taipei time ",
+    "台北時間 "
+  ],
+  [
+    "分鐘（1–240）",
+    "Minutes (1–240)",
+    "分（1～240）"
+  ],
+  [
+    "保存生活窗口",
+    "Save activity window",
+    "活動時間帯を保存"
+  ],
+  [
+    "允許受控新增筆記",
+    "Allow controlled note creation",
+    "制御されたノート追加を許可"
+  ],
+  [
+    "保存權限",
+    "Save permissions",
+    "権限を保存"
+  ],
+  [
+    "預覽「首次出生啟動」",
+    "Preview first birth",
+    "初回誕生をプレビュー"
+  ],
+  [
+    "我授權此指定個體首次出生",
+    "I authorize this specified individual's first birth",
+    "私は指定されたこの個体の初回誕生を許可します"
+  ],
+  [
+    "明確恢復已生活個體",
+    "Explicitly resume a born individual",
+    "誕生済み個体の活動を明示的に再開"
+  ],
+  [
+    "暫停此個體",
+    "Pause this individual",
+    "この個体を一時停止"
+  ],
+  [
+    "緊急停止此個體",
+    "Emergency stop this individual",
+    "この個体を緊急停止"
+  ],
+  [
+    "記憶、計畫與工作區",
+    "Memory, plans and workspace",
+    "記憶・計画・作業領域"
+  ],
+  [
+    "歷史與備份",
+    "History and backups",
+    "履歴とバックアップ"
+  ],
+  [
+    "讀取此個體 B 歷史",
+    "Load this individual's B history",
+    "この個体のB履歴を読み込む"
+  ],
+  [
+    "下一頁",
+    "Next page",
+    "次のページ"
+  ],
+  [
+    "建立一致性備份（須停止）",
+    "Create consistent backup (stop required)",
+    "整合性のあるバックアップを作成（停止必須）"
+  ],
+  [
+    "備份檔名 ",
+    "Backup filename ",
+    "バックアップのファイル名 "
+  ],
+  [
+    "任務與執行狀態",
+    "Jobs and execution status",
+    "ジョブと実行状態"
+  ],
+  [
+    "給新個體的初始身份",
+    "Initial identity for a new individual",
+    "新しい個体の初期アイデンティティ"
+  ],
+  [
+    "名稱不可重複",
+    "Name must be unique",
+    "名前は重複できません"
+  ],
+  [
+    "JSON 身份包",
+    "Identity package JSON",
+    "アイデンティティパッケージのJSON"
+  ],
+  [
+    "建立備份後自動填入",
+    "Filled automatically after backup",
+    "バックアップ作成後に自動入力"
+  ],
+  [
+    " · 修訂 ",
+    " · Revision ",
+    " · 改訂 "
+  ],
+  [
+    "未指定個體",
+    "No individual assigned",
+    "個体未指定"
+  ],
+  [
+    "未指定",
+    "Unassigned",
+    "未指定"
+  ],
+  [
+    "草稿 ",
+    "Draft ",
+    "下書き "
+  ],
+  [
+    " · 目標 ",
+    " · Target ",
+    " · 対象 "
+  ],
+  [
+    "需編譯",
+    "Needs rebuilding",
+    "再生成が必要"
+  ],
+  [
+    "候選已產生",
+    "Candidate created",
+    "候補を作成済み"
+  ],
+  [
+    "（必填）",
+    " (required)",
+    "（必須）"
+  ],
+  [
+    "（可跳過）",
+    " (optional)",
+    "（省略可能）"
+  ],
+  [
+    "回答狀態 ",
+    "Answer status ",
+    "回答の状態 "
+  ],
+  [
+    " 回答狀態",
+    " answer status",
+    " 回答の状態"
+  ],
+  [
+    "未作答",
+    "Unanswered",
+    "未回答"
+  ],
+  [
+    "明確跳過",
+    "Explicitly skipped",
+    "明示的に省略"
+  ],
+  [
+    "自訂回答",
+    "Custom answer",
+    "自由回答"
+  ],
+  [
+    "已回答",
+    "Answered",
+    "回答済み"
+  ],
+  [
+    "你的描述 ",
+    "Your description ",
+    "あなたの説明 "
+  ],
+  [
+    " 描述",
+    " description",
+    " 説明"
+  ],
+  [
+    "自由補充",
+    "Additional details",
+    "自由補足"
+  ],
+  [
+    "例外與限制",
+    "Exceptions and limits",
+    "例外と制限"
+  ],
+  [
+    " · 包 v",
+    " · Package v",
+    " · パッケージ v"
+  ],
+  [
+    " 條",
+    " entries",
+    " 項目"
+  ],
+  [
+    " · 查看完整條文與來源",
+    " · View full text and sources",
+    " · 全文と出典を見る"
+  ],
+  [
+    "\n\n來源：",
+    "\n\nSources: ",
+    "\n\n出典："
+  ],
+  [
+    "請先建立草稿",
+    "Create a draft first.",
+    "先に下書きを作成してください。"
+  ],
+  [
+    "請先儲存目前草稿",
+    "Save the current draft first.",
+    "先に現在の下書きを保存してください。"
+  ],
+  [
+    "草稿已保存；尚未出生",
+    "Draft saved; still unborn.",
+    "下書きを保存しました。まだ誕生していません。"
+  ],
+  [
+    "已恢復草稿",
+    "Draft resumed.",
+    "下書きを再開しました。"
+  ],
+  [
+    "草稿已儲存",
+    "Draft saved.",
+    "下書きを保存しました。"
+  ],
+  [
+    "請先選擇身份包版本",
+    "Select an identity package version first.",
+    "先にアイデンティティパッケージの版を選んでください。"
+  ],
+  [
+    "已匯出所選不可變版本",
+    "Exported the selected immutable version.",
+    "選択した変更不可の版を書き出しました。"
+  ],
+  [
+    "\n\n八領域與完整提案：\n",
+    "\n\nEight sections and full proposal:\n",
+    "\n\n8分野と提案の全文：\n"
+  ],
+  [
+    "請先完整預覽所選提案",
+    "Preview the selected proposal in full first.",
+    "先に選択した提案の全文をプレビューしてください。"
+  ],
+  [
+    "已取消預覽，未變更身份",
+    "Preview closed; identity unchanged.",
+    "プレビューを閉じました。アイデンティティは変更していません。"
+  ],
+  [
+    "主要功能",
+    "Main navigation",
+    "主な機能"
+  ],
+  [
+    "＋ 建立新個體",
+    "＋ Create an individual",
+    "＋ 新しい個体を作成"
+  ],
+  [
+    "先取一個名字",
+    "Choose a name first",
+    "まず名前を付ける"
+  ],
+  [
+    "例如：杉杉",
+    "For example: Shanshan",
+    "例：杉杉"
+  ],
+  [
+    "這份身份要交給誰？",
+    "Who will receive this identity?",
+    "このアイデンティティを誰に渡しますか？"
+  ],
+  [
+    "用八個領域描述初始身份",
+    "Describe the initial identity in eight sections",
+    "8つの分野で初期アイデンティティを記述"
+  ],
+  [
+    "進階：身份識別與範本",
+    "Advanced: identity identifiers and templates",
+    "詳細：アイデンティティ識別とテンプレート"
+  ],
+  [
+    "身份名稱 ",
+    "Identity name ",
+    "アイデンティティ名 "
+  ],
+  [
+    "選用既有身份包",
+    "Use an existing identity package",
+    "既存のアイデンティティパッケージを選ぶ"
+  ],
+  [
+    "開始全新問卷（空白）",
+    "Start a new blank questionnaire",
+    "新しい空白の質問票を開始"
+  ],
+  [
+    "繼續這份草稿",
+    "Continue this draft",
+    "この下書きを続ける"
+  ],
+  [
+    "查看已保存紀錄",
+    "View saved records",
+    "保存済みの記録を見る"
+  ],
+  [
+    "保存為新候選版本",
+    "Save as a new candidate version",
+    "新しい候補の版として保存"
+  ],
+  [
+    "保存並下載身份包",
+    "Save and download identity package",
+    "アイデンティティパッケージを保存・ダウンロード"
+  ]
+]
