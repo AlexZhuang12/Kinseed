@@ -1,0 +1,37 @@
+[
+  [
+    "尚未保存：勾選只是草稿，尚未改變Hedra連線。",
+    "Unsaved: these selections are a draft; the Hedra connection is unchanged.",
+    "未保存：チェックは下書きであり、Hedraの接続設定はまだ変更されていません。"
+  ],
+  [
+    "未能確認Hedra連線保存結果；請更新資料核對，草稿仍保留。",
+    "Could not confirm the saved Hedra connection settings. Refresh to verify; your draft is retained.",
+    "Hedraの接続設定の保存結果を確認できません。データを更新して確認してください。下書きは保持されています。"
+  ],
+  [
+    "Hedra連線選擇已保存並核對；不會開放個體權限或啟動生活。",
+    "Hedra connection settings saved and verified; individual permissions and life remain unchanged.",
+    "Hedraの接続設定を保存して確認しました。個体の権限や生活は変更されません。"
+  ],
+  [
+    "捨棄未保存的Hedra連線選擇",
+    "Discard unsaved Hedra connection settings",
+    "未保存のHedra接続設定を破棄"
+  ],
+  [
+    "目前已生效：Hedra共用連線已開啟；個體仍須另有媒體權限與額度。",
+    "Active: the shared Hedra connection is enabled; individuals still need media permissions and a budget.",
+    "現在有効：Hedraの共有接続は有効です。個体には別途メディア権限とポイント枠が必要です。"
+  ],
+  [
+    "目前已生效：Hedra共用連線未開啟。",
+    "Active: the shared Hedra connection is disabled.",
+    "現在有効：Hedraの共有接続は無効です。"
+  ],
+  [
+    "沒有尚未保存的Hedra連線修改。",
+    "No unsaved Hedra connection changes.",
+    "未保存のHedra接続設定の変更はありません。"
+  ]
+]

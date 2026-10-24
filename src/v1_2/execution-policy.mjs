@@ -10,9 +10,10 @@ export function clearExecutionHold(e,reason){if(!executionHold(e))return;return 
 export function executionView(e){const hold=executionHold(e)??(e.fatal?{kind:'integrity',scope:'individual',message:'執行紀錄或收尾需要檢查：'+e.fatal,requires_owner:true}:e.platform?.runtimeHold?{...e.platform.runtimeHold,scope:'platform'}:null);return {hold,authority_preserved:true,message:hold?hold.message:'目前沒有待處理的執行阻擋。'};}
 export const recoveryContext=e=>optional(e,'execution_recovery',[]);
 export const recoverySummary=e=>recoveryContext(e).map(({operations,...record})=>({...record,operations:(operations??[]).map(({key,name,status,external,result})=>({key,name,status,external,receipt:result&&typeof result==='object'?Object.fromEntries(['event_id','artifact_id','file_id','document_id','job_id','id','version','name'].filter(k=>Object.hasOwn(result,k)).map(k=>[k,result[k]])):null}))}));
+// Paid requests use their durable ledger, not cycle-scoped external retries.
 const mutations=new Set(['write_note','work_save','work_import','run_javascript','send_owner','reply_owner','consult_llm','download_web','request_upload','delegate_codex','project_save','project_run','document_create','image_read','tool_request','reminder_save','reminder_ack','mail_draft']);
 const external=new Set(['consult_llm','download_web','request_upload','delegate_codex']);
-const longTools=new Set(['browse_web','search_web','consult_llm','download_web','delegate_codex','project_run','document_create','image_read','data_query','run_javascript']);
+const longTools=new Set(['hedra_quote','browse_web','search_web','consult_llm','download_web','delegate_codex','project_run','document_create','image_read','data_query','document_view','run_javascript']);
 const canonical=v=>Array.isArray(v)?v.map(canonical):v&&typeof v==='object'?Object.fromEntries(Object.keys(v).sort().map(k=>[k,canonical(v[k])])):v;
 export function operationKey(name,args){const {request_id,expected_version,...content}=args;return hash(canonical({name,content}));}
 const orders=a=>a.length?a.flatMap((k,i)=>orders(a.filter((_,j)=>j!==i)).map(rest=>[k,...rest])):[[]];

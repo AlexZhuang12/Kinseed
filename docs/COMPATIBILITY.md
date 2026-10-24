@@ -15,3 +15,7 @@ Status is scoped to source candidates. Local same-machine validation is not a se
 | Daily reports | Brain report-purpose contract exists | Independent clone entry does not enable the original platform's daily report scheduler |
 
 Mechanism, provider, quality and UX evidence must be reported separately. Default CI uses no real providers or private credentials. Release notes must identify the source version used by each test. See [model acceptance standard](MODEL_ADAPTER_STANDARD.md) and [engineering plan](OPEN_SOURCE_ENGINEERING_PLAN.md).
+
+## 1.6.1
+
+Hedra uses the connected account through the official MCP and checks credits before paid dispatch. Only image/video/music subsets are connected; other official tools are not implied. Subscription dates and original grant are not required. Limits are cumulative and do not reset automatically. Raw deadlines/cancellation labels do not alone establish a provider outage or Owner stop. Generated document PDF viewing requires supported rendering; model image input remains adapter-dependent.

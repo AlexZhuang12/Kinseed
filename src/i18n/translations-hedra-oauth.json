@@ -1,0 +1,22 @@
+[
+  [
+    "Hedra工具已接入；預設關閉。須先確認共用OAuth連線，再設定個體媒體權限及額度。音訊目前限音樂；影片與音樂必須明確指定時長。完成只顯示遠端成果資料，尚不會自動下載或播放。",
+    "Hedra tools are connected, disabled by default. Confirm the shared OAuth connection, then set individual media permissions and budgets. Audio currently means music; video and music require an explicit duration. Completed jobs show remote metadata; downloads and playback are not automatic.",
+    "Hedraツールは接続済みですが、初期状態では無効です。共有OAuth接続を確認し、個体ごとのメディア権限と予算を設定してください。音声は現在音楽のみで、動画と音楽には長さの指定が必要です。完了後は成果の情報を表示し、自動ダウンロードや再生は行いません。"
+  ],
+  [
+    "允許此安裝使用Hedra真實連線",
+    "Enable the real Hedra connection for this installation",
+    "このインストールで実際のHedra接続を有効にする"
+  ],
+  [
+    "我了解OAuth計費來源可被其他客戶端更改，並由Owner控管費用",
+    "I understand other clients can change OAuth billing settings; the Owner manages costs",
+    "OAuthの課金元は他のクライアントで変更でき、費用はOwnerが管理することを理解しています"
+  ],
+  [
+    "保存Hedra連線選擇",
+    "Save Hedra connection choice",
+    "Hedra接続の選択を保存"
+  ]
+]

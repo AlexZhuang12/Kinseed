@@ -1,0 +1,137 @@
+[
+  [
+    "Hedra媒體工具",
+    "Hedra media tools",
+    "Hedraメディアツール"
+  ],
+  [
+    "Hedra媒體製作與點數",
+    "Hedra media creation and credits",
+    "Hedraのメディア制作とクレジット"
+  ],
+  [
+    "本候選不會真實生成或扣點。固定點數連線尚未驗證；合成測試通過不代表已開放正式工具。",
+    "This candidate cannot generate real media or spend credits. A fixed-credit connection has not been verified; synthetic tests do not enable production tools.",
+    "この候補版では実際の生成やクレジット消費は行いません。クレジット専用接続は未検証です。合成テストの成功は本番ツールの利用許可を意味しません。"
+  ],
+  [
+    "唯讀檢查Hedra連線與餘額",
+    "Check Hedra connection and balance (read only)",
+    "Hedraの接続と残高を確認（読み取り専用）"
+  ],
+  [
+    "訂閱週期與保留點數",
+    "Subscription period and reserved credits",
+    "契約期間と確保するクレジット"
+  ],
+  [
+    "請依Hedra實際訂閱週期填寫，不會在每月1日自動重設。既有未結算工作仍保留。",
+    "Enter the actual Hedra subscription period. Credits do not reset automatically on the first day of the month. Unsettled jobs remain recorded.",
+    "Hedraの実際の契約期間を入力してください。毎月1日に自動リセットしません。未精算の作業記録は保持されます。"
+  ],
+  [
+    "本期識別（自行命名）",
+    "Period identifier (choose a name)",
+    "期間ID（任意の名前）"
+  ],
+  [
+    "本期開始時間",
+    "Period start",
+    "期間の開始日時"
+  ],
+  [
+    "本期結束時間",
+    "Period end",
+    "期間の終了日時"
+  ],
+  [
+    "本期總點數",
+    "Total credits for this period",
+    "この期間の合計クレジット"
+  ],
+  [
+    "Owner與驗收保留點數",
+    "Credits reserved for Owner and verification",
+    "Ownerと検証用に確保するクレジット"
+  ],
+  [
+    "保存已核對的訂閱週期",
+    "Save verified subscription period",
+    "確認済みの契約期間を保存"
+  ],
+  [
+    "請完整填寫並核對訂閱週期。",
+    "Complete and verify the subscription period fields.",
+    "契約期間の全項目を入力し、確認してください。"
+  ],
+  [
+    "這個個體的Hedra權限與額度",
+    "Hedra permissions and budget for this individual",
+    "この個体のHedra権限と予算"
+  ],
+  [
+    "開啟權限不會啟動生活，也不會解除真實生成關卡。未保存的勾選不會生效。",
+    "Enabling permissions does not start life or unlock real generation. Unsaved selections do not take effect.",
+    "権限を有効にしても生活は開始せず、実際の生成制限も解除されません。保存していない選択は反映されません。"
+  ],
+  [
+    "允許製作圖片",
+    "Allow image creation",
+    "画像制作を許可"
+  ],
+  [
+    "允許製作影片",
+    "Allow video creation",
+    "動画制作を許可"
+  ],
+  [
+    "允許製作聲音",
+    "Allow audio creation",
+    "音声制作を許可"
+  ],
+  [
+    "本期個體額度",
+    "Individual budget for this period",
+    "この期間の個体予算"
+  ],
+  [
+    "單件最多點數",
+    "Maximum credits per job",
+    "1件あたりのクレジット上限"
+  ],
+  [
+    "保存Hedra權限與額度",
+    "Save Hedra permissions and budget",
+    "Hedraの権限と予算を保存"
+  ],
+  [
+    "請先更新這個個體的工具資料。",
+    "Refresh this individual's tool data first.",
+    "先にこの個体のツール情報を更新してください。"
+  ],
+  [
+    "本期額度 / 已用 / 暫留 / 可用：",
+    "Period budget / spent / held / available: ",
+    "期間予算 / 使用済み / 仮確保 / 利用可能："
+  ],
+  [
+    "點數：",
+    "Credits: ",
+    "クレジット："
+  ],
+  [
+    "取消尚未送出的工作",
+    "Cancel job before submission",
+    "未送信の作業を取り消す"
+  ],
+  [
+    "捨棄未保存的Hedra設定",
+    "Discard unsaved Hedra settings",
+    "未保存のHedra設定を破棄"
+  ],
+  [
+    "重新查詢原工作（不重做）",
+    "Check the original job again (do not regenerate)",
+    "元の作業を再確認（再生成しない）"
+  ]
+]

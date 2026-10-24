@@ -177,6 +177,6 @@ export class Platform{
   }
  }
  capability(token){const digest=hash(token??'');for(const e of this.individuals.values()){const lease=e.store.get('lease');if(lease?.token_hash===digest)return e;}throw Error('UNAUTHORIZED_CYCLE');}
- status(){return {version:'1.5.0-preview.1',timezone:this.timezone,capabilities:capabilitiesFor({platform:this}),global:{...this.global(),execution_hold:this.runtimeHold},individuals:[...this.individuals.values()].map(e=>e.status()),cost:'unknown',engineering:this.engineering};}
+ status(){return {version:'1.6.0-local.1',timezone:this.timezone,capabilities:capabilitiesFor({platform:this}),global:{...this.global(),execution_hold:this.runtimeHold},individuals:[...this.individuals.values()].map(e=>e.status()),cost:'unknown',engineering:this.engineering};}
  async close(){for(const e of this.individuals.values())e.shutdown();const end=Date.now()+10000;while([...this.individuals.values()].some(e=>e.store.get('lease'))&&Date.now()<end)await new Promise(r=>setTimeout(r,50));if([...this.individuals.values()].some(e=>e.store.get('lease')))throw Error('TASKS_NOT_SETTLED');for(const e of this.individuals.values())e.store.close();this.set('manager',null);this.network.close();this.db.close();}
 }

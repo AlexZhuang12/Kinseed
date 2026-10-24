@@ -1,0 +1,42 @@
+[
+  [
+    "公開外網（不限網域清單）",
+    "Public web (no domain list restriction)",
+    "公開ウェブ（ドメインリストの制限なし）"
+  ],
+  [
+    "限定網域（僅允許清單內網站）",
+    "Specified domains (listed sites only)",
+    "指定ドメイン（リスト内のサイトのみ）"
+  ],
+  [
+    "允許的網域（僅限定網域模式生效） ",
+    "Allowed domains (used only in specified-domain mode) ",
+    "許可するドメイン（指定ドメインモードのみ有効） "
+  ],
+  [
+    "尚未保存的瀏覽設定：",
+    "Unsaved browsing settings: ",
+    "未保存の閲覧設定："
+  ],
+  [
+    "已保存的瀏覽設定：",
+    "Saved browsing settings: ",
+    "保存済みの閲覧設定："
+  ],
+  [
+    "外網尚未開啟。",
+    "External web access is disabled.",
+    "外部ウェブへのアクセスは無効です。"
+  ],
+  [
+    "公開外網不限網域清單；舊清單不生效。仍受網路額度與安全限制。",
+    "Public web access is not restricted by a domain list; the old list is inactive. Network budgets and safety restrictions still apply.",
+    "公開ウェブはドメインリストで制限されず、以前のリストは適用されません。通信量と安全上の制限は引き続き適用されます。"
+  ],
+  [
+    "僅允許下方清單內的網站；仍受網路額度與安全限制。",
+    "Only sites in the list below are allowed. Network budgets and safety restrictions still apply.",
+    "下のリスト内のサイトのみ許可します。通信量と安全上の制限は引き続き適用されます。"
+  ]
+]

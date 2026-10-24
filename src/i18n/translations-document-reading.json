@@ -1,0 +1,37 @@
+[
+  [
+    "PDF實際頁面預覽",
+    "Actual PDF page preview",
+    "PDFの実際のページをプレビュー"
+  ],
+  [
+    "上一頁",
+    "Previous page",
+    "前のページ"
+  ],
+  [
+    "關閉頁面預覽",
+    "Close page preview",
+    "ページのプレビューを閉じる"
+  ],
+  [
+    "PDF實際頁面影像",
+    "Rendered PDF page image",
+    "PDFの実際のページ画像"
+  ],
+  [
+    "這是已保存PDF的實際頁面，不會重製或改寫原文件。文字抽取不等於已核對版面。",
+    "This is a rendered page of the saved PDF. The original is unchanged. Extracted text does not prove layout was reviewed.",
+    "保存済みPDFの実際のページです。元の文書は変更しません。文字の抽出はレイアウト確認の証明ではありません。"
+  ],
+  [
+    "目前個體已切換，沒有顯示先前個體的預覽。",
+    "The selected individual changed; the previous preview was not displayed.",
+    "選択した個体が変わったため、前の個体のプレビューは表示しません。"
+  ],
+  [
+    "預覽PDF頁面",
+    "Preview PDF pages",
+    "PDFページをプレビュー"
+  ]
+]

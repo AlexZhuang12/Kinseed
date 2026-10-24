@@ -1,13 +1,15 @@
+import {hedraTools} from './hedra-contract.mjs';
 const str={type:'string',maxLength:10000},key={type:'string',maxLength:100},obj=(properties,required=[])=>({type:'object',properties,required,additionalProperties:false}),list=(items,maxItems=100)=>({type:'array',items,maxItems});
 export const HUB_PERMISSIONS=['materials','projects','documents','vision','data','mail'];
 export const HUB_TITLES={materials:'閱讀已同意分析的材料',projects:'編輯與執行隔離專案',documents:'製作PDF、Word與Excel',vision:'辨識圖片文字與內容',data:'查詢公開資料服務',mail:'提出郵件草稿，等待Owner批准'};
 const tool=(name,description,properties,required)=>({name,description,inputSchema:obj(properties,required),annotations:{readOnlyHint:/list|read|query/.test(name),destructiveHint:false,openWorldHint:name==='data_query'}});
-export const hubTools=[
+export const hubTools=[...hedraTools,
  tool('material_list','列出自己的已同意交給目前大腦分析的材料；不列未同意內容。',{},[]),
  tool('material_read','讀自己的已同意材料，每次最多6000字元；圖片另用image_read。',{material_id:key,offset:{type:'integer',minimum:0}},['material_id']),
  tool('project_save','保存自己隔離專案的新版本。不可使用本機路徑、依賴安裝或外網；先核對目前權限。',{request_id:key,project_id:key,expected_version:{type:'integer',minimum:0},name:key,language:{type:'string',enum:['python','javascript','html']},entry:key,files:list(obj({name:key,content:{type:'string',maxLength:64000}},['name','content']),20)},['request_id','expected_version','name','language','entry','files']),
  tool('project_run','執行自己專案的明確版本。Python在瀏覽器WebAssembly執行；JS在隔離WASM執行。無Owner檔案、任意網路或安裝。',{request_id:key,project_id:key,version:{type:'integer',minimum:1}},['request_id','project_id','version']),
- tool('document_create','製作PDF、Word或Excel。文字及表格均由你提供，不補寫內容；下載成果需查真實結果。',{request_id:key,format:{type:'string',enum:['pdf','docx','xlsx']},title:key,paragraphs:list(str,100),rows:list(list({type:'string',maxLength:2000},30),500)},['request_id','format','title']),
+ tool('document_create','製作PDF、Word或Excel。文字及表格均由你提供，不補寫內容。成功後用回傳document_id呼叫read_document讀回原檔，PDF另用document_view核對實際頁面；未看過影像不能宣稱已確認排版。',{request_id:key,format:{type:'string',enum:['pdf','docx','xlsx']},title:key,paragraphs:list(str,100),rows:list(list({type:'string',maxLength:2000},30),500)},['request_id','format','title']),
+ tool('document_view','查看自己已保存PDF的指定頁面影像，頁碼從1開始。沿用文件與圖片閱讀權限，需支援視覺的大腦；文字讀取請用read_document。不能讀取他人的文件或本機路徑。',{document_id:key,page:{type:'integer',minimum:1,maximum:200}},['document_id']),
  tool('data_query','查詢已開放的維基百科、Crossref書目或USGS地震公開資料。query只可公開、不含Owner資料；地震採最近資料，不是預警。',{service:{type:'string',enum:['wikipedia','crossref','usgs']},query:{type:'string',maxLength:200},offset:{type:'integer',minimum:0,maximum:1000}},['service']),
  tool('image_view','取得自己已同意交給目前大腦的原始圖片，透過MCP影像輸入供目前模型理解，不另傳外部服務。',{material_id:key},['material_id']),
  tool('image_read','對已同意的自己的圖片執行OCR。取得文字不代表已理解整張圖；視覺模型另有可用狀態。',{request_id:key,material_id:key},['request_id','material_id']),

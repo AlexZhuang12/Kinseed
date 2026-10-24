@@ -799,7 +799,8 @@
   "m_ae9d525462f33109": {
     "source": "下一頁",
     "files": [
-      "src/v1_2/owner.html"
+      "src/v1_2/owner.html",
+      "src/v1_2/network-ui.js"
     ]
   },
   "m_ba3e1c589005ed5f": {
@@ -5760,8 +5761,7 @@
   "m_f842ce7438b5c70f": {
     "source": "沿用指定網站清單",
     "files": [
-      "src/v1_2/wizard-ui.js",
-      "src/v1_2/network-ui.js"
+      "src/v1_2/wizard-ui.js"
     ]
   },
   "m_70e64f5b2e52b9b0": {
@@ -7358,14 +7358,20 @@
       "src/v1_2/network-ui.js"
     ]
   },
-  "m_efc82b2fa7854eec": {
-    "source": "所有公開HTTPS網站",
+  "m_93da1dc533a3e49f": {
+    "source": "公開外網（不限網域清單）",
     "files": [
       "src/v1_2/network-ui.js"
     ]
   },
-  "m_890669fdb5d49adc": {
-    "source": "指定網站清單（僅相容模式需要） ",
+  "m_2d147c063b16783f": {
+    "source": "限定網域（僅允許清單內網站）",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_28d50e2d2f5d7450": {
+    "source": "允許的網域（僅限定網域模式生效） ",
     "files": [
       "src/v1_2/network-ui.js"
     ]
@@ -7510,6 +7516,36 @@
   },
   "m_f2cd185fda5f8d06": {
     "source": "封存只移除日常選項，身份與歷史保留；不會停止活動中的個體。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_3b6483a153dee53f": {
+    "source": "尚未保存的瀏覽設定：",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_aad4ba78bca666c2": {
+    "source": "已保存的瀏覽設定：",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_a4c1d3611220bc46": {
+    "source": "外網尚未開啟。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_9aadefd066ee7437": {
+    "source": "公開外網不限網域清單；舊清單不生效。仍受網路額度與安全限制。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_dc21ded3a3b55039": {
+    "source": "僅允許下方清單內的網站；仍受網路額度與安全限制。",
     "files": [
       "src/v1_2/network-ui.js"
     ]
@@ -9938,6 +9974,12 @@
       "src/v1_2/network-ui.js"
     ]
   },
+  "m_46b17c744f9cef50": {
+    "source": "Hedra媒體工具",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
   "m_7159d62d2053738b": {
     "source": "正在處理，請稍候。",
     "files": [
@@ -10112,6 +10154,42 @@
       "src/v1_2/network-ui.js"
     ]
   },
+  "m_d2f801ad0ac68cd7": {
+    "source": "PDF實際頁面預覽",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_13256df2ec815420": {
+    "source": "上一頁",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_2809f819b05dd1b0": {
+    "source": "關閉頁面預覽",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_052edbf128a9ad35": {
+    "source": "PDF實際頁面影像",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_c873e840f0a22208": {
+    "source": "這是已保存PDF的實際頁面，不會重製或改寫原文件。文字抽取不等於已核對版面。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_003bc2d4156b93b7": {
+    "source": "目前個體已切換，沒有顯示先前個體的預覽。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
   "m_c6edb8e96d9726a9": {
     "source": "隔離作品預覽",
     "files": [
@@ -10276,6 +10354,246 @@
   },
   "m_158266e15c7b511a": {
     "source": "（目前未開啟）",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_60638d831cf8c97c": {
+    "source": "Hedra媒體製作與點數",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_932f587aff199494": {
+    "source": "Hedra工具已接入；預設關閉。須先確認共用OAuth連線，再設定個體媒體權限及額度。音訊目前限音樂；影片與音樂必須明確指定時長。完成只顯示遠端成果資料，尚不會自動下載或播放。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_0dabf60f27d5a6b8": {
+    "source": "尚未檢查連線；按下方按鈕後，結果會顯示在這裡。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_77f62e0450f7d33a": {
+    "source": "唯讀檢查Hedra連線與餘額",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_438924ee1d0de369": {
+    "source": "正在檢查Hedra登入、計費模式與餘額；不生成、不扣點，請稍候。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_75698f6552136406": {
+    "source": "連線檢查成功。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_9bf99021a103b2bd": {
+    "source": "目前使用訂閱點數。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_9a460224bf8e827b": {
+    "source": "目前不是點數模式；請先核對Hedra計費設定。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_045eb2b05508425b": {
+    "source": "\n訂閱點數：",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_03a8eb0382f29d99": {
+    "source": "；可用點數：",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_415cfdffd918ba63": {
+    "source": "Hedra連線檢查完成；結果顯示在Hedra頁面的檢查區。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_3a6f3889f51a149b": {
+    "source": "連線檢查未完成，沒有生成或扣點。原因：",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_dc0f9f7271cc37c4": {
+    "source": "允許此安裝使用Hedra真實連線",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_dea4c23c046b0332": {
+    "source": "我了解OAuth計費來源可被其他客戶端更改，並由Owner控管費用",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_547678671afc11bb": {
+    "source": "尚未保存：勾選只是草稿，尚未改變Hedra連線。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_d2958278e69be321": {
+    "source": "保存Hedra連線選擇",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_b2d1d35e580a5b91": {
+    "source": "未能確認Hedra連線保存結果；請更新資料核對，草稿仍保留。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_865374ba6eda651e": {
+    "source": "Hedra連線選擇已保存並核對；不會開放個體權限或啟動生活。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_904d8c1498c38ea0": {
+    "source": "捨棄未保存的Hedra連線選擇",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_ca2246d720890b6f": {
+    "source": "即時點數與Owner保留額",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_41f8b31829557f98": {
+    "source": "使用MCP查得的即時可用點數，不需要訂閱日期或原始配發量。個體額度為累計使用上限，不自動按月重設；餘額增加不會自行加額。各個體上限不是供應商點數的保證分配，實際提交仍須通過即時餘額與保留額檢查。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_818e5586830fa44c": {
+    "source": "Owner保留點數（留在Hedra、不給個體使用）",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_d079e55ca4a17854": {
+    "source": "保存Owner保留點數",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_c5c70ffc193262d7": {
+    "source": "這個個體的Hedra權限與額度",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_0a923a327789af31": {
+    "source": "開啟權限不會啟動生活，也不會解除真實生成關卡。未保存的勾選不會生效。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_67cb16534bf51338": {
+    "source": "允許製作圖片",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_ee074fa0a3f59a03": {
+    "source": "允許製作影片",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_c17b738a75be99cc": {
+    "source": "允許製作聲音",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_d92d7628f9ac1953": {
+    "source": "個體累計使用上限",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_72dcbd75c848fe34": {
+    "source": "單件最多點數",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_3c9969eacfb807cd": {
+    "source": "保存Hedra權限與額度",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_da045e2e94a1ad2b": {
+    "source": "請先更新這個個體的工具資料。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_f3772c27fd816fd9": {
+    "source": "捨棄未保存的Hedra設定",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_671b6dcda3632eb9": {
+    "source": "目前已生效：Hedra共用連線已開啟；個體仍須另有媒體權限與額度。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_f318a0a21412b6ef": {
+    "source": "目前已生效：Hedra共用連線未開啟。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_39b486c6fc75b018": {
+    "source": "沒有尚未保存的Hedra連線修改。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_763e4234d83ac971": {
+    "source": "個體累計上限 / 已用 / 暫留 / 可用：",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_fd2a56a5b38c72d0": {
+    "source": "點數：",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_c12f5b2a21b15085": {
+    "source": "重新查詢原工作（不重做）",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_0c1ef33d50af1380": {
+    "source": "取消尚未送出的工作",
     "files": [
       "src/v1_2/network-ui.js"
     ]
@@ -10486,6 +10804,12 @@
   },
   "m_0122de4bf7b530e0": {
     "source": "下載成果",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_d69ce8fdd84999de": {
+    "source": "預覽PDF頁面",
     "files": [
       "src/v1_2/network-ui.js"
     ]

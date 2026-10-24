@@ -1,0 +1,47 @@
+[
+  [
+    "尚未檢查連線；按下方按鈕後，結果會顯示在這裡。",
+    "Connection not checked yet. Use the button below; results will appear here.",
+    "接続は未確認です。下のボタンを押すと、ここに結果が表示されます。"
+  ],
+  [
+    "正在檢查Hedra登入、計費模式與餘額；不生成、不扣點，請稍候。",
+    "Checking Hedra login, billing mode and balance. No generation or credit charge; please wait.",
+    "Hedraのログイン、課金モード、残高を確認中です。生成やポイント消費はありません。しばらくお待ちください。"
+  ],
+  [
+    "連線檢查成功。",
+    "Connection check succeeded. ",
+    "接続確認に成功しました。"
+  ],
+  [
+    "目前使用訂閱點數。",
+    "Currently using subscription credits.",
+    "現在はサブスクリプションのポイントを使用しています。"
+  ],
+  [
+    "目前不是點數模式；請先核對Hedra計費設定。",
+    "The current billing mode is not credits; check Hedra billing settings first.",
+    "現在はポイントモードではありません。先にHedraの課金設定を確認してください。"
+  ],
+  [
+    "\n訂閱點數：",
+    "\nSubscription credits: ",
+    "\nサブスクリプションのポイント："
+  ],
+  [
+    "；可用點數：",
+    "; available credits: ",
+    "、利用可能なポイント："
+  ],
+  [
+    "Hedra連線檢查完成；結果顯示在Hedra頁面的檢查區。",
+    "Hedra connection check finished; see the result area on the Hedra page.",
+    "Hedraの接続確認が完了しました。Hedraページの確認結果をご覧ください。"
+  ],
+  [
+    "連線檢查未完成，沒有生成或扣點。原因：",
+    "Connection check failed. No generation or credit charge. Reason: ",
+    "接続確認が完了しませんでした。生成やポイント消費はありません。理由："
+  ]
+]

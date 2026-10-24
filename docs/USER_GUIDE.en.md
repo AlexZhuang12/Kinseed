@@ -1,3 +1,7 @@
+## 1.5.1
+
+Tools and materials → select the individual → Projects and outputs → Preview PDF pages. This renders saved bytes without recreating the document. Switching individuals clears the preview. Individuals use read_document for their own generated PDF, Word and Excel files. document_view additionally requires existing document and vision permissions and a verified image-capable adapter. Extracted text does not prove layout review. Existing documents need no migration.
+
 ## 1.5.0
 
 Daily consent and execution health are separate. Only an explicit Owner stop revokes daily consent. Connection failures, timeouts, clean restarts and saved settings preserve consent; affected operations can remain blocked with a visible reason. Save permissions after work settles without first disabling daily life. Original time, usage and isolation limits still apply.
@@ -51,3 +55,7 @@ Language changes preserve supported unsaved input locally without saving it to t
 Stop your copy and confirm no unfinished work, then make and verify a snapshot. Follow [upgrade and rollback](UPGRADE_ROLLBACK.md); retain the newest `.private` data. Never overwrite newer history with an old database. Unknown versions and existing-timezone changes are rejected, not solved by deleting data.
 
 Support prioritizes the latest preview, without guaranteed response times. After publication, use [SUPPORT](../SUPPORT.md) for general questions and [SECURITY](../SECURITY.md) for private security reports. Unactivated GitHub channels cannot yet receive reports. Translations are engineering drafts; independent native-language review and another physical Windows test remain pending.
+
+## Hedra image, video and music tools
+
+Open Tools and materials, choose an individual, then Hedra media tools. First run the read-only connection check; it does not generate or spend credits. Enable this installation’s shared connection only after reviewing the billing notice, then save. Set an optional Owner reserve, explicitly select media permissions and set cumulative and single-item limits. No subscription date or original credit grant is needed. Limits do not reset monthly. Music permission does not include speech, sound effects or voice cloning. Failed paid work never authorizes a blind new generation. See HEDRA_FOUNDATION.md.

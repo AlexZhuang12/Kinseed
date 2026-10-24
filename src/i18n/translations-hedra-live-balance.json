@@ -1,0 +1,32 @@
+[
+  [
+    "即時點數與Owner保留額",
+    "Live credits and Owner reserve",
+    "現在のポイントとOwnerの確保分"
+  ],
+  [
+    "使用MCP查得的即時可用點數，不需要訂閱日期或原始配發量。個體額度為累計使用上限，不自動按月重設；餘額增加不會自行加額。各個體上限不是供應商點數的保證分配，實際提交仍須通過即時餘額與保留額檢查。",
+    "Uses the live available credits reported by MCP. Subscription dates and original grants are not required. Individual budgets are cumulative caps, with no automatic monthly reset or increase when credits rise. Caps do not reserve provider credits; every submission must pass live balance and reserve checks.",
+    "MCPで取得した現在の利用可能ポイントを使用します。契約日や当初の付与量は不要です。個体の枠は累計使用上限で、月ごとのリセットや残高増加による自動増額はありません。上限は提供元のポイントの確保を保証せず、送信ごとに現在の残高とOwnerの確保分を確認します。"
+  ],
+  [
+    "Owner保留點數（留在Hedra、不給個體使用）",
+    "Owner reserve (kept in Hedra, unavailable to individuals)",
+    "Ownerの確保ポイント（Hedraに残し、個体は使用不可）"
+  ],
+  [
+    "保存Owner保留點數",
+    "Save Owner reserve",
+    "Ownerの確保ポイントを保存"
+  ],
+  [
+    "個體累計使用上限",
+    "Individual cumulative spending cap",
+    "個体の累計使用上限"
+  ],
+  [
+    "個體累計上限 / 已用 / 暫留 / 可用：",
+    "Individual cumulative cap / spent / held / remaining: ",
+    "個体の累計上限 / 使用済み / 仮確保 / 残り："
+  ]
+]

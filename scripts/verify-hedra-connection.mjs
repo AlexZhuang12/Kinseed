@@ -1,0 +1,3 @@
+import {inspectHedraConnection} from '../src/tools/hedra-codex-readonly.mjs';
+if(!process.argv.includes('--allow-account-read'))throw Error('需要明確允許唯讀帳號查詢，不會生成或修改計費。');
+const r=await inspectHedraConnection();console.log(JSON.stringify({status:r.connected&&r.billing_mode==='credits'?'READ_ONLY_PASS_SUBMISSION_BLOCKED':'READ_ONLY_NOT_CREDITS',connected:r.connected,billing_mode:r.billing_mode,subscription_credits:r.subscription_credits,available_credits:r.available_credits,api_wallet:r.api_wallet,submission_enabled:r.submission_enabled,fixed:r.fixed,generation_submitted:false,model_turn_started:false,credentials_exported:false}));

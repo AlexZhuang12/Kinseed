@@ -1,0 +1,34 @@
+import fs from 'node:fs';import path from 'node:path';import {hash} from '../v1_2/store.mjs';import {browserJob} from './project-runner.mjs';
+export const DOCUMENT_VIEW_LIMITS={bytes:8000000,pages:200,width:1100,pixels:4000000,image_bytes:1500000,cache_bytes:8000000,timeout:10000};
+export function ownGeneratedDocument(e,id,{owner=false}={}){
+ if(typeof id!=='string'||!id||id.length>100)throw Error('請提供自己文件的識別碼，不接受本機路徑。');
+ if(!e.store.db.prepare("SELECT name FROM sqlite_master WHERE type='table' AND name='hub_objects'").get())return null;
+ const row=e.store.db.prepare('SELECT body FROM hub_objects WHERE id=? ORDER BY version DESC LIMIT 1').get(id);if(!row)return null;
+ const x=JSON.parse(row.body);if(x.kind!=='document')return null;if(!owner)e.platform.toolHub.require(e,'documents');
+ const mimes={pdf:'application/pdf',docx:'application/vnd.openxmlformats-officedocument.wordprocessingml.document',xlsx:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'};if(!['pdf','docx','xlsx'].includes(x.format)||x.mime!==mimes[x.format]||typeof x.data_base64!=='string'||x.data_base64.length>Math.ceil(DOCUMENT_VIEW_LIMITS.bytes/3)*4||!/^[A-Za-z0-9+/]*={0,2}$/.test(x.data_base64))throw Error('自己的文件格式或保存大小需要核對，未讀取。');const bytes=Buffer.from(x.data_base64,'base64');
+ if(!bytes.length||bytes.length!==x.bytes||bytes.length>DOCUMENT_VIEW_LIMITS.bytes||hash(bytes)!==x.sha256)throw Error('文件內容校驗不一致，已拒絕讀取；原文件保留。');return {item:x,bytes};
+}
+let rendererAsset;const asset=()=>rendererAsset??=fs.readFileSync(path.resolve(import.meta.dirname,'../../node_modules/unpdf/dist/pdfjs.mjs'));
+export async function renderPdfPage(bytes,pageNumber,{signal,timeout=DOCUMENT_VIEW_LIMITS.timeout}={}){
+ if(!Number.isInteger(pageNumber)||pageNumber<1||pageNumber>DOCUMENT_VIEW_LIMITS.pages)throw Error('頁碼必須是1至200的整數。');if(bytes.length>DOCUMENT_VIEW_LIMITS.bytes||bytes.subarray(0,5).toString()!=='%PDF-')throw Error('目前頁面預覽只接受已保存PDF。');
+ const moduleBytes=asset();return browserJob(async(page,context)=>{
+  await context.unroute('**/*');await context.route('**/*',route=>route.request().url()==='https://kinseed-pdf.invalid/pdfjs.mjs'&&route.request().method()==='GET'?route.fulfill({body:moduleBytes,contentType:'text/javascript',headers:{'Access-Control-Allow-Origin':'*'}}):route.abort());
+  await page.goto('about:blank');const result=await page.evaluate(async({data,pageNumber,limits})=>{
+   const lib=await import('https://kinseed-pdf.invalid/pdfjs.mjs');const input=Uint8Array.from(atob(data),c=>c.charCodeAt(0));let pdf;
+   try{pdf=await lib.getDocument({data:input,isEvalSupported:false,useSystemFonts:false,disableAutoFetch:true,disableStream:true,stopAtErrors:true,maxImageSize:limits.pixels,isOffscreenCanvasSupported:false}).promise;
+    if(pdf.numPages>limits.pages)throw Error('PDF超過目前200頁預覽範圍。');if(pageNumber>pdf.numPages)throw Error('頁碼超過文件頁數。');const p=await pdf.getPage(pageNumber),v=p.getViewport({scale:1});if(!Number.isFinite(v.width)||!Number.isFinite(v.height)||v.width<=0||v.height<=0)throw Error('PDF頁面尺寸無效。');const scale=Math.min(limits.width/v.width,Math.sqrt(limits.pixels/(v.width*v.height)));const viewport=p.getViewport({scale});const canvas=document.createElement('canvas');canvas.width=Math.max(1,Math.floor(viewport.width));canvas.height=Math.max(1,Math.floor(viewport.height));await p.render({canvasContext:canvas.getContext('2d',{alpha:false}),viewport,background:'rgb(255,255,255)'}).promise;
+    const png=canvas.toDataURL('image/png').split(',')[1];if(png.length>Math.ceil(limits.image_bytes/3)*4)throw Error('頁面影像超過目前安全大小，未回傳縮減或虛構內容。');return {data:png,width:canvas.width,height:canvas.height,page:pageNumber,pages:pdf.numPages};
+   }finally{await pdf?.cleanup?.();}
+  },{data:bytes.toString('base64'),pageNumber,limits:DOCUMENT_VIEW_LIMITS});return result;
+ },{signal,timeout});
+}
+export async function generatedPage(e,b,{owner=false,lease}={}){
+ const found=ownGeneratedDocument(e,b.document_id,{owner});if(!found)throw Error('找不到這個個體自己製作的文件，不能讀取其他個體或本機檔案。');if(found.item.format!=='pdf')throw Error('目前實際頁面預覽支援PDF；Word及Excel可讀取內容或下載檢視。');
+ const page=b.page??1;if(!Number.isInteger(page)||page<1||page>DOCUMENT_VIEW_LIMITS.pages)throw Error('頁碼必須是1至200的整數。');
+ if(!owner){e.platform.toolHub.require(e,'vision');if(e.platform.brainBinding?.adapter!=='codex-cli')throw Error('目前大腦接頭尚未驗證影像輸入，沒有假裝看懂；仍可閱讀文字或由Owner預覽。');e.assertAllowed(lease);}
+ e.documentPageCache??=new Map();const key=found.item.id+':'+found.item.sha256+':'+page;let result=e.documentPageCache.get(key);
+ if(!result){const abort=new AbortController();e.externalRequests??=new Set();e.externalRequests.add(abort);try{result=await renderPdfPage(found.bytes,page,{signal:abort.signal,timeout:lease?Math.max(1,Math.min(DOCUMENT_VIEW_LIMITS.timeout,lease.deadline-e.now()-500)):DOCUMENT_VIEW_LIMITS.timeout});}finally{e.externalRequests.delete(abort);}while([...e.documentPageCache.values()].reduce((n,x)=>n+x.data.length,0)+result.data.length>DOCUMENT_VIEW_LIMITS.cache_bytes&&e.documentPageCache.size)e.documentPageCache.delete(e.documentPageCache.keys().next().value);e.documentPageCache.set(key,result);}
+ if(!owner){e.assertAllowed(lease);e.platform.toolHub.require(e,'documents');e.platform.toolHub.require(e,'vision');}
+ const meta={document_id:found.item.id,version:found.item.version,name:found.item.name,source_sha256:found.item.sha256,image_sha256:hash(Buffer.from(result.data,'base64')),page:result.page,pages:result.pages,width:result.width,height:result.height,mime:'image/png',basis:'rendered_saved_pdf',notice:'這是已保存PDF的實際頁面影像，不是重製文件，也不代表模型已完成排版核對。'};
+ if(!owner)e.store.tx(()=>{e.assertAllowed(lease);e.store.event('hub.document_page_provided',meta,'mcp',lease);});return owner?{...meta,data_base64:result.data}:{...meta,_mcp_image:{type:'image',mimeType:'image/png',data:result.data}};
+}
