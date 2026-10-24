@@ -1,0 +1,9 @@
+{
+  "node_modules/tesseract.js": {
+    "version": "7.0.0",
+    "integrity": "sha512-exPBkd+z+wM1BuMkx/Bjv43OeLBxhL5kKWsz/9JY+DXcXdiBjiAch0V49QR3oAJqCaL5qURE0vx9Eo+G5YE7mA==",
+    "script": "opencollective-postinstall || true",
+    "policy": "never_execute",
+    "reason": "Pinned OCR package declares a donation notice script; all installation paths use npm --ignore-scripts. No execution authorized."
+  }
+}

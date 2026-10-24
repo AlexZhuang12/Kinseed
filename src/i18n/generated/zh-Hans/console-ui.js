@@ -10,7 +10,7 @@ let currentPage='home';function navigate(id){for(const [key,page]of Object.entri
 const intro=el('p',"先选择您要做的事。切换查看只读取数据，不会启动个体。");intro.className='lead';pageMap.home.append(intro);const newButton=el('button',"＋ 创建新个体");newButton.className='primary';newButton.onclick=()=>navigate('create');pageMap.home.append(newButton);const cards=el('div');cards.id='entityCards';pageMap.home.append(cards);
 // Move existing controls into focused pages; retain original life/stop/backup handlers.
 const createSection=$('create').closest('section'),importSection=$('import').closest('section'),selectionSection=$('selected').closest('section'),lifeSection=$('window').closest('section');
-createSection.querySelector('h2').textContent="先取一个名字";$('newID').closest('label').hidden=true;$('newName').placeholder="例如：杉杉";$('create').textContent="创建未出生个体，继续设置身份";createSection.append(el('p',"创建后保持未出生。接着可填写全新身份，或从版本库选用既有身份；批准与首次启动会分开处理。"));pageMap.create.append(createSection);
+createSection.querySelector('h2').textContent="先取一个名字";$('newID').closest('label').hidden=true;$('newName').placeholder="例如：小芽";$('create').textContent="创建未出生个体，继续设置身份";createSection.append(el('p',"创建后保持未出生。接着可填写全新身份，或从版本库选用既有身份；批准与首次启动会分开处理。"));pageMap.create.append(createSection);
 pageMap.life.append(selectionSection,lifeSection);for(const id of ['state','historyData','tasks'])pageMap.life.append($(id).closest('section'));
 // The old direct adoption form is replaced by the explicit review journey.
 const oldAdopt=$('adopt').closest('section');oldAdopt.hidden=true;pageMap.review.append(oldAdopt);
@@ -181,7 +181,7 @@ const previousRender=render;render=function(){previousRender();if(currentPage===
 document.addEventListener('kinseed-journal-open',async event=>{const target=event.detail?.individual_id;await loadJournal();if(lastStatus?.individuals.some(e=>e.profile.individual_id===target)){chosen=target;paint();}});
 
 })();
-(()=>{const b=el('button',"每日生活报告（开发版未激活）");b.disabled=true;b.id='openDailyReport';nav.append(b);})();
+(()=>{const b=el('button',"每日生活报告");b.disabled=true;b.id='openDailyReport';const prior=api;api=async function(route,body){const v=await prior(route,body);if(route==='status')b.disabled=!v.local_unification?.reports_enabled;return v;};b.onclick=()=>location.assign('/reports-view#'+encodeURIComponent(token));nav.append(b);})();
 
 (()=>{
 // Presentation examples only. These are never questionnaire answers or identity rules.
@@ -376,4 +376,8 @@ paintFlow();
 })();
 
 const ownerPermissionRows=[{"id":"workbench","group":"optional","title":"创建与修改自己的作品","description":"只能创建自己隔离工作区的文本、CSV、HTML与程序作品。每次保存为新版本，旧版保留；不开放Owner文件或其他个体。","tools":["work_save","work_import"]},{"id":"execute","group":"optional","title":"运行自己的隔离JavaScript工作","description":"需同时开放作品编辑。只处理明确选入自己的作品，使用return回传同步JSON。每次最多5秒、引擎16MB、结果32000字符；无一般文件、网络、shell、套件安装与背景服务。","tools":["run_javascript"]},{"id":"work_reading","group":"required","title":"查看自己的作品与版本","description":"唯读查阅自己的作品及运行结果，不能修改或读取别人的工作区。","tools":["work_list","work_read"]},{"id":"note","group":"optional","title":"添加自己的生活笔记","description":"只能在自己的受控工作区添加笔记，不能覆写旧笔记或任意访问电脑文件。取消勾选不会删除既有笔记。","tools":["write_note"]},{"id":"identity","group":"required","title":"读取自己的身份与原生条件来源","description":"确认自己是谁及必须遵守的条件，属于生活必备能力。","tools":["read_identity_bundle","read_identity_domain","read_identity_source"]},{"id":"memory","group":"required","title":"读取自己的记忆、计划与原始历史","description":"只能读取这个个体自己的纪录，不能读取其他个体的数据。","tools":["get_context","query_history","search_memory","read_record","read_document"]},{"id":"workspace","group":"required","title":"查看自己的既有生活笔记","description":"只读取受控工作区中已保存的笔记，不等于开放一般文件访问。","tools":["read_workspace"]},{"id":"commit","group":"required","title":"保存每轮记忆、进度与生活纪录","description":"每轮必须留下可追溯的结果；原始历史只能追加，不提供覆写或删除开关。","tools":["commit_cycle"]},{"id":"brain","group":"required","title":"使用本环境指定模型进行日常思考","description":"每个活动轮次把身份与记忆交给同一个模型，再保存进度；等待期间没有持续思考。受生活时间与模型额度限制。","tools":[]},{"id":"consult","group":"optional","title":"主动请教独立LLM","description":"向本环境指定模型另开独立对话请教；每轮最多一次，每次另占一个模型轮数，答案不当成已查证事实。","tools":["consult_llm"]},{"id":"chat","group":"required","title":"与Owner双向对话及主动传讯（基本能力）","description":"适用所有个体，不需勾选开放。在有效生活授权内可主动提问、分享或回复；Owner可随时留言。停止或时段外不自行唤醒。","tools":["reply_owner","send_owner"]},{"id":"web","group":"optional","title":"浏览公开外网（隔离浏览器）","description":"可搜索及阅读公开HTTPS网站、续读网页与自己的文本／CSV／PDF附件，不带入Owner登录数据，不连本机及私人网络。下载计入额度，上传自己笔记须逐次批准，不因此登录、发布或付款。","tools":["search_web","browse_web","download_web","request_upload"]}];
-(()=>{const b=el('button',"管理个体选项（后续集成）");b.disabled=true;b.id='manageIndividuals';nav.append(b);})();
+// Owner display preference only. Active entities remain visible. Source and history are unchanged.
+(()=>{let hidden=new Set();const previous=api;
+ api=async function(route,b){const value=await previous(route,b);if(route==='status'){manage.disabled=!value.local_unification?.reports_enabled;hidden=new Set(value.archived_ids??[]);return {...value,individuals:value.individuals.filter(e=>!hidden.has(e.profile.individual_id))};}if(route==='builder'&&value.reviews)return {...value,reviews:value.reviews.filter(r=>!hidden.has(r.individual_id))};return value;};
+ const manage=el('button',"管理个体选项");manage.disabled=true;manage.id='manageIndividuals';manage.onclick=()=>location.assign('/reports-view?manage=1#'+encodeURIComponent(token));nav.append(manage);
+})();

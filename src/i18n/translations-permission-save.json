@@ -1,0 +1,97 @@
+[
+  [
+    "勾選只是草稿，不會立即開放。請先停止此個體與每日安排、等待工作收尾，再返回這裡保存；保存後仍須另行開啟生活。",
+    "Checked boxes are a draft, not active permissions. Stop this individual and its daily schedule, wait for work to settle, then return here to save. Starting life is a separate action.",
+    "チェックは下書きであり、権限はまだ有効になりません。この個体と毎日の生活予定を停止し、処理が終了してからここに戻って保存してください。生活の開始は別の操作です。"
+  ],
+  [
+    "未能確認保存結果，請更新資料核對；勾選仍是草稿。",
+    "The save result could not be confirmed. Refresh to check the active settings; your selection is still a draft.",
+    "保存結果を確認できませんでした。更新して有効な設定を確認してください。選択内容はまだ下書きです。"
+  ],
+  [
+    "權限已保存並生效；沒有啟動生活。",
+    "Permissions are saved and active. Life has not been started.",
+    "権限を保存し、有効になりました。生活は開始していません。"
+  ],
+  [
+    "未能確認保存成功；請更新資料核對已生效權限。勾選仍是草稿。原因：",
+    "Save success could not be confirmed. Refresh to check the active permissions. Your selection remains a draft. Reason: ",
+    "保存の成功を確認できませんでした。更新して有効な権限を確認してください。選択内容はまだ下書きです。理由："
+  ],
+  [
+    "放棄未保存的權限勾選",
+    "Discard unsaved permission selections",
+    "未保存の権限選択を破棄"
+  ],
+  [
+    "已放棄草稿，顯示目前已生效權限；沒有修改設定。",
+    "Draft discarded. The active permissions are shown; no settings were changed.",
+    "下書きを破棄し、現在有効な権限を表示しました。設定は変更していません。"
+  ],
+  [
+    "前往此個體的狀態與每日安排",
+    "Go to this individual's status and daily schedule",
+    "この個体の状態と毎日の予定へ"
+  ],
+  [
+    "操作順序：①停止每日生活並等工作收尾 → ②返回工具與材料保存權限 → ③確認已生效 → ④重新開啟原每日生活安排。這裡不會替您停止或恢復個體。",
+    "Steps: 1. Stop daily life and wait for work to settle → 2. Return to Tools and materials and save permissions → 3. Confirm they are active → 4. Re-enable the original daily schedule. This page does not stop or resume the individual for you.",
+    "手順：①毎日の生活を停止し、処理の終了を待つ → ②ツールと資料に戻って権限を保存 → ③有効な設定を確認 → ④元の毎日の生活予定を再度有効にする。この画面が個体を自動で停止・再開することはありません。"
+  ],
+  [
+    "目前已生效：",
+    "Currently active: ",
+    "現在有効な権限："
+  ],
+  [
+    "正在讀取已生效權限。",
+    "Loading active permissions.",
+    "有効な権限を読み込み中です。"
+  ],
+  [
+    "目前已生效：這六項新增工具全部尚未開放。",
+    "Currently active: all six new tool permissions are off.",
+    "現在有効な設定：追加された6つのツール権限はすべて無効です。"
+  ],
+  [
+    "尚未保存：以下勾選只是草稿，個體仍使用上方已生效權限。",
+    "Unsaved: the selections below are only a draft. The individual still uses the active permissions shown above.",
+    "未保存：以下の選択は下書きです。個体は引き続き上記の有効な権限を使用します。"
+  ],
+  [
+    "沒有尚未保存的權限變更。",
+    "No unsaved permission changes.",
+    "未保存の権限変更はありません。"
+  ],
+  [
+    "請先選擇個體並等資料讀取完成。",
+    "Select an individual and wait for its data to load.",
+    "個体を選択し、データの読み込み完了を待ってください。"
+  ],
+  [
+    "目前仍在生活或工作尚未收尾，暫不能保存。請先到此個體的狀態與每日安排停止，再返回保存。",
+    "Life is active or work has not settled, so saving is unavailable. Go to this individual's status and daily schedule to stop it, then return to save.",
+    "生活中、または処理が未終了のため保存できません。この個体の状態と毎日の予定で停止してから、保存に戻ってください。"
+  ],
+  [
+    "每日生活仍開啟；即使現在不在生活時段，也須先關閉每日安排，才能保存。",
+    "The daily schedule is still enabled. Turn it off before saving, even outside the active hours.",
+    "毎日の生活予定が有効です。生活時間外でも、保存する前に毎日の予定を無効にしてください。"
+  ],
+  [
+    "目前可保存。保存成功後才會開放；不會自動啟動生活。",
+    "Ready to save. Permissions become active only after a successful save; life will not start automatically.",
+    "保存できます。保存が成功した後に権限が有効になります。生活は自動では開始しません。"
+  ],
+  [
+    "（目前已開啟）",
+    " (currently on)",
+    "（現在有効）"
+  ],
+  [
+    "（目前未開啟）",
+    " (currently off)",
+    "（現在無効）"
+  ]
+]

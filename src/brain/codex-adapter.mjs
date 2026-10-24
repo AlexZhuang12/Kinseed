@@ -1,3 +1,4 @@
+import {assertLifeEndpoint} from './endpoint-scope.mjs';
 import fs from 'node:fs';import path from 'node:path';import readline from 'node:readline';
 import {spawn} from 'node:child_process';
 import {createHash} from 'node:crypto';
@@ -12,7 +13,7 @@ export function createCodexAdapter(config,{base,cwd,evidenceDir,resolveBinary=re
  return {binding,execute(request){
   validateInvocation(request);if(!binding.enabled)throw Error('大腦尚未啟用。');
   const life=request.purpose==='life',tools=request.tools;
-  if(life){const url=new URL(tools.endpoint);if(url.protocol!=='http:'||url.hostname!=='127.0.0.1'||url.username||url.password||url.hash||url.search||url.pathname!=='/'||!url.port||[47429,47430,47431,62372].includes(Number(url.port)))throw Error('生活工具必須連接獨立本機開發服務。');tools.controller.assertAllowed(tools.lease);const current=tools.controller.store.get('lease');if(current?.cycle_id!==tools.lease.cycle_id||request.request_id!==current.cycle_id)throw Error('STALE_LEASE');if(path.resolve(tools.controller.store.dir)!==root||createHash('sha256').update(tools.token).digest('hex')!==current.token_hash)throw Error('跨個體租約或工具能力不符。');}
+  if(life){assertLifeEndpoint(tools.endpoint,tools.controller);tools.controller.assertAllowed(tools.lease);const current=tools.controller.store.get('lease');if(current?.cycle_id!==tools.lease.cycle_id||request.request_id!==current.cycle_id)throw Error('STALE_LEASE');if(path.resolve(tools.controller.store.dir)!==root||createHash('sha256').update(tools.token).digest('hex')!==current.token_hash)throw Error('跨個體租約或工具能力不符。');}
   return new Promise(resolve=>{
    const events=[],args=life?codexArgs(work):textArgs(work),file=path.join(evidence,request.request_id+'.jsonl'),limit=life?262144:524288;
    fs.closeSync(fs.openSync(file,'wx'));

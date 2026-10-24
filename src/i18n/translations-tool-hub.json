@@ -1,0 +1,522 @@
+[
+  [
+    "工具與材料",
+    "Tools and materials",
+    "ツールと資料"
+  ],
+  [
+    "選擇個體 → 確認工具權限 → 匯入並同意材料分析 → 閱讀或製作成果 → 核對對外草稿。查看與保存不會啟動生活。",
+    "Select an individual → Check tool permissions → Import and consent to analysis → Read or create results → Review outgoing drafts. Viewing and saving do not start life.",
+    "個体を選択 → 権限を確認 → 資料の取り込みと分析同意 → 成果の閲覧と作成 → 外部送信の下書きを確認。閲覧と保存だけでは生活は開始されません。"
+  ],
+  [
+    "更新這個個體的工具資料",
+    "Refresh this individual's tools",
+    "この個体のツール情報を更新"
+  ],
+  [
+    "材料收件匣",
+    "Material inbox",
+    "資料受信箱"
+  ],
+  [
+    "專案與成果",
+    "Projects and results",
+    "プロジェクトと成果"
+  ],
+  [
+    "申請與提醒",
+    "Requests and reminders",
+    "申請と通知"
+  ],
+  [
+    "外部連線",
+    "External connections",
+    "外部接続"
+  ],
+  [
+    "待批准郵件",
+    "Mail awaiting approval",
+    "承認待ちメール"
+  ],
+  [
+    "正在處理，請稍候。",
+    "Working. Please wait.",
+    "処理中です。お待ちください。"
+  ],
+  [
+    "新增一批材料",
+    "Import a batch of materials",
+    "資料を一括で取り込む"
+  ],
+  [
+    "只會複製你明確選入的內容，不掃描本機。每檔最多8MB；工具資料歷代合計20MB。分析同意只交給目前大腦，不等於允許對外發布。",
+    "Only selected content is copied; local folders are not scanned. Maximum 8 MB per file and 20 MB across retained tool data. Analysis consent is for the current brain, not external publication.",
+    "選択した内容だけをコピーし、ローカルフォルダーは走査しません。1ファイル8MB、ツールの全保存版合計20MBまで。分析同意は現在のモデルに対するもので、外部公開の許可ではありません。"
+  ],
+  [
+    "材料名稱",
+    "Material name",
+    "資料名"
+  ],
+  [
+    "貼上文字",
+    "Paste text",
+    "テキストを貼り付け"
+  ],
+  [
+    "或提供公開HTTPS網址",
+    "Or provide a public HTTPS URL",
+    "または公開HTTPS URL"
+  ],
+  [
+    "或手動選擇檔案",
+    "Or select a file manually",
+    "またはファイルを選択"
+  ],
+  [
+    "我同意本批材料交給目前大腦分析",
+    "I consent to analysis of this batch by the current brain",
+    "この資料一式を現在のモデルで分析することに同意する"
+  ],
+  [
+    "保存材料副本",
+    "Save material copy",
+    "資料のコピーを保存"
+  ],
+  [
+    "文字、網址與檔案請擇一提供。",
+    "Choose one source: text, URL or file.",
+    "テキスト、URL、ファイルのいずれか一つを指定してください。"
+  ],
+  [
+    "檔案超過8MB。",
+    "File exceeds 8 MB.",
+    "ファイルが8MBを超えています。"
+  ],
+  [
+    "材料副本已保存，原檔未修改。",
+    "Copy saved. Original file unchanged.",
+    "コピーを保存しました。元のファイルは変更していません。"
+  ],
+  [
+    "專案與文件成果",
+    "Projects and document results",
+    "プロジェクトと文書成果"
+  ],
+  [
+    "個體使用工具後，這裡顯示專案版本、真實執行結果與可下載文件。HTML預覽禁止讀取控制台、Owner資料及外網；JavaScript專案目前採自己的相對CommonJS模組。",
+    "View project versions, actual execution results and downloadable documents. HTML previews cannot access the console, Owner data or the network. JavaScript projects currently use their own relative CommonJS modules.",
+    "作品の各版、実際の実行結果、ダウンロード文書を表示します。HTMLプレビューは管理画面、Ownerのデータ、外部ネットワークにアクセスできません。JavaScriptは独自の相対CommonJSモジュールを使用します。"
+  ],
+  [
+    "隔離作品預覽",
+    "Isolated work preview",
+    "隔離された作品プレビュー"
+  ],
+  [
+    "個體新增工具權限",
+    "Additional tool permissions",
+    "個体の追加ツール権限"
+  ],
+  [
+    "先停止這個個體與每日安排，再保存。保存只設定所選個體的工具權限，不批准身份、不出生、不恢復生活，也不更改其他個體。",
+    "Stop this individual and its daily schedule before saving. Saving changes only the selected individual’s tool permissions. It does not approve an identity, cause birth, resume life, or change other individuals.",
+    "保存する前に、この個体と毎日の生活予定を停止してください。保存で変更するのは選択した個体のツール権限だけです。身元の承認、誕生、生活の再開、他の個体の変更は行いません。"
+  ],
+  [
+    "閱讀已同意分析的材料",
+    "Read materials approved for analysis",
+    "分析に同意した資料を読む"
+  ],
+  [
+    "編輯與執行隔離專案",
+    "Edit and run isolated projects",
+    "隔離プロジェクトの編集と実行"
+  ],
+  [
+    "製作PDF、Word及Excel",
+    "Create PDF, Word and Excel",
+    "PDF、Word、Excelの作成"
+  ],
+  [
+    "OCR與圖片內容閱讀",
+    "OCR and image reading",
+    "OCRと画像の読み取り"
+  ],
+  [
+    "查詢公開資料服務（仍須原外網權限）",
+    "Query public data services (requires existing web permission)",
+    "公開データの照会（既存の外部閲覧権限も必要）"
+  ],
+  [
+    "提出Gmail郵件草稿（不能自行寄出）",
+    "Propose Gmail drafts (cannot send independently)",
+    "Gmail下書きの提案（自律送信は不可）"
+  ],
+  [
+    "保存新增工具權限",
+    "Save additional tool permissions",
+    "追加ツール権限を保存"
+  ],
+  [
+    "工具與費用申請",
+    "Tool and cost requests",
+    "ツールと費用の申請"
+  ],
+  [
+    "批准不代表已安裝。只有工程驗證過的來源才可安裝；費用預設禁止，新增支出另行決策。",
+    "Approval does not mean installed. Only verified sources can be installed. New costs are blocked pending a separate decision.",
+    "承認だけではインストールされません。検証済みの提供元だけを使用します。新たな費用には別途判断が必要です。"
+  ],
+  [
+    "公開資料服務",
+    "Public data services",
+    "公開データサービス"
+  ],
+  [
+    "維基百科、Crossref與USGS使用受控公開資料接頭，沿用個體的網路權限與預算；Crossref只提供書目，不保證全文。",
+    "Wikipedia, Crossref and USGS use controlled public-data adapters and existing permissions and budgets. Crossref provides bibliographic metadata, not guaranteed full text.",
+    "Wikipedia、Crossref、USGSは管理された接続を使い、既存の権限と通信量に従います。Crossrefは書誌情報であり、本文取得を保証しません。"
+  ],
+  [
+    "雲端空間設定",
+    "Cloud storage settings",
+    "クラウド保存設定"
+  ],
+  [
+    "本輪只保存設定及權限，不連接尚未選定的服務。",
+    "This iteration saves settings and permissions only. Unselected services are not connected.",
+    "今回は設定と権限のみを保存します。未選択のサービスには接続しません。"
+  ],
+  [
+    "服務名稱",
+    "Service name",
+    "サービス名"
+  ],
+  [
+    "資料夾範圍",
+    "Folder scope",
+    "フォルダー範囲"
+  ],
+  [
+    "允許讀取",
+    "Allow reading",
+    "読み取りを許可"
+  ],
+  [
+    "允許寫入",
+    "Allow writing",
+    "書き込みを許可"
+  ],
+  [
+    "保存雲端設定（不連線）",
+    "Save cloud settings (do not connect)",
+    "クラウド設定を保存（接続しない）"
+  ],
+  [
+    "Gmail專用測試帳號",
+    "Dedicated Gmail test account",
+    "Gmail専用テストアカウント"
+  ],
+  [
+    "只要求寄送郵件，不讀既有信箱。請使用自己的Google桌面應用OAuth設定，不要填信箱密碼。帳號連線不等於寄送批准。",
+    "Send-only permission; no inbox reading. Use your Google desktop-app OAuth configuration, never your mailbox password. Connecting an account does not approve a message.",
+    "送信のみを要求し、受信箱は読みません。GoogleデスクトップアプリのOAuth設定を使用し、メールのパスワードは入力しないでください。接続だけでは送信を承認しません。"
+  ],
+  [
+    "OAuth用戶端ID",
+    "OAuth client ID",
+    "OAuthクライアントID"
+  ],
+  [
+    "OAuth用戶端密鑰",
+    "OAuth client secret",
+    "OAuthクライアントシークレット"
+  ],
+  [
+    "保存Gmail用戶端設定",
+    "Save Gmail client settings",
+    "Gmailクライアント設定を保存"
+  ],
+  [
+    "開啟Google授權頁",
+    "Open Google authorization",
+    "Google認証ページを開く"
+  ],
+  [
+    "連接Gmail（僅寄送權限）",
+    "Connect Gmail (send only)",
+    "Gmailに接続（送信のみ）"
+  ],
+  [
+    "請按下方連結，核對專用測試帳號並完成Google授權。",
+    "Open the link below, check the dedicated test account and complete Google authorization.",
+    "下のリンクで専用テストアカウントを確認し、Googleの認証を完了してください。"
+  ],
+  [
+    "中斷本工具的Gmail連線",
+    "Disconnect Gmail from this tool",
+    "このツールのGmail接続を解除"
+  ],
+  [
+    "逐封核對，批准後才寄送",
+    "Review each message before sending",
+    "メールごとに確認してから送信"
+  ],
+  [
+    "先核對收件人、正文及每個附件；批准只針對這一封。沒有Gmail連線或有效生活／工具授權就保留草稿。結果不明時不自動重寄。",
+    "Check the recipient, body and every attachment. Approval applies to this message only. Drafts remain unsent without Gmail connection and valid life and tool authorization. Unknown outcomes are never resent automatically.",
+    "宛先、本文、すべての添付ファイルを確認してください。承認はこの1通だけに適用されます。接続や有効な生活・ツール権限がない場合は下書きを保留します。不明な結果を自動再送しません。"
+  ],
+  [
+    "下載未成功，請更新資料。",
+    "Download failed. Refresh the data.",
+    "ダウンロードに失敗しました。更新してください。"
+  ],
+  [
+    "已保存材料",
+    "Saved materials",
+    "保存済み資料"
+  ],
+  [
+    "已同意交給目前大腦分析",
+    "Approved for analysis by the current brain",
+    "現在のモデルによる分析に同意済み"
+  ],
+  [
+    "尚未同意目前大腦分析，內容不交給模型",
+    "Not approved for this brain; content is withheld",
+    "現在のモデルへの同意がなく、内容は渡されません"
+  ],
+  [
+    "Owner閱讀原文",
+    "Owner: read original",
+    "Ownerが原文を読む"
+  ],
+  [
+    "無可抽取文字。",
+    "No extractable text.",
+    "抽出できる文字がありません。"
+  ],
+  [
+    "撤回材料分析同意",
+    "Withdraw analysis consent",
+    "分析同意を撤回"
+  ],
+  [
+    "同意目前大腦分析",
+    "Consent to this brain's analysis",
+    "現在のモデルでの分析に同意"
+  ],
+  [
+    "閱讀與預覽作品",
+    "Read and preview work",
+    "作品を読む・プレビュー"
+  ],
+  [
+    "閱讀執行結果",
+    "Read execution result",
+    "実行結果を読む"
+  ],
+  [
+    "未成功",
+    "Unsuccessful",
+    "未成功"
+  ],
+  [
+    "下載成果",
+    "Download result",
+    "成果をダウンロード"
+  ],
+  [
+    "｜費用：",
+    " | Cost:",
+    "｜費用："
+  ],
+  [
+    "批准申請（尚未安裝）",
+    "Approve request (not installed)",
+    "申請を承認（未インストール）"
+  ],
+  [
+    "拒絕申請",
+    "Reject request",
+    "申請を却下"
+  ],
+  [
+    "安裝已驗證套件（未驗證來源會拒絕）",
+    "Install verified package (unverified sources refused)",
+    "検証済みパッケージを導入（未検証の提供元は拒否）"
+  ],
+  [
+    "期限：",
+    "Due:",
+    "期限："
+  ],
+  [
+    "已到期，通知已記錄",
+    "Due; notification recorded",
+    "期限到来、通知を記録済み"
+  ],
+  [
+    "等待期限；不會自行加開生活",
+    "Waiting for deadline; no extra life is started",
+    "期限待ち。生活時間は追加しません"
+  ],
+  [
+    "收件人：",
+    "Recipient:",
+    "宛先："
+  ],
+  [
+    "核對這封郵件",
+    "Review this message",
+    "このメールを確認"
+  ],
+  [
+    "尚未寄送",
+    "Not sent",
+    "未送信"
+  ],
+  [
+    "狀態：",
+    "Status:",
+    "状態："
+  ],
+  [
+    "我已核對收件人、正文及附件，批准寄送這一封",
+    "I checked the recipient, body and attachments and approve this message",
+    "宛先、本文、添付を確認し、この1通の送信を承認します"
+  ],
+  [
+    "批准並寄送這一封",
+    "Approve and send this message",
+    "この1通を承認して送信"
+  ],
+  [
+    "請先明確勾選這封信的寄送批准。",
+    "Check the explicit approval box for this message first.",
+    "このメールの明示的な承認欄を先にチェックしてください。"
+  ],
+  [
+    "雲端：尚未連線；保存設定不會傳出資料。",
+    "Cloud: not connected. Saving settings does not transfer data.",
+    "クラウド未接続。設定保存だけではデータを送信しません。"
+  ],
+  [
+    "Gmail已連線，只允許寄送；每封仍須批准。",
+    "Gmail connected, send only. Each message still requires approval.",
+    "Gmail接続済み、送信のみ。各メールの承認は別途必要です。"
+  ],
+  [
+    "Gmail尚未連線；不會寄出郵件。",
+    "Gmail not connected. No message will be sent.",
+    "Gmail未接続。メールは送信されません。"
+  ],
+  [
+    "等待Owner處理",
+    "Awaiting Owner action",
+    "Ownerの対応待ち"
+  ],
+  [
+    "已批准，尚未安裝",
+    "Approved, not installed",
+    "承認済み、未インストール"
+  ],
+  [
+    "已安裝",
+    "Installed",
+    "インストール済み"
+  ],
+  [
+    "草稿，尚未寄送",
+    "Draft, not sent",
+    "下書き、未送信"
+  ],
+  [
+    "正在寄送",
+    "Sending",
+    "送信中"
+  ],
+  [
+    "服務已接受寄送",
+    "Service accepted the message",
+    "サービスが送信を受け付けました"
+  ],
+  [
+    "結果待核對，不自動重寄",
+    "Outcome needs verification; no automatic resend",
+    "結果の確認が必要、自動再送しません"
+  ],
+  [
+    "工作進行中",
+    "Work in progress",
+    "処理中"
+  ],
+  [
+    "工作已完成",
+    "Work completed",
+    "処理完了"
+  ],
+  [
+    "工作未完成",
+    "Work not completed",
+    "処理未完了"
+  ],
+  [
+    "工作已中斷",
+    "Work interrupted",
+    "処理中断"
+  ],
+  [
+    "請查看詳細結果",
+    "See detailed result",
+    "詳細結果を確認してください"
+  ],
+  [
+    "安裝候選：",
+    "Package proposed for installation:",
+    "導入候補："
+  ],
+  [
+    "來源尚未驗證，批准後也不會自行安裝。",
+    "Source unverified. Approval will not install it automatically.",
+    "提供元は未検証です。承認しても自動導入しません。"
+  ],
+  [
+    "Kinseed 1.4 工具能力獨立試用版",
+    "Kinseed 1.4 isolated tool preview",
+    "Kinseed 1.4 ツール機能の独立プレビュー"
+  ],
+  [
+    "Kinseed 1.4 工具能力獨立試用版｜個體控制台",
+    "Kinseed 1.4 isolated tool preview | Individual console",
+    "Kinseed 1.4 独立ツールプレビュー｜個体制御画面"
+  ],
+  [
+    "已更新這個個體的工具資料；查看不會啟動生活。",
+    "Tool information updated for this individual. Viewing does not start activity.",
+    "この個体のツール情報を更新しました。閲覧で活動は始まりません。"
+  ],
+  [
+    "查看原始內容與依據",
+    "View original contents and evidence",
+    "原文と根拠を見る"
+  ],
+  [
+    "正在安裝，請勿重複送出",
+    "Installing; do not submit again.",
+    "導入中です。再送しないでください。"
+  ],
+  [
+    "安裝結果待核對，不自動重試",
+    "Installation result needs review; no automatic retry.",
+    "導入結果の確認が必要です。自動再試行しません。"
+  ],
+  [
+    "工具工作",
+    "Tool job",
+    "ツール処理"
+  ]
+]

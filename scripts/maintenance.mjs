@@ -12,7 +12,7 @@ function fileMap(root){const out={};if(!fs.existsSync(root))return out;function 
 function inspectDatabases(home){
  const out={};
  for(const rel of Object.keys(fileMap(home)).filter(x=>x.endsWith('.sqlite'))){
-  const db=new DatabaseSync(path.join(home,rel),{readOnly:true});
+  const db=new DatabaseSync(path.toNamespacedPath(path.resolve(home,rel)),{readOnly:true});
   try{
    if(db.prepare('PRAGMA integrity_check').get().integrity_check!=='ok')throw Error('資料庫完整性未通過：'+rel);
    const tables=db.prepare("SELECT name FROM sqlite_master WHERE type='table'").all().map(x=>x.name);

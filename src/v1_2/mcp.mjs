@@ -1,12 +1,13 @@
+import {hubTools} from '../tools/hub-contract.mjs';
 // MCP stdio JSON-RPC transport. This fixed proxy has no Owner capability or filesystem API.
 import path from 'node:path';import readline from 'node:readline';import {argumentError} from './tool-guidance.mjs';import {workbenchTools} from './workbench-tools.mjs';
 import {delegationTool} from '../tools/delegation.mjs';
-let workbenchAvailable=false;
+let workbenchAvailable=false;let hubAvailable=false;
 let delegationAvailable=true;
 const string={type:'string'},integer={type:'integer'};
 const schema=(properties={},required=[])=>({type:'object',properties,required,additionalProperties:false});
 let extraCapabilities=false;
-export const tools=[delegationTool,...workbenchTools,
+export const tools=[...hubTools,delegationTool,...workbenchTools,
  {name:'search_web',description:'在既有公開外網權限與下載額度內使用Bing公開HTTPS搜尋，只送公開問題，不登入、不付費。失敗或無可用結果會明示，不假造來源。',inputSchema:schema({query:{type:'string',maxLength:300}},['query'])},
  {name:'read_document',description:'依document_id分頁閱讀自己的網頁快照、已下載純文字、CSV或PDF，不讀本機路徑、不接外網、不執行文件。每次最多6000字元；使用next_offset續讀。',inputSchema:schema({document_id:string,offset:{type:'integer',minimum:0},max_chars:{type:'integer',minimum:1,maximum:6000}},['document_id'])},
  {name:'read_identity_bundle',description:'分頁讀取伺服器核對的自身完整批准身份，必須帶目前package_hash；未讀完不得宣稱全文已讀。',inputSchema:schema({package_hash:string,offset:{type:'integer',minimum:0},max_chars:{type:'integer',minimum:1,maximum:12000}},['package_hash'])},
@@ -42,19 +43,19 @@ export async function handle(message){
  if(method==='initialize'){
   const r=await fetch(process.env.KINSEED_ENDPOINT+'/cycle/protocol',{method:'POST',headers:{'Content-Type':'application/json',Authorization:'Bearer '+process.env.KINSEED_CYCLE_TOKEN},body:JSON.stringify({requested_version:String(message.params?.protocolVersion??'unknown').slice(0,40),negotiated_version:'2024-11-05'}),signal:AbortSignal.timeout(5000)});
   if(!r.ok)throw Error('MCP_AUDIT_UNAVAILABLE');
-  const protocol=await r.json();extraCapabilities=protocol.capabilities?.version===1;workbenchAvailable=protocol.capabilities?.workbench===true;delegationAvailable=protocol.capabilities?.codex_delegation!==false;
+  const protocol=await r.json();hubAvailable=protocol.capabilities?.tool_hub===true;extraCapabilities=protocol.capabilities?.version===1;workbenchAvailable=protocol.capabilities?.workbench===true;delegationAvailable=protocol.capabilities?.codex_delegation!==false;
   return {protocolVersion:'2024-11-05',capabilities:{tools:{}},serverInfo:{name:'kinseed-controlled-local',version:'0.1.0'}};
  }
  if(method==='ping')return {};
- if(method==='tools/list')return {tools:tools.filter(t=>(t.name!=='delegate_codex'||delegationAvailable)&&(!workbenchTools.some(w=>w.name===t.name)||workbenchAvailable)&&(extraCapabilities||!['search_web','read_document','browse_web','download_web','request_upload','consult_llm','reply_owner','send_owner'].includes(t.name)))};
+ if(method==='tools/list')return {tools:tools.filter(t=>(hubAvailable||!hubTools.some(h=>h.name===t.name))&&(t.name!=='delegate_codex'||delegationAvailable)&&(!workbenchTools.some(w=>w.name===t.name)||workbenchAvailable)&&(extraCapabilities||!['search_web','read_document','browse_web','download_web','request_upload','consult_llm','reply_owner','send_owner'].includes(t.name)))};
  if(method==='resources/list')return {resources:[]};
  if(method==='resources/templates/list')return {resourceTemplates:[]};
  if(method==='tools/call'){
    const {name,arguments:args={}}=message.params??{};const definition=tools.find(t=>t.name===name);
-   if(!definition||workbenchTools.some(w=>w.name===name)&&!workbenchAvailable||!extraCapabilities&&['browse_web','download_web','request_upload','consult_llm','reply_owner','send_owner'].includes(name))throw Error('UNKNOWN_TOOL');
+   if(!definition||!hubAvailable&&hubTools.some(h=>h.name===name)||workbenchTools.some(w=>w.name===name)&&!workbenchAvailable||!extraCapabilities&&['browse_web','download_web','request_upload','consult_llm','reply_owner','send_owner'].includes(name))throw Error('UNKNOWN_TOOL');
    // Schema validation is authoritative in the broker, so refused calls are also audited.
-   const response=await fetch(process.env.KINSEED_ENDPOINT+'/cycle/tool',{method:'POST',headers:{'Content-Type':'application/json',Authorization:'Bearer '+process.env.KINSEED_CYCLE_TOKEN},body:JSON.stringify({name,args}),signal:AbortSignal.timeout(name==='delegate_codex'?75000:name==='run_javascript'?15000:name==='consult_llm'?60000:name==='read_document'?15000:['search_web','browse_web','download_web'].includes(name)?35000:5000)});
-   const result=await response.json();return {content:[{type:'text',text:JSON.stringify(result)}],isError:!response.ok};
+   const response=await fetch(process.env.KINSEED_ENDPOINT+'/cycle/tool',{method:'POST',headers:{'Content-Type':'application/json',Authorization:'Bearer '+process.env.KINSEED_CYCLE_TOKEN},body:JSON.stringify({name,args}),signal:AbortSignal.timeout(hubTools.some(h=>h.name===name)?60000:name==='delegate_codex'?75000:name==='run_javascript'?15000:name==='consult_llm'?60000:name==='read_document'?15000:['search_web','browse_web','download_web'].includes(name)?35000:5000)});
+   const result=await response.json();if(response.ok&&result._mcp_image){const {_mcp_image,...meta}=result;return {content:[{type:'text',text:JSON.stringify(meta)},_mcp_image],isError:false};}return {content:[{type:'text',text:JSON.stringify(result)}],isError:!response.ok};
  }
  throw Error('METHOD_NOT_FOUND');
 }

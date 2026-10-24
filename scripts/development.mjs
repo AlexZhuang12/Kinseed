@@ -12,11 +12,11 @@ export async function startDevelopment(env=loadEnvironment(),{requireWindows=tru
  if(requireWindows&&process.platform!=='win32')throw Error('本階段只支援Windows。');if(Number(process.versions.node.split('.')[0])!==24)throw Error('請使用Node.js 24。');
  claimEnvironment(env);
  const config=env.brain??{...DEFAULT_BRAIN},preflight=await brainPreflight(config);
- let app;app=await serve({dir:env.runtime,port:env.config.http.port,engineering:true,preflight,timezone:env.config.timezone??'Asia/Taipei',runnerFactory:e=>preflight.ok?lifeRunner({endpoint:app.endpoint,base:e.store.dir,cwd:path.join(e.store.dir,'life'),evidenceDir:path.join(e.store.dir,'brain-evidence'),prompt:lifePrompt,config}):async()=>{throw Error('DEVELOPMENT_INFERENCE_DISABLED');}});
- app.platform.brainBinding=descriptor(config);app.platform.consultBrainBinding=descriptor(config);app.platform.delegationEnabled=env.config.tools?.codex.enabled??true;
- app.platform.consultModel=preflight.ok?(prompt,options)=>textInference(prompt,{...options,purpose:'consult',config}):async()=>{throw Error('DEVELOPMENT_INFERENCE_DISABLED');};
+ let app;app=await serve({dir:env.runtime,port:env.config.http.port,engineering:true,preflight,timezone:env.config.timezone??'Asia/Taipei',runnerFactory:e=>app.platform.dailyPreflightReady?lifeRunner({endpoint:app.endpoint,base:e.store.dir,cwd:path.join(e.store.dir,'life'),evidenceDir:path.join(e.store.dir,'brain-evidence'),prompt:lifePrompt,config}):async()=>{throw Error('DEVELOPMENT_INFERENCE_DISABLED');}});
+ app.platform.refreshPreflight=async()=>{const latest=await brainPreflight(config);app.platform.dailyPreflightReady=latest.ok;return latest;};app.platform.toolBrainEndpoint=config.endpoint??config.baseUrl??null;app.platform.brainBinding=descriptor(config);app.platform.consultBrainBinding=descriptor(config);app.platform.delegationEnabled=env.config.tools?.codex.enabled??true;
+ app.platform.consultModel=(prompt,options)=>{if(!app.platform.dailyPreflightReady)throw Error('DEVELOPMENT_INFERENCE_DISABLED');return textInference(prompt,{...options,purpose:'consult',config});};
  const instance_id=createHash('sha256').update(env.home).digest('hex').slice(0,20),readStatus=app.platform.status.bind(app.platform);
- app.platform.status=()=>({...readStatus(),development:{instance_id,environment:'development',phase:3,timezone:app.platform.timezone},brain:{...descriptor(config),ready:preflight.ok}});
+ app.platform.status=()=>({...readStatus(),development:{instance_id,environment:'development',phase:3,timezone:app.platform.timezone},brain:{...descriptor(config),ready:app.platform.dailyPreflightReady}});
  noLinks(env.root,env.session);
  fs.writeFileSync(env.session,JSON.stringify({schema:1,kind:'kinseed-development-session',environment:'development',instance_id,runtime:env.runtime,endpoint:app.endpoint,token:app.ownerToken,pid:process.pid},null,2),{mode:0o600});
  const cleanup=()=>{if(fs.existsSync(env.session)){const s=JSON.parse(fs.readFileSync(env.session));if(s.pid===process.pid)fs.unlinkSync(env.session);}};

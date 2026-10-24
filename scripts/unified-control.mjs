@@ -1,0 +1,25 @@
+import {unifiedLayout,validateUnifiedSession} from './unified-layout.mjs';
+import {LOCAL_VERSION} from '../src/v1_2/local-version.mjs';
+import fs from 'node:fs';import path from 'node:path';import {spawn} from 'node:child_process';
+import {reserveSingleton} from '../src/singleton.mjs';import {startUnified} from '../src/v1_2/unified-runtime.mjs';
+const sourceRoot=path.resolve(import.meta.dirname,'..'),workspace=process.argv.find(x=>x.startsWith('--workspace=')),root=workspace?path.resolve(workspace.slice(12)):sourceRoot;
+if(workspace&&root!==path.resolve(sourceRoot,'..'))throw Error('整合資料只能位於本程式的上一層專案，拒絕外部路徑。');
+const layout=unifiedLayout(root,{requireStaging:process.argv.includes('--staging')}),runtime=layout.runtime,sessionFile=path.join(runtime,'owner-session.json');
+async function current(){const s=JSON.parse(fs.readFileSync(sessionFile));validateUnifiedSession(s,layout);const r=await fetch(s.endpoint+'/owner/status',{headers:{Authorization:'Bearer '+s.token},signal:AbortSignal.timeout(3000)});if(!r.ok)throw Error('控制台尚未連線。');const status=await r.json();if(status.version!==LOCAL_VERSION||layout.staging&&status.staging_instance!==layout.instance)throw Error('此入口只操作整合版，請勿同時啟動舊版。');return {s,status};}
+async function open(s){const child=spawn('powershell.exe',['-NoProfile','-Command',"Start-Process '"+s.endpoint+'/#'+s.token+"'"],{windowsHide:true,stdio:'ignore'});await new Promise((r,j)=>{child.once('error',j);child.once('close',code=>code===0?r():j(Error('無法開啟瀏覽器。')));});}
+async function run(){const action=process.argv[2]??'open';
+ if(action==='serve'){
+  if(!fs.existsSync(path.join(runtime,'registry.sqlite')))throw Error('缺少已驗證的整合資料，未建立空白平台。');
+  const guard=await reserveSingleton(layout.guardPort);let app;try{app=await startUnified({runtime,reportsDir:layout.reportsDir,port:layout.port,...(layout.staging?{engineering:true,schedule:false,inferenceEnabled:false,preflightOverride:{ok:false,error:'STAGING_INFERENCE_DISABLED'}}:{})});}catch(e){guard.close();throw e;}
+  if(layout.staging){const originalStatus=app.platform.status.bind(app.platform);app.platform.status=()=>({...originalStatus(),staging_instance:layout.instance});}
+  fs.writeFileSync(sessionFile,JSON.stringify({endpoint:app.endpoint,token:app.ownerToken,pid:process.pid,version:LOCAL_VERSION,...(layout.staging?{staging_instance:layout.instance}:{})}),{mode:0o600});
+  fs.writeFileSync(path.join(root,'runtime_reports/service.json'),JSON.stringify({pid:process.pid,endpoint:app.endpoint,integrated:true,schedule:layout.staging?'disabled':'23:00',timezone:'Asia/Taipei',started_at:new Date().toISOString()}));
+  app.server.once('close',()=>guard.close());let closing=false;const close=async()=>{if(closing)return;closing=true;try{await app.close();guard.close();}catch(e){closing=false;console.error(e.message);}};process.on('SIGTERM',close);process.on('SIGINT',close);console.log('Kinseed '+LOCAL_VERSION+' 整合控制台已啟動，將核對並遵循原有每日授權。');return;
+ }
+ if(action==='start'){try{const {s}=await current();if(!process.argv.includes('--no-open'))await open(s);console.log('整合控制台已在運作；沒有恢復生活。');return;}catch(e){if(!/fetch failed|ENOENT|尚未連線/.test(e.message))throw e;}
+  const logs=path.join(root,'runtime_v1_2','logs');fs.mkdirSync(logs,{recursive:true});const out=fs.openSync(path.join(logs,'unified-startup.log'),'a'),err=fs.openSync(path.join(logs,'unified-error.log'),'a');let child;try{child=spawn(process.execPath,[import.meta.filename,'serve','--workspace='+root,...(layout.staging?['--staging']:[])],{cwd:root,windowsHide:true,detached:true,stdio:['ignore',out,err]});child.unref();}finally{fs.closeSync(out);fs.closeSync(err);}let active;for(let i=0;i<60;i++){await new Promise(r=>setTimeout(r,500));try{const c=await current();if(c.s.pid===child.pid){active=c;break;}}catch{}}if(!active)throw Error('尚未確認啟動成功，請查看 runtime_v1_2/logs/unified-error.log，不要重複啟動。');if(!process.argv.includes('--no-open'))await open(active.s);console.log('整合控制台已啟動；依原有每日授權核對排程，未新增生活授權。');return;
+ }
+ const {s,status}=await current();if(action==='open'){await open(s);return;}if(action==='status'){console.log(JSON.stringify({version:status.version,endpoint:s.endpoint,pid:s.pid,global_stopped:status.global.stopped,visible:status.individuals.filter(x=>!status.archived_ids.includes(x.profile.individual_id)).map(x=>({name:x.name,life:x.life.state,mode:x.control.mode,a:x.a.version})),preflight:status.preflight.ok}));return;}
+ if(!['stop','shutdown'].includes(action))throw Error('使用 start / open / status / stop / shutdown。');const route=action==='stop'?'/owner/global':'/owner/shutdown',body=action==='stop'?{action:'stop',expected_version:status.global.version,request_id:crypto.randomUUID()}:{};const r=await fetch(s.endpoint+route,{method:'POST',headers:{Authorization:'Bearer '+s.token,'Content-Type':'application/json'},body:JSON.stringify(body),signal:AbortSignal.timeout(15000)});const v=await r.json();if(!r.ok)throw Error(v.error);console.log(action==='stop'?'全域停止已生效；沒有刪除資料。':'已要求安全關閉控制台；原每日授權保留，下次啟動核對後依原安排生活。');
+}
+if(process.argv[1]&&path.resolve(process.argv[1])===import.meta.filename)run().catch(e=>{console.error(e.message);process.exitCode=1;});

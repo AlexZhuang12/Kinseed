@@ -14,7 +14,7 @@ $('previewBirth').textContent='檢查條件，準備首次出生';$('birth').tex
 $('windowStart').closest('label').firstChild.textContent='每天開始生活的時間（生活時區） ';
 $('windowMinutes').closest('label').firstChild.textContent='每日可活動時段長度（分鐘，最多240） ';
 $('tasks').closest('section').querySelector('small').textContent='本機停止與遠端取消分開記錄；沒有遠端確認時會明示尚未確認。';
-const settingsHelp=el('p','這是每天允許活動的時間範圍，並非保證持續思考。個體與平台的輪數上限請見本步顯示的實際設定，每輪最多2分鐘。保存設定不會啟動生活。時段結束、Owner停止、撤回權限、額度用完或執行異常都會停止；重新開啟控制器不會自動恢復。');$('window').after(settingsHelp);
+const settingsHelp=el('p','生活時間是允許活動的範圍，不保證持續思考。每輪最多2分鐘，包含工具與等待；接近期限會保留交接時間。時段與額度不自動增加。只有Owner明確停止才取消每日授權，異常或重啟會先核對執行條件。');$('window').after(settingsHelp);
 const toolsHelp=el('p','工具權限請查看上方逐項清單。「生活必備」與「尚未開放」會說明原因；只有可自行勾選的項目能保存成設定，身份描述不會替代實際授權。');$('permissions').after(toolsHelp);
 const settingResult=el('p');settingResult.id='settingResult';$('permissions').after(settingResult);
 const globalPanelFlow=el('div');globalPanelFlow.id='globalClearFlow';globalPanelFlow.hidden=true;globalPanel.append(globalPanelFlow);$('globalClear').textContent='查看解除平台停止的範圍';

@@ -14,7 +14,7 @@ $('previewBirth').textContent="要件を確認して初回誕生の準備";$('bi
 $('windowStart').closest('label').firstChild.textContent="毎日の活動開始時刻（生活タイムゾーン） ";
 $('windowMinutes').closest('label').firstChild.textContent="毎日の活動時間帯の長さ（分、最大240） ";
 $('tasks').closest('section').querySelector('small').textContent="ローカル終了と遠隔取消は分けて記録します。遠隔側の確認がなければ未確認と明示します。";
-const settingsHelp=el('p',"これは毎日の活動可能時間で、継続的な思考を保証しません。個体と全体の回数上限はこの手順の実際の設定を確認してください。各回は最長2分です。保存だけでは生活を開始しません。時間終了、Ownerの停止、権限撤回、枠の消費、実行異常で停止し、コントローラーの再起動でも自動再開しません。");$('window').after(settingsHelp);
+const settingsHelp=el('p',"生活時間は活動を許可する範囲で、常に思考する保証ではありません。各回の上限はツールと待機を含む2分です。期限前に引き継ぎ時間を確保します。時間や使用枠を自動で増やしません。毎日の許可はOwnerの明示的な停止でのみ取り消され、異常や再起動時は実行条件を確認します。");$('window').after(settingsHelp);
 const toolsHelp=el('p',"道具の権限は上の一覧で確認してください。必須と未提供の項目には理由を表示します。選択可能な項目のみ保存でき、アイデンティティの記述は実際の許可を代替しません。");$('permissions').after(toolsHelp);
 const settingResult=el('p');settingResult.id='settingResult';$('permissions').after(settingResult);
 const globalPanelFlow=el('div');globalPanelFlow.id='globalClearFlow';globalPanelFlow.hidden=true;globalPanel.append(globalPanelFlow);$('globalClear').textContent="全体停止解除の影響範囲を見る";

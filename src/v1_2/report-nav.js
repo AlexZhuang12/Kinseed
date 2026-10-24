@@ -1,1 +1,1 @@
-(()=>{const b=el('button','每日生活報告（開發版未啟用）');b.disabled=true;b.id='openDailyReport';nav.append(b);})();
+(()=>{const b=el('button','每日生活報告');b.disabled=true;b.id='openDailyReport';const prior=api;api=async function(route,body){const v=await prior(route,body);if(route==='status')b.disabled=!v.local_unification?.reports_enabled;return v;};b.onclick=()=>location.assign('/reports-view#'+encodeURIComponent(token));nav.append(b);})();

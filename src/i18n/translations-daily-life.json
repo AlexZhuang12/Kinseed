@@ -1,0 +1,67 @@
+[
+  [
+    "每日生活",
+    "Daily life",
+    "毎日の生活"
+  ],
+  [
+    "停止、暫停、全域停止或重啟後需要重新開啟；修改生活設定後亦需重新確認。",
+    "Stop, pause, global stop or restart cancels daily life. Changes to life settings require confirmation again.",
+    "停止、一時停止、全体停止、再起動で毎日の生活は解除されます。生活設定の変更後も再確認が必要です。"
+  ],
+  [
+    "開啟每日生活",
+    "Enable daily life",
+    "毎日の生活を有効にする"
+  ],
+  [
+    "停止每日生活",
+    "Stop daily life",
+    "毎日の生活を停止する"
+  ],
+  [
+    "｜每日生活已開啟；下次開始：",
+    " | Daily life enabled; next start: ",
+    "｜毎日の生活は有効です。次回開始："
+  ],
+  [
+    "｜每日生活未開啟",
+    " | Daily life is off",
+    "｜毎日の生活は無効です"
+  ],
+  [
+    " 分鐘；每時段最多 ",
+    " minutes; per-window maximum: ",
+    "分。各時間帯の上限："
+  ],
+  [
+    " 輪。下次時段：",
+    " rounds. Next window: ",
+    "回。次の時間帯："
+  ],
+  [
+    "確認開啟此個體的每日生活",
+    "Confirm daily life for this individual",
+    "この個体の毎日の生活を有効にする"
+  ],
+  [
+    "取消",
+    "Cancel",
+    "キャンセル"
+  ],
+  [
+    "每日生活已開啟，時間到由控制器檢查後開始。",
+    "Daily life is enabled. The controller checks conditions and starts at the scheduled time.",
+    "毎日の生活を有効にしました。予定時刻にコントローラーが条件を確認して開始します。"
+  ],
+  [
+    "每日生活已停止，不會到時間自行恢復。",
+    "Daily life is stopped and will not resume automatically.",
+    "毎日の生活を停止しました。予定時刻になっても自動再開しません。"
+  ],
+  [
+    "出生立即留存紀錄，可以提前完成；活動要到指定時間才開始。到「狀態與啟停」可選「開啟每日生活」，確認後每天按已保存時段生活；單次臨時加開另行操作，不改每日時間。停止、暫停、全域停止、重啟或修改生活設定會取消每日生活，須重新開啟。輪數與網路額度不會因此增加。",
+    "Birth is recorded immediately and may be confirmed in advance. In Status and controls, choose Enable daily life and confirm to use the saved daily window. Temporary life is separate and does not change that window. Stop, pause, global stop, restart or changes to life settings cancel daily life and require enabling it again. Round and network allowances do not increase.",
+    "出生は直ちに記録され、事前に確認できます。「状態と操作」で「毎日の生活を有効にする」を選び、保存済み時間帯での生活を確認してください。一時的な生活は別で、毎日の時間帯を変更しません。停止、一時停止、全体停止、再起動、設定変更で解除され、再度有効にする必要があります。活動回数と通信量は増えません。"
+  ]
+]

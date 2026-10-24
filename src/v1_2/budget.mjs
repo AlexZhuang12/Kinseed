@@ -1,3 +1,4 @@
+import {rebindDailySettings} from './daily-life.mjs';
 // Owner-only administrative settings. No counter reset, activation, or time extension.
 export function setBudget(platform,cmd){
  const keys=cmd?.scope==='individual'?['scope','individual_id','limit','expected_version','request_id']:['scope','limit','expected_version','request_id'];
@@ -9,8 +10,8 @@ export function setBudget(platform,cmd){
  });
  const e=platform.entity(cmd.individual_id);return e.store.tx(()=>{
   const c=e.store.get('control');if(c.version!==cmd.expected_version)throw Error('CONTROL_VERSION_CONFLICT');
-  if(e.store.get('lease')||c.mode!=='stopped'||!c.stop_lock)throw Error('STOP_FIRST');
+  if(e.store.get('lease'))throw Error('目前工作尚未收尾，請稍後保存；原每日生活安排保留。');
   const previous=c.max_cycles;c.max_cycles=cmd.limit;c.version++;e.store.set('control',c);
-  e.store.event('owner.activity_budget',{request_id:cmd.request_id,previous,limit:c.max_cycles,cycles_used:c.cycles_used},'owner-local',{request_id:cmd.request_id});return c;
+  rebindDailySettings(e);e.store.event('owner.activity_budget',{request_id:cmd.request_id,previous,limit:c.max_cycles,cycles_used:c.cycles_used},'owner-local',{request_id:cmd.request_id});return c;
  });
 }

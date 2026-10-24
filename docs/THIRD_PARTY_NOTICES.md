@@ -42,3 +42,11 @@ Acorn 8.18.0 (MIT) is vendored only for deterministic localization builds. Its d
 OpenCC-JS 1.0.5 (MIT) supplies the offline Traditional-to-Simplified conversion for UI source strings only. No individual content is converted. The official npm package SHA-512 was verified; only its t2cn ESM build and license are distributed. See [license](third-party/opencc-js-LICENSE.txt) and [provenance](third-party/opencc-js-provenance.json). No install scripts or runtime network calls are used.
 
 Git散布會規範文字換行；inventory.json的sha256保留原始上游複製位元，distributed_lf_sha256另記LF散布位元，不改授權條文。完整來源附件的manifest也記錄實際散布檔案SHA。
+
+## Tool candidate additions
+
+Pinned runtime additions: Pyodide314.0.7 (MPL-2.0, embedded CPython3.14.2 PSF terms), Tesseract.js7.0.0/core7 (Apache-2.0), DOCX9.6.1 (MIT), docx-preview0.4.1 (MIT), JSZip3.10.1 (MIT/GPL-3.0 dual license, use MIT branch) and their locked transitive dependencies. Exact package versions, registry integrity and copied licenses are in third-party/tool-dependencies.json and inventory.json. OCR traineddata is obtained separately into private storage and pinned by byte size/SHA; upstream legacy mirror availability is not guaranteed. No model weights are distributed.
+
+Pyodide source: https://github.com/pyodide/pyodide/tree/314.0.7 . The source implementation of the served-copy WASM memory-limit change is src/tools/project-runner.mjs boundedPythonWasm, retained in this distribution; upstream installed asset is unmodified. MPL and CPython license copies are retained. This inventory is not legal certification or a complete audit of every embedded third-party component.
+
+The only optional verified Python wheel is packaging26.1 (Apache-2.0 OR BSD-2-Clause); approval pins the upstream wheel hash and source, not an arbitrary package-manager command. Third-party install scripts are never executed. A reviewed tesseract.js donation postinstall declaration is documented by exact version/integrity in config/reviewed-install-scripts.json and remains disabled with --ignore-scripts.

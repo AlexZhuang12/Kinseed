@@ -12,6 +12,6 @@ test('Reading all guidance leaves blank answers and compiled conditions blank; o
  answers[0].text='這是我自己寫的合成身份';answers[0].status='custom';p=compile({package_id:'guidance-test',title:'合成',test_only:true,answers});assert.equal(p.conditions.length,1);assert.equal(p.conditions[0].raw_text,answers[0].text);
  for(const row of guidanceRows)for(const example of row.slice(4))assert.ok(!JSON.stringify(p).includes(example));
 });
-test('Browser bundle includes examples and keeps unimplemented archive management explicitly disabled',()=>{
- const bundle=fs.readFileSync('src/v1_2/console-ui.js','utf8');new vm.Script(bundle);assert.ok(bundle.includes('不知道怎麼寫？看兩種填寫示例'));assert.ok(bundle.includes("b.disabled=true;b.id='manageIndividuals'"));assert.ok(bundle.includes('管理個體選項（後續整合）'));
+test('Browser bundle includes examples and requires runtime capability before enabling archive management',()=>{
+ const bundle=fs.readFileSync('src/v1_2/console-ui.js','utf8');new vm.Script(bundle);assert.ok(bundle.includes('不知道怎麼寫？看兩種填寫示例'));assert.ok(bundle.includes("manage.disabled=true;manage.id='manageIndividuals'"));assert.ok(bundle.includes('manage.disabled=!value.local_unification?.reports_enabled'));
 });

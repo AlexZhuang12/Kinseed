@@ -137,6 +137,12 @@
       "src/v1_2/owner.html"
     ]
   },
+  "m_16da7db27011b21c": {
+    "source": "平台執行暫停，生活授權保留",
+    "files": [
+      "src/v1_2/owner.html"
+    ]
+  },
   "m_4c64201cfbe97963": {
     "source": "平台可排程",
     "files": [
@@ -257,8 +263,8 @@
       "src/v1_2/owner.html"
     ]
   },
-  "m_37a81f738f25d4e1": {
-    "source": "Kinseed 1.3.0-preview.1｜個體控制台",
+  "m_feedcab3ea5471e2": {
+    "source": "Kinseed 1.5｜個體控制台",
     "files": [
       "src/v1_2/owner.html"
     ]
@@ -892,7 +898,8 @@
     "source": "已拒絕",
     "files": [
       "src/v1_2/builder-ui.js",
-      "src/v1_2/console-ui.js"
+      "src/v1_2/console-ui.js",
+      "src/v1_2/network-ui.js"
     ]
   },
   "m_2e46e85c142be32d": {
@@ -1233,8 +1240,8 @@
       "src/v1_2/console-ui.js"
     ]
   },
-  "m_83cc8490cd51c74d": {
-    "source": "例如：杉杉",
+  "m_64c19db81a8b583a": {
+    "source": "例如：小芽",
     "files": [
       "src/v1_2/console-ui.js"
     ]
@@ -3529,8 +3536,8 @@
       "src/v1_2/console-ui.js"
     ]
   },
-  "m_6f8a02d0cacc48e1": {
-    "source": "每日生活報告（開發版未啟用）",
+  "m_3a16c46d40586844": {
+    "source": "每日生活報告",
     "files": [
       "src/v1_2/console-ui.js"
     ]
@@ -4613,7 +4620,8 @@
   "m_1a6908d26a2318c9": {
     "source": "請先選擇個體。",
     "files": [
-      "src/v1_2/console-ui.js"
+      "src/v1_2/console-ui.js",
+      "src/v1_2/network-ui.js"
     ]
   },
   "m_02d975ff81c0898d": {
@@ -5134,8 +5142,8 @@
       "src/v1_2/console-ui.js"
     ]
   },
-  "m_35ebac981abdd49a": {
-    "source": "管理個體選項（後續整合）",
+  "m_5530f3f4a5b81a84": {
+    "source": "管理個體選項",
     "files": [
       "src/v1_2/console-ui.js"
     ]
@@ -5254,8 +5262,8 @@
       "src/v1_2/journey-ui.js"
     ]
   },
-  "m_53f26deff8a93ff7": {
-    "source": "這是每天允許活動的時間範圍，並非保證持續思考。個體與平台的輪數上限請見本步顯示的實際設定，每輪最多2分鐘。保存設定不會啟動生活。時段結束、Owner停止、撤回權限、額度用完或執行異常都會停止；重新開啟控制器不會自動恢復。",
+  "m_e216a40024e0ca6b": {
+    "source": "生活時間是允許活動的範圍，不保證持續思考。每輪最多2分鐘，包含工具與等待；接近期限會保留交接時間。時段與額度不自動增加。只有Owner明確停止才取消每日授權，異常或重啟會先核對執行條件。",
     "files": [
       "src/v1_2/journey-ui.js"
     ]
@@ -6235,6 +6243,12 @@
       "src/v1_2/wizard-ui.js"
     ]
   },
+  "m_f5189c788111b0e6": {
+    "source": "每日生活授權保留，等待執行條件。",
+    "files": [
+      "src/v1_2/wizard-ui.js"
+    ]
+  },
   "m_0ee0efd0f5549b0d": {
     "source": "目前活動已停止，不會自動恢復。",
     "files": [
@@ -6279,8 +6293,8 @@
       "src/v1_2/network-ui.js"
     ]
   },
-  "m_7a112f086ac43285": {
-    "source": "停止或重啟控制器後，請另行明確恢復；不用再次出生。",
+  "m_0d407b9beffbbff6": {
+    "source": "出生不需重做。每日授權仍開啟時，重啟會重新核對後依原安排執行；Owner明確停止後不自行恢復。",
     "files": [
       "src/v1_2/wizard-ui.js"
     ]
@@ -6774,8 +6788,8 @@
       "src/v1_2/network-ui.js"
     ]
   },
-  "m_1764a6d2db537545": {
-    "source": "決定每天何時開始、最多活動多久。調整前先停止此個體；保存後不會自動恢復，也不會延長目前已授權的截止時間。",
+  "m_076e0d36f6872759": {
+    "source": "決定每天何時開始、最多活動多久。等待當前工作收尾即可保存，原每日生活安排保留；不增加已用額度。",
     "files": [
       "src/v1_2/network-ui.js"
     ]
@@ -6870,8 +6884,8 @@
       "src/v1_2/network-ui.js"
     ]
   },
-  "m_b9e465b50c2af8c7": {
-    "source": "生活時間已保存，沒有恢復生活。下一步：核對時段及額度，再由您明確恢復。",
+  "m_0865e1aa46def3ec": {
+    "source": "生活時間已保存；原每日生活是否開啟保持不變。",
     "files": [
       "src/v1_2/network-ui.js"
     ]
@@ -6888,8 +6902,8 @@
       "src/v1_2/network-ui.js"
     ]
   },
-  "m_57f7206ba42bdc81": {
-    "source": "活動輪數已保存，已用量保留。下一步：確認平台仍有額度，再明確恢復此個體。",
+  "m_3fbf95c26d943ccb": {
+    "source": "活動輪數已保存，已用量與原每日生活安排保留。",
     "files": [
       "src/v1_2/network-ui.js"
     ]
@@ -7014,6 +7028,12 @@
       "src/v1_2/network-ui.js"
     ]
   },
+  "m_eebfaceb6afb96ee": {
+    "source": "每日生活已開啟",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
   "m_d89ae86fee0ad403": {
     "source": "已取得活動授權",
     "files": [
@@ -7050,20 +7070,20 @@
       "src/v1_2/network-ui.js"
     ]
   },
-  "m_b00c800446ea7d0b": {
-    "source": "現在可以修改時間與活動輪數；保存後不會自動恢復。",
+  "m_6ea03c6a26e5ed8d": {
+    "source": "現在可保存時間與活動輪數，原每日安排保留。",
     "files": [
       "src/v1_2/network-ui.js"
     ]
   },
-  "m_c4008cafd5f16bab": {
-    "source": "調整時間或活動輪數前，請先停止此個體並等待本輪結束。網路分配可以獨立調整。",
+  "m_09d6b73f9fe04916": {
+    "source": "本輪工作尚未收尾，請稍後保存；不用關閉每日生活。網路分配可以獨立調整。",
     "files": [
       "src/v1_2/network-ui.js"
     ]
   },
-  "m_eeecc71bbe791b92": {
-    "source": "先停止此個體，以調整設定",
+  "m_5556a559c8cd3cbb": {
+    "source": "停止此個體與每日生活",
     "files": [
       "src/v1_2/network-ui.js"
     ]
@@ -9660,8 +9680,8 @@
       "src/v1_2/network-ui.js"
     ]
   },
-  "m_cab82d8f33f87526": {
-    "source": "出生立即留存紀錄，可以提前完成；活動要到指定時間才開始。等待、正在活動、生活結束是不同狀態。到期或停止後不會自動延長；臨時加開請到「狀態與啟停」，日常時段請到「時間與額度」。",
+  "m_ee3d76e6b7cce239": {
+    "source": "出生立即留存紀錄，可以提前完成；活動要到指定時間才開始。到「狀態與啟停」可選「開啟每日生活」，確認後每天按已保存時段生活；單次臨時加開另行操作，不改每日時間。停止、暫停、全域停止、重啟或修改生活設定會取消每日生活，須重新開啟。輪數與網路額度不會因此增加。",
     "files": [
       "src/v1_2/network-ui.js"
     ]
@@ -9770,6 +9790,816 @@
   },
   "m_38651e3eaacdf471": {
     "source": "此頁目前顯示已保存設定，可以繼續。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_8ea40b5f0876bebe": {
+    "source": "每日生活",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_05c78806a5685845": {
+    "source": "只有Owner明確停止才關閉每日授權。重啟、設定變更或運作異常會先核對，不會取消未來安排。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_88cae34979f04e4b": {
+    "source": "開啟每日生活",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_19583c694973af93": {
+    "source": "停止每日生活",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_557ce728887f3d92": {
+    "source": "重新檢查執行條件",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_18b15f9f185e9f0e": {
+    "source": "｜每日生活已開啟；",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_2c83a94d8671540c": {
+    "source": "目前受阻：",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_ba3d71687db02a9f": {
+    "source": "下次開始：",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_fe59057dcdf530d5": {
+    "source": "｜每日生活未開啟",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_c5425f8aa6df4b74": {
+    "source": " 分鐘；每時段最多 ",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_a7e9fc6cdeaf516e": {
+    "source": " 輪。下次時段：",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_48d2346b7d5a39b2": {
+    "source": "確認開啟此個體的每日生活",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_2cd0f3be8738a86c": {
+    "source": "取消",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_b3307cd8e1c9ac7a": {
+    "source": "每日生活已開啟，時間到由控制器檢查後開始。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_bde88f771275fff1": {
+    "source": "已重新核對執行條件；原每日授權保留。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_c4649ba4c928a71b": {
+    "source": "每日生活已停止，不會到時間自行恢復。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_53b6c16615912e03": {
+    "source": "工具與材料",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_94cff926631d0708": {
+    "source": "選擇個體 → 確認工具權限 → 匯入並同意材料分析 → 閱讀或製作成果 → 核對對外草稿。查看與保存不會啟動生活。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_3307b0330675f468": {
+    "source": "更新這個個體的工具資料",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_3decf64b44da851a": {
+    "source": "材料收件匣",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_26f0535636115d5b": {
+    "source": "專案與成果",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_c3372c724fcb2d3e": {
+    "source": "申請與提醒",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_8974a3418a3e2f7e": {
+    "source": "外部連線",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_225e5b024cab9470": {
+    "source": "待批准郵件",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_7159d62d2053738b": {
+    "source": "正在處理，請稍候。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_941f9d71ddc1e5a7": {
+    "source": "已更新這個個體的工具資料；查看不會啟動生活。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_19b62d59bf007f29": {
+    "source": "等待Owner處理",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_d9826fc41e05bf14": {
+    "source": "已批准，尚未安裝",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_1e8b9769df7005a5": {
+    "source": "已安裝",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_7df0633f7c53b869": {
+    "source": "草稿，尚未寄送",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_6357ff0e194b4584": {
+    "source": "正在寄送",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_8ba5b500ec8afe90": {
+    "source": "服務已接受寄送",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_aa75ce14d408d2ea": {
+    "source": "結果待核對，不自動重寄",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_6c8cf4f6f8ba7429": {
+    "source": "工作進行中",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_52ea1e4e43a84711": {
+    "source": "工作已完成",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_1598c5c1ca5b0d6e": {
+    "source": "工作未完成",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_bb5014a63d81d9d2": {
+    "source": "工作已中斷",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_141e14851f324362": {
+    "source": "正在安裝，請勿重複送出",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_6df77630db4070f3": {
+    "source": "安裝結果待核對，不自動重試",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_a8828c33eebebaf8": {
+    "source": "請查看詳細結果",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_db2744cf5cf096cd": {
+    "source": "新增一批材料",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_516fc4ef42eca8a6": {
+    "source": "只會複製你明確選入的內容，不掃描本機。每檔最多8MB；工具資料歷代合計20MB。分析同意只交給目前大腦，不等於允許對外發布。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_d8ed3e5d545ae337": {
+    "source": "材料名稱",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_8235e0847f7d5712": {
+    "source": "貼上文字",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_38910128ad62e0f3": {
+    "source": "或提供公開HTTPS網址",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_8279eb6f145321d6": {
+    "source": "或手動選擇檔案",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_66bb373b34c76666": {
+    "source": "我同意本批材料交給目前大腦分析",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_156a574720167851": {
+    "source": "保存材料副本",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_cff610ff47fd0c74": {
+    "source": "文字、網址與檔案請擇一提供。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_52ebbf7fb394cf97": {
+    "source": "檔案超過8MB。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_b553240982353585": {
+    "source": "材料副本已保存，原檔未修改。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_9612e26d2bc15991": {
+    "source": "專案與文件成果",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_c777d20774a3d622": {
+    "source": "個體使用工具後，這裡顯示專案版本、真實執行結果與可下載文件。HTML預覽禁止讀取控制台、Owner資料及外網；JavaScript專案目前採自己的相對CommonJS模組。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_c6edb8e96d9726a9": {
+    "source": "隔離作品預覽",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_40c4905bd3c86461": {
+    "source": "查看原始內容與依據",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_d052a1f10df570b3": {
+    "source": "個體新增工具權限",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_140712ffac6d5aae": {
+    "source": "勾選只是草稿，不會立即開放。請先停止此個體與每日安排、等待工作收尾，再返回這裡保存；保存後仍須另行開啟生活。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_d6fe84196a52eabc": {
+    "source": "閱讀已同意分析的材料",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_fc6a15d16456ef64": {
+    "source": "編輯與執行隔離專案",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_970235c3e299723a": {
+    "source": "製作PDF、Word及Excel",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_cad0b7edfade5634": {
+    "source": "OCR與圖片內容閱讀",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_3ad32ad6499c6bc9": {
+    "source": "查詢公開資料服務（仍須原外網權限）",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_8b4b2f97d724a63f": {
+    "source": "提出Gmail郵件草稿（不能自行寄出）",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_755d76b608e35ee1": {
+    "source": "保存新增工具權限",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_a35931c469e5b55d": {
+    "source": "未能確認保存結果，請更新資料核對；勾選仍是草稿。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_ffa0e5712e5d6e73": {
+    "source": "權限已保存並生效；沒有啟動生活。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_a481fc0f2797eee5": {
+    "source": "未能確認保存成功；請更新資料核對已生效權限。勾選仍是草稿。原因：",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_e0d2e5e2e8862183": {
+    "source": "放棄未保存的權限勾選",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_18737055a2f8b390": {
+    "source": "已放棄草稿，顯示目前已生效權限；沒有修改設定。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_29f9829dcba82d11": {
+    "source": "前往此個體的狀態與每日安排",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_e9bea9b57873ce5d": {
+    "source": "操作順序：①勾選權限 → ②等待當前工作收尾並保存 → ③確認已生效。原每日生活安排保持不變。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_fc3494bd173828ef": {
+    "source": "目前已生效：",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_6f6b8f77411163bd": {
+    "source": "正在讀取已生效權限。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_956f5fe4f485989c": {
+    "source": "目前已生效：這六項新增工具全部尚未開放。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_2d88c626d0abb83a": {
+    "source": "尚未保存：以下勾選只是草稿，個體仍使用上方已生效權限。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_4de854c30d48010b": {
+    "source": "沒有尚未保存的權限變更。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_667cd7f2d0c22ce4": {
+    "source": "請先選擇個體並等資料讀取完成。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_5e91b067fd284988": {
+    "source": "目前工作尚未收尾，請稍後保存；原每日生活安排保留。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_374b3c3279869b02": {
+    "source": "目前可保存；每日生活安排不會因此關閉。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_cf047f46b7ad461c": {
+    "source": "（目前已開啟）",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_158266e15c7b511a": {
+    "source": "（目前未開啟）",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_cc373f7326051134": {
+    "source": "工具與費用申請",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_99680873436bfd3e": {
+    "source": "批准不代表已安裝。只有工程驗證過的來源才可安裝；費用預設禁止，新增支出另行決策。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_605213f66fb5fa46": {
+    "source": "公開資料服務",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_e684344428a7389a": {
+    "source": "維基百科、Crossref與USGS使用受控公開資料接頭，沿用個體的網路權限與預算；Crossref只提供書目，不保證全文。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_950689e61fa4e5aa": {
+    "source": "雲端空間設定",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_a33512256e91ca45": {
+    "source": "本輪只保存設定及權限，不連接尚未選定的服務。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_a1b9119f1941c974": {
+    "source": "服務名稱",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_7c837c15fa063e5c": {
+    "source": "資料夾範圍",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_85643324b88edd48": {
+    "source": "允許讀取",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_51e6dcc7fab95c97": {
+    "source": "允許寫入",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_7ed37e4efdfa56d4": {
+    "source": "保存雲端設定（不連線）",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_98843ebc0e627df2": {
+    "source": "Gmail專用測試帳號",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_3a22c5ffa56134e2": {
+    "source": "只要求寄送郵件，不讀既有信箱。請使用自己的Google桌面應用OAuth設定，不要填信箱密碼。帳號連線不等於寄送批准。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_5cd1d406011e6fff": {
+    "source": "OAuth用戶端ID",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_bbf3bb768a2c66b8": {
+    "source": "OAuth用戶端密鑰",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_24aed95adf6a871f": {
+    "source": "保存Gmail用戶端設定",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_af1a035d42f661d4": {
+    "source": "開啟Google授權頁",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_66750e1edb46f073": {
+    "source": "連接Gmail（僅寄送權限）",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_88e597d4ff709e3b": {
+    "source": "請按下方連結，核對專用測試帳號並完成Google授權。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_634cc70de644d7c8": {
+    "source": "中斷本工具的Gmail連線",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_946073d23ff28e18": {
+    "source": "逐封核對，批准後才寄送",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_6e4f75ae98fc6cd2": {
+    "source": "先核對收件人、正文及每個附件；批准只針對這一封。沒有Gmail連線或有效生活／工具授權就保留草稿。結果不明時不自動重寄。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_8e3de4c6b38aff10": {
+    "source": "下載未成功，請更新資料。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_e16cef8f0dc1f3d5": {
+    "source": "已保存材料",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_626af1dc3db387a7": {
+    "source": "工具工作",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_7f2503f4af8c59f9": {
+    "source": "已同意交給目前大腦分析",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_c0e384dcc11c8841": {
+    "source": "尚未同意目前大腦分析，內容不交給模型",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_add82814a768db95": {
+    "source": "Owner閱讀原文",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_ddad7287716a95f7": {
+    "source": "無可抽取文字。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_145e465b47b7cf2b": {
+    "source": "撤回材料分析同意",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_69d0140131672305": {
+    "source": "同意目前大腦分析",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_44fec18bf66b363e": {
+    "source": "閱讀與預覽作品",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_ebeb8cd6b24db992": {
+    "source": "閱讀執行結果",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_af0c4b935b8d1f75": {
+    "source": "未成功",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_0122de4bf7b530e0": {
+    "source": "下載成果",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_e78586a5de4f7ad0": {
+    "source": "｜費用：",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_fc4edbd43811b843": {
+    "source": "安裝候選：",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_fd97f0fc064c7b19": {
+    "source": "來源尚未驗證，批准後也不會自行安裝。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_9072e2c0b11fd25b": {
+    "source": "批准申請（尚未安裝）",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_045e4d7ecbb8b74d": {
+    "source": "拒絕申請",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_e050fe2f41bd23fc": {
+    "source": "安裝已驗證套件（未驗證來源會拒絕）",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_9fb49195699b946a": {
+    "source": "期限：",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_38e50f54085463ac": {
+    "source": "已到期，通知已記錄",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_41aa06200969de7a": {
+    "source": "等待期限；不會自行加開生活",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_6bc760d0593f64da": {
+    "source": "收件人：",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_5566dc370afb6666": {
+    "source": "核對這封郵件",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_4780d96284718180": {
+    "source": "尚未寄送",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_bc4060aa5e0b0290": {
+    "source": "狀態：",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_b30e8be0b0abc1d9": {
+    "source": "我已核對收件人、正文及附件，批准寄送這一封",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_0ae04fed708e1707": {
+    "source": "批准並寄送這一封",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_eeab77f10712caae": {
+    "source": "請先明確勾選這封信的寄送批准。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_5e7c698c99e7a61f": {
+    "source": "雲端：尚未連線；保存設定不會傳出資料。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_7ff3128a51d942f0": {
+    "source": "Gmail已連線，只允許寄送；每封仍須批准。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_1e73b642cbc2d95b": {
+    "source": "Gmail尚未連線；不會寄出郵件。",
     "files": [
       "src/v1_2/network-ui.js"
     ]

@@ -10,7 +10,7 @@ let currentPage='home';function navigate(id){for(const [key,page]of Object.entri
 const intro=el('p',"まず行いたい操作を選んでください。表示の切り替えはデータの閲覧だけで、個体は開始しません。");intro.className='lead';pageMap.home.append(intro);const newButton=el('button',"＋ 新しい個体を作成");newButton.className='primary';newButton.onclick=()=>navigate('create');pageMap.home.append(newButton);const cards=el('div');cards.id='entityCards';pageMap.home.append(cards);
 // Move existing controls into focused pages; retain original life/stop/backup handlers.
 const createSection=$('create').closest('section'),importSection=$('import').closest('section'),selectionSection=$('selected').closest('section'),lifeSection=$('window').closest('section');
-createSection.querySelector('h2').textContent="まず名前を付ける";$('newID').closest('label').hidden=true;$('newName').placeholder="例：杉杉";$('create').textContent="未誕生の個体を作成し、アイデンティティ設定へ";createSection.append(el('p',"作成後も未誕生のままです。次に新しいアイデンティティを記入するか、ライブラリから選びます。承認と初回開始は別々の操作です。"));pageMap.create.append(createSection);
+createSection.querySelector('h2').textContent="まず名前を付ける";$('newID').closest('label').hidden=true;$('newName').placeholder="例：小芽";$('create').textContent="未誕生の個体を作成し、アイデンティティ設定へ";createSection.append(el('p',"作成後も未誕生のままです。次に新しいアイデンティティを記入するか、ライブラリから選びます。承認と初回開始は別々の操作です。"));pageMap.create.append(createSection);
 pageMap.life.append(selectionSection,lifeSection);for(const id of ['state','historyData','tasks'])pageMap.life.append($(id).closest('section'));
 // The old direct adoption form is replaced by the explicit review journey.
 const oldAdopt=$('adopt').closest('section');oldAdopt.hidden=true;pageMap.review.append(oldAdopt);
@@ -181,7 +181,7 @@ const previousRender=render;render=function(){previousRender();if(currentPage===
 document.addEventListener('kinseed-journal-open',async event=>{const target=event.detail?.individual_id;await loadJournal();if(lastStatus?.individuals.some(e=>e.profile.individual_id===target)){chosen=target;paint();}});
 
 })();
-(()=>{const b=el('button',"毎日の生活レポート（開発版では未有効化）");b.disabled=true;b.id='openDailyReport';nav.append(b);})();
+(()=>{const b=el('button',"毎日の生活レポート");b.disabled=true;b.id='openDailyReport';const prior=api;api=async function(route,body){const v=await prior(route,body);if(route==='status')b.disabled=!v.local_unification?.reports_enabled;return v;};b.onclick=()=>location.assign('/reports-view#'+encodeURIComponent(token));nav.append(b);})();
 
 (()=>{
 // Presentation examples only. These are never questionnaire answers or identity rules.
@@ -376,4 +376,8 @@ paintFlow();
 })();
 
 const ownerPermissionRows=[{"id":"workbench","group":"optional","title":"自分の作品を作成・編集","description":"自分の隔離領域に文字、CSV、HTML、コードを作成します。保存ごとに新しい版を作り、旧版を残します。Ownerや他個体のファイルは対象外です。","tools":["work_save","work_import"]},{"id":"execute","group":"optional","title":"隔離JavaScriptを実行","description":"作品編集も必要です。自分の選択作品だけを処理し、returnで同期JSONを返します。最長5秒、16 MB、出力32,000文字。一般ファイル、ネット、shell、パッケージ導入、背景サービスは使えません。","tools":["run_javascript"]},{"id":"work_reading","group":"required","title":"自分の作品と版を閲覧","description":"自分の作品と結果のみ閲覧し、変更や他個体の領域へのアクセスはしません。","tools":["work_list","work_read"]},{"id":"note","group":"optional","title":"自分の生活ノートを追加","description":"制御された自分の領域にノートを追加するだけです。旧ノートの上書きや任意ファイルへのアクセスはできません。解除しても既存ノートは消えません。","tools":["write_note"]},{"id":"identity","group":"required","title":"自分のアイデンティティと原生条件の出典を読む","description":"自己のアイデンティティと守る条件を確認する生活必須能力です。","tools":["read_identity_bundle","read_identity_domain","read_identity_source"]},{"id":"memory","group":"required","title":"自分の記憶・計画・履歴を読む","description":"この個体の記録のみ読み、他個体の資料は読みません。","tools":["get_context","query_history","search_memory","read_record","read_document"]},{"id":"workspace","group":"required","title":"自分の生活ノートを見る","description":"保存済みの制御されたノートのみ読み、一般ファイルへのアクセスではありません。","tools":["read_workspace"]},{"id":"commit","group":"required","title":"各回の記憶と生活記録を保存","description":"各回に追跡できる結果を残します。原履歴は追記専用で、上書きや削除の切替はありません。","tools":["commit_cycle"]},{"id":"brain","group":"required","title":"この環境の指定モデルで思考","description":"各回でアイデンティティと記憶を指定モデルに渡し、進捗を保存します。待機中は考え続けません。時間とモデル枠に従います。","tools":[]},{"id":"consult","group":"optional","title":"独立LLMに相談","description":"指定モデルと別の対話を各回最大1回行い、モデル枠を追加で1回使います。回答は検証済みの事実ではありません。","tools":["consult_llm"]},{"id":"chat","group":"required","title":"Ownerとの双方向対話と自発的伝言（基本）","description":"全員に適用し、チェックは不要です。有効な生活中は質問、共有、返信ができます。Ownerはいつでも伝言できます。停止中や時間外は勝手に起きません。","tools":["reply_owner","send_owner"]},{"id":"web","group":"optional","title":"公開外網を閲覧（隔離ブラウザー）","description":"公開HTTPSの検索・閲覧・続き読み、自分の文字・CSV・PDFを読めます。Ownerのログインや私設網は使いません。受信は枠に数え、ノート送信は都度承認が必要です。ログイン、公開、支払いはしません。","tools":["search_web","browse_web","download_web","request_upload"]}];
-(()=>{const b=el('button',"個体の選択肢を管理（統合予定）");b.disabled=true;b.id='manageIndividuals';nav.append(b);})();
+// Owner display preference only. Active entities remain visible. Source and history are unchanged.
+(()=>{let hidden=new Set();const previous=api;
+ api=async function(route,b){const value=await previous(route,b);if(route==='status'){manage.disabled=!value.local_unification?.reports_enabled;hidden=new Set(value.archived_ids??[]);return {...value,individuals:value.individuals.filter(e=>!hidden.has(e.profile.individual_id))};}if(route==='builder'&&value.reviews)return {...value,reviews:value.reviews.filter(r=>!hidden.has(r.individual_id))};return value;};
+ const manage=el('button',"個体の表示管理");manage.disabled=true;manage.id='manageIndividuals';manage.onclick=()=>location.assign('/reports-view?manage=1#'+encodeURIComponent(token));nav.append(manage);
+})();

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "release": "v1.5.0-preview.1",
+  "status": "PASS_LOCAL_PENDING_HOSTED_CI",
+  "performed_by": "AI agent",
+  "synthetic_only": true,
+  "node_tests": {
+    "passed": 637,
+    "failed": 0
+  },
+  "browser_checks": {
+    "passed": 239,
+    "failed": 0,
+    "languages": [
+      "zh-Hant",
+      "zh-Hans",
+      "en",
+      "ja"
+    ]
+  },
+  "clean_install_checks": 11,
+  "targeted_after_sample_redaction": 24,
+  "real_provider": {
+    "adapter": "codex-cli",
+    "model": "gpt-6.1-sol",
+    "turns": 2,
+    "checks": 10,
+    "status": "PASS",
+    "fault": "deliberately omitted first memory handoff after persisted model-authored note",
+    "model_answers_or_memories_backfilled": false
+  },
+  "source_rollback": {
+    "same_database": true,
+    "database_restored": false,
+    "status": "PASS"
+  },
+  "dependency_audit": {
+    "date": "2026-10-24",
+    "known_reports": 0,
+    "packages": 49
+  },
+  "privacy_review": {
+    "source_patterns": "PASS",
+    "known_private_values": "PASS",
+    "private_data_included": false
+  },
+  "failures_and_corrections": [
+    "Nested transactions and controller safety expectations were corrected and re-tested under the authorized consent policy.",
+    "Time-budget hints initially changed successful receipt payloads; mutation and commit receipts now remain exact and idempotent.",
+    "A delegation test still expected the removed dynamic hint; exact-receipt equality was restored and the full suite re-tested.",
+    "An initial public sync command used the wrong working directory; that pre-sync run was not used as final acceptance.",
+    "Offline clean installation lacked cached packages; unchanged official lockfile online installation passed with install scripts disabled.",
+    "Public source redaction removed a sample name shared with private data and local deployment decisions; generated UI and 24 targeted tests passed afterward."
+  ],
+  "not_performed": [
+    "Independent human acceptance",
+    "Independent native-language review",
+    "Second physical Windows machine",
+    "Long-duration real provider outage or multi-day soak",
+    "Full-life qualification of Qwen or all local models"
+  ],
+  "limitations": [
+    "Unknown external outcomes remain held for reconciliation, not blindly replayed.",
+    "Same-operation identity is based on canonical tool input; semantic duplicates with different input are not inferred.",
+    "Recovery reaching eight pending handoffs holds execution without revoking consent.",
+    "Source rollback to older consent policy stays safely stopped pending an explicit recovery plan.",
+    "Hosted CI does not use real model or Gmail accounts."
+  ]
+}

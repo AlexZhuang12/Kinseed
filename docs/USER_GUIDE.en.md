@@ -1,3 +1,7 @@
+## 1.5.0
+
+Daily consent and execution health are separate. Only an explicit Owner stop revokes daily consent. Connection failures, timeouts, clean restarts and saved settings preserve consent; affected operations can remain blocked with a visible reason. Save permissions after work settles without first disabling daily life. Original time, usage and isolation limits still apply.
+
 # Windows user guide
 
 [繁體中文](USER_GUIDE.zh-Hant.md) · [简体中文](USER_GUIDE.zh-Hans.md) · [日本語](USER_GUIDE.ja.md)

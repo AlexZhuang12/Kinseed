@@ -1,3 +1,7 @@
+# Current iteration: 1.5.0
+
+See [life authority plan](LIFE_AUTHORITY_ENGINEERING_PLAN.md) and [recovery policy](LIFE_AUTHORITY_AND_RECOVERY.md). The following revision 7 remains the historical first-publication plan.
+
 # Kinseed 開源工程計畫 — 第7版
 
 版本1.3.0-preview.1，Windows預覽版。[Repository](https://github.com/AlexZhuang12/Kinseed)／[Releases](https://github.com/AlexZhuang12/Kinseed/releases)。發行的確切提交、日期與附件SHA以GitHub Release為準；舊版計畫是歷史，不是目前待辦。

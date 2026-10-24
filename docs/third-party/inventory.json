@@ -109,6 +109,307 @@
       "file": "docs/third-party/playwright-core--webp_codec.LICENSE.txt",
       "sha256": "995c7ee35aceb7666829b7a501ca89c0864e12b493c1174b155774ab1e03d831",
       "distributed_lf_sha256": "995c7ee35aceb7666829b7a501ca89c0864e12b493c1174b155774ab1e03d831"
+    },
+    {
+      "package": "@types/emscripten",
+      "version": "1.41.6",
+      "source": "node_modules/@types/emscripten/LICENSE",
+      "file": "docs/third-party/@types--emscripten--LICENSE.txt",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "distributed_lf_sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "package": "@types/node",
+      "version": "25.9.9",
+      "source": "node_modules/@types/node/LICENSE",
+      "file": "docs/third-party/@types--node--LICENSE.txt",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "distributed_lf_sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "package": "bmp-js",
+      "version": "0.1.0",
+      "source": "node_modules/bmp-js/LICENSE",
+      "file": "docs/third-party/bmp-js--LICENSE.txt",
+      "sha256": "9f165f5bd2b462122cacb8c6dc32028be1abb4d8ad0322e9a332f30b2ebdb833",
+      "distributed_lf_sha256": "9f165f5bd2b462122cacb8c6dc32028be1abb4d8ad0322e9a332f30b2ebdb833"
+    },
+    {
+      "package": "core-util-is",
+      "version": "1.0.3",
+      "source": "node_modules/core-util-is/LICENSE",
+      "file": "docs/third-party/core-util-is--LICENSE.txt",
+      "sha256": "33b734d60042d0fe0c92dd1fc1e874193a1c899ec3e276a2eb935d2d0bf5b710",
+      "distributed_lf_sha256": "33b734d60042d0fe0c92dd1fc1e874193a1c899ec3e276a2eb935d2d0bf5b710"
+    },
+    {
+      "package": "docx",
+      "version": "9.6.1",
+      "source": "node_modules/docx/LICENSE",
+      "file": "docs/third-party/docx--LICENSE.txt",
+      "sha256": "b5b2364c0c95a26b2a2399d7e706a61acac680be1d5b180b00592ee85830bffb",
+      "distributed_lf_sha256": "b5b2364c0c95a26b2a2399d7e706a61acac680be1d5b180b00592ee85830bffb"
+    },
+    {
+      "package": "docx-preview",
+      "version": "0.4.1",
+      "source": "node_modules/docx-preview/LICENSE",
+      "file": "docs/third-party/docx-preview--LICENSE.txt",
+      "sha256": "8668bf4417d161e4eb4d47d6044526e4914d9eb3c748573d9bb7e87708c1253f",
+      "distributed_lf_sha256": "0ed0b35bd10cb0d990fbecf7f1e05d113d785dfbbef8332e139fc10b84a4c3d7"
+    },
+    {
+      "package": "idb-keyval",
+      "version": "6.3.0",
+      "source": "node_modules/idb-keyval/LICENCE",
+      "file": "docs/third-party/idb-keyval--LICENCE.txt",
+      "sha256": "20c27d6339619eeb3113cb865d4e98a3f559e52964fc75caea9cb5fa72674565",
+      "distributed_lf_sha256": "20c27d6339619eeb3113cb865d4e98a3f559e52964fc75caea9cb5fa72674565"
+    },
+    {
+      "package": "immediate",
+      "version": "3.0.6",
+      "source": "node_modules/immediate/LICENSE.txt",
+      "file": "docs/third-party/immediate--LICENSE.txt.txt",
+      "sha256": "809e66de579fb7d92503848bbe6d1f348f4f6521a71e5d294fe7cc0c87a3b4ff",
+      "distributed_lf_sha256": "809e66de579fb7d92503848bbe6d1f348f4f6521a71e5d294fe7cc0c87a3b4ff"
+    },
+    {
+      "package": "inherits",
+      "version": "2.0.4",
+      "source": "node_modules/inherits/LICENSE",
+      "file": "docs/third-party/inherits--LICENSE.txt",
+      "sha256": "5ffe28e7ade7d8f10d85d5337a73fd793dac5c462fb9a28fbf8c5046c7fbca3b",
+      "distributed_lf_sha256": "5ffe28e7ade7d8f10d85d5337a73fd793dac5c462fb9a28fbf8c5046c7fbca3b"
+    },
+    {
+      "package": "is-url",
+      "version": "1.2.4",
+      "source": "node_modules/is-url/LICENSE-MIT",
+      "file": "docs/third-party/is-url--LICENSE-MIT.txt",
+      "sha256": "80957b522b0ea4ce24290953d74d818220c804d1f42cad02b8d7da1c12ce1fc1",
+      "distributed_lf_sha256": "80957b522b0ea4ce24290953d74d818220c804d1f42cad02b8d7da1c12ce1fc1"
+    },
+    {
+      "package": "jszip",
+      "version": "3.10.1",
+      "source": "node_modules/jszip/LICENSE.markdown",
+      "file": "docs/third-party/jszip--LICENSE.markdown.txt",
+      "sha256": "566c953c6090b1218ca6217dd7359d45dde46581968586dc607d59a78af6a9c4",
+      "distributed_lf_sha256": "566c953c6090b1218ca6217dd7359d45dde46581968586dc607d59a78af6a9c4"
+    },
+    {
+      "package": "lie",
+      "version": "3.3.0",
+      "source": "node_modules/lie/license.md",
+      "file": "docs/third-party/lie--license.md.txt",
+      "sha256": "5c81b0caa98593408b03125efa25efe622341ed87ae55561968828cd887d64a4",
+      "distributed_lf_sha256": "5c81b0caa98593408b03125efa25efe622341ed87ae55561968828cd887d64a4"
+    },
+    {
+      "package": "minimalistic-assert",
+      "version": "1.0.1",
+      "source": "node_modules/minimalistic-assert/LICENSE",
+      "file": "docs/third-party/minimalistic-assert--LICENSE.txt",
+      "sha256": "136fee1129ea96ce18b41c26a72f5d4ba196ee41bfd73b55d0b8509cdda148e9",
+      "distributed_lf_sha256": "136fee1129ea96ce18b41c26a72f5d4ba196ee41bfd73b55d0b8509cdda148e9"
+    },
+    {
+      "package": "nanoid",
+      "version": "5.1.16",
+      "source": "node_modules/nanoid/LICENSE",
+      "file": "docs/third-party/nanoid--LICENSE.txt",
+      "sha256": "4383cb2c3608397ce7a4159502614ed66890f8999c2a9c056dd3b1024d6721f0",
+      "distributed_lf_sha256": "4383cb2c3608397ce7a4159502614ed66890f8999c2a9c056dd3b1024d6721f0"
+    },
+    {
+      "package": "node-fetch",
+      "version": "2.7.0",
+      "source": "node_modules/node-fetch/LICENSE.md",
+      "file": "docs/third-party/node-fetch--LICENSE.md.txt",
+      "sha256": "84eaa985e1ef71b8c630e8aba73404c219ff425c6fdb45c62e998b58d4fbdc8e",
+      "distributed_lf_sha256": "84eaa985e1ef71b8c630e8aba73404c219ff425c6fdb45c62e998b58d4fbdc8e"
+    },
+    {
+      "package": "opencollective-postinstall",
+      "version": "2.0.3",
+      "source": "node_modules/opencollective-postinstall/LICENSE",
+      "file": "docs/third-party/opencollective-postinstall--LICENSE.txt",
+      "sha256": "86641df2e1c0c0e655d7eb9962a28e850e80c97c62a29500f2f93ab142c3c8f2",
+      "distributed_lf_sha256": "86641df2e1c0c0e655d7eb9962a28e850e80c97c62a29500f2f93ab142c3c8f2"
+    },
+    {
+      "package": "pako",
+      "version": "1.0.11",
+      "source": "node_modules/pako/LICENSE",
+      "file": "docs/third-party/pako--LICENSE.txt",
+      "sha256": "a04665b3b2de56c66730c1f720f528175739e4104f79073614aa611da1e85539",
+      "distributed_lf_sha256": "a04665b3b2de56c66730c1f720f528175739e4104f79073614aa611da1e85539"
+    },
+    {
+      "package": "process-nextick-args",
+      "version": "2.0.1",
+      "source": "node_modules/process-nextick-args/license.md",
+      "file": "docs/third-party/process-nextick-args--license.md.txt",
+      "sha256": "ecdccbcf39024f624ded480c01c0b25458e1eca8f26ecf040933865ce56d9a4f",
+      "distributed_lf_sha256": "ecdccbcf39024f624ded480c01c0b25458e1eca8f26ecf040933865ce56d9a4f"
+    },
+    {
+      "package": "readable-stream",
+      "version": "2.3.8",
+      "source": "node_modules/readable-stream/LICENSE",
+      "file": "docs/third-party/readable-stream--LICENSE.txt",
+      "sha256": "ec62dc96da0099b87f4511736c87309335527fb7031639493e06c95728dc8c54",
+      "distributed_lf_sha256": "ec62dc96da0099b87f4511736c87309335527fb7031639493e06c95728dc8c54"
+    },
+    {
+      "package": "regenerator-runtime",
+      "version": "0.13.11",
+      "source": "node_modules/regenerator-runtime/LICENSE",
+      "file": "docs/third-party/regenerator-runtime--LICENSE.txt",
+      "sha256": "51887a3d47051ac2fce1210562e5b9fe0830a8a8fabeb272c2d586eeb18a05fd",
+      "distributed_lf_sha256": "51887a3d47051ac2fce1210562e5b9fe0830a8a8fabeb272c2d586eeb18a05fd"
+    },
+    {
+      "package": "safe-buffer",
+      "version": "5.1.2",
+      "source": "node_modules/safe-buffer/LICENSE",
+      "file": "docs/third-party/safe-buffer--LICENSE.txt",
+      "sha256": "c7cc929b57080f4b9d0c6cf57669f0463fc5b39906344dfc8d3bc43426b30eac",
+      "distributed_lf_sha256": "c7cc929b57080f4b9d0c6cf57669f0463fc5b39906344dfc8d3bc43426b30eac"
+    },
+    {
+      "package": "sax",
+      "version": "1.6.1",
+      "source": "node_modules/sax/LICENSE.md",
+      "file": "docs/third-party/sax--LICENSE.md.txt",
+      "sha256": "8a1af140fdfbf5afd3df27f7e662f989c5b963a300020dfafce42033cae9e004",
+      "distributed_lf_sha256": "8a1af140fdfbf5afd3df27f7e662f989c5b963a300020dfafce42033cae9e004"
+    },
+    {
+      "package": "setimmediate",
+      "version": "1.0.5",
+      "source": "node_modules/setimmediate/LICENSE.txt",
+      "file": "docs/third-party/setimmediate--LICENSE.txt.txt",
+      "sha256": "c4b4ad3a5746f1f5249a6dd90396ec519264e1bb02e01e48a6522c48a3a97cb4",
+      "distributed_lf_sha256": "c4b4ad3a5746f1f5249a6dd90396ec519264e1bb02e01e48a6522c48a3a97cb4"
+    },
+    {
+      "package": "string_decoder",
+      "version": "1.1.1",
+      "source": "node_modules/string_decoder/LICENSE",
+      "file": "docs/third-party/string_decoder--LICENSE.txt",
+      "sha256": "11f2aafb37d06b3ee5bdaf06e9811141d0da05263c316f3d627f45c20d43261b",
+      "distributed_lf_sha256": "11f2aafb37d06b3ee5bdaf06e9811141d0da05263c316f3d627f45c20d43261b"
+    },
+    {
+      "package": "tesseract.js",
+      "version": "7.0.0",
+      "source": "node_modules/tesseract.js/LICENSE.md",
+      "file": "docs/third-party/tesseract.js--LICENSE.md.txt",
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "distributed_lf_sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+    },
+    {
+      "package": "tesseract.js-core",
+      "version": "7.0.0",
+      "source": "node_modules/tesseract.js-core/LICENSE",
+      "file": "docs/third-party/tesseract.js-core--LICENSE.txt",
+      "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08",
+      "distributed_lf_sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08"
+    },
+    {
+      "package": "undici-types",
+      "version": "7.24.6",
+      "source": "node_modules/undici-types/LICENSE",
+      "file": "docs/third-party/undici-types--LICENSE.txt",
+      "sha256": "a6db8096b2707bc0102d256917d4d33f298ba36d8c3f25de067a2b5bb379db27",
+      "distributed_lf_sha256": "a6db8096b2707bc0102d256917d4d33f298ba36d8c3f25de067a2b5bb379db27"
+    },
+    {
+      "package": "util-deprecate",
+      "version": "1.0.2",
+      "source": "node_modules/util-deprecate/LICENSE",
+      "file": "docs/third-party/util-deprecate--LICENSE.txt",
+      "sha256": "0154425673db15cdfa80ecba2c9b1f1a867f7197a006764712849bfc3a93cbb7",
+      "distributed_lf_sha256": "0154425673db15cdfa80ecba2c9b1f1a867f7197a006764712849bfc3a93cbb7"
+    },
+    {
+      "package": "wasm-feature-detect",
+      "version": "1.9.0",
+      "source": "node_modules/wasm-feature-detect/LICENSE",
+      "file": "docs/third-party/wasm-feature-detect--LICENSE.txt",
+      "sha256": "bcf29b4fd3ec2cb5f9d40a0866da446f6da62170d2ccedf4aeca9cf9406dd20c",
+      "distributed_lf_sha256": "bcf29b4fd3ec2cb5f9d40a0866da446f6da62170d2ccedf4aeca9cf9406dd20c"
+    },
+    {
+      "package": "webidl-conversions",
+      "version": "3.0.1",
+      "source": "node_modules/webidl-conversions/LICENSE.md",
+      "file": "docs/third-party/webidl-conversions--LICENSE.md.txt",
+      "sha256": "a889cc4dbee2ae172c179856b25d75b0b7a5a136e1b97109b9b590b2ff1a879c",
+      "distributed_lf_sha256": "a889cc4dbee2ae172c179856b25d75b0b7a5a136e1b97109b9b590b2ff1a879c"
+    },
+    {
+      "package": "whatwg-url",
+      "version": "5.0.0",
+      "source": "node_modules/whatwg-url/LICENSE.txt",
+      "file": "docs/third-party/whatwg-url--LICENSE.txt.txt",
+      "sha256": "6b7a1792144374d84dc5ed3655b8bbe2754d06f4f1f64a9fb8b9de2d6f448b85",
+      "distributed_lf_sha256": "6b7a1792144374d84dc5ed3655b8bbe2754d06f4f1f64a9fb8b9de2d6f448b85"
+    },
+    {
+      "package": "ws",
+      "version": "8.22.0",
+      "source": "node_modules/ws/LICENSE",
+      "file": "docs/third-party/ws--LICENSE.txt",
+      "sha256": "2b29dcfe0d6471f7e8c92c5fb38c9f93edee10330937055440192f1832b1ecef",
+      "distributed_lf_sha256": "2b29dcfe0d6471f7e8c92c5fb38c9f93edee10330937055440192f1832b1ecef"
+    },
+    {
+      "package": "xml",
+      "version": "1.0.1",
+      "source": "node_modules/xml/LICENSE",
+      "file": "docs/third-party/xml--LICENSE.txt",
+      "sha256": "d2b3e2f62078f282f21a8c5119a44cc7313fe6aa4a22094c8ad93f4b577b7901",
+      "distributed_lf_sha256": "d2b3e2f62078f282f21a8c5119a44cc7313fe6aa4a22094c8ad93f4b577b7901"
+    },
+    {
+      "package": "xml-js",
+      "version": "1.6.11",
+      "source": "node_modules/xml-js/LICENSE",
+      "file": "docs/third-party/xml-js--LICENSE.txt",
+      "sha256": "8ada61091ef0ef154a69321483e5ffadf5c50693ca945047ffb90a6b4b12b088",
+      "distributed_lf_sha256": "cfef5da35c965c670b89d6cfddb352ff9a464b6cfc85814f2392403f4f0ae8e5"
+    },
+    {
+      "package": "zlibjs",
+      "version": "0.3.1",
+      "source": "node_modules/zlibjs/LICENSE",
+      "file": "docs/third-party/zlibjs--LICENSE.txt",
+      "sha256": "131afe3f7bdce1698beb292fb8de1a968de01bce876122a60ef5db230471c866",
+      "distributed_lf_sha256": "131afe3f7bdce1698beb292fb8de1a968de01bce876122a60ef5db230471c866"
+    },
+    {
+      "package": "pyodide-314.0.7",
+      "source": "https://raw.githubusercontent.com/pyodide/pyodide/314.0.7/LICENSE",
+      "file": "docs/third-party/pyodide-314.0.7-LICENSE.txt",
+      "sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5",
+      "distributed_lf_sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5"
+    },
+    {
+      "package": "cpython-3.14.2",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.14.2/LICENSE",
+      "file": "docs/third-party/cpython-3.14.2-LICENSE.txt",
+      "sha256": "b0e25a78cffb43f4d92de8b61ccfa1f1f98ecbc22330b54b5251e7b6ba010231",
+      "distributed_lf_sha256": "b0e25a78cffb43f4d92de8b61ccfa1f1f98ecbc22330b54b5251e7b6ba010231"
+    },
+    {
+      "package": "ocr-traineddata",
+      "source": "https://raw.githubusercontent.com/naptha/tessdata/gh-pages/LICENSE",
+      "file": "docs/third-party/ocr-traineddata-LICENSE.txt",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "distributed_lf_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
     }
   ],
   "distribution_note": "sha256 records original copied upstream bytes; distributed_lf_sha256 records Git LF-normalized text. License wording is unchanged."

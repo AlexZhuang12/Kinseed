@@ -1,0 +1,147 @@
+{
+  "version": "1.4.0-tool-preview.1",
+  "at": "2026-10-22T19:32:24.354Z",
+  "status": "LOCAL_CANDIDATE_WITH_REAL_GMAIL_SCOPED_ACCEPTANCE",
+  "acceptance_executor": "AI",
+  "publication": false,
+  "formal_deployment": false,
+  "stages": [
+    {
+      "id": "K00",
+      "status": "PASS",
+      "scope": "獨立Windows環境、私人資料邊界、正式與共用服務只讀核對"
+    },
+    {
+      "id": "K01",
+      "status": "PASS",
+      "scope": "13項受控MCP工具、預設關權、個體隔離、冪等、失敗與未知結果收尾"
+    },
+    {
+      "id": "K02",
+      "status": "PASS",
+      "scope": "文字／網址／手選檔案真實匯入、內容與大腦目的地同意綁定、原檔保留"
+    },
+    {
+      "id": "K03",
+      "status": "PASS",
+      "scope": "真實Python與多檔JS，WASM隔離、Windows Job資源限制與停止／逾時收尾"
+    },
+    {
+      "id": "K04",
+      "status": "PASS_WITH_LIMITS",
+      "scope": "受控DOM互動預覽與PDF／DOCX／XLSX；未做原生Office版面驗收"
+    },
+    {
+      "id": "K05",
+      "status": "PASS_WITH_LIMITS",
+      "scope": "本地OCR、目前Codex原圖與圖表理解；其他大腦視覺未驗證不啟用"
+    },
+    {
+      "id": "K06",
+      "status": "PASS",
+      "scope": "三個真實公開API、流量、來源快照、分頁與錯誤"
+    },
+    {
+      "id": "K07",
+      "status": "PASS_REAL_SCOPED",
+      "scope": "真實send-only OAuth、Owner逐封批准、單次寄送及PDF附件；Gmail回執與Owner收件核對完成，不讀信箱"
+    },
+    {
+      "id": "K08",
+      "status": "PASS_SCOPED",
+      "scope": "申請與提醒已實作；雲端僅設定未連線，不含付費或跨個體合作"
+    },
+    {
+      "id": "K09",
+      "status": "LOCAL_CANDIDATE_DELIVERED",
+      "scope": "獨立操作版、四語、安裝啟停、操作指南與去識別驗收；未正式部署或發布"
+    }
+  ],
+  "verification": {
+    "full_node_tests": {
+      "pass": 606,
+      "fail": 0,
+      "source_note": "Final runtime sources with Gmail MIME correction; final setup-UI harness isolation separately browser-retested."
+    },
+    "targeted_boundary_tests": {
+      "pass": 9,
+      "overlaps_full_suite": true
+    },
+    "browser_checks": {
+      "new_tools": 68,
+      "existing_journey": 146
+    },
+    "real_model": {
+      "rounds": 3,
+      "fixtures": 2,
+      "first_two_rounds": "PASS",
+      "research_chart_draft": "PASS",
+      "no_hand_written_model_memory": true
+    },
+    "real_services": "PASS",
+    "real_package_install": true,
+    "real_package_execution": true,
+    "documents_and_ocr": "PASS",
+    "clean_install": "PASS",
+    "clean_install_checks": 11,
+    "preview": "PASS",
+    "formal_preservation": "PASS",
+    "npm_advisories": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "gmail": {
+      "oauth": "real gmail.send only",
+      "send": "provider accepted once",
+      "recipient": "Owner confirmed receipt, body and PDF opens",
+      "inbox_access": false,
+      "content": "Owner-approved synthetic fixture; no model generation during this send",
+      "targeted_regression_pass": 8
+    }
+  },
+  "blocked": [],
+  "not_tested": [
+    "Independent human acceptance",
+    "Native-language human review",
+    "Second physical Windows computer",
+    "Native Microsoft Office/LibreOffice rendering",
+    "Other model vision adapters",
+    "Long-duration concurrent load under production traffic"
+  ],
+  "limitations": [
+    "Windows-only verified isolation backend; missing compiler/Chrome fails closed",
+    "Controlled DOM subset; not arbitrary browser frameworks, SVG or Canvas",
+    "One heavyweight local conversion/execution at a time; explicit bounded memory/storage/input sizes",
+    "OCR can misrecognize; OCR is distinct from full-image model understanding",
+    "Public APIs subject to rate limits, availability and content changes",
+    "Known-fragment outbound filtering is not complete semantic data loss prevention",
+    "Cloud configuration is intentionally not connected; payment and cross-individual cooperation deferred"
+  ],
+  "diagnoses": [
+    "Initial Wikipedia403 fixed with compliant identifiable User-Agent",
+    "Draft reload persistence fixed and four-language browser-retested",
+    "Public imported text initially overblocked queries; public-source classification separated from protected manual materials, reverified against all3 real services",
+    "Native DOCX renderer unavailable: browser rendering and independent parsing used and native limitation retained",
+    "Long Windows backup path reproduced at256 chars, extended-path SQLite open fixed; clean backup/restart passed",
+    "Inline CSS preview and stale busy notices fixed and four-language browser-retested",
+    "Initial offline clean install missing new package cache; locked official online install succeeded without scripts",
+    "Python restricted-executor stall contrasted with normal Windows-user PASS; sandbox and Job limits retained. Full606 passed.",
+    "Setup UI test now uses a clean source/dependency copy, preventing existing-registry timezone-guard false failure; four-language retest PASS."
+  ],
+  "gmail_acceptance_updated_at": "2026-10-22T21:24:54.126Z",
+  "final_gate": {
+    "node_tests": 606,
+    "ui_checks": 215,
+    "document_checks": 13,
+    "clean_install_checks": 11,
+    "full_node_fail": 0,
+    "final_source_scope": "After Gmail MIME change; setup UI harness isolated before final packaging",
+    "formal_deployment": false,
+    "github_upload": false
+  },
+  "final_gate_report": "FINAL_LOCAL_GATE_1_4.md"
+}

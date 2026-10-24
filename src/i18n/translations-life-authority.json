@@ -1,0 +1,107 @@
+[
+  [
+    "決定每天何時開始、最多活動多久。等待當前工作收尾即可保存，原每日生活安排保留；不增加已用額度。",
+    "Choose when daily life starts and how long it lasts. Save once the current task settles; the daily schedule and recorded usage remain intact.",
+    "毎日の開始時刻と活動時間を設定します。現在の作業終了後に保存できます。毎日の予定と使用済み量は保持されます。"
+  ],
+  [
+    "生活時間已保存；原每日生活是否開啟保持不變。",
+    "Life hours saved; the daily schedule stays enabled or disabled as before.",
+    "生活時間を保存しました。毎日の生活の有効・無効は変わりません。"
+  ],
+  [
+    "活動輪數已保存，已用量與原每日生活安排保留。",
+    "Activity limit saved; recorded usage and the daily schedule are preserved.",
+    "活動回数の上限を保存しました。使用済み量と毎日の予定は保持されます。"
+  ],
+  [
+    "每日生活已開啟",
+    "Daily life is enabled",
+    "毎日の生活は有効です"
+  ],
+  [
+    "現在可保存時間與活動輪數，原每日安排保留。",
+    "You can save life hours and activity limits now without disabling daily life.",
+    "時間と活動回数を保存できます。毎日の予定は無効になりません。"
+  ],
+  [
+    "本輪工作尚未收尾，請稍後保存；不用關閉每日生活。網路分配可以獨立調整。",
+    "Wait for this task to settle before saving; you do not need to disable daily life. Network allocation can be adjusted separately.",
+    "現在の作業が終了してから保存してください。毎日の生活を停止する必要はありません。通信量の割り当ては別に調整できます。"
+  ],
+  [
+    "停止此個體與每日生活",
+    "Stop this individual and daily life",
+    "この個体と毎日の生活を停止"
+  ],
+  [
+    "只有Owner明確停止才關閉每日授權。重啟、設定變更或運作異常會先核對，不會取消未來安排。",
+    "Only an explicit Owner stop revokes daily consent. Restarts, setting changes and runtime faults trigger checks without cancelling future schedules.",
+    "Ownerによる明示的な停止のみが毎日の許可を取り消します。再起動、設定変更、動作異常では条件を確認し、今後の予定を取り消しません。"
+  ],
+  [
+    "重新檢查執行條件",
+    "Recheck execution conditions",
+    "実行条件を再確認"
+  ],
+  [
+    "｜每日生活已開啟；",
+    " | Daily life is enabled; ",
+    "｜毎日の生活は有効です。"
+  ],
+  [
+    "目前受阻：",
+    "Currently blocked: ",
+    "現在の実行を妨げている理由："
+  ],
+  [
+    "下次開始：",
+    "Next start: ",
+    "次回開始："
+  ],
+  [
+    "已重新核對執行條件；原每日授權保留。",
+    "Execution conditions rechecked; daily consent is preserved.",
+    "実行条件を再確認しました。毎日の許可は保持されます。"
+  ],
+  [
+    "操作順序：①勾選權限 → ②等待當前工作收尾並保存 → ③確認已生效。原每日生活安排保持不變。",
+    "Steps: 1. Select permissions. 2. Wait for the current task to settle and save. 3. Verify active permissions. Daily life remains unchanged.",
+    "手順：①権限を選択 → ②現在の作業終了後に保存 → ③反映された権限を確認。毎日の予定は変わりません。"
+  ],
+  [
+    "目前工作尚未收尾，請稍後保存；原每日生活安排保留。",
+    "The current task has not settled. Save shortly after it finishes; daily life remains enabled.",
+    "現在の作業はまだ終了していません。終了後に保存してください。毎日の予定は保持されます。"
+  ],
+  [
+    "目前可保存；每日生活安排不會因此關閉。",
+    "Ready to save without disabling daily life.",
+    "保存できます。毎日の予定は無効になりません。"
+  ],
+  [
+    "Kinseed 1.5｜個體控制台",
+    "Kinseed 1.5 | Individual console",
+    "Kinseed 1.5｜個体管理"
+  ],
+  [
+    "平台執行暫停，生活授權保留",
+    "Platform execution paused; life consent preserved",
+    "プラットフォームの実行は一時停止中。生活の許可は保持されています"
+  ],
+  [
+    "生活時間是允許活動的範圍，不保證持續思考。每輪最多2分鐘，包含工具與等待；接近期限會保留交接時間。時段與額度不自動增加。只有Owner明確停止才取消每日授權，異常或重啟會先核對執行條件。",
+    "Life hours allow activity without promising constant thought. Each round has a two-minute hard limit including tools and waiting, with time reserved for handoff. Hours and budgets never increase automatically. Only an explicit Owner stop revokes daily consent; faults and restarts trigger checks.",
+    "生活時間は活動を許可する範囲で、常に思考する保証ではありません。各回の上限はツールと待機を含む2分です。期限前に引き継ぎ時間を確保します。時間や使用枠を自動で増やしません。毎日の許可はOwnerの明示的な停止でのみ取り消され、異常や再起動時は実行条件を確認します。"
+  ],
+  [
+    "每日生活授權保留，等待執行條件。",
+    "Daily life consent is preserved while waiting for execution conditions.",
+    "毎日の生活の許可を保持し、実行条件が整うのを待っています。"
+  ],
+  [
+    "出生不需重做。每日授權仍開啟時，重啟會重新核對後依原安排執行；Owner明確停止後不自行恢復。",
+    "Birth does not need repeating. If daily consent remains enabled, restart checks conditions and follows the original schedule. An explicit Owner stop never resumes automatically.",
+    "誕生をやり直す必要はありません。毎日の許可が有効なら、再起動後に条件を確認して元の予定に従います。Ownerによる明示的な停止後は自動再開しません。"
+  ]
+]
