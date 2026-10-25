@@ -1,0 +1,797 @@
+[
+  [
+    " 每日自動整理生活報告（使用目前大腦，會占模型帳號容量；可稍後關閉）",
+    " Automatically prepare daily reports (uses the selected brain and account capacity; can be disabled later)",
+    " 毎日のレポートを自動作成する（選択したモデルの利用枠を消費します。後から無効にできます）"
+  ],
+  [
+    "Kinseed｜每日生活報告",
+    "Kinseed · Daily life reports",
+    "Kinseed｜毎日の生活レポート"
+  ],
+  [
+    "選一天，讀懂各個體的進展；每段內容都能回查原始紀錄。",
+    "Choose a day to read each individual's progress, with original evidence for every paragraph.",
+    "日付を選んで各個体の進捗を読み、各段落の元の記録を確認できます。"
+  ],
+  [
+    "← 返回生活控制台",
+    "← Back to the life console",
+    "← 生活コントロール画面に戻る"
+  ],
+  [
+    "如何使用與整理範圍",
+    "How to use reports and what they cover",
+    "使い方と対象範囲"
+  ],
+  [
+    "選擇想閱讀的日期",
+    "Choose a report date",
+    "読みたい日付を選ぶ"
+  ],
+  [
+    "已完成的報告會直接顯示在下方。沒有報告，或想納入後續紀錄時，再要求整理。",
+    "Saved reports appear below. Request a new report if none exists or you need to include later records.",
+    "保存済みのレポートは下に表示されます。未作成の場合や後の記録を含めたい場合に、新しく作成してください。"
+  ],
+  [
+    "報告日期（依安裝時區）",
+    "Report date (installation time zone)",
+    "レポートの日付（この環境のタイムゾーン）"
+  ],
+  [
+    "依所選日期整理；今天仍在進行的活動，只會納入擷取時已保存的紀錄。",
+    "Uses records from the selected day. For today, only records saved at snapshot time are included.",
+    "選択日の記録を使用します。当日の進行中の活動は、取得時点で保存済みの記録だけが対象です。"
+  ],
+  [
+    "整理這一天的報告",
+    "Prepare this day's report",
+    "この日のレポートを作成"
+  ],
+  [
+    "會使用報告模型額度，另存一個新版本；不覆蓋舊報告。",
+    "Uses report model capacity and saves a new version without replacing previous reports.",
+    "モデルの利用枠を消費して新しい版を保存します。過去のレポートは上書きしません。"
+  ],
+  [
+    "整理狀態",
+    "Report status",
+    "作成状況"
+  ],
+  [
+    "正在讀取",
+    "Loading",
+    "読み込み中"
+  ],
+  [
+    "正在讀取已保存的報告…",
+    "Loading saved reports…",
+    "保存済みレポートを読み込み中…"
+  ],
+  [
+    "正在讀取本安裝的整理時間與時區。",
+    "Loading this installation's schedule and time zone.",
+    "この環境の作成時刻とタイムゾーンを読み込み中です。"
+  ],
+  [
+    "報告獨立計次，不占個體生活輪數；使用本安裝選定的大腦，仍會共用帳號容量。等待生活模型空檔，不會替個體停止生活。",
+    "Reports have a separate call count and do not use life rounds. They use the selected brain and share account capacity. Reports wait for idle time without stopping anyone's life.",
+    "レポートの呼び出し数は生活の活動回数と別に計上します。選択したモデルのアカウント利用枠は共有されます。生活を停止せず、処理の空きを待ちます。"
+  ],
+  [
+    "每日報告設定",
+    "Daily report settings",
+    "毎日のレポート設定"
+  ],
+  [
+    "手動整理與自動整理均使用本安裝選定的大腦；共用模型容量，不占個體生活輪數。不支援或未通過查核時會顯示原因，不改用其他模型。",
+    "Manual and automatic reports use this installation's selected brain and share its capacity, without using life rounds. Unsupported or rejected results show a reason; no other model is substituted.",
+    "手動・自動とも、この環境で選択したモデルと利用枠を使います。生活の活動回数は消費しません。未対応や検証失敗の理由を表示し、別のモデルへ切り替えません。"
+  ],
+  [
+    " 每日自動整理（會使用模型容量）",
+    " Daily automatic reports (uses model capacity)",
+    " 毎日自動作成する（モデルの利用枠を消費）"
+  ],
+  [
+    "整理時間 ",
+    "Preparation time ",
+    "作成時刻 "
+  ],
+  [
+    "新報告語言 ",
+    "Language for new reports ",
+    "新しいレポートの言語 "
+  ],
+  [
+    "繁體中文",
+    "Traditional Chinese",
+    "繁体字中国語"
+  ],
+  [
+    "简体中文",
+    "Simplified Chinese",
+    "簡体字中国語"
+  ],
+  [
+    "日本語",
+    "Japanese",
+    "日本語"
+  ],
+  [
+    "保存報告設定",
+    "Save report settings",
+    "レポート設定を保存"
+  ],
+  [
+    "閱讀已保存的報告",
+    "Read saved reports",
+    "保存済みのレポートを読む"
+  ],
+  [
+    "更新結果（不重新生成）",
+    "Refresh results (no generation)",
+    "結果を更新（再生成しません）"
+  ],
+  [
+    "版本與整理紀錄",
+    "Versions and preparation history",
+    "版と作成履歴"
+  ],
+  [
+    "閱讀版本",
+    "Version to read",
+    "表示する版"
+  ],
+  [
+    "查看每次整理的執行情況",
+    "View each preparation attempt",
+    "各作成処理の状況を見る"
+  ],
+  [
+    "使用說明",
+    "Instructions",
+    "使い方"
+  ],
+  [
+    "先選日期 → 直接閱讀下方已有報告 → 需要新版時按「整理這一天的報告」。整理進度會自動更新；「更新結果」只讀取保存狀態，不會呼叫模型。",
+    "Choose a date → read saved reports below → request a new report when needed. Progress refreshes automatically. Refresh results only reads saved status and never calls the model.",
+    "日付を選ぶ → 保存済みの内容を読む → 必要なら新しいレポートを作成。進捗は自動更新されます。「結果を更新」は保存状態を読むだけでモデルを呼び出しません。"
+  ],
+  [
+    "原文查核與資料範圍",
+    "Source verification and scope",
+    "原文の照合とデータの範囲"
+  ],
+  [
+    "各個體分開整理後才產生全體摘要。只根據所選日期的紀錄，不補寫感受或未發生的成果。筆記中的想法不等於外部事實，計畫不等於已完成。AI整理可能仍有誤差，每段可查看原文依據；內容經逐字引用檢查及另一輪模型核對，沒有通過便不發布。",
+    "Each individual is summarized separately before the overview. Only selected-day records are used; feelings or unrecorded achievements are not invented. Notes are not verified external facts, and plans are not completed work. AI may still make errors. Each paragraph has source evidence, exact quote checks and a separate model review; failed checks prevent publication.",
+    "各個体を別々に整理してから全体要約を作成します。選択日の記録だけを使用し、感情や未記録の成果を補いません。メモは外部事実の証明ではなく、計画は完了した成果ではありません。AIには誤りの可能性があります。各段落の原文引用と別のモデル処理での照合に通らなければ公開しません。"
+  ],
+  [
+    "不改身份、出生、記憶及B歷史，也不停止或恢復任何個體。電腦與控制器需保持運作；睡眠或關機後恢復服務會補整最近一個漏掉的日期，不會自動補跑個體生活。",
+    "Reports do not change identities, birth, memories or B history, or stop or resume individuals. Keep the computer and controller running. After a service interruption, only the most recently missed day is considered; missed life is never replayed.",
+    "身分・誕生・記憶・B履歴を変更せず、個体の生活を停止・再開しません。パソコンとコントローラーの起動が必要です。中断後は直近の未処理日だけを補完対象とし、過去の生活は再実行しません。"
+  ],
+  [
+    "管理哪些個體出現在日常選單",
+    "Manage individuals shown in daily menus",
+    "日常メニューに表示する個体を管理"
+  ],
+  [
+    "這是選單管理，不是報告生成設定；封存會影響日常選單、生活日誌與新報告。身份、出生、記憶及歷史完整保留，可還原。",
+    "This manages visibility, not report generation. Archiving affects daily menus, journals and new reports. Identity, birth, memory and history remain intact, and visibility can be restored.",
+    "これは表示の管理です。アーカイブは日常メニュー・生活日誌・新しいレポートに反映されます。身分・誕生・記憶・履歴は保持され、表示を戻せます。"
+  ],
+  [
+    "開啟個體選單管理",
+    "Open individual menu management",
+    "個体メニューの管理を開く"
+  ],
+  [
+    "個體選單管理",
+    "Individual menu management",
+    "個体メニューの管理"
+  ],
+  [
+    "只有已停止、每日安排已關閉且本輪已結束的個體才能封存。這裡不會替您停止或啟動生活。",
+    "Only stopped individuals with daily scheduling off and all work settled can be archived. This page never stops or starts their lives.",
+    "生活が停止し、毎日の予定が無効で、作業が終了している個体だけをアーカイブできます。この画面から生活を停止・開始することはありません。"
+  ],
+  [
+    "報告導覽",
+    "Report navigation",
+    "レポートのナビゲーション"
+  ],
+  [
+    "已完成個體的報告數",
+    "Number of completed individual reports",
+    "作成済み個体レポート数"
+  ],
+  [
+    "報告版本與整理紀錄",
+    "Report versions and preparation history",
+    "レポートの版と作成履歴"
+  ],
+  [
+    "報告版本",
+    "Report version",
+    "レポートの版"
+  ],
+  [
+    "讀取當日紀錄",
+    "Reading daily records",
+    "当日の記録を読み込み"
+  ],
+  [
+    "整理短文",
+    "Writing the summary",
+    "要約を作成"
+  ],
+  [
+    "依查核意見修訂（最多一次）",
+    "Revising after review (once at most)",
+    "照合結果に基づき修正（最大1回）"
+  ],
+  [
+    "逐字核對引用",
+    "Checking exact quotes",
+    "引用を原文と逐語照合"
+  ],
+  [
+    "核對內容依據",
+    "Checking supporting evidence",
+    "内容の根拠を照合"
+  ],
+  [
+    "整理全體摘要",
+    "Preparing the overview",
+    "全体要約を作成"
+  ],
+  [
+    "保存新版本",
+    "Saving a new version",
+    "新しい版を保存"
+  ],
+  [
+    "無法讀取報告。",
+    "Unable to read reports.",
+    "レポートを読み込めません。"
+  ],
+  [
+    "正在整理，請稍候",
+    "Preparing, please wait",
+    "作成中です。お待ちください"
+  ],
+  [
+    "重新整理這一天",
+    "Retry this day's report",
+    "この日のレポートを再作成"
+  ],
+  [
+    "另存一份新版報告",
+    "Save a new report version",
+    "新しい版を作成して保存"
+  ],
+  [
+    "尚未要求整理",
+    "No report requested yet",
+    "まだ作成を要求していません"
+  ],
+  [
+    "下方可以閱讀已保存的報告。",
+    "Saved reports can be read below.",
+    "保存済みのレポートを下で読めます。"
+  ],
+  [
+    "目前只讀取保存狀態；需要報告時，請按上方的整理按鈕。",
+    "Only saved status is being read. Use the preparation button above when you need a report.",
+    "現在は保存状態を読み込むだけです。必要な場合は上の作成ボタンを押してください。"
+  ],
+  [
+    "這次整理失敗，沒有產生新報告",
+    "This attempt failed; no new report was published",
+    "今回の作成は失敗し、新しいレポートは保存されませんでした"
+  ],
+  [
+    "引用不是來源原文",
+    "Quote does not match the source",
+    "引用が原文と一致しません"
+  ],
+  [
+    "引用文字未通過逐字原文檢查，因此沒有發布這次報告。",
+    "The quotes failed exact source matching, so this report was not published.",
+    "引用が原文との逐語照合に通らなかったため、レポートを公開しませんでした。"
+  ],
+  [
+    "內容依據檢查",
+    "Supporting evidence check",
+    "内容の根拠の照合"
+  ],
+  [
+    "核對時發現內容的依據不足或無法確定，因此沒有發布這次報告。",
+    "Supporting evidence was insufficient or uncertain, so this report was not published.",
+    "内容の根拠が不足、または確認できなかったため、レポートを公開しませんでした。"
+  ],
+  [
+    " 核對說明：",
+    " Review notes: ",
+    " 照合結果："
+  ],
+  [
+    "段：",
+    ": ",
+    "段："
+  ],
+  [
+    " 原始生活紀錄完整保留；更新結果不會重新生成。",
+    " Original life records remain intact. Refreshing results does not generate again.",
+    " 元の生活記録は保持されています。結果の更新では再生成しません。"
+  ],
+  [
+    " 下方仍可閱讀先前成功保存的版本。",
+    " Previous successful versions remain available below.",
+    " 過去に保存できた版は下で読めます。"
+  ],
+  [
+    " 修正原因後，可用上方按鈕重新整理。",
+    " After addressing the cause, use the button above to retry.",
+    " 原因を解消した後、上のボタンから再作成できます。"
+  ],
+  [
+    "報告已完成並保存",
+    "Report completed and saved",
+    "レポートを作成して保存しました"
+  ],
+  [
+    "下方可閱讀",
+    "Read below: ",
+    "下で読めます："
+  ],
+  [
+    "您選擇的歷史版本",
+    "the selected historical version",
+    "選択した過去の版"
+  ],
+  [
+    "最新完成版本",
+    "the latest completed version",
+    "最新の完成版"
+  ],
+  [
+    "，展開段落下方的依據即可查核原文。",
+    ". Expand the evidence below each paragraph to check the source.",
+    "。各段落の根拠を展開すると原文を確認できます。"
+  ],
+  [
+    "等待生活模型的空檔",
+    "Waiting for an idle model slot",
+    "生活モデルの空きを待機"
+  ],
+  [
+    "報告已排入，會在生活模型空檔繼續；不會停止任何個體，請保持電腦與控制器運作。",
+    "Queued until the life model is idle. No individual will be stopped. Keep the computer and controller running.",
+    "生活モデルが空いたら続行します。個体の生活は停止しません。パソコンとコントローラーを起動したままにしてください。"
+  ],
+  [
+    "模型暫時繁忙，等待有限重試",
+    "Model busy; waiting for a bounded retry",
+    "モデルが混雑中です。回数制限付きで再試行を待機"
+  ],
+  [
+    "已收到整理要求",
+    "Report request received",
+    "作成要求を受け付けました"
+  ],
+  [
+    "正在整理與查核",
+    "Preparing and verifying",
+    "作成・照合中"
+  ],
+  [
+    "目前處理：",
+    "Processing: ",
+    "処理中："
+  ],
+  [
+    "。進度會自動更新，不必重複按整理。",
+    ". Progress updates automatically; do not submit again.",
+    "。進捗は自動更新されます。再度押す必要はありません。"
+  ],
+  [
+    "待讀取",
+    "pending",
+    "読み込み待ち"
+  ],
+  [
+    " 個體",
+    " individuals",
+    " 個体"
+  ],
+  [
+    "停止階段：",
+    "Failed stage: ",
+    "失敗した段階："
+  ],
+  [
+    "請查看原因",
+    "See the reason",
+    "理由を確認してください"
+  ],
+  [
+    "模型修訂 ",
+    "Model revisions: ",
+    "モデルの修正回数："
+  ],
+  [
+    "本次報告模型呼叫 ",
+    "Model calls for this report: ",
+    "今回のモデル呼び出し："
+  ],
+  [
+    "最後更新 ",
+    "Last updated: ",
+    "最終更新："
+  ],
+  [
+    "畫面確認 ",
+    "Status checked: ",
+    "画面の確認時刻："
+  ],
+  [
+    "每日自動整理已開啟",
+    "Daily automatic reports enabled",
+    "毎日の自動作成は有効です"
+  ],
+  [
+    "每日自動整理已關閉",
+    "Daily automatic reports disabled",
+    "毎日の自動作成は無効です"
+  ],
+  [
+    "大腦已就緒",
+    "Brain ready",
+    "モデルは準備完了です"
+  ],
+  [
+    "目前大腦尚未就緒",
+    "Brain currently unavailable",
+    "現在モデルを利用できません"
+  ],
+  [
+    "查核這段的原文依據（",
+    "Check this paragraph's source evidence (",
+    "この段落の原文の根拠を確認（"
+  ],
+  [
+    "項）",
+    " items)",
+    "件）"
+  ],
+  [
+    "引用原文：",
+    "Exact quote: ",
+    "引用原文："
+  ],
+  [
+    "完整來源資料",
+    "Full source record",
+    "元の記録全体"
+  ],
+  [
+    "這一天還沒有可閱讀的報告",
+    "No readable report for this day yet",
+    "この日の読めるレポートはまだありません"
+  ],
+  [
+    "報告完成後會顯示在這裡",
+    "Completed reports appear here",
+    "完成したレポートをここに表示します"
+  ],
+  [
+    "這一天尚未有保存的報告",
+    "No saved report for this day",
+    "この日の保存済みレポートはありません"
+  ],
+  [
+    "這次整理沒有通過檢查，請先查看上方原因。不是報告被刪除，也不是更新按鈕沒有反應。",
+    "This attempt did not pass verification. Check the reason above. No report was deleted; the refresh button is working.",
+    "今回の作成は照合に通りませんでした。上に表示された理由を確認してください。削除や更新ボタンの不具合ではありません。"
+  ],
+  [
+    "目前正在等待或整理。這裡會自動更新，請勿重複提交。",
+    "Waiting or preparing. This view updates automatically; do not submit again.",
+    "待機または作成中です。自動更新されるため、重複して送信しないでください。"
+  ],
+  [
+    "按上方「整理這一天的報告」後，系統才會使用模型整理並查核內容。",
+    "The model is used only after you request a report with the button above.",
+    "上の作成ボタンを押したときに、モデルで作成と照合を行います。"
+  ],
+  [
+    "歷史摘要含已封存個體，相關段落已收起，原報告完整保留。",
+    "Sections about archived individuals are hidden. The original historical report remains intact.",
+    "アーカイブ済み個体を含む段落は非表示です。過去のレポート自体は保持されています。"
+  ],
+  [
+    "資料截至 ",
+    "Records through ",
+    "記録の取得時点："
+  ],
+  [
+    " · 完成於 ",
+    " · Completed at ",
+    " · 完了時刻："
+  ],
+  [
+    "。後續活動不會自動改寫這份版本。",
+    ". Later activity does not rewrite this version.",
+    "。後の活動によってこの版が書き換わることはありません。"
+  ],
+  [
+    "｜全體摘要",
+    " · Overview",
+    "｜全体要約"
+  ],
+  [
+    "涵蓋 ",
+    "Includes ",
+    "対象："
+  ],
+  [
+    " 位個體 · 本日有生活活動 ",
+    " individuals · Active today: ",
+    " 個体 · 当日活動あり："
+  ],
+  [
+    " 位 · 本日無活動紀錄 ",
+    " · No recorded activity today: ",
+    " 個体 · 当日の活動記録なし："
+  ],
+  [
+    " 位",
+    " individuals",
+    " 個体"
+  ],
+  [
+    "的一天",
+    " · Daily report",
+    "の一日"
+  ],
+  [
+    "完成 ",
+    "Completed: ",
+    "完了："
+  ],
+  [
+    " 輪 · 筆記 ",
+    " rounds · Notes: ",
+    " 回 · メモ："
+  ],
+  [
+    " 篇",
+    " notes",
+    " 件"
+  ],
+  [
+    " 輪未完整完成",
+    " incomplete rounds",
+    " 回が未完了"
+  ],
+  [
+    " 輪尚待確認",
+    " unconfirmed rounds",
+    " 回が確認待ち"
+  ],
+  [
+    "請選擇有效日期",
+    "Choose a valid date",
+    "有効な日付を選んでください"
+  ],
+  [
+    "日期不可晚於今天。",
+    "The date cannot be later than today.",
+    "今日より後の日付は選べません。"
+  ],
+  [
+    " 新版已完成，按「更新結果」即可閱讀，保留目前展開的查核內容。",
+    " A new version is ready. Refresh results to read it; currently expanded evidence is preserved until then.",
+    " 新しい版が完成しました。現在展開中の根拠を保ったまま、結果の更新で新しい版を読めます。"
+  ],
+  [
+    "完成於 ",
+    "Completed at ",
+    "完了時刻："
+  ],
+  [
+    "每日自動",
+    "Automatic daily report",
+    "毎日の自動作成"
+  ],
+  [
+    "Owner要求",
+    "Owner request",
+    "Ownerの要求"
+  ],
+  [
+    "失敗，未發布",
+    "Failed; not published",
+    "失敗・未公開"
+  ],
+  [
+    "整理中",
+    "Preparing",
+    "作成中"
+  ],
+  [
+    "排隊中",
+    "Queued",
+    "処理待ち"
+  ],
+  [
+    "等待生活空檔",
+    "Waiting for life idle time",
+    "生活処理の空き待ち"
+  ],
+  [
+    "等待重試",
+    "Waiting to retry",
+    "再試行待ち"
+  ],
+  [
+    " · 模型呼叫 ",
+    " · Model calls: ",
+    " · モデル呼び出し："
+  ],
+  [
+    "目前無法確認報告狀態",
+    "Report status is unconfirmed",
+    "レポートの状態を確認できません"
+  ],
+  [
+    "報告服務尚未連上，請由「開啟控制台.cmd」重新進入。",
+    "Report service is unreachable. Reopen the console using its launcher.",
+    "レポートサービスに接続できません。コントロール画面の起動ファイルから開き直してください。"
+  ],
+  [
+    " 已顯示的報告保留；請更新結果確認，不必重新提交。",
+    " The displayed report is kept. Refresh results to confirm; do not resubmit.",
+    " 表示済みのレポートは保持されます。再送せず、結果を更新して確認してください。"
+  ],
+  [
+    "報告設定尚未確認",
+    "Report settings not confirmed",
+    "レポート設定を確認できません"
+  ],
+  [
+    "請先選擇日期",
+    "Choose a date first",
+    "先に日付を選んでください"
+  ],
+  [
+    "請選今天或更早的有效日期。",
+    "Choose today or an earlier valid date.",
+    "今日以前の有効な日付を選んでください。"
+  ],
+  [
+    "正在送出整理要求",
+    "Submitting report request",
+    "作成要求を送信中"
+  ],
+  [
+    "請稍候，不要重複提交。",
+    "Please wait; do not submit again.",
+    "お待ちください。重複して送信しないでください。"
+  ],
+  [
+    "尚未確認整理要求是否已接受",
+    "Request acceptance is unconfirmed",
+    "要求が受理されたか確認できません"
+  ],
+  [
+    " 請先按「更新結果」核對；不會自動重送。",
+    " Refresh results to check first. The request is not automatically resent.",
+    " 先に結果を更新して確認してください。自動で再送はしません。"
+  ],
+  [
+    "已封存，不列入日常選單與新報告。",
+    "Archived; excluded from daily menus and new reports.",
+    "アーカイブ済みです。日常メニューと新しいレポートには含めません。"
+  ],
+  [
+    "此個體已有活動，為安全仍顯示；封存不會停止生活。",
+    "This individual has activity and remains visible for safety. Archiving never stops life.",
+    "この個体には活動があるため、安全のため表示します。アーカイブで生活は停止しません。"
+  ],
+  [
+    "已停止且沒有每日安排，可封存選單。",
+    "Stopped with no daily schedule; can be archived.",
+    "停止済みで毎日の予定はありません。アーカイブできます。"
+  ],
+  [
+    "仍有生活授權或工作；若要封存，須先在控制台明確停止。",
+    "Life authorization or work remains active. Explicitly stop it in the console before archiving.",
+    "生活の許可または作業が有効です。アーカイブする前に、コントロール画面で明示的に停止してください。"
+  ],
+  [
+    "還原到日常選單",
+    "Restore to daily menus",
+    "日常メニューに戻す"
+  ],
+  [
+    "封存選單（保留資料）",
+    "Archive from menus (keep data)",
+    "メニューからアーカイブ（データ保持）"
+  ],
+  [
+    " 已還原選單，沒有啟動生活。",
+    " Restored to menus; life was not started.",
+    " メニューに戻しました。生活は開始していません。"
+  ],
+  [
+    " 已封存選單，原資料與歷史保留。",
+    " Archived from menus; data and history are kept.",
+    " メニューからアーカイブしました。データと履歴は保持されています。"
+  ],
+  [
+    "正在讀取所選日期",
+    "Loading the selected date",
+    "選択した日付を読み込み中"
+  ],
+  [
+    "請稍候。",
+    "Please wait.",
+    "お待ちください。"
+  ],
+  [
+    "1.14.0-preview.1 · Windows預覽版 · 這不是正式個體資料的搬移或模型切換工具。需要重新設定時，先停止這份控制台，再執行「首次設定.cmd」。",
+    "1.14.0-preview.1 · Windows preview · This wizard does not migrate existing individuals or switch an active brain. Stop this console before reopening first-run setup.",
+    "1.14.0-preview.1 · Windowsプレビュー版 · このウィザードは既存個体の移行や実行中のモデル切り替えには使いません。再設定する前に、この環境のコントローラーを閉じてください。"
+  ],
+  [
+    "報告大腦尚未就緒，請先確認目前大腦的登入與連線。",
+    "The report brain is unavailable. Check the selected brain connection and login.",
+    "レポート用モデルを利用できません。選択したモデルの接続とログインを確認してください。"
+  ],
+  [
+    "設定已被其他視窗更新，請重新讀取後核對；您的草稿仍保留。",
+    "Settings changed in another window. Reload and compare; your draft is preserved.",
+    "別の画面で設定が変更されました。再読み込みして確認してください。入力内容は保持されています。"
+  ],
+  [
+    "請確認整理時間及報告語言。",
+    "Check the report time and language.",
+    "作成時刻とレポートの言語を確認してください。"
+  ],
+  [
+    "報告仍在整理，完成後再保存設定。",
+    "A report is still being prepared. Save settings after it finishes.",
+    "レポートを作成中です。終了してから設定を保存してください。"
+  ],
+  [
+    "已有個體資料：請在控制台的每日報告設定查看或調整自動整理；此處保留原安排。",
+    "Existing individuals: review or change automatic reports in the console report settings. This wizard preserves the current schedule.",
+    "既存の個体があります。自動作成はコントロール画面のレポート設定で確認・変更してください。この画面では既存の予定を保持します。"
+  ],
+  [
+    "報告可使用；既有自動整理安排請在控制台的每日報告設定核對",
+    "Reports are available; review the existing schedule in the console report settings.",
+    "レポートを利用できます。既存の自動作成予定はコントロール画面のレポート設定で確認してください。"
+  ],
+  [
+    "每日自動整理已選擇；使用目前大腦並共用模型容量，不占生活輪數",
+    "Daily automatic reports selected; uses the current brain and shared capacity, without consuming life rounds.",
+    "毎日の自動作成を選択済みです。現在のモデルと利用枠を使い、生活の活動回数は消費しません。"
+  ],
+  [
+    "報告可手動使用；每日自動整理尚未開啟，可在控制台設定",
+    "Manual reports are available. Daily automatic reports are off and can be enabled in the console.",
+    "手動でレポートを作成できます。毎日の自動作成は無効で、コントロール画面から有効にできます。"
+  ],
+  [
+    "自己的控制台已啟動。新個體仍需批准、出生與生活授權；既有個體只依原每日授權及目前條件運作，不會因啟動而新增授權。",
+    "Your console is running. New individuals still need approval, birth and life consent. Existing individuals follow their previous daily consent and current checks; startup grants no new consent.",
+    "この環境のコントローラーを起動しました。新しい個体には承認・誕生・生活の許可が必要です。既存の個体は元の毎日の許可と現在の条件に従います。起動だけで新しい許可は与えません。"
+  ]
+]

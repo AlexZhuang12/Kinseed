@@ -1,3 +1,7 @@
+## 1.14.0-preview.1 — local candidate
+
+General-installation parity, reports, archive visibility, time zones and four-language report controls; source-only upgrade/rollback. Not yet published. See docs/RELEASE_1_14_0_PREVIEW.md.
+
 # 1.13.0-local.1 — deferred independent consultation
 
 Consultations return a job ID immediately, retain original replies for later rounds, and do not permanently block new questions after a settled failure. Original quotas, identity, memory and permissions are retained. See docs/ASYNC_CONSULTATIONS.md.

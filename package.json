@@ -1,6 +1,6 @@
 {
   "name": "kinseed-windows-foundation",
-  "version": "1.13.0-preview.1",
+  "version": "1.14.0-preview.1",
   "license": "Apache-2.0",
   "private": true,
   "files": [
@@ -31,7 +31,11 @@
     "CODE_OF_CONDUCT.md",
     "CHANGELOG.md",
     ".github/",
-    "config/reviewed-install-scripts.json"
+    "config/reviewed-install-scripts.json",
+    "啟動控制台.cmd",
+    "開啟控制台.cmd",
+    "關閉控制台.cmd",
+    "檢查環境.cmd"
   ],
   "type": "module",
   "engines": {
@@ -55,7 +59,7 @@
     "backup:verify": "node scripts/maintenance.mjs verify",
     "ui:build": "node scripts/build-journal-ui.mjs && node scripts/build-owner-controls-ui.mjs && node scripts/build-locales.mjs --complete",
     "ui:check": "node scripts/build-journal-ui.mjs --check && node scripts/build-owner-controls-ui.mjs --check && node scripts/build-locales.mjs --check --complete",
-    "test:ui": "node scripts/verify-ui-journey.mjs zh-Hant && node scripts/verify-ui-journey.mjs zh-Hans && node scripts/verify-ui-journey.mjs en && node scripts/verify-ui-journey.mjs ja && node scripts/verify-ui-setup.mjs && node scripts/verify-ui-languages.mjs && node scripts/verify-permission-save-ui.mjs zh-Hant && node scripts/verify-permission-save-ui.mjs zh-Hans && node scripts/verify-permission-save-ui.mjs en && node scripts/verify-permission-save-ui.mjs ja && node scripts/verify-document-reading-ui.mjs zh-Hant && node scripts/verify-document-reading-ui.mjs zh-Hans && node scripts/verify-document-reading-ui.mjs en && node scripts/verify-document-reading-ui.mjs ja && node scripts/verify-hedra-ui.mjs zh-Hant && node scripts/verify-hedra-ui.mjs zh-Hans && node scripts/verify-hedra-ui.mjs en && node scripts/verify-hedra-ui.mjs ja && node scripts/verify-web-scope-ui.mjs && node scripts/verify-hedra-workflow-ui.mjs zh-Hant && node scripts/verify-hedra-workflow-ui.mjs zh-Hans && node scripts/verify-hedra-workflow-ui.mjs en && node scripts/verify-hedra-workflow-ui.mjs ja && node scripts/verify-hedra-reference-ui.mjs zh-Hant && node scripts/verify-hedra-reference-ui.mjs zh-Hans && node scripts/verify-hedra-reference-ui.mjs en && node scripts/verify-hedra-reference-ui.mjs ja && node scripts/verify-film-ui.mjs zh-Hant && node scripts/verify-film-ui.mjs zh-Hans && node scripts/verify-film-ui.mjs en && node scripts/verify-film-ui.mjs ja && node scripts/verify-hearing-ui.mjs zh-Hant && node scripts/verify-hearing-ui.mjs zh-Hans && node scripts/verify-hearing-ui.mjs en && node scripts/verify-hearing-ui.mjs ja && node scripts/verify-report-ui.mjs",
+    "test:ui": "node scripts/verify-ui-journey.mjs zh-Hant && node scripts/verify-ui-journey.mjs zh-Hans && node scripts/verify-ui-journey.mjs en && node scripts/verify-ui-journey.mjs ja && node scripts/verify-ui-setup.mjs && node scripts/verify-ui-languages.mjs && node scripts/verify-permission-save-ui.mjs zh-Hant && node scripts/verify-permission-save-ui.mjs zh-Hans && node scripts/verify-permission-save-ui.mjs en && node scripts/verify-permission-save-ui.mjs ja && node scripts/verify-document-reading-ui.mjs zh-Hant && node scripts/verify-document-reading-ui.mjs zh-Hans && node scripts/verify-document-reading-ui.mjs en && node scripts/verify-document-reading-ui.mjs ja && node scripts/verify-hedra-ui.mjs zh-Hant && node scripts/verify-hedra-ui.mjs zh-Hans && node scripts/verify-hedra-ui.mjs en && node scripts/verify-hedra-ui.mjs ja && node scripts/verify-web-scope-ui.mjs && node scripts/verify-hedra-workflow-ui.mjs zh-Hant && node scripts/verify-hedra-workflow-ui.mjs zh-Hans && node scripts/verify-hedra-workflow-ui.mjs en && node scripts/verify-hedra-workflow-ui.mjs ja && node scripts/verify-hedra-reference-ui.mjs zh-Hant && node scripts/verify-hedra-reference-ui.mjs zh-Hans && node scripts/verify-hedra-reference-ui.mjs en && node scripts/verify-hedra-reference-ui.mjs ja && node scripts/verify-film-ui.mjs zh-Hant && node scripts/verify-film-ui.mjs zh-Hans && node scripts/verify-film-ui.mjs en && node scripts/verify-film-ui.mjs ja && node scripts/verify-hearing-ui.mjs zh-Hant && node scripts/verify-hearing-ui.mjs zh-Hans && node scripts/verify-hearing-ui.mjs en && node scripts/verify-hearing-ui.mjs ja && node scripts/verify-report-ui.mjs && node scripts/verify-public-install-ui.mjs",
     "acceptance:local": "node scripts/acceptance-run.mjs",
     "acceptance:full": "node scripts/acceptance-run.mjs --allow-provider --allow-install-network",
     "acceptance:provider": "node scripts/acceptance-provider.mjs",
@@ -68,7 +72,8 @@
     "test:hedra": "node --test --test-concurrency=1 tests/hedra.test.mjs tests/hedra-integration.test.mjs tests/hedra-oauth.test.mjs tests/hedra-live-balance.test.mjs",
     "test:hedra-workflow": "node --test tests/hedra-workflow.test.mjs",
     "test:hedra-reference": "node --test tests/hedra-reference.test.mjs",
-    "test:hearing": "node --test --test-concurrency=1 tests/audio-understanding.test.mjs tests/audio-quality.test.mjs"
+    "test:hearing": "node --test --test-concurrency=1 tests/audio-understanding.test.mjs tests/audio-quality.test.mjs",
+    "test:public-install": "node --test --test-concurrency=1 tests/public-install.test.mjs"
   },
   "dependencies": {
     "@ffmpeg/core": "0.12.10",

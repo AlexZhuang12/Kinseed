@@ -1,7 +1,7 @@
 import {readLocalized} from '../src/i18n/server.mjs';
 import fs from 'node:fs';import path from 'node:path';import http from 'node:http';import {randomBytes,timingSafeEqual} from 'node:crypto';import {spawn} from 'node:child_process';
 import {APP_ROOT,loadEnvironment,noLinks} from './environment.mjs';import {setupState,nodeSupported,localModels,inspectChoice,saveChoice,installDependencies,installCodex,codexLoginWindow,configRevision} from './setup-core.mjs';
-export async function serveSetup({root=APP_ROOT,port=0,preflight,installDeps=installDependencies,installCLI=installCodex,login=codexLoginWindow}={}){
+export async function serveSetup({root=APP_ROOT,port=0,preflight,installDeps=installDependencies,installCLI=installCodex,login=codexLoginWindow,startApp=null}={}){
  loadEnvironment(root);const token=randomBytes(32).toString('hex');let endpoint,busy=false,childApp=null,operation=null;
  const server=http.createServer(async(req,res)=>{const reply=(code,value)=>{res.writeHead(code,{'content-type':'application/json; charset=utf-8','cache-control':'no-store','x-content-type-options':'nosniff'});res.end(JSON.stringify(value));};
   try{if(req.headers.host!==new URL(endpoint).host)throw Error('連線來源不符，請使用本次導引連結。');if(req.headers.origin&&req.headers.origin!==endpoint)throw Error('只接受本導引頁面的操作。');
@@ -24,7 +24,7 @@ export async function serveSetup({root=APP_ROOT,port=0,preflight,installDeps=ins
     if(req.url==='/api/start'){
      if(configRevision(root)!==body.revision)throw Error('設定已變更。請重新讀取並確認後再啟動。');
      const state=await setupState(root);if(!state.dependencies_ok)throw Error('請先完成第1步依賴安裝，再啟動控制台。');const env=loadEnvironment(root);if(fs.existsSync(env.session))throw Error('本副本已有控制台或未確認的連線。請用本副本的開啟／停止入口，避免重複啟動。');
-     const {startDevelopment}=await import('./development.mjs');childApp=await startDevelopment(env);return reply(200,{started:true,url:childApp.endpoint+'/#'+childApp.ownerToken,message:'自己的控制台已啟動。所有個體保持停止，仍需Owner另外批准與授權。'});
+     const {startDevelopment}=await import('./development.mjs');childApp=await (startApp??startDevelopment)(env);return reply(200,{started:true,url:childApp.endpoint+'/#'+childApp.ownerToken,message:'自己的控制台已啟動。新個體仍需批准、出生與生活授權；既有個體只依原每日授權及目前條件運作，不會因啟動而新增授權。'});
     }
     if(req.url==='/api/stop'){if(!childApp)throw Error('這個導引沒有持有控制台，請使用本副本的停止入口。');await childApp.close();childApp=null;return reply(200,{stopped:true,message:'本導引啟動的控制台已關閉，個體資料保留。'});}
     if(req.url==='/api/close'){if(childApp)throw Error('請先在本導引停止自己的控制台，再關閉導引。');reply(200,{closed:true});server.close();return;}

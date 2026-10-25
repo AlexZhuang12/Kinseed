@@ -181,7 +181,7 @@ const previousRender=render;render=function(){previousRender();if(currentPage===
 document.addEventListener('kinseed-journal-open',async event=>{const target=event.detail?.individual_id;await loadJournal();if(lastStatus?.individuals.some(e=>e.profile.individual_id===target)){chosen=target;paint();}});
 
 })();
-(()=>{const b=el('button',"每日生活报告");b.disabled=true;b.id='openDailyReport';const prior=api;api=async function(route,body){const v=await prior(route,body);if(route==='status')b.disabled=!v.local_unification?.reports_enabled;return v;};b.onclick=()=>location.assign('/reports-view#'+encodeURIComponent(token));nav.append(b);})();
+(()=>{const b=el('button',"每日生活报告");b.disabled=true;b.id='openDailyReport';const prior=api;api=async function(route,body){const v=await prior(route,body);if(route==='status')b.disabled=!v.local_unification?.reports_enabled;return v;};b.onclick=()=>location.assign('/reports-view?lang='+encodeURIComponent(document.documentElement.lang)+'#'+encodeURIComponent(token));nav.append(b);})();
 
 (()=>{
 // Presentation examples only. These are never questionnaire answers or identity rules.
@@ -379,5 +379,5 @@ const ownerPermissionRows=[{"id":"workbench","group":"optional","title":"创建�
 // Owner display preference only. Active entities remain visible. Source and history are unchanged.
 (()=>{let hidden=new Set();const previous=api;
  api=async function(route,b){const value=await previous(route,b);if(route==='status'){manage.disabled=!value.local_unification?.reports_enabled;hidden=new Set(value.archived_ids??[]);return {...value,individuals:value.individuals.filter(e=>!hidden.has(e.profile.individual_id))};}if(route==='builder'&&value.reviews)return {...value,reviews:value.reviews.filter(r=>!hidden.has(r.individual_id))};return value;};
- const manage=el('button',"管理个体选项");manage.disabled=true;manage.id='manageIndividuals';manage.onclick=()=>location.assign('/reports-view?manage=1#'+encodeURIComponent(token));nav.append(manage);
+ const manage=el('button',"管理个体选项");manage.disabled=true;manage.id='manageIndividuals';manage.onclick=()=>location.assign('/reports-view?manage=1&lang='+encodeURIComponent(document.documentElement.lang)+'#'+encodeURIComponent(token));nav.append(manage);
 })();

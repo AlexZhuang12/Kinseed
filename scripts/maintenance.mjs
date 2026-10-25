@@ -1,3 +1,4 @@
+import {inspectReportSnapshot} from './report-snapshot.mjs';
 // Cold snapshots only. There is deliberately no database overwrite/restore command.
 import fs from 'node:fs';
 import path from 'node:path';
@@ -17,6 +18,7 @@ function inspectDatabases(home){
   try{
    if(db.prepare('PRAGMA integrity_check').get().integrity_check!=='ok')throw Error('資料庫完整性未通過：'+rel);
    const tables=db.prepare("SELECT name FROM sqlite_master WHERE type='table'").all().map(x=>x.name);
+   if(rel.replaceAll('\\','/')==='reports/reports.sqlite'){out[rel]=inspectReportSnapshot(db,tables);continue;}
    if(rel.replaceAll('\\','/')==='runtime/hedra.sqlite'){out[rel]=inspectHedraSnapshot(db,tables);continue;}
    if(rel.replaceAll('\\','/')==='runtime/network.sqlite'){out[rel]=inspectNetworkSnapshot(db,tables);continue;}
    const s=tables.includes('state')?Object.fromEntries(db.prepare('SELECT key,value FROM state').all().map(x=>[x.key,JSON.parse(x.value)])):{};

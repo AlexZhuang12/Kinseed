@@ -12,6 +12,6 @@ Status is scoped to source candidates. Local same-machine validation is not a se
 | Qwen3 1.7B Q4_K_M | Real isolated synthetic-material trials | Full autonomous-life task compatibility did not pass; do not recommend as equivalent to the qualified Codex brain |
 | Controlled MCP | Kinseed-scoped tools, per-individual workspace and explicit Codex delegation | Not arbitrary MCP configuration, unrestricted shell, account, payment or publishing access |
 | UI languages | Traditional Chinese baseline; additional language acceptance tracked separately | Check the release language report; source catalogs alone do not establish review or usability |
-| Daily reports | Brain report-purpose contract exists | Independent clone entry does not enable the original platform's daily report scheduler |
+| Daily reports | General-install entry provides manual/scheduled reports and visibility management | Uses its own selected brain and installation time zone; opt-in automatic generation; model qualification remains separate |
 
 Mechanism, provider, quality and UX evidence must be reported separately. Default CI uses no real providers or private credentials. Release notes must identify the source version used by each test. See [model acceptance standard](MODEL_ADAPTER_STANDARD.md) and [engineering plan](OPEN_SOURCE_ENGINEERING_PLAN.md).

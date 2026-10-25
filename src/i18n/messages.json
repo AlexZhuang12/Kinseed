@@ -2119,7 +2119,8 @@
   "m_f81526efce190719": {
     "source": " 次",
     "files": [
-      "src/v1_2/console-ui.js"
+      "src/v1_2/console-ui.js",
+      "src/v1_2/report-ui.js"
     ]
   },
   "m_ad46ae7df12bb50c": {
@@ -3540,7 +3541,8 @@
   "m_3a16c46d40586844": {
     "source": "每日生活報告",
     "files": [
-      "src/v1_2/console-ui.js"
+      "src/v1_2/console-ui.js",
+      "src/v1_2/report.html"
     ]
   },
   "m_9116c291d82e9dac": {
@@ -5556,7 +5558,8 @@
   "m_307d59726358c7c6": {
     "source": "已完成 ",
     "files": [
-      "src/v1_2/journey-ui.js"
+      "src/v1_2/journey-ui.js",
+      "src/v1_2/report-ui.js"
     ]
   },
   "m_c017cb64d67d159b": {
@@ -5647,7 +5650,8 @@
     "source": "第",
     "files": [
       "src/v1_2/wizard-ui.js",
-      "src/v1_2/network-ui.js"
+      "src/v1_2/network-ui.js",
+      "src/v1_2/report-ui.js"
     ]
   },
   "m_cd36072ad1a7ff58": {
@@ -8243,7 +8247,8 @@
   "m_c0b3fbff51ccc40b": {
     "source": "完成",
     "files": [
-      "src/v1_2/network-ui.js"
+      "src/v1_2/network-ui.js",
+      "src/v1_2/report-ui.js"
     ]
   },
   "m_6707de42c29ddf4e": {
@@ -9059,7 +9064,8 @@
   "m_f28461bb49c85647": {
     "source": "已完成",
     "files": [
-      "src/v1_2/network-ui.js"
+      "src/v1_2/network-ui.js",
+      "src/v1_2/report-ui.js"
     ]
   },
   "m_b5db0eb2c3ba7b14": {
@@ -12723,6 +12729,18 @@
       "scripts/setup.html"
     ]
   },
+  "m_18c7157d2c9e08cf": {
+    "source": " 每日自動整理生活報告（使用目前大腦，會占模型帳號容量；可稍後關閉）",
+    "files": [
+      "scripts/setup.html"
+    ]
+  },
+  "m_72307cea38d0b014": {
+    "source": "已有個體資料：請在控制台的每日報告設定查看或調整自動整理；此處保留原安排。",
+    "files": [
+      "scripts/setup.html"
+    ]
+  },
   "m_a88bdee5db38b65c": {
     "source": "舊設定會先備份。只保存這份副本的設定，不改身份、記憶、歷史或生活授權。",
     "files": [
@@ -12790,8 +12808,8 @@
       "scripts/setup-ui.js"
     ]
   },
-  "m_1c5f4a9cdba7d015": {
-    "source": "1.3.0-preview.1 · Windows預覽版 · 這不是正式個體資料的搬移或模型切換工具。需要重新設定時，先停止這份控制台，再執行「首次設定.cmd」。",
+  "m_a092a4831d6c11f6": {
+    "source": "1.14.0-preview.1 · Windows預覽版 · 這不是正式個體資料的搬移或模型切換工具。需要重新設定時，先停止這份控制台，再執行「首次設定.cmd」。",
     "files": [
       "scripts/setup.html"
     ]
@@ -13196,6 +13214,943 @@
     "source": "歡迎。請從第1步檢查開始；重新整理會保留本分頁尚未保存的選擇。",
     "files": [
       "scripts/setup-ui.js"
+    ]
+  },
+  "m_ba1bbd4505856903": {
+    "source": "Kinseed｜每日生活報告",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_ce85937c529de2bc": {
+    "source": "選一天，讀懂各個體的進展；每段內容都能回查原始紀錄。",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_a82a1681dfcf841a": {
+    "source": "← 返回生活控制台",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_2a78096e7c68f34f": {
+    "source": "如何使用與整理範圍",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_2cc84955a17c5399": {
+    "source": "選擇想閱讀的日期",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_1da13c1c2b9bfcad": {
+    "source": "已完成的報告會直接顯示在下方。沒有報告，或想納入後續紀錄時，再要求整理。",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_3e5b975ec75cd0f5": {
+    "source": "報告日期（依安裝時區）",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_65f9062fa8edf452": {
+    "source": "依所選日期整理；今天仍在進行的活動，只會納入擷取時已保存的紀錄。",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_ffe31c2e4a7d5f0e": {
+    "source": "整理這一天的報告",
+    "files": [
+      "src/v1_2/report.html",
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_e67b2bdaae806c5a": {
+    "source": "會使用報告模型額度，另存一個新版本；不覆蓋舊報告。",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_bf2ce2d8d9de94da": {
+    "source": "整理狀態",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_f32463e538e5799a": {
+    "source": "正在讀取",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_8baf229698b05547": {
+    "source": "正在讀取已保存的報告…",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_4616ff8f203357dc": {
+    "source": "正在讀取本安裝的整理時間與時區。",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_00a654a7e3cf1c5f": {
+    "source": "報告獨立計次，不占個體生活輪數；使用本安裝選定的大腦，仍會共用帳號容量。等待生活模型空檔，不會替個體停止生活。",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_d890acd8f426ead3": {
+    "source": "每日報告設定",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_655d8365ce4ebf5b": {
+    "source": "手動整理與自動整理均使用本安裝選定的大腦；共用模型容量，不占個體生活輪數。不支援或未通過查核時會顯示原因，不改用其他模型。",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_a0338057e52e992e": {
+    "source": " 每日自動整理（會使用模型容量）",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_d5053f82982efce6": {
+    "source": "整理時間 ",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_7d1f6b5bb5013e67": {
+    "source": "新報告語言 ",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_1c95ab9b144ea2f5": {
+    "source": "繁體中文",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_9937e365aaf3a085": {
+    "source": "简体中文",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_77710aedc74ecfa3": {
+    "source": "日本語",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_0119c56769805c28": {
+    "source": "保存報告設定",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_344cea07c83aaad9": {
+    "source": "閱讀已保存的報告",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_c0c3bd714dad1f44": {
+    "source": "更新結果（不重新生成）",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_340caeeb300066d5": {
+    "source": "版本與整理紀錄",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_e8554d93070606f7": {
+    "source": "閱讀版本",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_541bba351bd4b25e": {
+    "source": "查看每次整理的執行情況",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_c7845aa273192272": {
+    "source": "使用說明",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_7d21246ea9e64157": {
+    "source": "先選日期 → 直接閱讀下方已有報告 → 需要新版時按「整理這一天的報告」。整理進度會自動更新；「更新結果」只讀取保存狀態，不會呼叫模型。",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_33adcd2aa34af302": {
+    "source": "原文查核與資料範圍",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_25d82f7414f1b4d6": {
+    "source": "各個體分開整理後才產生全體摘要。只根據所選日期的紀錄，不補寫感受或未發生的成果。筆記中的想法不等於外部事實，計畫不等於已完成。AI整理可能仍有誤差，每段可查看原文依據；內容經逐字引用檢查及另一輪模型核對，沒有通過便不發布。",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_cc9e62545b148c16": {
+    "source": "不改身份、出生、記憶及B歷史，也不停止或恢復任何個體。電腦與控制器需保持運作；睡眠或關機後恢復服務會補整最近一個漏掉的日期，不會自動補跑個體生活。",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_f6f2025a98c6516e": {
+    "source": "管理哪些個體出現在日常選單",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_3849f8409275d631": {
+    "source": "這是選單管理，不是報告生成設定；封存會影響日常選單、生活日誌與新報告。身份、出生、記憶及歷史完整保留，可還原。",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_6396e8768960532c": {
+    "source": "開啟個體選單管理",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_a71f6cae3e6724b0": {
+    "source": "個體選單管理",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_2d571a07ef3443cc": {
+    "source": "只有已停止、每日安排已關閉且本輪已結束的個體才能封存。這裡不會替您停止或啟動生活。",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_c2284aabad05a5ba": {
+    "source": "報告導覽",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_03d1e0dbbb7cd91a": {
+    "source": "已完成個體的報告數",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_6d4cb6f3ba037997": {
+    "source": "報告版本與整理紀錄",
+    "files": [
+      "src/v1_2/report.html"
+    ]
+  },
+  "m_98f34a943f05401e": {
+    "source": "報告大腦尚未就緒，請先確認目前大腦的登入與連線。",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_6fdf00701e7fe2a9": {
+    "source": "設定已被其他視窗更新，請重新讀取後核對；您的草稿仍保留。",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_3632f40035536796": {
+    "source": "請確認整理時間及報告語言。",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_f46c952a09fe9998": {
+    "source": "報告仍在整理，完成後再保存設定。",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_e09570c468bb7d68": {
+    "source": "報告版本",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_1d99533bdaf705f6": {
+    "source": "讀取當日紀錄",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_99c8ce6b1d26e874": {
+    "source": "整理短文",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_af38bd0652fa1067": {
+    "source": "依查核意見修訂（最多一次）",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_1391e75fe081e458": {
+    "source": "逐字核對引用",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_ec7e665258b354fb": {
+    "source": "核對內容依據",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_2d8c41d3f5dc2d26": {
+    "source": "整理全體摘要",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_b928371adab3b568": {
+    "source": "保存新版本",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_bd2b6b9eb3117be8": {
+    "source": "無法讀取報告。",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_32b7bd6636360c73": {
+    "source": "正在整理，請稍候",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_4a4c250c87671474": {
+    "source": "重新整理這一天",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_2ee348a3103ddfbf": {
+    "source": "另存一份新版報告",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_a82d152d4c8e11d6": {
+    "source": "尚未要求整理",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_227eddb3953c922e": {
+    "source": "下方可以閱讀已保存的報告。",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_6a66b0d50449f146": {
+    "source": "目前只讀取保存狀態；需要報告時，請按上方的整理按鈕。",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_ac42a58835c8397f": {
+    "source": "這次整理失敗，沒有產生新報告",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_11d10123409b8b2f": {
+    "source": "引用文字未通過逐字原文檢查，因此沒有發布這次報告。",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_8bab906843089d87": {
+    "source": "核對時發現內容的依據不足或無法確定，因此沒有發布這次報告。",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_3f51508d53c4ec8b": {
+    "source": " 核對說明：",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_4faf362ce09d647d": {
+    "source": "段：",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_56c7b23751162459": {
+    "source": " 原始生活紀錄完整保留；更新結果不會重新生成。",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_d63346bb93bf3a98": {
+    "source": " 下方仍可閱讀先前成功保存的版本。",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_4c1fad43322114c6": {
+    "source": " 修正原因後，可用上方按鈕重新整理。",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_979cffe48362599d": {
+    "source": "報告已完成並保存",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_be68f5781e42ebf2": {
+    "source": "下方可閱讀",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_6a63b62e8e6d34c3": {
+    "source": "您選擇的歷史版本",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_75f87dbecde28461": {
+    "source": "最新完成版本",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_0bb6759acbe68362": {
+    "source": "，展開段落下方的依據即可查核原文。",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_73261646fd03993a": {
+    "source": "等待生活模型的空檔",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_9ec877fad85bcffb": {
+    "source": "報告已排入，會在生活模型空檔繼續；不會停止任何個體，請保持電腦與控制器運作。",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_798c19617e9545d8": {
+    "source": "模型暫時繁忙，等待有限重試",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_711d4369cad7ff9b": {
+    "source": "已收到整理要求",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_d80d87c88a842465": {
+    "source": "正在整理與查核",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_adbd6b12a63bf052": {
+    "source": "目前處理：",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_6f66c0998a5bc0ec": {
+    "source": "。進度會自動更新，不必重複按整理。",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_4d6fb4a093b353c5": {
+    "source": "待讀取",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_057a15510aab8e84": {
+    "source": " 個體",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_38ded92d781e46b4": {
+    "source": "停止階段：",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_c764e0324d10571b": {
+    "source": "請查看原因",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_edff5736b87aa2ab": {
+    "source": "模型修訂 ",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_25d5745c172859bd": {
+    "source": "本次報告模型呼叫 ",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_9b6f40b006fbb0a8": {
+    "source": "最後更新 ",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_c902fdb4539e3a77": {
+    "source": "畫面確認 ",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_c94569165e4e8daf": {
+    "source": "每日自動整理已開啟",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_3a4555d14b7f6ca0": {
+    "source": "每日自動整理已關閉",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_42c36e3f1873b086": {
+    "source": "大腦已就緒",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_55133ece2166cc93": {
+    "source": "目前大腦尚未就緒",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_5043d5a2ce1a0927": {
+    "source": "查核這段的原文依據（",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_d182abc0f00fe664": {
+    "source": "項）",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_56a359402a69432f": {
+    "source": "引用原文：",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_9baff34dcb37db1f": {
+    "source": "完整來源資料",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_2c28f49117e5e3e4": {
+    "source": "這一天還沒有可閱讀的報告",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_16dfeaae4b3580a5": {
+    "source": "報告完成後會顯示在這裡",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_79bd099a8ed4b618": {
+    "source": "這一天尚未有保存的報告",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_c0a80953c4d64b6f": {
+    "source": "這次整理沒有通過檢查，請先查看上方原因。不是報告被刪除，也不是更新按鈕沒有反應。",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_1c9d152b64a76327": {
+    "source": "目前正在等待或整理。這裡會自動更新，請勿重複提交。",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_6a90dd89fdc61f1a": {
+    "source": "按上方「整理這一天的報告」後，系統才會使用模型整理並查核內容。",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_b688189f2ae2c9dc": {
+    "source": "歷史摘要含已封存個體，相關段落已收起，原報告完整保留。",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_44c58dd0efbc3918": {
+    "source": "資料截至 ",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_260ac3e534db9459": {
+    "source": " · 完成於 ",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_077640e50e611812": {
+    "source": "。後續活動不會自動改寫這份版本。",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_d1c4fc180b41f97d": {
+    "source": "｜全體摘要",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_45bd2f381118608e": {
+    "source": "涵蓋 ",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_504517ea5a159f8a": {
+    "source": " 位個體 · 本日有生活活動 ",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_0edcc7aca596e53a": {
+    "source": " 位 · 本日無活動紀錄 ",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_5262cd9f9bdd9dd2": {
+    "source": " 位",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_c0b4a88fce92ebf4": {
+    "source": "的一天",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_fcdb6e3b04a3c6f9": {
+    "source": "完成 ",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_21bee0ef7e5bb90f": {
+    "source": " 輪 · 筆記 ",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_78548675f31af8af": {
+    "source": " 篇",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_2d5602035a6ef9ff": {
+    "source": " 輪未完整完成",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_2dbb680c2f01f900": {
+    "source": " 輪尚待確認",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_5975460404347640": {
+    "source": "請選擇有效日期",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_a2721e38ec950724": {
+    "source": "日期不可晚於今天。",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_b0e756eeb468e264": {
+    "source": " 新版已完成，按「更新結果」即可閱讀，保留目前展開的查核內容。",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_c974f5d55a65ae34": {
+    "source": "完成於 ",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_138d5fc4fb9de4ac": {
+    "source": "每日自動",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_5c6862bec8090f4c": {
+    "source": "Owner要求",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_642ba7da26afb917": {
+    "source": "失敗，未發布",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_65d23459b6be4280": {
+    "source": "整理中",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_bd98b503df237a80": {
+    "source": "排隊中",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_f87ffefec1fb04ee": {
+    "source": "等待生活空檔",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_7336f98f81b22607": {
+    "source": "等待重試",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_a740895c5e85e5dd": {
+    "source": " · 模型呼叫 ",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_12064d366f93c762": {
+    "source": "目前無法確認報告狀態",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_58aab8a81e00d93c": {
+    "source": "報告服務尚未連上，請由「開啟控制台.cmd」重新進入。",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_0ad3dc4804897318": {
+    "source": " 已顯示的報告保留；請更新結果確認，不必重新提交。",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_1462c711b9725812": {
+    "source": "報告設定尚未確認",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_bdba16d8ae1e43cc": {
+    "source": "請先選擇日期",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_0ee9536618ef01cf": {
+    "source": "請選今天或更早的有效日期。",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_771af7c384a01809": {
+    "source": "正在送出整理要求",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_7f346a7acdd66b06": {
+    "source": "請稍候，不要重複提交。",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_3aa4243fa5c378ae": {
+    "source": "尚未確認整理要求是否已接受",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_144bc62e5c2ff408": {
+    "source": " 請先按「更新結果」核對；不會自動重送。",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_f7b6b269e05c2bb3": {
+    "source": "已封存，不列入日常選單與新報告。",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_6ee52ca744811cea": {
+    "source": "此個體已有活動，為安全仍顯示；封存不會停止生活。",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_1191625b28b174a6": {
+    "source": "已停止且沒有每日安排，可封存選單。",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_002b1bc10a49675b": {
+    "source": "仍有生活授權或工作；若要封存，須先在控制台明確停止。",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_aa8a22d1b73e486a": {
+    "source": "還原到日常選單",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_9dcc4c6d162b9f5b": {
+    "source": "封存選單（保留資料）",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_deda31b35ab9df04": {
+    "source": " 已還原選單，沒有啟動生活。",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_7b7d2904ef7b21f5": {
+    "source": " 已封存選單，原資料與歷史保留。",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_2f03347c9becb043": {
+    "source": "正在讀取所選日期",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_69ae1994e7fe5595": {
+    "source": "請稍候。",
+    "files": [
+      "src/v1_2/report-ui.js"
+    ]
+  },
+  "m_86066d17c97ff933": {
+    "source": "引用不是來源原文",
+    "files": [
+      "report/setup display catalog"
+    ]
+  },
+  "m_5be815bdffa964a9": {
+    "source": "內容依據檢查",
+    "files": [
+      "report/setup display catalog"
+    ]
+  },
+  "m_721e7edef27d0e19": {
+    "source": "報告可使用；既有自動整理安排請在控制台的每日報告設定核對",
+    "files": [
+      "report/setup display catalog"
+    ]
+  },
+  "m_d92d5878f9ba3875": {
+    "source": "每日自動整理已選擇；使用目前大腦並共用模型容量，不占生活輪數",
+    "files": [
+      "report/setup display catalog"
+    ]
+  },
+  "m_81247dc5855d5521": {
+    "source": "報告可手動使用；每日自動整理尚未開啟，可在控制台設定",
+    "files": [
+      "report/setup display catalog"
+    ]
+  },
+  "m_2c830d3d6df1b49d": {
+    "source": "自己的控制台已啟動。新個體仍需批准、出生與生活授權；既有個體只依原每日授權及目前條件運作，不會因啟動而新增授權。",
+    "files": [
+      "report/setup display catalog"
     ]
   },
   "m_3135968ecfc3ed9f": {

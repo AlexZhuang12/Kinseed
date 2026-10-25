@@ -1,3 +1,7 @@
+# Current candidate: 1.14.0-preview.1
+
+See [general-installation U00–U05](PUBLIC_INSTALL_ENGINEERING_PLAN.md) and the [capability matrix](PUBLIC_CAPABILITY_MATRIX.md). This candidate is independently prepared; publication and operational deployment remain separate decisions. The earlier sections below are historical.
+
 # Current iteration: 1.5.0
 
 See [life authority plan](LIFE_AUTHORITY_ENGINEERING_PLAN.md) and [recovery policy](LIFE_AUTHORITY_AND_RECOVERY.md). The following revision 7 remains the historical first-publication plan.

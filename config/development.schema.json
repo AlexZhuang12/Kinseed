@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Kinseed Windows development configuration",
+  "title": "Kinseed installation configuration",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -60,7 +60,7 @@
       ],
       "properties": {
         "enabled": {
-          "const": false
+          "type": "boolean"
         }
       }
     },

@@ -1,5 +1,5 @@
 {
-  "messages": 2199,
+  "messages": 2357,
   "locales": [
     "zh-Hant",
     "zh-Hans",
@@ -7,8 +7,8 @@
     "ja"
   ],
   "translated": {
-    "en": 2199,
-    "ja": 2199
+    "en": 2357,
+    "ja": 2357
   },
   "missing": {
     "en": [],

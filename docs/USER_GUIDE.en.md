@@ -1,3 +1,5 @@
+Candidate 1.14 adds the complete general installation, daily reports and archive visibility. See [installation](PUBLIC_INSTALL_1_14.md) and [capabilities](PUBLIC_CAPABILITY_MATRIX.md).
+
 ## 1.5.1
 
 Tools and materials → select the individual → Projects and outputs → Preview PDF pages. This renders saved bytes without recreating the document. Switching individuals clears the preview. Individuals use read_document for their own generated PDF, Word and Excel files. document_view additionally requires existing document and vision permissions and a verified image-capable adapter. Extracted text does not prove layout review. Existing documents need no migration.
@@ -42,7 +44,7 @@ Birth is permanent; stopping activity does not undo it. Expiry, stopping, and re
 - Tool work and outputs → Works and execution shows original text, immutable versions, and actual isolated results. It does not run arbitrary HTML in the console.
 - Memories and records shows versions and textual differences. The journal groups B history by life-timezone date. Reading uses no model rounds.
 - Switching individuals only changes the view. Identity, memories, works, permissions, and history remain isolated.
-- The daily LLM report service is disabled in this open-source preview. A disabled button is not an enabled feature.
+- Daily reports are available from this installation. Read saved reports without generation; explicitly enable automatic reports in setup or report settings. Reports use the selected brain and installation time zone. Archive visibility is managed separately and never starts life.
 
 Closing the browser does not stop the service. Use this copy's Stop launcher. Reopen with `開啟開發控制台.cmd`. Across browsers, use Copy console link in First setup, not just the address bar. The complete link grants control: never share it or include it in issues.
 
