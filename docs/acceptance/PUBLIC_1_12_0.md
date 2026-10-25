@@ -10,7 +10,11 @@ AI-executed public-source checks on Windows, 2026-10-25:
 | Source boundary and known private-value review | PASS; no private runtime, credentials or individual data included |
 | Package security advisory query | 0 known advisories at check time; not a guarantee against unknown vulnerabilities |
 | Public-version Hedra synthetic UI | PASS; 23 checks, no generation or paid submission |
-| Full hosted Windows regression and 35-script browser suite | Pending this push; actual run link and result will be recorded after completion |
+| Full hosted Windows regression | PASS; 874 tests |
+| Full hosted browser suite | PASS; 848 checks across 35 scripts |
+| Hosted locked install, source boundary, release check, locale build and source export | PASS |
+
+Hosted run: [Windows synthetic verification 40196383956](https://github.com/AlexZhuang12/Kinseed/actions/runs/40196383956), completed successfully on 2026-10-25. Tested code commit: `447e3e0f51bbd0d6070ec3748410a87b6eefbaf0`. The follow-up commit only records these results in this Markdown file, leaves all tested code unchanged, and skips redundant CI. Hosted Windows is a virtual runner, not a second physical-machine acceptance.
 
 The first public-version UI check found the template header still used the local suffix. The public header and four generated locale pages were rebuilt; the same UI check then passed. This did not change the local operational source or provider behavior. Source checks and locale checks were repeated after the correction. The complete hosted run verifies the final pushed tree separately.
 
