@@ -9,7 +9,7 @@ export const permissionRows = [
  {id:'workspace',group:'required',title:'查看自己的既有生活筆記',description:'只讀取受控工作區中已保存的筆記，不等於開放一般檔案存取。',tools:['read_workspace']},
  {id:'commit',group:'required',title:'保存每輪記憶、進度與生活紀錄',description:'每輪必須留下可追溯的結果；原始歷史只能追加，不提供覆寫或刪除開關。',tools:['commit_cycle']},
  {id:'brain',group:'required',title:'使用本環境指定模型進行日常思考',description:'每個活動輪次把身份與記憶交給同一個模型，再保存進度；等待期間沒有持續思考。受生活時間與模型額度限制。',tools:[]},
- {id:'consult',group:'optional',title:'主動請教獨立LLM',description:'向本環境指定模型另開獨立對話請教；每輪最多一次，每次另占一個模型輪數，答案不當成已查證事實。',tools:['consult_llm']},
+ {id:'consult',group:'optional',title:'主動請教獨立LLM',description:'向本環境指定模型另開獨立對話請教；每輪最多一次，每次另占一個模型輪數；可稍後領取回答，等待不影響其他活動，答案不當成已查證事實。',tools:['consult_llm']},
  {id:'chat',group:'required',title:'與Owner雙向對話及主動傳訊（基本能力）',description:'適用所有個體，不需勾選開放。在有效生活授權內可主動提問、分享或回覆；Owner可隨時留言。停止或時段外不自行喚醒。',tools:['reply_owner','send_owner']},
  {id:'web',group:'optional',title:'瀏覽公開外網（隔離瀏覽器）',description:'可搜尋及閱讀公開HTTPS網站、續讀網頁與自己的文字／CSV／PDF附件，不帶入Owner登入資料，不連本機及私人網路。下載計入額度，上傳自己筆記須逐次批准，不因此登入、發布或付款。',tools:['search_web','browse_web','download_web','request_upload']}
 ];

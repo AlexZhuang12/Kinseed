@@ -1,6 +1,6 @@
-# 1.12.0-preview.1 — 2026-10-25
+# 1.13.0-local.1 — deferred independent consultation
 
-Guided console and pink visual hierarchy; Hedra workflow, local film and Whisper transcription tools; PDF layout/preview queue and recovery improvements. See [version notes](docs/RELEASE_1_12_0_PREVIEW.md) for acceptance scope and limitations.
+Consultations return a job ID immediately, retain original replies for later rounds, and do not permanently block new questions after a settled failure. Original quotas, identity, memory and permissions are retained. See docs/ASYNC_CONSULTATIONS.md.
 
 # 1.9.0-film-preview.1 — independent synthetic candidate
 

@@ -21,7 +21,9 @@ export function ownerMessage(p,b){
  return receipt;
 }
 export async function extraTool(e,name,args,l){
- const c=e.store.get('control');e.assertAllowed(l);const required={search_web:'web',browse_web:'web',download_web:'web',request_upload:'web',consult_llm:'consult',reply_owner:'chat',send_owner:'chat'}[name];if(!['reply_owner','send_owner'].includes(name)&&!c.permissions[required])throw Error('PERMISSION_DENIED');
+ const c=e.store.get('control');e.assertAllowed(l);const required={search_web:'web',browse_web:'web',download_web:'web',request_upload:'web',consult_llm:'consult',consult_status:'consult',reply_owner:'chat',send_owner:'chat'}[name];if(!['reply_owner','send_owner'].includes(name)&&!c.permissions[required])throw Error('PERMISSION_DENIED');
+ if(name==='consult_status'){e.store.tx(()=>e.bumpTool());return e.platform.consultations.status(e,args.job_id);}
+ if(name==='consult_llm'){e.store.tx(()=>e.bumpTool());return e.platform.consultations.submit(e,args,l);}
  const effectiveURL=name==='search_web'?searchURL(args.query):args.url;
  const key='extra:'+l.cycle_id+':'+name+':'+(args.request_id??hash(args)),prior=e.store.receipt(key),input_hash=hash(args);if(prior){if(prior.input_hash!==input_hash)throw Error('IDEMPOTENCY_CONFLICT');return prior.result;}
  e.store.tx(()=>e.bumpTool());
@@ -43,14 +45,6 @@ export async function extraTool(e,name,args,l){
    else if(name==='download_web')result=await downloadPublic(e,args,l,signal);
    else if(c.permissions.web_mode==='public')result=await (e.platform.publicReader??browsePublic)(effectiveURL,{signal,assert:()=>e.assertAllowed(l),budget:e.platform.network,individual:e.info.individual_id,max_chars:args.max_chars??6000,protectedTexts:networkProtected(e)});
    else result=await (e.platform.webReader??browseWeb)(args.url,{domains:c.permissions.web_domains??[],signal,max_chars:args.max_chars??6000});
-  }else{
-   if(e.store.get('lease').consult_used)throw Error('CONSULT_CYCLE_LIMIT');
-   if(l.deadline-e.now()<15000)throw Error('CONSULT_TIME_LIMIT');
-   const g=e.platform.global(),w=windowAt(c,e.now());if(g.day!==zonedDay(e.now(),e.platform.timezone)||g.used>=g.limit||c.cycles_day!==w.day||c.cycles_used>=c.max_cycles)throw Error('MODEL_BUDGET_LIMIT');
-   // Reserve before dispatch. A failed/unknown request still consumes one attempt and is never silently replayed.
-   e.store.tx(()=>{c.cycles_used++;e.store.set('control',c);const live=e.store.get('lease');live.consult_used=true;live.mutation_attempted=true;e.store.set('lease',live);e.store.putReceipt('extra-intent:'+key,{at:e.now()});e.store.event('consult.intent',{question:args.question,model:consultModelName(e),control:c},'mcp',l);});g.used++;e.platform.set('global',g);e.platform.audit('consult.reserved',{individual_id:e.info.individual_id,cycle_id:l.cycle_id,used:g.used});
-   result=await (e.platform.consultModel??runReportModel)('你是獨立諮詢用的LLM，並非此個體本人。只回答下方問題，不使用工具，不改任何身份、權限或紀錄。回答不代表已查證，沒有網路或外部資料存取。只回傳JSON：{"answer":"繁體中文回答，最多2000字"}。問題資料：\n'+JSON.stringify(args.question),{dir:path.join(e.store.dir,'consultations'),call_id:id(),timeout:Math.min(45000,l.deadline-e.now()-2000),signal:abort.signal});
-   if(!result||typeof result.answer!=='string'||result.answer.length>4000)throw Error('CONSULT_FORMAT');result={answer:result.answer,model:consultModelName(e),trust:'LLM建議，並非已查證事實。'};
   }
   e.assertAllowed(l);if(['browse_web','search_web'].includes(name)){if(name==='search_web')result={...result,search:searchResults(result)};result=saveWebReading(e,result);}
   e.assertAllowed(l);return e.store.tx(()=>{e.assertAllowed(l);e.store.event(['search_web','browse_web','download_web','request_upload'].includes(name)?'tool.web.result':'consult.result',result,'mcp',l);e.store.putReceipt(key,{input_hash,result});return result;});

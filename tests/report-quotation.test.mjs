@@ -1,0 +1,12 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {validateNarrative,validateGrounding} from '../src/v1_2/report-source.mjs';
+const facts=[{id:'synthetic-note',content:{text:'第一行\n第二行包含 "引號" 與 C:\\sample\\file',other:'另一欄'},stats:{started:0}}];
+const value=(quote,id='synthetic-note')=>({paragraphs:[{text:'合成摘要',citations:[{id,quote}]}]});
+test('report accepts exact decoded multiline quotation without changing model text',()=>{const v=value('第一行\n第二行');assert.equal(validateNarrative(v,facts),v);});
+test('report accepts exact quotes and backslashes',()=>{validateNarrative(value('"引號" 與 C:\\sample\\file'),facts);});
+test('report retains historical structured count citations',()=>{validateNarrative(value('"started":0'),facts);});
+test('report refuses fabricated or whitespace-rewritten quotes',()=>{for(const quote of ['不存在的原文','第一行 第二行'])assert.throws(()=>validateNarrative(value(quote),facts));});
+test('report refuses a correct quotation attached to another source ID',()=>{assert.throws(()=>validateNarrative(value('第一行','wrong-source'),facts));});
+test('report never concatenates source fields to manufacture a match',()=>{assert.throws(()=>validateNarrative(value('file另一欄'),facts));});
+test('report keeps quote length and paragraph limits',()=>{for(const quote of ['字','字'.repeat(301)])assert.throws(()=>validateNarrative(value(quote),facts));const v=value('第一行');v.paragraphs=Array(7).fill(v.paragraphs[0]);assert.throws(()=>validateNarrative(v,facts));});
+test('independent content grounding still rejects unsupported paragraphs',()=>{assert.throws(()=>validateGrounding({checks:[{index:0,supported:false}]},value('第一行')));});

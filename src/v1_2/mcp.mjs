@@ -18,7 +18,8 @@ export const tools=[...hubTools,delegationTool,...workbenchTools,
  {name:'download_web',description:'下載公開HTTPS的PDF、文字或圖片到自己的隔離資料庫，不執行；計入下載額度。',inputSchema:schema({url:{type:'string',maxLength:2000}},['url'])},
  {name:'request_upload',description:'提出上傳自己已保存筆記的申請，由Owner逐次批准目的URL與內容，不接受本機路徑。',inputSchema:schema({request_id:string,url:{type:'string',maxLength:2000},note_id:string,reason:{type:'string',maxLength:500}},['request_id','url','note_id','reason'])},
  {name:'browse_web',description:'依Owner權限瀏覽公開HTTPS網站，公開模式使用隔離動態瀏覽器；不得在網址夾帶私人資料。回傳連結可繼續閱讀，額度不足仍可思考及保存進度。',inputSchema:schema({url:{type:'string',maxLength:2000},max_chars:{type:'integer',minimum:1,maximum:6000}},['url'])},
- {name:'consult_llm',description:'向本環境設定的大腦模型另開獨立對話諮詢一次；每輪最多一次，計入個體與平台模型額度。回答不代表已查證。',inputSchema:schema({request_id:string,question:{type:'string',maxLength:3000}},['request_id','question'])},
+ {name:'consult_llm',description:'向本環境設定的大腦模型另開獨立對話諮詢一次；每輪最多一次，受理立即回傳job_id，不等待答案。可繼續其他活動，後續輪次用consult_status領取；不自動重送，計入原模型額度。回答不代表已查證。',inputSchema:schema({request_id:string,question:{type:'string',maxLength:3000}},['request_id','question'])},
+ {name:'consult_status',description:'查詢自己的獨立諮詢工作；提供job_id讀取已完成原始回答，省略可列最近五筆。等待或失敗不會取消生活或封鎖新問題。',inputSchema:schema({job_id:string})},
  {name:'reply_owner',description:'回覆自己的Owner留言，不傳送給外部收件者；須使用get_context提供的message_id。',inputSchema:schema({request_id:string,reply_to:string,text:{type:'string',maxLength:4000}},['request_id','reply_to','text'])},
  {name:'read_identity_domain',description:'分頁讀取自身已批准八領域的完整條目及來源關聯；每頁最多 12000 字元。',inputSchema:schema({domain_id:string,offset:{type:'integer',minimum:0},max_chars:{type:'integer',minimum:1,maximum:12000}},['domain_id'])},
  {name:'read_identity_source',description:'讀取自身已批准身份來源原文；offset 為字元位置，每頁最多 6000 字元。只可讀 get_context 列出的 source_id。',inputSchema:schema({source_id:string,offset:{type:'integer',minimum:0},max_chars:{type:'integer',minimum:1,maximum:6000}},['source_id'])},
@@ -48,12 +49,12 @@ export async function handle(message){
   return {protocolVersion:'2024-11-05',capabilities:{tools:{}},serverInfo:{name:'kinseed-controlled-local',version:'0.1.0'}};
  }
  if(method==='ping')return {};
- if(method==='tools/list')return {tools:tools.filter(t=>(hubAvailable||!hubTools.some(h=>h.name===t.name))&&(t.name!=='delegate_codex'||delegationAvailable)&&(!workbenchTools.some(w=>w.name===t.name)||workbenchAvailable)&&(extraCapabilities||!['search_web','read_document','browse_web','download_web','request_upload','consult_llm','reply_owner','send_owner'].includes(t.name)))};
+ if(method==='tools/list')return {tools:tools.filter(t=>(hubAvailable||!hubTools.some(h=>h.name===t.name))&&(t.name!=='delegate_codex'||delegationAvailable)&&(!workbenchTools.some(w=>w.name===t.name)||workbenchAvailable)&&(extraCapabilities||!['search_web','read_document','browse_web','download_web','request_upload','consult_llm','consult_status','reply_owner','send_owner'].includes(t.name)))};
  if(method==='resources/list')return {resources:[]};
  if(method==='resources/templates/list')return {resourceTemplates:[]};
  if(method==='tools/call'){
    const {name,arguments:args={}}=message.params??{};const definition=tools.find(t=>t.name===name);
-   if(!definition||!hubAvailable&&hubTools.some(h=>h.name===name)||workbenchTools.some(w=>w.name===name)&&!workbenchAvailable||!extraCapabilities&&['browse_web','download_web','request_upload','consult_llm','reply_owner','send_owner'].includes(name))throw Error('UNKNOWN_TOOL');
+   if(!definition||!hubAvailable&&hubTools.some(h=>h.name===name)||workbenchTools.some(w=>w.name===name)&&!workbenchAvailable||!extraCapabilities&&['browse_web','download_web','request_upload','consult_llm','consult_status','reply_owner','send_owner'].includes(name))throw Error('UNKNOWN_TOOL');
    // Schema validation is authoritative in the broker, so refused calls are also audited.
    const response=await fetch(process.env.KINSEED_ENDPOINT+'/cycle/tool',{method:'POST',headers:{'Content-Type':'application/json',Authorization:'Bearer '+process.env.KINSEED_CYCLE_TOKEN},body:JSON.stringify({name,args}),signal:AbortSignal.timeout(hubTools.some(h=>h.name===name)?60000:name==='delegate_codex'?75000:name==='run_javascript'?15000:name==='consult_llm'?60000:name==='read_document'?15000:['search_web','browse_web','download_web'].includes(name)?35000:5000)});
    const result=await response.json();return toolContent(result,{ok:response.ok,tool:name});

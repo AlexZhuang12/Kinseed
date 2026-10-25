@@ -13,7 +13,7 @@ export const recoverySummary=e=>recoveryContext(e).map(({operations,...record})=
 // Paid requests use their durable ledger, not cycle-scoped external retries.
 const mutations=new Set(['write_note','work_save','work_import','run_javascript','send_owner','reply_owner','consult_llm','download_web','request_upload','delegate_codex','project_save','project_run','document_create','image_read','tool_request','reminder_save','reminder_ack','mail_draft']);
 const external=new Set(['consult_llm','download_web','request_upload','delegate_codex']);
-const longTools=new Set(['hedra_models','hedra_model','hedra_save','hedra_quote','browse_web','search_web','consult_llm','download_web','delegate_codex','project_run','document_create','image_read','data_query','document_view','run_javascript']);
+const longTools=new Set(['hedra_models','hedra_model','hedra_save','hedra_quote','browse_web','search_web','download_web','delegate_codex','project_run','document_create','image_read','data_query','document_view','run_javascript']);
 const canonical=v=>Array.isArray(v)?v.map(canonical):v&&typeof v==='object'?Object.fromEntries(Object.keys(v).sort().map(k=>[k,canonical(v[k])])):v;
 export function operationKey(name,args){const {request_id,expected_version,...content}=args;return hash(canonical({name,content}));}
 const orders=a=>a.length?a.flatMap((k,i)=>orders(a.filter((_,j)=>j!==i)).map(rest=>[k,...rest])):[[]];

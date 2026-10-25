@@ -26,21 +26,36 @@ export class Reports{
    try{return await this.model(prompt,{dir:this.dir,call_id,signal:this.abort.signal});}catch(e){if(attempt===0&&e.retryable&&!this.closed){job.phase='retry_wait';job.message='報告模型暫時繁忙，30秒後自動再試一次；生活不受停止或恢復操作影響。';this.save(job);await delay(this.retryDelay);}else throw e;}
   }
  }
- async narrative(job,facts,input){const text=validateNarrative(await this.call(job,narrativePrompt(input)),facts,{maxParagraphs:input.kind==='owner_overview'?2:4});if(input.kind==='owner_overview'&&text.paragraphs.reduce((n,p)=>n+p.text.length,0)>450)throw Error('全體摘要超過易讀長度，未發布；請重新整理。');validateGrounding(await this.call(job,groundingPrompt(facts,text)),text);return text;}
+ async narrative(job,facts,input){
+  let current=input;
+  for(let attempt=0;attempt<2;attempt++){
+   job.stage=attempt?'revising':'writing';this.save(job);const value=await this.call(job,narrativePrompt(current));
+   job.stage='citation_check';this.save(job);const text=validateNarrative(value,facts,{maxParagraphs:input.kind==='owner_overview'?2:4});
+   if(input.kind==='owner_overview'&&text.paragraphs.reduce((n,p)=>n+p.text.length,0)>450)throw Error('全體摘要超過易讀長度，未發布；請重新整理。');
+   job.stage='grounding_check';this.save(job);const review=await this.call(job,groundingPrompt(facts,text));
+   try{validateGrounding(review,text);job.review_findings=[];return text;}catch(error){
+    job.review_findings=Array.isArray(review?.checks)?review.checks.filter(c=>c.supported===false).slice(0,4).map(c=>({index:c.index,reason:typeof c.reason==='string'?c.reason.slice(0,1200):'缺少可用的核對說明'})):[];
+    if(attempt||!Array.isArray(review?.checks)||review.checks.length!==text.paragraphs.length||review.checks.some((c,i)=>c.index!==i||typeof c.supported!=='boolean'||typeof c.reason!=='string'||c.reason.length>1200))throw error;
+    job.revisions=(job.revisions??0)+1;job.stage='revising';job.message='摘要需依查核意見修訂，模型最多修訂一次；不補寫原始資料。';this.save(job);
+    current={...input,revision:{previous_output:text,review:review.checks}};
+   }
+  }
+ }
+
  async work(job){if(this.busy||this.closed)return;this.busy=true;try{
-   job.phase='running';job.message='正在唯讀擷取所有個體的當日紀錄。';this.save(job);const source=collectReportSource(this.runtime,job.day,{now:this.now(),excluded:effectiveArchived(this.db,this.runtime)});job.total_individuals=source.individuals.length;this.save(job);
+   job.phase='running';job.stage='snapshot';job.message='正在唯讀擷取所有個體的當日紀錄。';this.save(job);const source=collectReportSource(this.runtime,job.day,{now:this.now(),excluded:effectiveArchived(this.db,this.runtime)});job.total_individuals=source.individuals.length;this.save(job);
    fs.mkdirSync(path.join(this.dir,'snapshots'),{recursive:true});fs.writeFileSync(path.join(this.dir,'snapshots',job.id+'.json'),JSON.stringify(source));const individual_reports=[];
-   for(const individual of source.individuals){if(this.closed)throw Error('報告服務已停止。');let text;if(individual.has_activity)text=await this.narrative(job,individual.facts,{kind:'individual',individual_id:individual.individual_id,name:individual.name,day:job.day,cutoff:individual.cutoff,facts:individual.facts});else text={paragraphs:[{text:individual.name+' 在此日截至資料擷取時沒有生活活動紀錄。',citations:[{id:individual.facts[0].id,quote:'"started":0'}]}]};
+   for(const individual of source.individuals){if(this.closed)throw Error('報告服務已停止。');job.current_individual=individual.name;this.save(job);let text;if(individual.has_activity)text=await this.narrative(job,individual.facts,{kind:'individual',individual_id:individual.individual_id,name:individual.name,day:job.day,cutoff:individual.cutoff,facts:individual.facts});else text={paragraphs:[{text:individual.name+' 在此日截至資料擷取時沒有生活活動紀錄。',citations:[{id:individual.facts[0].id,quote:'"started":0'}]}]};
     individual_reports.push({individual_id:individual.individual_id,name:individual.name,stats:individual.stats,...text,evidence:individual.evidence,source_boundary:individual.source_boundary});job.completed_individuals++;this.save(job);
    }
    const activeReports=individual_reports.filter(x=>source.individuals.find(s=>s.individual_id===x.individual_id).has_activity);
    const summaryInput={kind:'owner_overview',day:job.day,cutoff:source.cutoff,individuals:activeReports.map(({evidence,...x})=>x)};
    // Only the Owner overview combines data. Each individual's model invocation has its own isolated input/session.
    const summaryFacts=source.individuals.filter(x=>x.has_activity).flatMap(x=>[x.facts[0],...x.facts.filter(f=>activeReports.find(r=>r.individual_id===x.individual_id).paragraphs.some(p=>p.citations.some(c=>c.id===f.id)))]);
-   let summary;if(!source.individuals.some(x=>x.has_activity))summary={paragraphs:[{text:'所選日期截至擷取時，所有個體均沒有生活活動紀錄。',citations:source.individuals.map(x=>({id:x.facts[0].id,quote:'"started":0'}))}]};else summary=await this.narrative(job,summaryFacts,{...summaryInput,facts:summaryFacts});
+   job.current_individual=null;job.stage='overview';this.save(job);let summary;if(!source.individuals.some(x=>x.has_activity))summary={paragraphs:[{text:'所選日期截至擷取時，所有個體均沒有生活活動紀錄。',citations:source.individuals.map(x=>({id:x.facts[0].id,quote:'"started":0'}))}]};else summary=await this.narrative(job,summaryFacts,{...summaryInput,facts:summaryFacts});
    const report={id:id(),job_id:job.id,day:job.day,generated_at:new Date(this.now()).toISOString(),cutoff:source.cutoff,source_hash:source.source_hash,model:'gpt-6.1-sol',grounding:'逐段原文引用檢查及獨立模型核對；不是外部事實認證',summary,individuals:individual_reports,calls:job.calls};
-   if(this.closed)throw Error('報告服務已停止，未發布新報告。');this.db.exec('BEGIN IMMEDIATE');try{this.db.prepare('INSERT INTO reports VALUES(?,?,?)').run(report.id,report.day,JSON.stringify(report));job.phase='completed';job.message='報告已完成，各段可查看依據。';job.report_id=report.id;this.save(job);this.db.exec('COMMIT');}catch(e){this.db.exec('ROLLBACK');throw e;}
-  }catch(e){job.phase='failed';job.message=e.message;this.save(job);}finally{this.busy=false;if(this.closed)this.db.close();}
+   if(this.closed)throw Error('報告服務已停止，未發布新報告。');job.stage='saving';this.db.exec('BEGIN IMMEDIATE');try{this.db.prepare('INSERT INTO reports VALUES(?,?,?)').run(report.id,report.day,JSON.stringify(report));job.phase='completed';job.stage='completed';job.message='報告已完成，各段可查看依據。';job.report_id=report.id;this.save(job);this.db.exec('COMMIT');}catch(e){this.db.exec('ROLLBACK');throw e;}
+  }catch(e){job.failed_stage=job.stage??'unknown';job.phase='failed';job.message=e.message;this.save(job);}finally{this.busy=false;if(this.closed)this.db.close();}
  }
  close(){if(this.closed)return;this.closed=true;this.abort.abort();if(!this.busy)this.db.close();}
 }

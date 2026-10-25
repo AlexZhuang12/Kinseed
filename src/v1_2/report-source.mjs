@@ -29,11 +29,18 @@ export function collectReportSource(runtime,day,{now=Date.now(),excluded=[]}={})
  }
  return {day,cutoff,individuals,source_hash:hash(individuals)};
 }
+// A citation may quote a JSON fragment (legacy count citations) or an exact
+// contiguous string value. Never normalize, join fields, or repair model text.
+export function exactReportQuote(fact,quote){
+ if(JSON.stringify(fact).includes(quote))return true;
+ const contains=value=>typeof value==='string'?value.includes(quote):value&&typeof value==='object'?Object.values(value).some(contains):false;
+ return !!contains(fact);
+}
 export function validateNarrative(value,facts,{maxParagraphs=6}={}){
  if(!value||Object.keys(value).some(k=>!['paragraphs'].includes(k))||!Array.isArray(value.paragraphs)||!value.paragraphs.length||value.paragraphs.length>maxParagraphs)throw Error('報告格式未通過檢查。');
- const sources=new Map(facts.map(f=>[f.id,JSON.stringify(f)]));let length=0;
+ const sources=new Map(facts.map(f=>[f.id,f]));let length=0;
  for(const p of value.paragraphs){if(!p||Object.keys(p).some(k=>!['text','citations'].includes(k))||typeof p.text!=='string'||!p.text.trim()||p.text.length>900||!Array.isArray(p.citations)||!p.citations.length||p.citations.length>12)throw Error('報告段落未附有效依據。');length+=p.text.length;
-  for(const c of p.citations)if(!c||Object.keys(c).some(k=>!['id','quote'].includes(k))||typeof c.quote!=='string'||c.quote.length<2||c.quote.length>300||!sources.has(c.id)||!sources.get(c.id).includes(c.quote))throw Error('報告引用不是來源原文，沒有發布。');
+  for(const c of p.citations)if(!c||Object.keys(c).some(k=>!['id','quote'].includes(k))||typeof c.quote!=='string'||c.quote.length<2||c.quote.length>300||!sources.has(c.id)||!exactReportQuote(sources.get(c.id),c.quote))throw Error('報告引用不是來源原文，沒有發布。');
  }if(length>2600)throw Error('報告過長，沒有發布。');return value;
 }
 export function validateGrounding(value,narrative){if(!value||!Array.isArray(value.checks)||value.checks.length!==narrative.paragraphs.length||value.checks.some((c,i)=>c.index!==i||c.supported!==true))throw Error('內容依據檢查未通過，沒有發布；可重新整理。');return true;}
