@@ -1,0 +1,124 @@
+[
+  {
+    "model": "elevenlabs-multilingual-v2",
+    "modality": "audio",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "description": "Generation prompt. At most 10000 characters.",
+          "maxLength": 10000,
+          "pattern": "[^\\s\\x1C-\\x1F]",
+          "type": "string"
+        },
+        "stability": {
+          "default": 1,
+          "description": "Voice stability. Higher values give a steadier, more consistent delivery; lower values allow more expressive variation between generations. From 0 to 1.",
+          "maximum": 1,
+          "minimum": 0,
+          "type": "number"
+        },
+        "speed": {
+          "default": 1,
+          "description": "Speech rate multiplier; 1.0 is the voice's natural pace. From 0.7 to 1.2.",
+          "maximum": 1.2,
+          "minimum": 0.7,
+          "type": "number"
+        },
+        "language": {
+          "enum": [
+            "auto",
+            "zh",
+            "yue",
+            "en",
+            "ar",
+            "ru",
+            "es",
+            "fr",
+            "pt",
+            "de",
+            "tr",
+            "nl",
+            "uk",
+            "vi",
+            "id",
+            "ja",
+            "it",
+            "ko",
+            "th",
+            "pl",
+            "ro",
+            "el",
+            "cs",
+            "fi",
+            "hi",
+            "bg",
+            "da",
+            "he",
+            "ms",
+            "fa",
+            "sk",
+            "sv",
+            "hr",
+            "fil",
+            "hu",
+            "no",
+            "sl",
+            "ca",
+            "nn",
+            "ta",
+            "af"
+          ],
+          "type": "string",
+          "description": "Language of the text, as an ISO 639-1 code such as 'ko' ('yue' for Cantonese, 'fil' for Filipino), or 'auto' to detect it from the text. Omitted means 'auto'. Regional tags such as 'pt-BR' and English names such as 'Korean' are also accepted."
+        },
+        "voice_id": {
+          "description": "Call list_voices with this model to obtain a voice_<uuid> ID; pass it as voice.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "text",
+        "voice_id"
+      ],
+      "additionalProperties": false
+    }
+  },
+  {
+    "model": "elevenlabs-sound-effects",
+    "modality": "audio",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "description": "Generation prompt.",
+          "pattern": "[^\\s\\x1C-\\x1F]",
+          "type": "string"
+        },
+        "duration_ms": {
+          "description": "Length of the generated sound, in milliseconds. Billed as whole seconds, rounded up. From 500 to 30000.",
+          "maximum": 30000,
+          "minimum": 500,
+          "type": "integer"
+        },
+        "prompt_influence": {
+          "default": 0.3,
+          "description": "How literally the model reads the description; higher values track it more closely and lower values leave the model more latitude. From 0 to 1.",
+          "maximum": 1,
+          "minimum": 0,
+          "type": "number"
+        },
+        "loop": {
+          "default": false,
+          "description": "Generate a sound that loops seamlessly end to end.",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "duration_ms",
+        "text"
+      ],
+      "additionalProperties": false
+    }
+  }
+]

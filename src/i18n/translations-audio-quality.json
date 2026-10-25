@@ -1,0 +1,32 @@
+[
+  [
+    "音訊與轉錄核對提示",
+    "Audio and transcription review notices",
+    "音声と文字起こしの確認事項"
+  ],
+  [
+    "音訊是全零靜音，未送至辨識服務。",
+    "The audio contains only zero PCM samples and was not sent for recognition.",
+    "音声のPCM値がすべてゼロのため、認識サービスには送信していません。"
+  ],
+  [
+    "音量偏低，可能漏字；不代表沒有對白。",
+    "Audio level is low; words may be missed. This does not prove there is no speech.",
+    "音量が低いため、単語を取りこぼす可能性があります。発話がないことの証明ではありません。"
+  ],
+  [
+    "轉錄包含可疑重複，請對照原音；原文字未修改。",
+    "Suspicious repetition was detected. Compare with the source audio; the original text is unchanged.",
+    "不自然な繰り返しを検出しました。元音声と照合してください。元の文字列は変更していません。"
+  ],
+  [
+    "服務未回傳文字；不能據此判斷音訊沒有對白。",
+    "The service returned no text. This does not prove the audio contains no speech.",
+    "サービスから文字が返されませんでした。発話がないとは判断できません。"
+  ],
+  [
+    "轉錄尚未核對，可能包含同音錯字；不自動改寫。",
+    "The transcription is unverified and may contain homophone errors. No automatic rewriting is performed.",
+    "文字起こしは未確認です。同音語の誤りが含まれる可能性があります。自動で書き換えません。"
+  ]
+]

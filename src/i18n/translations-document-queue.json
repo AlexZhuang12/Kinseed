@@ -1,0 +1,12 @@
+[
+  [
+    "正在排隊或產生PDF頁面，請稍候。",
+    "Waiting for or rendering the PDF page. Please wait.",
+    "PDFページを待機または描画しています。しばらくお待ちください。"
+  ],
+  [
+    "PDF頁面未顯示，請查看上方原因後再試。",
+    "The PDF page was not displayed. Check the reason above before retrying.",
+    "PDFページを表示できませんでした。上の理由を確認してから再試行してください。"
+  ]
+]

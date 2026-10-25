@@ -37,7 +37,7 @@ export function activityHealth(e){
  if(l)return result('executing','正在執行本輪；完成或到截止時間後會收尾。');
  if(e.store.get('life').state==='unborn')return result('unborn','尚未出生。','由Owner完成身份採用及首次出生');
  if(g.stopped)return result('global_stopped','平台處於全域停止；解除不會自動恢復個體。','由Owner核對平台及個體狀態後決定是否恢復');
- const daily=dailyView(e),hold=executionHold(e);if(daily.enabled&&e.platform.runtimeHold)return result('execution_held','每日授權保留；'+e.platform.runtimeHold.message,'查看阻擋原因');if(daily.enabled&&hold)return result('execution_held','每日授權保留；'+hold.message,'修復原因後重新檢查');if(daily.enabled&&c.mode==='stopped'&&c.inference_status?.phase==='window_failed')return {...result('daily_window_failed',c.inference_status.message,'本次活動未完成；保留每日安排，等待下一個既定時段。'),next_at:daily.next_start};
+ const daily=dailyView(e),hold=executionHold(e);if(daily.enabled&&e.platform.runtimeHold)return result('execution_held','每日授權保留；'+e.platform.runtimeHold.message,'查看阻擋原因');if(daily.enabled&&hold&&hold.scope==='individual')return result('execution_held','每日授權保留；'+hold.message,'修復原因後重新檢查');if(daily.enabled&&c.mode==='stopped'&&c.inference_status?.phase==='window_failed')return {...result('daily_window_failed',c.inference_status.message,'本次活動未完成；保留每日安排，等待下一個既定時段。'),next_at:daily.next_start};
  if(daily.enabled&&c.mode==='stopped')return {...result('daily_waiting','每日生活已開啟，等待下一個既定時段。'),next_at:daily.next_start};
  if(c.mode!=='running'||c.stop_lock)return result('stopped',c.inference_status?.message??c.reason??'此個體已停止。','確認原因後，由Owner決定是否授權生活');
  if(now<c.authorization_until&&c.next_wake?.source==='birth-scheduled'&&now<c.next_wake.at&&c.next_wake.at<c.authorization_until)return result('scheduled','已出生，尚未到第一次活動時間；沒有占用模型。','等待畫面顯示的首次活動時間，不必再次出生或恢復');

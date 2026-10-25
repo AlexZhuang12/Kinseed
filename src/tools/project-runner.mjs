@@ -1,4 +1,4 @@
-import {localJob} from './resource-gate.mjs';
+import {localJob,queuedLocalJob} from './resource-gate.mjs';
 import {boundedBrowserExecutable} from './browser-job.mjs';
 import fs from 'node:fs';import path from 'node:path';import http from 'node:http';import {chromium} from 'playwright-core';import {executeJavascript} from '../v1_2/javascript-executor.mjs';
 const PYROOT=path.resolve(import.meta.dirname,'../../node_modules/pyodide');
@@ -21,4 +21,4 @@ export async function runProject(project,{signal,timeout=5000,packages=[]}={}){p
  }finally{if(server)await new Promise(r=>server.close(r));}
 }
 
-export const browserJob=(callback,options)=>localJob(()=>runBrowserJob(callback,options));
+export const browserJob=(callback,options={})=>options.queue?queuedLocalJob(()=>{options.beforeStart?.();return runBrowserJob(callback,options);},{signal:options.signal,waitTimeout:options.waitTimeout}):localJob(()=>runBrowserJob(callback,options));

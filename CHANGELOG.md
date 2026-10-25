@@ -1,33 +1,29 @@
-# v1.6.1-preview.1 — Hedra and generated-document readback
+# 1.12.0-preview.1 — 2026-10-25
 
-Windows preview, aligned with local application feature baseline 1.6.1. Public first-setup and empty private storage remain the default. Production-only launcher paths and private data are not distributed.
+Guided console and pink visual hierarchy; Hedra workflow, local film and Whisper transcription tools; PDF layout/preview queue and recovery improvements. See [version notes](docs/RELEASE_1_12_0_PREVIEW.md) for acceptance scope and limitations.
 
-- Read back self-created PDF, Word and Excel documents; view actual saved PDF pages through the scoped rendering path.
-- Add opt-in Hedra image, video and music tools with OAuth workspace/credits checks, durable reservations, per-individual cumulative and single-item limits, optional Owner reserve, same-job recovery and exact charge reconciliation.
-- No subscription dates, renewal date or original grant amount are required. Available credits come from MCP. A renewed balance never resets local spending or increases Owner permission.
-- Preserve unsaved Hedra connection selections during polling/reload and distinguish saved state, draft and failed requests. Put read-only connection results beside the button. Public-web mode hides inactive legacy domain lists.
-- Only explicit Owner stops revoke daily consent. Hedra faults affect paid operations, not future life authorization. Existing identities, memory, history and used quotas are preserved.
+# 1.9.0-film-preview.1 — independent synthetic candidate
 
-## Defaults and limits
+Adds separate local media permission, FFmpeg/WASM inspection/editing, immutable film timelines, resumable local steps, actual frames and technical acceptance; separate Hedra speech and sound-effect permissions and curated public voice discovery. Integrates own-result reference and PDF heading/queue candidates. No existing installation is deployed or granted permission. Audio semantic understanding remains explicitly unavailable. See docs/FILM_WORKFLOW.md.
 
-Hedra is off for every fresh install and individual. Users bring their own Codex/Hedra login and accept the mutable OAuth billing setting. No account, credential, individual, paid budget or sample private runtime is bundled. Audio means music; speech, sound effects, voice cloning, reference uploads, media download/player and full film assembly are not implemented by this release. Image generation was exercised in an earlier Owner-approved synthetic real-provider test; this publication run makes no paid call. Media quality, provider refunds, immutable billing and exactly-once remote execution are not promised.
+# 1.8.0-hedra-preview.1 — independent P3 candidate
 
-The brain still has a bounded cycle deadline. Long tasks may need receipted continuation and can time out; successful continuation is not continuous thought. A deadline can retain a generic cancellation label in some raw adapter outputs; do not interpret that label as proof of an Owner stop. Further diagnosis is planned, without altering personalities or automatically extending resources.
+Adds own saved Hedra PNG/JPEG references, explicit reference permission, model input validation, provenance binding and durable failure handling. Reuses original provider assets without uploading. Owner materials, arbitrary URLs and account-wide libraries remain outside scope. No real reference generation acceptance or formal rollout.
 
-AI performs the published acceptance. Independent human, native-language, second physical Windows, and multi-day vendor acceptance were not performed. Local and hosted results are reported separately; CI uses synthetic data and no private provider credentials. See docs/acceptance/RELEASE_1_6_1.md and docs/HEDRA_WORKFLOW_ITERATION_PLAN.md.
+# 1.7.0-hedra-preview.1 — independent candidate
 
----
-# v1.5.0-preview.1
+P0 cancellation reasons preserved; P1 scoped public model discovery; P2 original-result downloads, immutable provenance and opaque media preview. No formal deployment, permission grant or new paid generation. See docs/HEDRA_WORKFLOW_P0_P2.md for scope and limits.
 
-Windows preview. Owner daily consent is independent of execution health. Runtime faults preserve future daily consent while holding the affected execution scope. Only explicit Owner stop, pause or global emergency stop revokes daily consent.
+## 1.6.1-local.1
 
-Confirmed operation receipts and unfinished-handoff context prevent blind replay. Models still write their own memories. Clean restarts validate identity, original time, usage and consent; unknown work remains blocked. Idle edits to time, individual round limits and permissions preserve daily consent. Four-language UI separates draft, saved settings and execution holds.
+- Hedra改依MCP即時點數運作，移除訂閱日期與原始配發量的必填門檻。
+- 個體額度改明示累計上限；歷史支出與暫留不自動歸零，Owner保留額與逐次餘額保護保留。
+- 連線錯誤區分授權、存取拒絕、額度／資格、限流及暫時失聯，不自行宣稱訂閱過期或停止生活。
 
-This version also publishes the controlled materials, project workspace, documents, OCR/vision and public-data adapters developed after v1.3. New tools are opt-in. Gmail needs each installation owner’s own OAuth and exact per-message approval; no account or credential is distributed. No new permission, catch-up, quota reset, identity change or automatic birth is implied.
+## 1.6.0-local.1 — local Hedra integration
 
-AI-executed synthetic acceptance, not independent human, native-language or second-physical-Windows acceptance. A real two-turn GPT/Codex/MCP synthetic test deliberately omitted the first memory handoff after a model-authored note, then verified readback and model-authored memory. It does not claim a live provider outage occurred. Qwen full-life qualification remains incomplete.
+Adds scoped Hedra OAuth tools, explicit installation consent, per-individual media permissions and budgets, durable holds and actual-currency settlement. Preserves life authority on paid-tool failures. Local synthetic-controlled MCP real image test passed for one credit; no new production individual permissions were granted. Source-only rollback, existing data preserved. GitHub not updated.
 
----
 # Changelog
 
 ## 1.3.0-preview.1 — Windows preview
@@ -65,3 +61,7 @@ All entries describe source candidates unless deployment is explicitly stated. A
 - Codex CLI and Ollama brain interfaces, controlled Codex/workspace tool interface, and first-run setup.
 - Apache-2.0, third-party notices, source export, cold backup and release checks.
 - Local small-model real trials recorded incomplete task compatibility; not advertised as a qualified autonomous brain.
+# Independent candidate 1.10.0-hearing-preview.1 — not released
+
+Adds a disabled-by-default local hearing permission and replaceable transcription/analysis interface, explicit source/destination/brain consent, bounded audio clipping, A/B analysis records and original-result read evidence. Unknown local requests hold only the affected service until Owner confirms completion; they are never silently replayed. No trained audio model is included or verified. See docs/AUDIO_UNDERSTANDING.md and docs/AUDIO_ACCEPTANCE.md for scope, AI acceptance and limitations.
+

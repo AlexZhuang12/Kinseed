@@ -1,0 +1,117 @@
+[
+  [
+    "本機Whisper專用服務",
+    "Dedicated local Whisper service",
+    "専用ローカルWhisperサービス"
+  ],
+  [
+    "這裡只管理本安裝的Whisper服務，不啟動個體、不開權限，也不操作共用聊天或其他模型。",
+    "Manage only this installation’s Whisper service. This does not start individuals, grant permissions, or control shared chat or other models.",
+    "このインストールのWhisperサービスだけを管理します。個体の起動、権限付与、共有チャットや他のモデルの操作は行いません。"
+  ],
+  [
+    "已下載的官方CPU壓縮檔路徑",
+    "Path to the downloaded official CPU archive",
+    "ダウンロード済み公式CPUアーカイブのパス"
+  ],
+  [
+    "Whisper base多語模型路徑",
+    "Path to the Whisper base multilingual model",
+    "Whisper base多言語モデルのパス"
+  ],
+  [
+    "尚未檢查專用Whisper服務。",
+    "The dedicated Whisper service has not been checked.",
+    "専用Whisperサービスは未確認です。"
+  ],
+  [
+    "服務已停止；個體生活與權限沒有變更。",
+    "Service stopped; individual life and permissions are unchanged.",
+    "サービスは停止しています。個体の生活と権限は変更されていません。"
+  ],
+  [
+    "專用服務已就緒；可手動把此端點填入下方聲音連線。",
+    "The dedicated service is ready. You may manually enter this endpoint in the audio connection below.",
+    "専用サービスの準備ができました。下の音声接続にこのエンドポイントを手動で入力できます。"
+  ],
+  [
+    "服務正在辨識；停止會等待原工作收尾，不重送。",
+    "Recognition is in progress. Stop waits for the original job to finish without resubmitting it.",
+    "認識処理中です。停止時は元の処理が完了するまで待ち、再送しません。"
+  ],
+  [
+    "正在等待原工作收尾，暫不接新請求。",
+    "Waiting for the original job to finish; new requests are not accepted.",
+    "元の処理の完了を待っています。新しい要求は受け付けません。"
+  ],
+  [
+    "無法確認是本安裝的服務，不會依PID強制關閉。",
+    "Service ownership could not be confirmed. No PID-based forced shutdown is performed.",
+    "このインストールのサービスか確認できません。PID指定の強制終了は行いません。"
+  ],
+  [
+    "啟動尚未確認，請勿重複啟動。",
+    "Startup is not confirmed. Do not start another instance.",
+    "起動を確認できていません。重複起動しないでください。"
+  ],
+  [
+    "正在載入已校驗模型。",
+    "Loading the verified model.",
+    "検証済みモデルを読み込んでいます。"
+  ],
+  [
+    "檢查Whisper狀態（不載入）",
+    "Check Whisper status (without loading)",
+    "Whisperの状態を確認（読み込みなし）"
+  ],
+  [
+    "校驗並保存Whisper檔案設定",
+    "Verify and save Whisper file settings",
+    "Whisperのファイル設定を検証して保存"
+  ],
+  [
+    "啟動專用Whisper服務",
+    "Start dedicated Whisper service",
+    "専用Whisperサービスを起動"
+  ],
+  [
+    "停止專用Whisper服務",
+    "Stop dedicated Whisper service",
+    "専用Whisperサービスを停止"
+  ],
+  [
+    "我已確認專用Whisper服務已結束",
+    "I have confirmed the dedicated Whisper service has exited",
+    "専用Whisperサービスの終了を確認しました"
+  ],
+  [
+    "復原已退出服務的殘留狀態",
+    "Recover stale state after the service has exited",
+    "サービス終了後の残留状態を復旧"
+  ],
+  [
+    "請先核對專用服務已結束；不會關閉未知程序。",
+    "First confirm the dedicated service has exited. Unknown processes will not be closed.",
+    "まず専用サービスの終了を確認してください。不明なプロセスは終了しません。"
+  ],
+  [
+    "可用記憶體：",
+    "Available memory: ",
+    "利用可能メモリ："
+  ],
+  [
+    " GiB；啟動至少需要3 GiB。",
+    " GiB; startup requires at least 3 GiB.",
+    " GiB。起動には少なくとも3 GiBが必要です。"
+  ],
+  [
+    "可用記憶體不足3 GiB，尚未啟動模型；個體生活與其他服務不變。",
+    "Less than 3 GiB of memory is available. The model was not started; individual life and other services are unchanged.",
+    "利用可能メモリが3 GiB未満のため、モデルは起動していません。個体の生活と他のサービスは変更されていません。"
+  ],
+  [
+    "Whisper操作未完成，個體生活與權限不變。原始原因：",
+    "The Whisper operation did not complete. Individual life and permissions are unchanged. Original reason: ",
+    "Whisperの操作が完了しませんでした。個体の生活と権限は変更されていません。元の理由："
+  ]
+]

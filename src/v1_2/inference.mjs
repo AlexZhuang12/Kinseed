@@ -20,6 +20,7 @@ export function retryDecision(e,l,result,c){
  if(c.stop_lock||c.mode!=='running'||c.version!==l.control_version){c.inference_status.phase='interrupted';c.inference_status.message='活動已依停止指令或設定變更中止，不會自動重試';return null;}
  const life=e.store.get('life');if(!life||life.state!=='born'||l.identity_version!==life.identity_version||l.generation!==life.generation||l.recovery_generation!==life.recovery_generation){c.inference_status.phase='interrupted';c.inference_status.message='個體身份或恢復狀態已變更，已停止；不會沿用舊輪次自動重試';return null;}
  if(['authentication','quota'].includes(failure.kind))return recoverSettledCycle(e,l,result,c,failure);
+ if(failure.kind==='local_resource')return recoverSettledCycle(e,l,result,c,failure);
  if(l.cancel_reason&&!timedOut){c.inference_status.phase='interrupted';c.inference_status.message=l.cancel_reason==='STALE_LEASE'?'本輪授權或設定已不相符，已停止；請核對目前狀態後再決定是否恢復':l.cancel_reason==='DEADLINE_EXCEEDED'?'本輪已逾時，但工作尚未確認安全收尾；暫不重試，請查看執行診斷':'本輪已取消，沒有自動重試；請核對停止原因與目前授權';return null;}
  if(l.finished||l.mutation_attempted)return recoverSettledCycle(e,l,result,c,failure);
  const recognized=failure.kind==='capacity'||failure.kind==='transient'&&result.local_exit_confirmed===true||timedOut;

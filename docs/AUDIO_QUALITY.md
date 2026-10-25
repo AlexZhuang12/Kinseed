@@ -1,0 +1,17 @@
+# Audio precheck and review notices
+
+This candidate adds deterministic checks around the existing local audio protocol. It does not rewrite transcripts, infer dialogue from a screenplay, or identify emotion or artistic quality.
+
+After permission, source-version, destination and life checks, the existing isolated converter produces a bounded 16 kHz mono PCM16 WAV. The precheck validates its RIFF/format/data chunks. Only a transcription clip whose samples are **all exactly zero** completes locally without contacting a model. Its report explicitly says `local_pcm_precheck_no_model_call`, `audio_input_delivered: false`, and `model: null`. Empty text in this case is a local signal finding, never a model recognition result. The original file and request remain saved, with source SHA and measured samples. Completed local checks cannot be submitted again as the same request.
+
+Nonzero low-volume clips are still submitted. RMS below -50 dBFS and peak below -35 dBFS produce a low-level warning; these are conservative engineering thresholds, not speech detection. No VAD model is downloaded. A nonzero waveform, noise, silence padding or music cannot establish whether dialogue is present.
+
+After a response, the original Whisper text is retained verbatim in both `raw_transcript_text` and the tentative transcript. A separate `quality` object holds measurements and notices: low level, empty service text, suspicious threefold repetition of a 4–40-character normalized sequence, and a generic unverified-transcription warning. Legitimate repetition may trigger a notice. Notices never remove words, certify correctness, change the model's own report or automatically become an individual's memory. Homophone errors usually cannot be reliably detected without another source; the UI therefore asks for review rather than pretending to locate or correct them.
+
+The Owner UI displays notices in Traditional Chinese, Simplified Chinese, English and Japanese. Original output is escaped as text. The brain reads the same saved quality metadata through the existing consent-bound tool. `analysis_consulted` only records that the individual read an analysis or local signal report, not that it personally heard the audio or verified artistic quality.
+
+Precheck failures stay unsent. Unknown submitted work keeps the existing no-replay service hold. No notices cancel daily life authority, raise budgets, start a model, download assets or enable permissions. All new permissions remain off for new installations. Production settings and existing artifacts are not rewritten.
+
+The real test uses the previously verified whisper.cpp b5454 CPU build and Whisper base multilingual weights. Its native server defaults and HTTP form contract were checked against the [matching official server source](https://github.com/ggml-org/whisper.cpp/blob/d1be6fde11ac6e0407606b4e42fe72d34add8037/examples/server/server.cpp). The adapter only submits `/inference` with auto language and no prompt; it does not expose native `/load` as a tool. Native server startup/shutdown is a bounded engineering test, not automatic product service management.
+
+Real Whisper accuracy, OS process memory and execution evidence must be reported separately from synthetic response tests. The real integration uses only synthetic individuals/audio; results do not certify arbitrary accents, noise, multi-speaker dialogue, emotion or musical listening.

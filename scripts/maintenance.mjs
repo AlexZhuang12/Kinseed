@@ -8,6 +8,7 @@ import {stopped} from './setup-core.mjs';
 import {exportSource} from './export-source.mjs';
 import {sha256} from './release-check.mjs';
 import {inspectNetworkSnapshot} from './network-snapshot.mjs';
+import {inspectHedraSnapshot} from './hedra-snapshot.mjs';
 function fileMap(root){const out={};if(!fs.existsSync(root))return out;function walk(dir){for(const e of fs.readdirSync(dir,{withFileTypes:true})){const file=path.join(dir,e.name);noLinks(root,file);if(e.isDirectory())walk(file);else out[path.relative(root,file).replaceAll('\\','/')]=sha256(fs.readFileSync(file));}}walk(root);return out;}
 function inspectDatabases(home){
  const out={};
@@ -16,6 +17,7 @@ function inspectDatabases(home){
   try{
    if(db.prepare('PRAGMA integrity_check').get().integrity_check!=='ok')throw Error('資料庫完整性未通過：'+rel);
    const tables=db.prepare("SELECT name FROM sqlite_master WHERE type='table'").all().map(x=>x.name);
+   if(rel.replaceAll('\\','/')==='runtime/hedra.sqlite'){out[rel]=inspectHedraSnapshot(db,tables);continue;}
    if(rel.replaceAll('\\','/')==='runtime/network.sqlite'){out[rel]=inspectNetworkSnapshot(db,tables);continue;}
    const s=tables.includes('state')?Object.fromEntries(db.prepare('SELECT key,value FROM state').all().map(x=>[x.key,JSON.parse(x.value)])):{};
    if(s.lease||s.global?.worker||['running','paused'].includes(s.control?.mode)||['running','paused'].includes(s.control?.state)||['running','paused'].includes(s.control?.status))throw Error('仍有生活或未收尾工作，請先在控制台確認停止：'+rel);

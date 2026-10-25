@@ -13,13 +13,13 @@ export const recoverySummary=e=>recoveryContext(e).map(({operations,...record})=
 // Paid requests use their durable ledger, not cycle-scoped external retries.
 const mutations=new Set(['write_note','work_save','work_import','run_javascript','send_owner','reply_owner','consult_llm','download_web','request_upload','delegate_codex','project_save','project_run','document_create','image_read','tool_request','reminder_save','reminder_ack','mail_draft']);
 const external=new Set(['consult_llm','download_web','request_upload','delegate_codex']);
-const longTools=new Set(['hedra_quote','browse_web','search_web','consult_llm','download_web','delegate_codex','project_run','document_create','image_read','data_query','document_view','run_javascript']);
+const longTools=new Set(['hedra_models','hedra_model','hedra_save','hedra_quote','browse_web','search_web','consult_llm','download_web','delegate_codex','project_run','document_create','image_read','data_query','document_view','run_javascript']);
 const canonical=v=>Array.isArray(v)?v.map(canonical):v&&typeof v==='object'?Object.fromEntries(Object.keys(v).sort().map(k=>[k,canonical(v[k])])):v;
 export function operationKey(name,args){const {request_id,expected_version,...content}=args;return hash(canonical({name,content}));}
 const orders=a=>a.length?a.flatMap((k,i)=>orders(a.filter((_,j)=>j!==i)).map(rest=>[k,...rest])):[[]];
 export function checkExecutionTool(e,name,args,l){
  const h=executionHold(e);if(h&&(h.scope==='individual'||h.tools.includes(name)))throw Error('此操作暫時受阻：'+h.message+'；每日生活授權仍保留。');
- if(longTools.has(name)&&(l.deadline-e.now()<35000||l.tool_calls>=14))throw Error('本輪接近收尾時間，請先提交目前真實進度；下一輪仍可使用原本已授權的工具。');
+ if(longTools.has(name)&&(l.deadline-e.now()<(name==='hedra_save'?60000:35000)||l.tool_calls>=14))throw Error('本輪接近收尾時間，請先提交目前真實進度；下一輪仍可使用原本已授權的工具。');
  const permission={write_note:'note',work_save:'workbench',work_import:'workbench',run_javascript:'execute',consult_llm:'consult',download_web:'web',request_upload:'web',delegate_codex:'codex'}[name];if(permission&&!e.store.get('control').permissions[permission])throw Error(['workbench','execute'].includes(permission)?'Owner尚未開放這項作品編輯或隔離執行權限。':'PERMISSION_DENIED');if(name==='run_javascript'&&!e.store.get('control').permissions.workbench)throw Error('Owner尚未開放作品編輯權限。');const hubPermission={project_save:'projects',project_run:'projects',document_create:'documents',image_read:'vision',mail_draft:'mail'}[name];if(hubPermission)e.platform.toolHub?.require(e,hubPermission);
  if(mutations.has(name)){const key=operationKey(name,args);for(const r of recoveryContext(e)){if(r.life_hash&&r.life_hash!==hash(e.store.get('life')))continue;const old=r.operations?.find(x=>x.key===key&&x.status==='completed');if(old)return {cached:true,result:old.result,key};}}
  return {cached:false,key:operationKey(name,args),tracked:mutations.has(name),external:external.has(name)};
@@ -32,7 +32,7 @@ export function rememberIncomplete(e,l,result){
  const operations=l.operations??[],unknown=operations.filter(x=>x.status!=='completed');
  const noteRows=e.store.db.prepare("SELECT body FROM events WHERE json_extract(body,'$.cycle_id')=? AND json_extract(body,'$.type')='tool.note.result'").all(l.cycle_id).map(x=>JSON.parse(x.body));
  const record={life_hash:hash(e.store.get('life')),cycle_id:l.cycle_id,at:e.now(),reason:result.cancel_reason??result.provider_failure?.kind??'incomplete',memory_submitted:l.finished===true,notes:noteRows.map(x=>({event_id:x.event_id,name:x.result.name,artifact_id:x.result.artifact_id})),operations,unknown_tools:unknown.map(x=>x.name),notice:'這是系統保存的操作事實，並非替個體補寫記憶。已成功的操作不可重做；請自行閱讀成果並決定如何更新記憶。'};
- (e.store.db.isTransaction?fn=>fn():fn=>e.store.tx(fn))(()=>{const records=recoveryContext(e).filter(x=>x.cycle_id!==l.cycle_id);records.push(record);e.store.set('execution_recovery',records);if(records.length>=8)holdExecution(e,'recovery_storage','未完成交接的工作已累積，先核對保存成果，避免遺失或重複操作；每日生活授權保留。',{requires_owner:true});e.store.event('execution.incomplete_recorded',{cycle_id:l.cycle_id,notes:record.notes,unknown_tools:record.unknown_tools,memory_submitted:record.memory_submitted},'controller',l);});return record;
+ (e.store.db.isTransaction?fn=>fn():fn=>e.store.tx(fn))(()=>{const records=recoveryContext(e).filter(x=>x.cycle_id!==l.cycle_id);records.push(record);const risky=records.some(x=>x.memory_submitted||x.operations?.length);e.store.set('execution_recovery',risky?records:records.slice(-8));if(risky&&records.length>=8)holdExecution(e,'recovery_storage','未完成交接的工作已累積，先核對保存成果，避免遺失或重複操作；每日生活授權保留。',{requires_owner:true});e.store.event('execution.incomplete_recorded',{cycle_id:l.cycle_id,notes:record.notes,unknown_tools:record.unknown_tools,memory_submitted:record.memory_submitted},'controller',l);});return record;
 }
 export function recoverSettledCycle(e,l,result,c,failure){
  const record=rememberIncomplete(e,l,result),daily=optional(e,'daily_life');
@@ -41,6 +41,14 @@ export function recoverSettledCycle(e,l,result,c,failure){
  if(['tool_forbidden','invalid_stream'].includes(failure.kind)){holdExecution(e,'security','模型回傳或工具範圍需要核對；每日生活授權保留。',{requires_owner:true});return null;}
  if(record.unknown_tools.length){holdExecution(e,'unknown_operation','部分操作結果尚未確認，暫停這些操作；其他已授權工作仍可進行。',{scope:record.operations.some(x=>!x.external&&x.status!=='completed')?'individual':'tools',tools:[...new Set(record.unknown_tools)],requires_owner:true});}
  if(l.mutation_attempted&&!(l.operations?.length)&&!l.finished){holdExecution(e,'unknown_operation','舊工作有未分類的操作，需先核對結果；每日授權保留。',{requires_owner:true});return null;}
+ if(failure.kind==='local_resource'){
+  const old=executionHold(e);if(old?.scope==='individual')return null;
+  const name=failure.tool,known=name&&/^[a-z_]{1,80}$/.test(name);
+  if(known){const tools=[...new Set([...(old?.scope==='tools'?old.tools:[]),name])];holdExecution(e,old?.kind==='unknown_operation'?'unknown_operation':'tool_resource','這些工具結果超過資料通道上限，暫不重做；其他已授權活動仍可進行。',{scope:'tools',tools,requires_owner:true});
+   const at=e.now()+30000;if(daily?.enabled&&at<c.authorization_until&&c.cycles_used<c.max_cycles){c.inference_status={phase:'tool_resource_wait',failure:'local_resource',message:'問題工具已隔離，稍後可繼續其他活動；每日授權保留。',at:e.now(),retry_at:at};return {at,source:'resource-continuation',key:l.cycle_id+':other-tools'};}
+  }else holdExecution(e,'brain_resource','大腦資料通道超限，等待核對；每日授權保留，沒有把問題歸因個體或帳號。',{requires_owner:true});
+  return null;
+ }
  const n=optional(e,'execution_recovery_count',0),at=e.now()+[30000,90000,180000][Math.min(n,2)];
  if(!daily?.enabled||n>=3||at>=c.authorization_until||c.cycles_used>=c.max_cycles)return null;
  e.store.set('execution_recovery_count',n+1);c.inference_status={phase:'recovery_wait',failure:failure.kind,message:'成果與未完成事項已保留，稍後以新一輪接續，不重做已確認的操作。',at:e.now(),retry_at:at};

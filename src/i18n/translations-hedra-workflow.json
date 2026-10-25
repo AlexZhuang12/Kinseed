@@ -1,0 +1,77 @@
+[
+  [
+    "允許製作音樂",
+    "Allow music generation",
+    "音楽の生成を許可"
+  ],
+  [
+    "圖片模型",
+    "Image models",
+    "画像モデル"
+  ],
+  [
+    "影片模型",
+    "Video models",
+    "動画モデル"
+  ],
+  [
+    "音訊模型（目前僅音樂）",
+    "Audio models (music only supported)",
+    "音声モデル（現在は音楽のみ対応）"
+  ],
+  [
+    "公開模型目錄與規格",
+    "Public model catalog and specifications",
+    "公開モデル一覧と仕様"
+  ],
+  [
+    "模型識別碼",
+    "Model ID",
+    "モデルID"
+  ],
+  [
+    "查詢模型目錄（不生成）",
+    "Query model catalog (no generation)",
+    "モデル一覧を確認（生成なし）"
+  ],
+  [
+    "查詢模型規格（不生成）",
+    "Query model specifications (no generation)",
+    "モデル仕様を確認（生成なし）"
+  ],
+  [
+    "目錄含尚未接入的模型；請查看規格與接頭限制。查詢、下載和觀看均不會重新生成。",
+    "The catalog includes models not yet supported. Check specifications and adapter limits. Querying, downloading and viewing never regenerate.",
+    "一覧には未対応モデルも含まれます。仕様と接続機能の制限を確認してください。照会・保存・閲覧で再生成はしません。"
+  ],
+  [
+    "Hedra成果預覽",
+    "Hedra result preview",
+    "Hedra成果プレビュー"
+  ],
+  [
+    "成果讀取失敗，請重新核對。",
+    "Could not read the result. Please check again.",
+    "成果を読み込めません。再確認してください。"
+  ],
+  [
+    "保存原成果（不重新生成）",
+    "Save original result (no regeneration)",
+    "元の成果を保存（再生成なし）"
+  ],
+  [
+    "觀看或播放已保存成果",
+    "View or play saved result",
+    "保存済み成果を表示・再生"
+  ],
+  [
+    "下載已保存成果",
+    "Download saved result",
+    "保存済み成果をダウンロード"
+  ],
+  [
+    "關閉媒體預覽",
+    "Close media preview",
+    "メディアプレビューを閉じる"
+  ]
+]

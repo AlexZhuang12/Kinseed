@@ -9926,8 +9926,1016 @@
       "src/v1_2/network-ui.js"
     ]
   },
+  "m_06b6fd1c88489fe8": {
+    "source": "目前操作的個體",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
   "m_53b6c16615912e03": {
     "source": "工具與材料",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_e9f1daa2ca2d4d5e": {
+    "source": "先選個體，再依需要準備工具、開放能力、交付材料及核對成果。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_b02514b0b5a53005": {
+    "source": "使用總覽",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_cc147e162c82bbc7": {
+    "source": "開始",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_6166840247d11670": {
+    "source": "工具設定",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_3ca08d2d4ad90644": {
+    "source": "材料與成果",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_409149f39b3b8eb3": {
+    "source": "Owner處理",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_b3bf1459afbe3d0c": {
+    "source": "工具操作導覽",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_ef3ac01a4ea53f9a": {
+    "source": "這次想完成什麼？",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_6130135ea0fd210e": {
+    "source": "查看不會啟動個體。連線、權限與生活安排分開保存。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_cc2fe9fa017e8166": {
+    "source": "準備工具",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_7edf28449150a47a": {
+    "source": "需要帳號或本地模型時，先確認連線與服務是否可用。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_e64677e1662136bb": {
+    "source": "查看連線設定",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_fcbebedd34b3a636": {
+    "source": "開放能力",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_f48e7941f35e16f8": {
+    "source": "選擇這個個體能使用的工具，保存後核對已生效狀態。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_8df652e4c81abdc3": {
+    "source": "設定工具權限",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_89d81c9051908b3e": {
+    "source": "交付材料",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_64886e1b52730b02": {
+    "source": "由你指定文字或檔案，確認可交給目前大腦分析。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_649f687bdea80846": {
+    "source": "交付一批材料",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_f4867dd1698bc354": {
+    "source": "閱讀與批准",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_74d98abb6c9d3441": {
+    "source": "查看成果、音訊分析或待批准郵件，再決定下一步。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_e03564595b442472": {
+    "source": "查看作品成果",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_3374b89a811ce652": {
+    "source": "Gmail設定與寄信說明",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_b6a8eced3044eda3": {
+    "source": "本地聲音工具怎麼用",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_3a0c1943d8de0be1": {
+    "source": "Hedra權限、點數與模型查詢",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_0c7b55c38e87215e": {
+    "source": "這個個體可以使用哪些能力？",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_f5e534263ee01269": {
+    "source": "勾選是尚未保存的選擇。等目前工作收尾後即可保存，原每日生活安排保持不變。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_a3c6333f0c9206bb": {
+    "source": "先看目前狀態",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_bffc2fb3b02b412d": {
+    "source": "閱讀與研究",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_82e5068ca38b2b4a": {
+    "source": "創作與製作",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_05fff5ee35925549": {
+    "source": "影音與聲音",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_31f3e9ccb12b29c5": {
+    "source": "對外聯絡",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_6fe0e80289e5f285": {
+    "source": "只讀取你交付並同意分析的材料。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_5d322ff778351c95": {
+    "source": "閱讀圖片文字或內容；實際能力依目前大腦而定。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_8547638d83456496": {
+    "source": "查詢公開資料；仍受外網權限與流量限制。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_f05b6f99bc4480b9": {
+    "source": "只操作個體的隔離工作區。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_cd86c98135a9468d": {
+    "source": "製作可下載的PDF、Word與Excel。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_60ce21f4f8e27e67": {
+    "source": "使用本機資源處理影音、字幕與作品檢查。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_2a033f549b142eb7": {
+    "source": "另需本地服務、聲音連線及逐份音訊批准；搭配本地影音權限。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_7576b35e5dc6e56e": {
+    "source": "只能提出草稿；每封寄出都要Owner另行批准。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_661baf8742fa9f76": {
+    "source": "需要查看生活安排？",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_46f921d5e9698edd": {
+    "source": "閱讀權限與每日生活的差別",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_d2958278e69be321": {
+    "source": "保存Hedra連線選擇",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_904d8c1498c38ea0": {
+    "source": "捨棄未保存的Hedra連線選擇",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_d079e55ca4a17854": {
+    "source": "保存Owner保留點數",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_3c9969eacfb807cd": {
+    "source": "保存Hedra權限與額度",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_f3772c27fd816fd9": {
+    "source": "捨棄未保存的Hedra設定",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_fd2d6c9a058c1213": {
+    "source": "查詢模型目錄（不生成）",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_514208318a1611f0": {
+    "source": "查詢模型規格（不生成）",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_cf0a8568bb85b4ff": {
+    "source": "參考",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_86948ecd5df2da01": {
+    "source": "Hedra：先連線，再開放能力與額度",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_b61692e3d568677e": {
+    "source": "保存設定不會生成或扣點。共用連線與Owner保留額影響整份安裝，能力與上限只套用到所選個體。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_d7d9932c5f201b29": {
+    "source": "Hedra設定與模型查詢怎麼操作",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_4397f27594a15b49": {
+    "source": "步驟1 · 整份安裝共用",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_c4200d09806e1f39": {
+    "source": "確認Hedra帳號連線",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_7f4e9975e4b907f1": {
+    "source": "先讀回登入狀態與點數，再決定是否允許此安裝使用連線。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_fd79c595c2ee2967": {
+    "source": "步驟2 · 整份安裝共用",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_f0a2fa355f433549": {
+    "source": "保留Owner自己要用的點數",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_ff51148988bfccf6": {
+    "source": "這些點數留在Hedra，不給個體使用；不是訂閱日期或每月重設設定。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_bf6e9cfd83d2bc00": {
+    "source": "步驟3 · 只影響所選個體",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_103bbcbd03e48eeb": {
+    "source": "選擇製作能力與使用上限",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_5653b33244104947": {
+    "source": "不必先挑選模型。個體會在已開放的能力、支援範圍與點數上限內選用模型。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_27ae1a88a2c0378f": {
+    "source": "選看 · 不影響授權",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_f0cb9c0736574ff8": {
+    "source": "查看模型與規格",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_df33e02aaadd5b1b": {
+    "source": "這是資料查詢，不是模型白名單。開放能力前不需要先查完目錄；查詢不會生成或改權限。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_fb948471af5affce": {
+    "source": "選擇要查看的媒體種類，查詢目前目錄。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_583d8402ae583e02": {
+    "source": "想了解單一模型時，從目錄選取或複製識別碼，再查規格。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_b57c70ddd5878d1f": {
+    "source": "從查詢結果選擇模型",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_53d9d933cb9db56d": {
+    "source": "查詢後可在此選擇模型",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_4c57cc5f2bac6f2f": {
+    "source": "可供參考續作的已保存圖片",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_cc20098d4f8da1eb": {
+    "source": "只使用個體自己的Hedra圖片，仍需要參考續作權限及新工作的估價。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_091494e1140d9e23": {
+    "source": "已提交工作與保存成果",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_57da06736671248e": {
+    "source": "查看原工作的結果，不會再生成一次。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_24aed95adf6a871f": {
+    "source": "保存Gmail用戶端設定",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_66750e1edb46f073": {
+    "source": "連接Gmail（僅寄送權限）",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_634cc70de644d7c8": {
+    "source": "中斷本工具的Gmail連線",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_7ed37e4efdfa56d4": {
+    "source": "保存雲端設定（不連線）",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_107f21425552c624": {
+    "source": "外部連線：帳號與服務設定",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_a75081b276f64b3d": {
+    "source": "這裡準備工具連線；個體能否使用，仍由工具權限與生活安排決定。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_c9430963a526f00a": {
+    "source": "Gmail · 整份安裝共用",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_ed2eb894eecd433b": {
+    "source": "連接自己的寄件帳號",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_7b082969aea0135b": {
+    "source": "Kinseed只要求寄送郵件，不讀取既有信箱；每封仍要Owner核對批准。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_24ae26c6c3f89efc": {
+    "source": "第一次設定？教你到Google取得OAuth資料",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_19ab5f42d4388618": {
+    "source": "到Google Cloud準備Gmail API與桌面應用OAuth用戶端。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_d5c47327763220df": {
+    "source": "將用戶端資料填入下方，保存後再登入授權。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_7e468c051ec820a6": {
+    "source": "連線成功後，到待批准郵件核對草稿與附件。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_56f016bf2611224a": {
+    "source": "填入Google桌面應用用戶端資料",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_99f4d09e4748df09": {
+    "source": "顯示／隱藏密鑰",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_9892928fb09ebc8a": {
+    "source": "前往待批准郵件",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_f0ac289b075ecebd": {
+    "source": "公開資料服務不需要額外帳號",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_2a29075b04a2b2a2": {
+    "source": "維基百科、Crossref與USGS已內建，只需開放公開資料與原外網權限，仍受網路預算限制。Crossref不保證全文。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_b076b9de751972ad": {
+    "source": "尚未接入",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_08de3278f23237ee": {
+    "source": "雲端空間：目前不能連線",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_ed094c2bd6e276d2": {
+    "source": "這是將來把材料或作品存到雲端資料夾的預留設定。目前未接入Google Drive、Dropbox或其他儲存服務，填入資料也不會開始同步。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_4aa891030c0dd9c9": {
+    "source": "雲端空間是什麼？目前可以做什麼？",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_88b45259134f1e39": {
+    "source": "查看已保存的預留設定（不會連線）",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_62fcb1c6ddcddcc1": {
+    "source": "Gmail：待Owner批准的郵件",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_82d1a1b7b1dd8ea9": {
+    "source": "與Gmail連線設定使用同一寄件服務。先連線，再核對每一封；沒有連線時保留草稿。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_5d74f9b93754f613": {
+    "source": "返回Gmail連線設定",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_0c24652ebf7d2572": {
+    "source": "查看Gmail操作說明",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_44feff899d154347": {
+    "source": "聲音工具：把對白轉成文字",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_9a001029a9d6b607": {
+    "source": "目前Whisper只做對白轉錄，不能判斷語氣、音樂或藝術品質。按順序準備服務與個體連線，再處理指定音訊。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_8e7085e293015304": {
+    "source": "第一次使用？查看本地聲音工具操作說明",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_cae7ec768e098c86": {
+    "source": "步驟1 · 本機服務，整份安裝共用",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_bd44eb5bd5dc5609": {
+    "source": "準備本機Whisper",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_cacd9a685333d4a2": {
+    "source": "先檢查狀態，不會載入模型。需要辨識時才啟動；停止這個服務不會取消個體生活。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_c6dedf99d467e64f": {
+    "source": "服務狀態與啟停",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_677c6c903e9ce177": {
+    "source": "檢查Whisper狀態（不載入）",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_65632b0f883e5c28": {
+    "source": "啟動專用Whisper服務",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_1a469f0de5fa0b76": {
+    "source": "停止專用Whisper服務",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_ababc59e2c971b4a": {
+    "source": "首次設定或排查問題：檔案路徑與復原",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_74909db3ef3369e5": {
+    "source": "復原已退出服務的殘留狀態",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_75bf40c5e3b5f419": {
+    "source": "校驗並保存Whisper檔案設定",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_d43eb783049e795a": {
+    "source": "尚未檢查：先按檢查狀態，不會載入模型。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_c7108fb36ddde623": {
+    "source": "查看技術狀態原文",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_7982055300caab7a": {
+    "source": "步驟2 · 只影響所選個體",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_e02574f352a93065": {
+    "source": "允許這個個體使用聲音工具",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_2149894a236fbb94": {
+    "source": "先在工具權限開放本地影音與聲音，再啟用這個個體的聲音連線；服務啟動不代表權限已開。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_6db921c977f444ec": {
+    "source": "前往工具權限",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_1fab98f94b8944fd": {
+    "source": "設定這個個體的服務連線",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_11e8206bbb41575f": {
+    "source": "服務網址從步驟1的就緒狀態取得；Whisper模型名稱可用whisper-base-b5454-managed，協定選Whisper。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_e3208f7b9638d359": {
+    "source": "查看已保存連線的技術資料",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_cb16f137df76b1cb": {
+    "source": "帶入已核對的本機連線（尚未保存）",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_2c3d9be008c3483e": {
+    "source": "步驟3 · 每一份音訊分開批准",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_1594f8681167d05f": {
+    "source": "核對音訊與閱讀結果",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_47beeefb344db8ab": {
+    "source": "個體提出工作後，先看來源、片段、目的地與問題，再批准。結果不明不自動重送；原轉錄文字保留。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_156a574720167851": {
+    "source": "保存材料副本",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_0a781c3fc22ce4d0": {
+    "source": "已批准，等待處理",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_ce662559a8cfe9e9": {
+    "source": "尚未送出",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_6276ee611269ae04": {
+    "source": "正在準備音訊",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_83c4a4177e44b756": {
+    "source": "結果已保存",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_c3939ca20d1a7c1c": {
+    "source": "結果待核對，不重送",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_87c1ce62dff70dc9": {
+    "source": "已確認收尾，原結果仍未知",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_1c0289885ada443d": {
+    "source": "尚未開始就已取消",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_df83130fb59a1134": {
+    "source": "分析目的地",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_6b3e851f212bb3ea": {
+    "source": "對白轉錄",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_53ad4a35ff655088": {
+    "source": "聲音分析",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_cf8e73ce0d138397": {
+    "source": "請查看工作詳細狀態。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_fe1afc2822a9e1b1": {
+    "source": "合成預覽工作：只練習核對與批准，不會送出辨識。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_ee04953040319434": {
+    "source": "查看這份工作的技術資料",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_56ae060cfa94935a": {
+    "source": "這次批准會交付什麼？",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_eaeaa64e56b8d9ea": {
+    "source": "分析問題",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_0a0ed1200146cf28": {
+    "source": "音訊片段",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_4a28932a1f1e46f8": {
+    "source": "批准只適用這份音訊、片段、目的地與目前大腦；變更後需要重新核對。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_ab0b00816989a6b4": {
+    "source": "查看核對資料原文",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_875a2fe2424ab8b7": {
+    "source": "已開放能力數：",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_968bd806e42cd6ff": {
+    "source": "每日安排已開啟",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_776612a842a7bdfa": {
+    "source": "每日安排未開啟",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_ba6bcbfd6a464947": {
+    "source": "寄件帳號已連線；仍須逐封批准。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_e6c945772175704c": {
+    "source": "寄件帳號尚未連線，可先查看草稿。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_4344501d39c055ff": {
+    "source": "尚未保存：聲音服務設定仍是草稿。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_6c2ad29dbde7b614": {
+    "source": "這個個體的聲音連線已啟用。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_99dba79c78a9334a": {
+    "source": "這個個體的聲音連線尚未啟用。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_51cce54cbe754d80": {
+    "source": "聲音所需權限已開啟。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_2cceee2765d2ada7": {
+    "source": "尚需開放本地影音與聲音權限。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_d13becf713c1f900": {
+    "source": "連線已保存。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_b98600015ed314eb": {
+    "source": "下一步：準備服務並保存個體連線。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_935076ba852b9456": {
+    "source": "目前無法啟動，原生活與其他服務不變；請查看下方技術原因。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_e9f6d5a067e6f475": {
+    "source": "Whisper目前停止，需要時可啟動。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_14cfd414c1913579": {
+    "source": "Whisper已就緒，可以使用下方的固定服務網址。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_aea71b468841e216": {
+    "source": "Whisper正在處理原工作；其他工作等待。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_825ef96cf14e6342": {
+    "source": "正在收尾原工作，不接受新工作。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_4a85461ed82c5265": {
+    "source": "服務狀態待確認，請先查看說明。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_b9ded64131e5ec49": {
+    "source": "正在載入Whisper。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_e2e13f53d08eac31": {
+    "source": "可用記憶體不足3 GiB，尚未啟動模型；個體生活與其他服務不變。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_0994ee723e9b445d": {
+    "source": "請查看技術狀態與操作說明。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_7cd5ff4820369112": {
+    "source": "本機服務網址：",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_2a84fb47079143ed": {
+    "source": "可用記憶體：",
     "files": [
       "src/v1_2/network-ui.js"
     ]
@@ -9976,6 +10984,18 @@
   },
   "m_46b17c744f9cef50": {
     "source": "Hedra媒體工具",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_b6e91226bd3a5166": {
+    "source": "影音作品工作區",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_96e733d7b8cd2533": {
+    "source": "聲音理解與比較",
     "files": [
       "src/v1_2/network-ui.js"
     ]
@@ -10118,12 +11138,6 @@
       "src/v1_2/network-ui.js"
     ]
   },
-  "m_156a574720167851": {
-    "source": "保存材料副本",
-    "files": [
-      "src/v1_2/network-ui.js"
-    ]
-  },
   "m_cff610ff47fd0c74": {
     "source": "文字、網址與檔案請擇一提供。",
     "files": [
@@ -10184,8 +11198,20 @@
       "src/v1_2/network-ui.js"
     ]
   },
+  "m_152e294398973720": {
+    "source": "正在排隊或產生PDF頁面，請稍候。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
   "m_003bc2d4156b93b7": {
     "source": "目前個體已切換，沒有顯示先前個體的預覽。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_dffe9880d68f0049": {
+    "source": "PDF頁面未顯示，請查看上方原因後再試。",
     "files": [
       "src/v1_2/network-ui.js"
     ]
@@ -10204,12 +11230,6 @@
   },
   "m_d052a1f10df570b3": {
     "source": "個體新增工具權限",
-    "files": [
-      "src/v1_2/network-ui.js"
-    ]
-  },
-  "m_140712ffac6d5aae": {
-    "source": "勾選只是草稿，不會立即開放。請先停止此個體與每日安排、等待工作收尾，再返回這裡保存；保存後仍須另行開啟生活。",
     "files": [
       "src/v1_2/network-ui.js"
     ]
@@ -10246,6 +11266,18 @@
   },
   "m_8b4b2f97d724a63f": {
     "source": "提出Gmail郵件草稿（不能自行寄出）",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_9eb379ce94410516": {
+    "source": "本地影音檢查、剪輯與作品工程",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_a17d1bfa8d831edf": {
+    "source": "聲音轉錄與分析（另需Owner核對目的地）",
     "files": [
       "src/v1_2/network-ui.js"
     ]
@@ -10310,8 +11342,8 @@
       "src/v1_2/network-ui.js"
     ]
   },
-  "m_956f5fe4f485989c": {
-    "source": "目前已生效：這六項新增工具全部尚未開放。",
+  "m_3c62faded1a2bc44": {
+    "source": "目前已生效：新增工具全部尚未開放。",
     "files": [
       "src/v1_2/network-ui.js"
     ]
@@ -10364,8 +11396,8 @@
       "src/v1_2/network-ui.js"
     ]
   },
-  "m_932f587aff199494": {
-    "source": "Hedra工具已接入；預設關閉。須先確認共用OAuth連線，再設定個體媒體權限及額度。音訊目前限音樂；影片與音樂必須明確指定時長。完成只顯示遠端成果資料，尚不會自動下載或播放。",
+  "m_1b9095e30861684f": {
+    "source": "Hedra工具已接入；預設關閉。須先確認共用OAuth連線，再設定個體媒體權限及額度。音樂、語音與音效分開授權；影片與音樂必須明確指定時長。完成只顯示遠端成果資料，尚不會自動下載或播放。",
     "files": [
       "src/v1_2/network-ui.js"
     ]
@@ -10448,12 +11480,6 @@
       "src/v1_2/network-ui.js"
     ]
   },
-  "m_d2958278e69be321": {
-    "source": "保存Hedra連線選擇",
-    "files": [
-      "src/v1_2/network-ui.js"
-    ]
-  },
   "m_b2d1d35e580a5b91": {
     "source": "未能確認Hedra連線保存結果；請更新資料核對，草稿仍保留。",
     "files": [
@@ -10462,12 +11488,6 @@
   },
   "m_865374ba6eda651e": {
     "source": "Hedra連線選擇已保存並核對；不會開放個體權限或啟動生活。",
-    "files": [
-      "src/v1_2/network-ui.js"
-    ]
-  },
-  "m_904d8c1498c38ea0": {
-    "source": "捨棄未保存的Hedra連線選擇",
     "files": [
       "src/v1_2/network-ui.js"
     ]
@@ -10490,8 +11510,14 @@
       "src/v1_2/network-ui.js"
     ]
   },
-  "m_d079e55ca4a17854": {
-    "source": "保存Owner保留點數",
+  "m_a9654a9b62738820": {
+    "source": "尚未保存：Owner保留點數仍是草稿。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_7068ab7b317290f2": {
+    "source": "Owner保留點數已保存。",
     "files": [
       "src/v1_2/network-ui.js"
     ]
@@ -10520,8 +11546,26 @@
       "src/v1_2/network-ui.js"
     ]
   },
-  "m_c17b738a75be99cc": {
-    "source": "允許製作聲音",
+  "m_c075b1e9d02aabcd": {
+    "source": "允許製作音樂",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_02d836ec0bf23d1e": {
+    "source": "允許製作語音（公用聲音）",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_7b94bebef316935e": {
+    "source": "允許製作音效",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_65c18e9dc4f9d461": {
+    "source": "允許用自己的Hedra圖片作為參考續作",
     "files": [
       "src/v1_2/network-ui.js"
     ]
@@ -10538,20 +11582,80 @@
       "src/v1_2/network-ui.js"
     ]
   },
-  "m_3c9969eacfb807cd": {
-    "source": "保存Hedra權限與額度",
-    "files": [
-      "src/v1_2/network-ui.js"
-    ]
-  },
   "m_da045e2e94a1ad2b": {
     "source": "請先更新這個個體的工具資料。",
     "files": [
       "src/v1_2/network-ui.js"
     ]
   },
-  "m_f3772c27fd816fd9": {
-    "source": "捨棄未保存的Hedra設定",
+  "m_4f928dad5c0223e0": {
+    "source": "參考續作另有獨立權限，預設關閉。只引用自己已保存的Hedra圖片，不上傳Owner材料或本機檔案；仍需媒體權限、估價、生活及點數檢查。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_b3283935d2728968": {
+    "source": "圖片模型",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_35f5cdd56320bbfb": {
+    "source": "影片模型",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_7061f91284d951e4": {
+    "source": "音樂模型",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_b7f87877a1f56328": {
+    "source": "語音模型",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_12cd0a1511b46031": {
+    "source": "音效模型",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_55c6f5bc0c10509e": {
+    "source": "公開模型目錄與規格",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_428316a7322bcd14": {
+    "source": "模型識別碼",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_b08db6ea390ad0ac": {
+    "source": "目錄含尚未接入的模型；請查看規格與接頭限制。查詢、下載和觀看均不會重新生成。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_a0ff3a163fc1cda5": {
+    "source": "Hedra成果預覽",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_82c7a90f4e8e7c81": {
+    "source": "關閉媒體預覽",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_dc42127c51bd9d8b": {
+    "source": "成果讀取失敗，請重新核對。",
     "files": [
       "src/v1_2/network-ui.js"
     ]
@@ -10570,6 +11674,12 @@
   },
   "m_39b486c6fc75b018": {
     "source": "沒有尚未保存的Hedra連線修改。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_519dbaf9fce02307": {
+    "source": "目前已保存的Owner保留點數：",
     "files": [
       "src/v1_2/network-ui.js"
     ]
@@ -10594,6 +11704,342 @@
   },
   "m_0c1ef33d50af1380": {
     "source": "取消尚未送出的工作",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_2aaa1e90ebbe58e3": {
+    "source": "保存原成果（不重新生成）",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_cb285494996c0d09": {
+    "source": "觀看或播放已保存成果",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_85fce9d123702187": {
+    "source": "下載已保存成果",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_30fea335d5e71681": {
+    "source": "本地聲音服務",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_473b9b70d16262fe": {
+    "source": "聲音接頭不會自行下載或啟動模型。上方專用服務須由Owner操作；轉錄不等於語氣或音樂理解。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_0e51ca1d0c21cb2c": {
+    "source": "啟用本地聲音接頭",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_6be6c911107f379a": {
+    "source": "獨立本地服務網址",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_cdd108dc875e77a8": {
+    "source": "服務已載入的模型名稱",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_2c4cab6f49656d5c": {
+    "source": "Whisper：只轉錄對白",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_10086c5b4afbce79": {
+    "source": "聲音分析服務：需另完成模型驗證",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_450fdf4bfd6c95f1": {
+    "source": "保存本地聲音服務設定",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_8b92ec6977b39449": {
+    "source": "保存回應不一致，請重新核對。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_b52600dbfd79d80e": {
+    "source": "放棄未保存的聲音設定",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_f3219fb250f63aed": {
+    "source": "音訊與轉錄核對提示",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_3197ac1da9b1818e": {
+    "source": "音訊是全零靜音，未送至辨識服務。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_1d82f9914c42518c": {
+    "source": "音量偏低，可能漏字；不代表沒有對白。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_1ca923a553152bdc": {
+    "source": "轉錄包含可疑重複，請對照原音；原文字未修改。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_6850cc2e6637282e": {
+    "source": "服務未回傳文字；不能據此判斷音訊沒有對白。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_899f653e5ad5fa72": {
+    "source": "轉錄尚未核對，可能包含同音錯字；不自動改寫。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_f28f582347a97624": {
+    "source": "本機Whisper專用服務",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_316e8dd046b170bd": {
+    "source": "這裡只管理本安裝的Whisper服務，不啟動個體、不開權限，也不操作共用聊天或其他模型。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_c0443bfca015b248": {
+    "source": "已下載的官方CPU壓縮檔路徑",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_0f239a7f1a787abc": {
+    "source": "Whisper base多語模型路徑",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_6419d6565dbef4bf": {
+    "source": "尚未檢查專用Whisper服務。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_1814e0565a37787b": {
+    "source": "服務已停止；個體生活與權限沒有變更。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_37ea6f7f3ffc0f47": {
+    "source": "專用服務已就緒；可手動把此端點填入下方聲音連線。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_5793ec21da39f7ed": {
+    "source": "服務正在辨識；停止會等待原工作收尾，不重送。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_1dee70cb381111d2": {
+    "source": "正在等待原工作收尾，暫不接新請求。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_c9531f7e8fecebcb": {
+    "source": "無法確認是本安裝的服務，不會依PID強制關閉。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_3b90aa62b0bf6976": {
+    "source": "啟動尚未確認，請勿重複啟動。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_97a787c931d1b1fb": {
+    "source": "正在載入已校驗模型。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_c0f0c50cd0fe0478": {
+    "source": " GiB；啟動至少需要3 GiB。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_53ca141ff6a238dc": {
+    "source": "Whisper操作未完成，個體生活與權限不變。原始原因：",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_16c8ee770a123c22": {
+    "source": "我已確認專用Whisper服務已結束",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_b2f52f2cb7a5f85c": {
+    "source": "請先核對專用服務已結束；不會關閉未知程序。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_15f71e3941f344a4": {
+    "source": "批准這份本地聲音分析",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_3f5a671f0739273d": {
+    "source": "我同意指定音訊片段與分析回報交給所示本地服務及目前大腦",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_a62de9b755ec70d4": {
+    "source": "核對聲音分析內容與目的地",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_bfcee94b557ba521": {
+    "source": "請重新核對這份聲音分析。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_fa34a00b8e1342d4": {
+    "source": "此確認只解除工具暫停，沒有重送原工作或驗證未知結果。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_5e737fb16014804e": {
+    "source": "我已確認本地聲音服務工作已結束",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_2a559ac9be96c41a": {
+    "source": "解除這項聲音服務暫停",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_72e8109b6ebd7d3c": {
+    "source": "請先確認本地服務已收尾。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_7a5057878bb3551d": {
+    "source": "取消尚未開始的聲音分析",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_032dd44f1a2a3b4f": {
+    "source": "自己的素材 → 保存工程 → 本地逐步組片 → 擷取畫面 → 核對與修改。新影音權限預設關閉；不會因開啟頁面而生成或啟動生活。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_7063e621ea19850a": {
+    "source": "本機處理最長30秒、1280×720、8鏡頭、8音軌；單檔8MB、歷代工具資料20MB。超過範圍會明示，保留原素材。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_13180b55a8e88b2c": {
+    "source": "目前可提供畫面給支援視覺的大腦。音量與靜音診斷不等於已聽懂對白或確認音樂聽感。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_6bb5452f8efaad03": {
+    "source": "本地影音權限已開啟；仍須有效生活才能處理工作。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_1c0610646ed284ef": {
+    "source": "本地影音權限未開啟；查看既有成果不會擴權。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_9bc3f01ed85e0424": {
+    "source": "片長毫秒：",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_4ed74c18a028e5e7": {
+    "source": "閱讀作品工程與素材版本",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_bc4060aa5e0b0290": {
+    "source": "狀態：",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_85af81638c63bac1": {
+    "source": " · 步驟：",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_1b2727bfeece7dcc": {
+    "source": "閱讀技術檢查結果",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_90a2201f64cedda3": {
+    "source": "取消尚未執行的影音工作",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_dbb010fbc7586e3a": {
+    "source": "聲音內容核對：",
     "files": [
       "src/v1_2/network-ui.js"
     ]
@@ -10658,12 +12104,6 @@
       "src/v1_2/network-ui.js"
     ]
   },
-  "m_7ed37e4efdfa56d4": {
-    "source": "保存雲端設定（不連線）",
-    "files": [
-      "src/v1_2/network-ui.js"
-    ]
-  },
   "m_98843ebc0e627df2": {
     "source": "Gmail專用測試帳號",
     "files": [
@@ -10688,32 +12128,14 @@
       "src/v1_2/network-ui.js"
     ]
   },
-  "m_24aed95adf6a871f": {
-    "source": "保存Gmail用戶端設定",
-    "files": [
-      "src/v1_2/network-ui.js"
-    ]
-  },
   "m_af1a035d42f661d4": {
     "source": "開啟Google授權頁",
     "files": [
       "src/v1_2/network-ui.js"
     ]
   },
-  "m_66750e1edb46f073": {
-    "source": "連接Gmail（僅寄送權限）",
-    "files": [
-      "src/v1_2/network-ui.js"
-    ]
-  },
   "m_88e597d4ff709e3b": {
     "source": "請按下方連結，核對專用測試帳號並完成Google授權。",
-    "files": [
-      "src/v1_2/network-ui.js"
-    ]
-  },
-  "m_634cc70de644d7c8": {
-    "source": "中斷本工具的Gmail連線",
     "files": [
       "src/v1_2/network-ui.js"
     ]
@@ -10882,12 +12304,6 @@
   },
   "m_4780d96284718180": {
     "source": "尚未寄送",
-    "files": [
-      "src/v1_2/network-ui.js"
-    ]
-  },
-  "m_bc4060aa5e0b0290": {
-    "source": "狀態：",
     "files": [
       "src/v1_2/network-ui.js"
     ]

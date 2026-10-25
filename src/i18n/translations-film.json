@@ -1,0 +1,97 @@
+[
+  [
+    "影音作品工作區",
+    "Film workspace",
+    "映像作品ワークスペース"
+  ],
+  [
+    "本地影音檢查、剪輯與作品工程",
+    "Local media inspection, editing and film projects",
+    "ローカル映像・音声の検査、編集と作品プロジェクト"
+  ],
+  [
+    "Hedra工具已接入；預設關閉。須先確認共用OAuth連線，再設定個體媒體權限及額度。音樂、語音與音效分開授權；影片與音樂必須明確指定時長。完成只顯示遠端成果資料，尚不會自動下載或播放。",
+    "Hedra is connected but off by default. Confirm the shared OAuth connection, then set individual media permissions and budgets. Music, speech and effects have separate permissions. Video and music require a duration. Remote completion does not automatically download or play the output.",
+    "Hedraは接続済みですが初期状態では無効です。共有OAuth接続を確認し、個体の権限と予算を設定してください。音楽・音声・効果音は別の権限です。動画と音楽には長さの指定が必要です。リモート完了だけでは自動保存や再生は行いません。"
+  ],
+  [
+    "允許製作語音（公用聲音）",
+    "Allow speech generation (shared-library voices)",
+    "音声生成を許可（共有ライブラリの声）"
+  ],
+  [
+    "允許製作音效",
+    "Allow sound effect generation",
+    "効果音生成を許可"
+  ],
+  [
+    "自己的素材 → 保存工程 → 本地逐步組片 → 擷取畫面 → 核對與修改。新影音權限預設關閉；不會因開啟頁面而生成或啟動生活。",
+    "Own media → save project → assemble locally in steps → extract frames → review and revise. New media permissions default off. Opening this page neither generates media nor starts life.",
+    "自分の素材 → プロジェクト保存 → ローカルで段階的に編集 → フレーム抽出 → 確認・修正。新しい権限は初期状態で無効です。この画面を開くだけでは生成や生活を開始しません。"
+  ],
+  [
+    "本機處理最長30秒、1280×720、8鏡頭、8音軌；單檔8MB、歷代工具資料20MB。超過範圍會明示，保留原素材。",
+    "Local processing: up to 30 seconds, 1280×720, 8 clips and 8 audio tracks. Files up to 8 MB; tool history up to 20 MB. Limits are reported explicitly; original media is retained.",
+    "ローカル処理は最大30秒・1280×720・8クリップ・8音声トラックです。1ファイル8 MB、ツールの全履歴20 MBまで。上限超過は明示し、元の素材は保持します。"
+  ],
+  [
+    "目前可提供畫面給支援視覺的大腦。音量與靜音診斷不等於已聽懂對白或確認音樂聽感。",
+    "Frames can be supplied to a vision-capable brain. Volume and silence diagnostics do not establish understanding of dialogue or musical listening quality.",
+    "視覚対応の大脳へフレームを渡せます。音量や無音の検査は、台詞の理解や音楽の聴感確認を意味しません。"
+  ],
+  [
+    "本地影音權限已開啟；仍須有效生活才能處理工作。",
+    "Local media permission is enabled; processing still requires authorized life.",
+    "ローカル映像・音声の権限は有効です。処理には有効な生活許可も必要です。"
+  ],
+  [
+    "本地影音權限未開啟；查看既有成果不會擴權。",
+    "Local media permission is off; viewing saved outputs does not grant permission.",
+    "ローカル映像・音声の権限は無効です。保存済み成果の閲覧で権限は増えません。"
+  ],
+  [
+    "片長毫秒：",
+    "Duration in milliseconds: ",
+    "長さ（ミリ秒）："
+  ],
+  [
+    "閱讀作品工程與素材版本",
+    "Read project and media versions",
+    "作品プロジェクトと素材バージョンを読む"
+  ],
+  [
+    " · 步驟：",
+    " · Step: ",
+    "・手順："
+  ],
+  [
+    "閱讀技術檢查結果",
+    "Read technical inspection results",
+    "技術検査の結果を読む"
+  ],
+  [
+    "取消尚未執行的影音工作",
+    "Cancel pending media work",
+    "未実行の映像・音声作業を取り消す"
+  ],
+  [
+    "聲音內容核對：",
+    "Audio content review: ",
+    "音声内容の確認："
+  ],
+  [
+    "音樂模型",
+    "Music models",
+    "音楽モデル"
+  ],
+  [
+    "語音模型",
+    "Speech models",
+    "音声モデル"
+  ],
+  [
+    "音效模型",
+    "Sound effect models",
+    "効果音モデル"
+  ]
+]

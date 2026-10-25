@@ -1,0 +1,117 @@
+[
+  [
+    "聲音理解與比較",
+    "Audio understanding and comparison",
+    "音声理解と比較"
+  ],
+  [
+    "聲音轉錄與分析（另需Owner核對目的地）",
+    "Audio transcription and analysis (Owner destination approval required)",
+    "音声の文字起こしと分析（送信先のOwner確認が必要）"
+  ],
+  [
+    "本地聲音服務",
+    "Local audio service",
+    "ローカル音声サービス"
+  ],
+  [
+    "聲音接頭不會自行下載或啟動模型。上方專用服務須由Owner操作；轉錄不等於語氣或音樂理解。",
+    "The audio adapter never downloads or starts a model automatically. The dedicated service above is controlled by the Owner; transcription is not tone or music understanding.",
+    "音声アダプターはモデルを自動でダウンロード・起動しません。上の専用サービスはOwnerが操作します。文字起こしは語調や音楽の理解ではありません。"
+  ],
+  [
+    "啟用本地聲音接頭",
+    "Enable the local audio adapter",
+    "ローカル音声接続を有効にする"
+  ],
+  [
+    "獨立本地服務網址",
+    "Separate local service URL",
+    "独立したローカルサービスのURL"
+  ],
+  [
+    "服務已載入的模型名稱",
+    "Model loaded by the service",
+    "サービスに読み込まれたモデル名"
+  ],
+  [
+    "Whisper：只轉錄對白",
+    "Whisper: dialogue transcription only",
+    "Whisper：台詞の文字起こしのみ"
+  ],
+  [
+    "聲音分析服務：需另完成模型驗證",
+    "Audio analysis service: model verification still required",
+    "音声分析サービス：モデルの検証が別途必要"
+  ],
+  [
+    "保存本地聲音服務設定",
+    "Save local audio service settings",
+    "ローカル音声サービス設定を保存"
+  ],
+  [
+    "保存回應不一致，請重新核對。",
+    "The saved response differs. Check the settings again.",
+    "保存結果が一致しません。設定を再確認してください。"
+  ],
+  [
+    "放棄未保存的聲音設定",
+    "Discard unsaved audio settings",
+    "未保存の音声設定を破棄"
+  ],
+  [
+    "尚未保存：聲音服務設定仍是草稿。",
+    "Unsaved: audio service settings are still a draft.",
+    "未保存：音声サービス設定は下書きです。"
+  ],
+  [
+    "批准這份本地聲音分析",
+    "Approve this local audio analysis",
+    "このローカル音声分析を承認"
+  ],
+  [
+    "我同意指定音訊片段與分析回報交給所示本地服務及目前大腦",
+    "I consent to the specified audio clips and analysis being provided to the displayed local service and current brain",
+    "指定した音声区間と分析結果を、表示されたローカルサービスと現在の頭脳に提供することに同意します"
+  ],
+  [
+    "核對聲音分析內容與目的地",
+    "Review audio analysis content and destination",
+    "音声分析の内容と送信先を確認"
+  ],
+  [
+    "請重新核對這份聲音分析。",
+    "Review this audio analysis again.",
+    "この音声分析を再確認してください。"
+  ],
+  [
+    "取消尚未開始的聲音分析",
+    "Cancel audio analysis that has not started",
+    "未開始の音声分析を取り消す"
+  ],
+  [
+    "目前已生效：新增工具全部尚未開放。",
+    "Currently effective: all additional tools are disabled.",
+    "現在有効：追加ツールはすべて無効です。"
+  ],
+  [
+    "此確認只解除工具暫停，沒有重送原工作或驗證未知結果。",
+    "This confirmation only clears the tool hold. It does not resend the original request or verify an unknown result.",
+    "この確認はツールの保留を解除するだけです。元の要求を再送せず、不明な結果を検証したことにもなりません。"
+  ],
+  [
+    "我已確認本地聲音服務工作已結束",
+    "I have confirmed that the local audio service has finished its work",
+    "ローカル音声サービスの処理が終了したことを確認しました"
+  ],
+  [
+    "解除這項聲音服務暫停",
+    "Clear this audio service hold",
+    "この音声サービスの保留を解除"
+  ],
+  [
+    "請先確認本地服務已收尾。",
+    "Confirm that the local service has finished first.",
+    "先にローカルサービスの処理終了を確認してください。"
+  ]
+]

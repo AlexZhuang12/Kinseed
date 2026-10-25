@@ -1,3 +1,4 @@
+import {toolContent,RESOURCE_LIMITS} from '../brain/resource-budget.mjs';
 import {hubTools} from '../tools/hub-contract.mjs';
 // MCP stdio JSON-RPC transport. This fixed proxy has no Owner capability or filesystem API.
 import path from 'node:path';import readline from 'node:readline';import {argumentError} from './tool-guidance.mjs';import {workbenchTools} from './workbench-tools.mjs';
@@ -55,13 +56,13 @@ export async function handle(message){
    if(!definition||!hubAvailable&&hubTools.some(h=>h.name===name)||workbenchTools.some(w=>w.name===name)&&!workbenchAvailable||!extraCapabilities&&['browse_web','download_web','request_upload','consult_llm','reply_owner','send_owner'].includes(name))throw Error('UNKNOWN_TOOL');
    // Schema validation is authoritative in the broker, so refused calls are also audited.
    const response=await fetch(process.env.KINSEED_ENDPOINT+'/cycle/tool',{method:'POST',headers:{'Content-Type':'application/json',Authorization:'Bearer '+process.env.KINSEED_CYCLE_TOKEN},body:JSON.stringify({name,args}),signal:AbortSignal.timeout(hubTools.some(h=>h.name===name)?60000:name==='delegate_codex'?75000:name==='run_javascript'?15000:name==='consult_llm'?60000:name==='read_document'?15000:['search_web','browse_web','download_web'].includes(name)?35000:5000)});
-   const result=await response.json();if(response.ok&&result._mcp_image){const {_mcp_image,...meta}=result;return {content:[{type:'text',text:JSON.stringify(meta)},_mcp_image],isError:false};}return {content:[{type:'text',text:JSON.stringify(result)}],isError:!response.ok};
+   const result=await response.json();return toolContent(result,{ok:response.ok,tool:name});
  }
  throw Error('METHOD_NOT_FOUND');
 }
 if(process.argv[1]&&path.resolve(import.meta.filename).toLowerCase()===path.resolve(process.argv[1]).toLowerCase()) {
  readline.createInterface({input:process.stdin,crlfDelay:Infinity}).on('line',async line=>{
-  let m;try{if(line.length>(workbenchAvailable?400000:30000))throw Error('MESSAGE_LIMIT');m=JSON.parse(line);const result=await handle(m);if(result!==null)process.stdout.write(JSON.stringify({jsonrpc:'2.0',id:m.id,result})+'\n');}
+  let m;try{if(Buffer.byteLength(line)>(workbenchAvailable||hubAvailable?RESOURCE_LIMITS.request_bytes:30000))throw Error('MESSAGE_LIMIT：這次工具輸入超過大小限制，沒有執行；請分批建立或使用較小的明確內容。');m=JSON.parse(line);const result=await handle(m);if(result!==null)process.stdout.write(JSON.stringify({jsonrpc:'2.0',id:m.id,result})+'\n');}
   catch(e){if(m?.id!==undefined)process.stdout.write(JSON.stringify({jsonrpc:'2.0',id:m.id,error:{code:-32602,message:e.message}})+'\n');}
  });
 }

@@ -1,0 +1,12 @@
+[
+  [
+    "允許用自己的Hedra圖片作為參考續作",
+    "Allow own Hedra images as creative references",
+    "自分のHedra画像を参照素材として使用することを許可"
+  ],
+  [
+    "參考續作另有獨立權限，預設關閉。只引用自己已保存的Hedra圖片，不上傳Owner材料或本機檔案；仍需媒體權限、估價、生活及點數檢查。",
+    "Reference reuse has a separate permission, off by default. Only your own saved Hedra images are referenced; no Owner materials or local files are uploaded. Media permissions, estimates, life authority and credit checks still apply.",
+    "参照素材の再利用には個別の権限が必要で、初期状態は無効です。自分が保存したHedra画像のみを参照し、Ownerの資料やローカルファイルは送信しません。メディア権限・見積もり・生活の許可・ポイント確認は引き続き必要です。"
+  ]
+]

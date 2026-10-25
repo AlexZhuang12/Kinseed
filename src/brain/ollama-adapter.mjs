@@ -34,7 +34,7 @@ export function createOllamaAdapter(config,{base,cwd,evidenceDir,onEvent=()=>{},
   const cancel=reason=>{if(cancelReason)return;cancelReason=reason;try{emit({phase:'cancel_requested',reason,request_id:request.request_id});}catch{}if(!inferenceSettled)graceTimer=setTimeout(()=>abortFetch.abort(),settlementGraceMs);};
   const abort=()=>cancel('ABORTED');
   request.signal?.addEventListener('abort',abort,{once:true});
-  if(life){scope.task.cancel=()=>cancel('OWNER_OR_CONTROL_STOP');scope.task.kind='brain:ollama-local';}
+  if(life){scope.task.cancel=reason=>cancel(typeof reason==='string'&&reason?reason:'CONTROL_CANCEL_UNSPECIFIED');scope.task.kind='brain:ollama-local';}
   const ensureLive=()=>{if(cancelReason)throw new LocalBrainError('cancelled','本輪已取消。');if(Date.now()>=request.deadline){cancel('DEADLINE_EXCEEDED');throw new LocalBrainError('cancelled','本輪已到期。');}if(life)scope.controller.assertAllowed(scope.lease);};
   let processConfirmed=true;
   try{

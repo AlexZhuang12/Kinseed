@@ -1,0 +1,787 @@
+[
+  [
+    "目前操作的個體",
+    "Selected individual",
+    "操作する個体"
+  ],
+  [
+    "先選個體，再依需要準備工具、開放能力、交付材料及核對成果。",
+    "Select an individual, then prepare tools, grant capabilities, provide materials and review results.",
+    "個体を選び、ツールの準備、能力の許可、資料の提供、成果の確認へ進みます。"
+  ],
+  [
+    "使用總覽",
+    "Getting started",
+    "利用の全体像"
+  ],
+  [
+    "開始",
+    "Start",
+    "開始"
+  ],
+  [
+    "工具設定",
+    "Tool setup",
+    "ツール設定"
+  ],
+  [
+    "材料與成果",
+    "Materials and results",
+    "資料と成果"
+  ],
+  [
+    "Owner處理",
+    "Owner review",
+    "Ownerの確認"
+  ],
+  [
+    "工具操作導覽",
+    "Tool navigation",
+    "ツールの案内"
+  ],
+  [
+    "這次想完成什麼？",
+    "What would you like to do?",
+    "今回は何をしますか？"
+  ],
+  [
+    "查看不會啟動個體。連線、權限與生活安排分開保存。",
+    "Viewing does not start life. Connections, permissions and schedules are saved separately.",
+    "閲覧で個体は起動しません。接続、権限、生活予定は別々に保存します。"
+  ],
+  [
+    "準備工具",
+    "Prepare a tool",
+    "ツールを準備"
+  ],
+  [
+    "需要帳號或本地模型時，先確認連線與服務是否可用。",
+    "If a tool needs an account or local model, check its connection and service first.",
+    "アカウントやローカルモデルが必要な場合は、接続とサービスを先に確認します。"
+  ],
+  [
+    "查看連線設定",
+    "View connections",
+    "接続設定を見る"
+  ],
+  [
+    "開放能力",
+    "Grant capabilities",
+    "能力を許可"
+  ],
+  [
+    "選擇這個個體能使用的工具，保存後核對已生效狀態。",
+    "Choose tools for this individual, save, then verify the effective permissions.",
+    "この個体が使えるツールを選び、保存後に適用済みの状態を確認します。"
+  ],
+  [
+    "設定工具權限",
+    "Set tool permissions",
+    "ツール権限を設定"
+  ],
+  [
+    "交付材料",
+    "Provide materials",
+    "資料を渡す"
+  ],
+  [
+    "由你指定文字或檔案，確認可交給目前大腦分析。",
+    "Choose text or files and confirm consent for the current brain to analyze them.",
+    "文章やファイルを指定し、現在の大脳による分析に同意します。"
+  ],
+  [
+    "交付一批材料",
+    "Provide a batch",
+    "資料を一括で渡す"
+  ],
+  [
+    "閱讀與批准",
+    "Read and approve",
+    "閲覧と承認"
+  ],
+  [
+    "查看成果、音訊分析或待批准郵件，再決定下一步。",
+    "Review works, audio requests or pending mail before deciding what comes next.",
+    "作品、音声分析、承認待ちメールを確認し、次の行動を決めます。"
+  ],
+  [
+    "查看作品成果",
+    "View results",
+    "作品の成果を見る"
+  ],
+  [
+    "Gmail設定與寄信說明",
+    "Gmail setup and sending guide",
+    "Gmail設定と送信の説明"
+  ],
+  [
+    "本地聲音工具怎麼用",
+    "How to use local audio",
+    "ローカル音声ツールの使い方"
+  ],
+  [
+    "Hedra權限、點數與模型查詢",
+    "Hedra permissions, credits and models",
+    "Hedraの権限・ポイント・モデル照会"
+  ],
+  [
+    "這個個體可以使用哪些能力？",
+    "Which capabilities may this individual use?",
+    "この個体にどの能力を許可しますか？"
+  ],
+  [
+    "勾選是尚未保存的選擇。等目前工作收尾後即可保存，原每日生活安排保持不變。",
+    "Checks are unsaved choices. Save after current work settles; the existing daily schedule stays enabled.",
+    "チェックは未保存の選択です。現在の処理が完了したら保存でき、毎日の生活予定は維持されます。"
+  ],
+  [
+    "先看目前狀態",
+    "Check the current state",
+    "まず現在の状態を確認"
+  ],
+  [
+    "閱讀與研究",
+    "Reading and research",
+    "閲覧と調査"
+  ],
+  [
+    "創作與製作",
+    "Writing and making",
+    "創作と制作"
+  ],
+  [
+    "影音與聲音",
+    "Video and audio",
+    "映像と音声"
+  ],
+  [
+    "對外聯絡",
+    "External communication",
+    "外部への連絡"
+  ],
+  [
+    "只讀取你交付並同意分析的材料。",
+    "Reads only materials you provide with analysis consent.",
+    "渡して分析に同意した資料だけを読みます。"
+  ],
+  [
+    "閱讀圖片文字或內容；實際能力依目前大腦而定。",
+    "Reads image text or content; actual capability depends on the current brain.",
+    "画像の文字や内容を読みます。実際の能力は現在の大脳によります。"
+  ],
+  [
+    "查詢公開資料；仍受外網權限與流量限制。",
+    "Queries public data within web permissions and traffic limits.",
+    "外部ネットワーク権限と通信量の範囲内で公開情報を調べます。"
+  ],
+  [
+    "只操作個體的隔離工作區。",
+    "Works only inside the individual's isolated workspace.",
+    "個体の隔離作業領域だけを操作します。"
+  ],
+  [
+    "製作可下載的PDF、Word與Excel。",
+    "Creates downloadable PDF, Word and Excel files.",
+    "ダウンロード可能なPDF、Word、Excelを作成します。"
+  ],
+  [
+    "使用本機資源處理影音、字幕與作品檢查。",
+    "Uses local resources for media, subtitles and work checks.",
+    "本機の資源を使って映像音声、字幕、作品確認を処理します。"
+  ],
+  [
+    "另需本地服務、聲音連線及逐份音訊批准；搭配本地影音權限。",
+    "Also needs a local service, an audio connection, per-clip approval and local-media permission.",
+    "ローカルサービス、音声接続、音声ごとの承認、ローカル映像音声権限も必要です。"
+  ],
+  [
+    "只能提出草稿；每封寄出都要Owner另行批准。",
+    "Can propose drafts only; each send needs separate Owner approval.",
+    "下書きの提案だけを行います。送信には一通ずつOwnerの承認が必要です。"
+  ],
+  [
+    "需要查看生活安排？",
+    "Need to check life schedules?",
+    "生活予定を確認しますか？"
+  ],
+  [
+    "閱讀權限與每日生活的差別",
+    "How permissions differ from daily life",
+    "権限と毎日の生活の違い"
+  ],
+  [
+    "參考",
+    "Reference",
+    "参考"
+  ],
+  [
+    "Hedra：先連線，再開放能力與額度",
+    "Hedra: connect, then grant capabilities and budgets",
+    "Hedra：接続してから能力と上限を許可"
+  ],
+  [
+    "保存設定不會生成或扣點。共用連線與Owner保留額影響整份安裝，能力與上限只套用到所選個體。",
+    "Saving settings does not generate or spend credits. Shared connection and Owner reserve apply to this installation; capabilities and limits apply only to the selected individual.",
+    "設定保存で生成やポイント消費は行いません。共有接続とOwner予約額は環境全体、能力と上限は選択した個体だけに適用します。"
+  ],
+  [
+    "Hedra設定與模型查詢怎麼操作",
+    "Hedra setup and model lookup guide",
+    "Hedra設定とモデル照会の手順"
+  ],
+  [
+    "步驟1 · 整份安裝共用",
+    "Step 1 · Shared installation setting",
+    "手順1 · 環境全体の共有設定"
+  ],
+  [
+    "確認Hedra帳號連線",
+    "Check the Hedra account connection",
+    "Hedraアカウント接続を確認"
+  ],
+  [
+    "先讀回登入狀態與點數，再決定是否允許此安裝使用連線。",
+    "Read login status and credits before allowing this installation to use the connection.",
+    "ログイン状態とポイントを確認し、この環境での接続利用を許可するか決めます。"
+  ],
+  [
+    "步驟2 · 整份安裝共用",
+    "Step 2 · Shared installation setting",
+    "手順2 · 環境全体の共有設定"
+  ],
+  [
+    "保留Owner自己要用的點數",
+    "Reserve credits for the Owner",
+    "Ownerが使うポイントを確保"
+  ],
+  [
+    "這些點數留在Hedra，不給個體使用；不是訂閱日期或每月重設設定。",
+    "These credits remain in Hedra for the Owner, not individuals. This is not a subscription date or monthly reset setting.",
+    "このポイントはHedraに残し、個体には使わせません。購読日や毎月のリセット設定ではありません。"
+  ],
+  [
+    "步驟3 · 只影響所選個體",
+    "Step 3 · Selected individual only",
+    "手順3 · 選択した個体だけ"
+  ],
+  [
+    "選擇製作能力與使用上限",
+    "Choose creation capabilities and limits",
+    "制作能力と使用上限を選択"
+  ],
+  [
+    "不必先挑選模型。個體會在已開放的能力、支援範圍與點數上限內選用模型。",
+    "No model selection is required first. The individual chooses within permitted capabilities, connector support and credit limits.",
+    "最初にモデルを選ぶ必要はありません。個体は許可された能力、対応範囲、ポイント上限内で選びます。"
+  ],
+  [
+    "選看 · 不影響授權",
+    "Optional · Does not change permissions",
+    "参考 · 権限は変わりません"
+  ],
+  [
+    "查看模型與規格",
+    "Browse models and specifications",
+    "モデルと仕様を見る"
+  ],
+  [
+    "這是資料查詢，不是模型白名單。開放能力前不需要先查完目錄；查詢不會生成或改權限。",
+    "This is information lookup, not a model allowlist. It is optional before granting capabilities and never generates or changes permissions.",
+    "これは情報照会であり、モデルの許可一覧ではありません。能力許可の前に全一覧を調べる必要はなく、生成や権限変更は行いません。"
+  ],
+  [
+    "選擇要查看的媒體種類，查詢目前目錄。",
+    "Choose a media type and query its current catalog.",
+    "確認するメディアの種類を選び、現在の一覧を取得します。"
+  ],
+  [
+    "想了解單一模型時，從目錄選取或複製識別碼，再查規格。",
+    "For one model, choose or copy its ID from the catalog, then query its specification.",
+    "個別のモデルを確認するときは、一覧からIDを選ぶかコピーし、仕様を取得します。"
+  ],
+  [
+    "從查詢結果選擇模型",
+    "Choose a model from the query results",
+    "照会結果からモデルを選択"
+  ],
+  [
+    "查詢後可在此選擇模型",
+    "Choose a model here after querying",
+    "照会後にここでモデルを選択"
+  ],
+  [
+    "可供參考續作的已保存圖片",
+    "Saved images available as references",
+    "参照して続きを作れる保存画像"
+  ],
+  [
+    "只使用個體自己的Hedra圖片，仍需要參考續作權限及新工作的估價。",
+    "Uses only the individual's own Hedra images; reference permission and a new job quote are still required.",
+    "個体自身のHedra画像だけを使います。参照権限と新規処理の見積もりが必要です。"
+  ],
+  [
+    "已提交工作與保存成果",
+    "Submitted jobs and saved results",
+    "送信済み処理と保存成果"
+  ],
+  [
+    "查看原工作的結果，不會再生成一次。",
+    "View the original job result without generating again.",
+    "元の処理結果を表示し、再生成しません。"
+  ],
+  [
+    "外部連線：帳號與服務設定",
+    "Connections: accounts and services",
+    "外部接続：アカウントとサービス設定"
+  ],
+  [
+    "這裡準備工具連線；個體能否使用，仍由工具權限與生活安排決定。",
+    "Prepare tool connections here. Actual use still depends on tool permissions and life schedules.",
+    "ここでツールの接続を準備します。利用可否はツール権限と生活予定で決まります。"
+  ],
+  [
+    "Gmail · 整份安裝共用",
+    "Gmail · Shared installation setting",
+    "Gmail · 環境全体の共有設定"
+  ],
+  [
+    "連接自己的寄件帳號",
+    "Connect your sender account",
+    "自分の送信用アカウントを接続"
+  ],
+  [
+    "Kinseed只要求寄送郵件，不讀取既有信箱；每封仍要Owner核對批准。",
+    "Kinseed requests send-only access, does not read your mailbox, and requires Owner approval for each message.",
+    "Kinseedは送信権限だけを要求し、既存メールは読みません。一通ずつOwnerの確認と承認が必要です。"
+  ],
+  [
+    "第一次設定？教你到Google取得OAuth資料",
+    "First setup? Learn where to find Google OAuth details",
+    "初めての設定：Google OAuth情報の取得方法"
+  ],
+  [
+    "到Google Cloud準備Gmail API與桌面應用OAuth用戶端。",
+    "Prepare the Gmail API and a Desktop app OAuth client in Google Cloud.",
+    "Google CloudでGmail APIとデスクトップ用OAuthクライアントを準備します。"
+  ],
+  [
+    "將用戶端資料填入下方，保存後再登入授權。",
+    "Enter the client details below, save, then sign in to authorize.",
+    "以下にクライアント情報を入力し、保存してからログインして認可します。"
+  ],
+  [
+    "連線成功後，到待批准郵件核對草稿與附件。",
+    "After connecting, review drafts and attachments in pending mail.",
+    "接続後、承認待ちメールで下書きと添付を確認します。"
+  ],
+  [
+    "填入Google桌面應用用戶端資料",
+    "Enter Google Desktop app client details",
+    "Googleデスクトップ用クライアント情報を入力"
+  ],
+  [
+    "顯示／隱藏密鑰",
+    "Show / hide secret",
+    "シークレットを表示／非表示"
+  ],
+  [
+    "前往待批准郵件",
+    "Go to pending mail",
+    "承認待ちメールへ"
+  ],
+  [
+    "公開資料服務不需要額外帳號",
+    "Public data needs no extra account",
+    "公開情報サービスに追加アカウントは不要"
+  ],
+  [
+    "維基百科、Crossref與USGS已內建，只需開放公開資料與原外網權限，仍受網路預算限制。Crossref不保證全文。",
+    "Wikipedia, Crossref and USGS are built in. Public-data and web permissions and network budgets still apply. Crossref does not guarantee full text.",
+    "Wikipedia、Crossref、USGSは組み込み済みです。公開情報と外部ネットワーク権限、通信量の制限は必要です。Crossrefは全文を保証しません。"
+  ],
+  [
+    "尚未接入",
+    "Not connected yet",
+    "未接続"
+  ],
+  [
+    "雲端空間：目前不能連線",
+    "Cloud storage: not available yet",
+    "クラウド保存：現在は接続できません"
+  ],
+  [
+    "這是將來把材料或作品存到雲端資料夾的預留設定。目前未接入Google Drive、Dropbox或其他儲存服務，填入資料也不會開始同步。",
+    "These are reserved settings for future cloud storage. Google Drive, Dropbox and other storage providers are not integrated; entering details cannot start synchronization.",
+    "将来、資料や作品をクラウドに保存するための予約設定です。Google Drive、Dropboxなどは未接続で、入力しても同期は始まりません。"
+  ],
+  [
+    "雲端空間是什麼？目前可以做什麼？",
+    "What is cloud storage, and what works now?",
+    "クラウド保存とは？現在できることは？"
+  ],
+  [
+    "查看已保存的預留設定（不會連線）",
+    "View retained settings (does not connect)",
+    "保存済みの予約設定を見る（接続なし）"
+  ],
+  [
+    "Gmail：待Owner批准的郵件",
+    "Gmail: mail awaiting Owner approval",
+    "Gmail：Ownerの承認待ちメール"
+  ],
+  [
+    "與Gmail連線設定使用同一寄件服務。先連線，再核對每一封；沒有連線時保留草稿。",
+    "Uses the same sender service as Gmail setup. Connect, then review each message; drafts remain when disconnected.",
+    "Gmail接続設定と同じ送信サービスです。接続して一通ずつ確認します。未接続でも下書きは残ります。"
+  ],
+  [
+    "返回Gmail連線設定",
+    "Back to Gmail setup",
+    "Gmail接続設定に戻る"
+  ],
+  [
+    "查看Gmail操作說明",
+    "Read the Gmail guide",
+    "Gmail操作説明を見る"
+  ],
+  [
+    "聲音工具：把對白轉成文字",
+    "Audio tools: turn dialogue into text",
+    "音声ツール：会話を文字にする"
+  ],
+  [
+    "目前Whisper只做對白轉錄，不能判斷語氣、音樂或藝術品質。按順序準備服務與個體連線，再處理指定音訊。",
+    "Whisper currently transcribes dialogue, not delivery, music or artistic quality. Prepare the service and individual connection before processing selected audio.",
+    "Whisperは会話の文字起こしだけを行い、語調、音楽、芸術的品質は判断しません。サービスと個体の接続を準備してから指定音声を処理します。"
+  ],
+  [
+    "第一次使用？查看本地聲音工具操作說明",
+    "First use? Read the local audio guide",
+    "初めての利用：ローカル音声ツールの説明"
+  ],
+  [
+    "步驟1 · 本機服務，整份安裝共用",
+    "Step 1 · Local service shared by this installation",
+    "手順1 · 環境全体で共有するローカルサービス"
+  ],
+  [
+    "準備本機Whisper",
+    "Prepare local Whisper",
+    "本機のWhisperを準備"
+  ],
+  [
+    "先檢查狀態，不會載入模型。需要辨識時才啟動；停止這個服務不會取消個體生活。",
+    "Check status without loading. Start only when recognition is needed; stopping the service does not cancel life.",
+    "モデルを読み込まず状態を確認し、認識が必要なときに起動します。サービス停止で個体の生活は取り消しません。"
+  ],
+  [
+    "服務狀態與啟停",
+    "Service status and controls",
+    "サービス状態と起動・停止"
+  ],
+  [
+    "尚未檢查：先按檢查狀態，不會載入模型。",
+    "Not checked yet: check status first, without loading a model.",
+    "未確認です。まず状態を確認してください。モデルは読み込みません。"
+  ],
+  [
+    "首次設定或排查問題：檔案路徑與復原",
+    "First setup or troubleshooting: paths and recovery",
+    "初回設定と問題確認：パスと復旧"
+  ],
+  [
+    "查看技術狀態原文",
+    "View raw technical status",
+    "技術状態の原文を見る"
+  ],
+  [
+    "步驟2 · 只影響所選個體",
+    "Step 2 · Selected individual only",
+    "手順2 · 選択した個体だけ"
+  ],
+  [
+    "允許這個個體使用聲音工具",
+    "Allow this individual to use audio tools",
+    "この個体に音声ツールを許可"
+  ],
+  [
+    "先在工具權限開放本地影音與聲音，再啟用這個個體的聲音連線；服務啟動不代表權限已開。",
+    "Grant local-media and hearing permissions, then enable this individual's audio connection. Starting the service does not grant permissions.",
+    "ローカル映像音声と聴取権限を許可してから、この個体の音声接続を有効にします。サービス起動だけでは権限は付きません。"
+  ],
+  [
+    "前往工具權限",
+    "Go to tool permissions",
+    "ツール権限へ"
+  ],
+  [
+    "設定這個個體的服務連線",
+    "Configure this individual's service connection",
+    "この個体のサービス接続を設定"
+  ],
+  [
+    "服務網址從步驟1的就緒狀態取得；Whisper模型名稱可用whisper-base-b5454-managed，協定選Whisper。",
+    "Get the endpoint from step 1's ready status. Use whisper-base-b5454-managed as the model name and select the Whisper protocol.",
+    "手順1の準備完了状態からURLを取得します。モデル名はwhisper-base-b5454-managed、方式はWhisperを選びます。"
+  ],
+  [
+    "查看已保存連線的技術資料",
+    "View saved connection details",
+    "保存済み接続の技術情報を見る"
+  ],
+  [
+    "步驟3 · 每一份音訊分開批准",
+    "Step 3 · Approve each audio request separately",
+    "手順3 · 音声ごとに承認"
+  ],
+  [
+    "核對音訊與閱讀結果",
+    "Review audio requests and results",
+    "音声と結果を確認"
+  ],
+  [
+    "個體提出工作後，先看來源、片段、目的地與問題，再批准。結果不明不自動重送；原轉錄文字保留。",
+    "After a request, review source, segment, destination and question before approval. Uncertain results are not resent; original words are retained.",
+    "依頼後、元音声、区間、送信先、質問を確認して承認します。不明な結果は自動再送せず、元の転記文字を保持します。"
+  ],
+  [
+    "獨立預覽：只有合成資料。連線與模型狀態是示例，不寄信、不扣點、不啟動模型，也不改正式個體。",
+    "Independent preview with synthetic data only. Connections and model states are examples: no mail, credits, models or production individuals are affected.",
+    "合成データだけの独立プレビューです。接続とモデル状態は例であり、メール送信、ポイント消費、モデル起動、正式個体の変更は行いません。"
+  ],
+  [
+    "填入預覽用戶端示例",
+    "Fill preview client example",
+    "プレビュー用クライアント例を入力"
+  ],
+  [
+    "填入預覽檔案示例",
+    "Fill preview file example",
+    "プレビュー用ファイル例を入力"
+  ],
+  [
+    "已開放能力數：",
+    "Enabled capabilities: ",
+    "許可済み能力数："
+  ],
+  [
+    "每日安排已開啟",
+    "Daily schedule enabled",
+    "毎日の予定は有効です"
+  ],
+  [
+    "每日安排未開啟",
+    "Daily schedule not enabled",
+    "毎日の予定は無効です"
+  ],
+  [
+    "寄件帳號已連線；仍須逐封批准。",
+    "Sender connected; each message still requires approval.",
+    "送信アカウントは接続済みです。一通ごとの承認は必要です。"
+  ],
+  [
+    "寄件帳號尚未連線，可先查看草稿。",
+    "Sender not connected; drafts can still be viewed.",
+    "送信アカウントは未接続ですが、下書きは閲覧できます。"
+  ],
+  [
+    "這個個體的聲音連線已啟用。",
+    "This individual's audio connection is enabled.",
+    "この個体の音声接続は有効です。"
+  ],
+  [
+    "這個個體的聲音連線尚未啟用。",
+    "This individual's audio connection is not enabled.",
+    "この個体の音声接続は未有効です。"
+  ],
+  [
+    "聲音所需權限已開啟。",
+    "Required audio permissions are enabled.",
+    "音声に必要な権限は有効です。"
+  ],
+  [
+    "尚需開放本地影音與聲音權限。",
+    "Local-media and hearing permissions are still needed.",
+    "ローカル映像音声と聴取権限が必要です。"
+  ],
+  [
+    "連線已保存。",
+    "Connection saved.",
+    "接続は保存済みです。"
+  ],
+  [
+    "下一步：準備服務並保存個體連線。",
+    "Next: prepare the service and save the individual connection.",
+    "次にサービスを準備し、個体の接続を保存します。"
+  ],
+  [
+    "目前無法啟動，原生活與其他服務不變；請查看下方技術原因。",
+    "Cannot start now. Life and other services are unchanged; see technical details below.",
+    "現在は起動できません。元の生活と他のサービスは変わりません。下の技術情報を確認してください。"
+  ],
+  [
+    "Whisper目前停止，需要時可啟動。",
+    "Whisper is stopped; start it when needed.",
+    "Whisperは停止中です。必要なときに起動できます。"
+  ],
+  [
+    "Whisper已就緒，可以使用下方的固定服務網址。",
+    "Whisper is ready; use the fixed endpoint below.",
+    "Whisperは準備完了です。以下の固定URLを使えます。"
+  ],
+  [
+    "Whisper正在處理原工作；其他工作等待。",
+    "Whisper is processing the original job; other jobs wait.",
+    "Whisperは元の処理を実行中です。他の処理は待機します。"
+  ],
+  [
+    "正在收尾原工作，不接受新工作。",
+    "Finishing the original job; no new jobs accepted.",
+    "元の処理を終了中で、新しい処理は受け付けません。"
+  ],
+  [
+    "服務狀態待確認，請先查看說明。",
+    "Service state needs confirmation; read the guide first.",
+    "サービス状態の確認が必要です。まず説明を確認してください。"
+  ],
+  [
+    "正在載入Whisper。",
+    "Loading Whisper.",
+    "Whisperを読み込み中です。"
+  ],
+  [
+    "請查看技術狀態與操作說明。",
+    "Check technical status and the guide.",
+    "技術状態と操作説明を確認してください。"
+  ],
+  [
+    "預覽示例狀態，沒有啟動真實模型。",
+    "Preview example state; no real model was started.",
+    "プレビューの状態例です。実際のモデルは起動していません。"
+  ],
+  [
+    "查看預覽說明（不登入Google）",
+    "View preview guide (no Google sign-in)",
+    "プレビュー説明を見る（Googleログインなし）"
+  ],
+  [
+    "已批准，等待處理",
+    "Approved, waiting for processing",
+    "承認済み、処理待ち"
+  ],
+  [
+    "尚未送出",
+    "Not submitted",
+    "未送信"
+  ],
+  [
+    "正在準備音訊",
+    "Preparing audio",
+    "音声を準備中"
+  ],
+  [
+    "結果已保存",
+    "Result saved",
+    "結果は保存済み"
+  ],
+  [
+    "結果待核對，不重送",
+    "Result needs review; not resubmitted",
+    "結果の確認が必要です。再送しません"
+  ],
+  [
+    "已確認收尾，原結果仍未知",
+    "Cleanup confirmed; original result still unknown",
+    "終了を確認済みですが、元の結果は不明です"
+  ],
+  [
+    "尚未開始就已取消",
+    "Cancelled before starting",
+    "開始前に取消済み"
+  ],
+  [
+    "對白轉錄",
+    "Dialogue transcription",
+    "会話の文字起こし"
+  ],
+  [
+    "聲音分析",
+    "Audio analysis",
+    "音声分析"
+  ],
+  [
+    "請查看工作詳細狀態。",
+    "Check the job details.",
+    "処理の詳細を確認してください。"
+  ],
+  [
+    "合成預覽工作：只練習核對與批准，不會送出辨識。",
+    "Synthetic preview job: practice review and approval only; no recognition request is sent.",
+    "合成プレビュー処理です。確認と承認の練習だけで、認識要求は送信しません。"
+  ],
+  [
+    "查看這份工作的技術資料",
+    "View technical job details",
+    "この処理の技術情報を見る"
+  ],
+  [
+    "這次批准會交付什麼？",
+    "What will this approval deliver?",
+    "この承認で何を渡しますか？"
+  ],
+  [
+    "分析目的地",
+    "Analysis destination",
+    "分析の送信先"
+  ],
+  [
+    "分析問題",
+    "Analysis question",
+    "分析する質問"
+  ],
+  [
+    "音訊片段",
+    "Audio segments",
+    "音声区間"
+  ],
+  [
+    "批准只適用這份音訊、片段、目的地與目前大腦；變更後需要重新核對。",
+    "Approval applies only to this audio, segments, destination and current brain. Changes require a new review.",
+    "承認はこの音声、区間、送信先、現在の大脳にだけ適用されます。変更時は再確認が必要です。"
+  ],
+  [
+    "查看核對資料原文",
+    "View raw review data",
+    "確認データの原文を見る"
+  ],
+  [
+    "載入合成音訊請求（只練習核對）",
+    "Load synthetic audio request (review practice)",
+    "合成音声依頼を表示（確認の練習）"
+  ],
+  [
+    "帶入已核對的本機連線（尚未保存）",
+    "Use checked local connection (not saved)",
+    "確認済みローカル接続を入力（未保存）"
+  ],
+  [
+    "本機服務網址：",
+    "Local service URL: ",
+    "ローカルサービスURL："
+  ],
+  [
+    "尚未保存：Owner保留點數仍是草稿。",
+    "Unsaved Owner reserve draft.",
+    "Owner予約ポイントは未保存の下書きです。"
+  ],
+  [
+    "Owner保留點數已保存。",
+    "Owner reserve saved.",
+    "Owner予約ポイントを保存しました。"
+  ],
+  [
+    "目前已保存的Owner保留點數：",
+    "Saved Owner reserve: ",
+    "保存済みOwner予約ポイント："
+  ]
+]

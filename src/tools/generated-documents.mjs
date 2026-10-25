@@ -9,9 +9,9 @@ export function ownGeneratedDocument(e,id,{owner=false}={}){
  if(!bytes.length||bytes.length!==x.bytes||bytes.length>DOCUMENT_VIEW_LIMITS.bytes||hash(bytes)!==x.sha256)throw Error('文件內容校驗不一致，已拒絕讀取；原文件保留。');return {item:x,bytes};
 }
 let rendererAsset;const asset=()=>rendererAsset??=fs.readFileSync(path.resolve(import.meta.dirname,'../../node_modules/unpdf/dist/pdfjs.mjs'));
-export async function renderPdfPage(bytes,pageNumber,{signal,timeout=DOCUMENT_VIEW_LIMITS.timeout}={}){
+export async function renderPdfPage(bytes,pageNumber,{signal,timeout=DOCUMENT_VIEW_LIMITS.timeout,deadline=Infinity,now=Date.now,validate}={}){
  if(!Number.isInteger(pageNumber)||pageNumber<1||pageNumber>DOCUMENT_VIEW_LIMITS.pages)throw Error('頁碼必須是1至200的整數。');if(bytes.length>DOCUMENT_VIEW_LIMITS.bytes||bytes.subarray(0,5).toString()!=='%PDF-')throw Error('目前頁面預覽只接受已保存PDF。');
- const moduleBytes=asset();return browserJob(async(page,context)=>{
+ const queuedAt=Date.now();let startedAt=queuedAt;const options={signal,timeout,queue:true,waitTimeout:Math.max(1,Math.min(15000,deadline-now()-timeout-500)),beforeStart:()=>{validate?.();const left=deadline-now()-500;if(left<=0)throw Error('PDF預覽已超過本輪期限，未開始轉換。');options.timeout=Math.max(1,Math.min(timeout,left));startedAt=Date.now();}};const moduleBytes=asset();const result=await browserJob(async(page,context)=>{
   await context.unroute('**/*');await context.route('**/*',route=>route.request().url()==='https://kinseed-pdf.invalid/pdfjs.mjs'&&route.request().method()==='GET'?route.fulfill({body:moduleBytes,contentType:'text/javascript',headers:{'Access-Control-Allow-Origin':'*'}}):route.abort());
   await page.goto('about:blank');const result=await page.evaluate(async({data,pageNumber,limits})=>{
    const lib=await import('https://kinseed-pdf.invalid/pdfjs.mjs');const input=Uint8Array.from(atob(data),c=>c.charCodeAt(0));let pdf;
@@ -20,15 +20,14 @@ export async function renderPdfPage(bytes,pageNumber,{signal,timeout=DOCUMENT_VI
     const png=canvas.toDataURL('image/png').split(',')[1];if(png.length>Math.ceil(limits.image_bytes/3)*4)throw Error('頁面影像超過目前安全大小，未回傳縮減或虛構內容。');return {data:png,width:canvas.width,height:canvas.height,page:pageNumber,pages:pdf.numPages};
    }finally{await pdf?.cleanup?.();}
   },{data:bytes.toString('base64'),pageNumber,limits:DOCUMENT_VIEW_LIMITS});return result;
- },{signal,timeout});
+ },options);return {...result,queue_wait_ms:Math.max(0,startedAt-queuedAt)};
 }
 export async function generatedPage(e,b,{owner=false,lease}={}){
  const found=ownGeneratedDocument(e,b.document_id,{owner});if(!found)throw Error('找不到這個個體自己製作的文件，不能讀取其他個體或本機檔案。');if(found.item.format!=='pdf')throw Error('目前實際頁面預覽支援PDF；Word及Excel可讀取內容或下載檢視。');
  const page=b.page??1;if(!Number.isInteger(page)||page<1||page>DOCUMENT_VIEW_LIMITS.pages)throw Error('頁碼必須是1至200的整數。');
- if(!owner){e.platform.toolHub.require(e,'vision');if(e.platform.brainBinding?.adapter!=='codex-cli')throw Error('目前大腦接頭尚未驗證影像輸入，沒有假裝看懂；仍可閱讀文字或由Owner預覽。');e.assertAllowed(lease);}
- e.documentPageCache??=new Map();const key=found.item.id+':'+found.item.sha256+':'+page;let result=e.documentPageCache.get(key);
- if(!result){const abort=new AbortController();e.externalRequests??=new Set();e.externalRequests.add(abort);try{result=await renderPdfPage(found.bytes,page,{signal:abort.signal,timeout:lease?Math.max(1,Math.min(DOCUMENT_VIEW_LIMITS.timeout,lease.deadline-e.now()-500)):DOCUMENT_VIEW_LIMITS.timeout});}finally{e.externalRequests.delete(abort);}while([...e.documentPageCache.values()].reduce((n,x)=>n+x.data.length,0)+result.data.length>DOCUMENT_VIEW_LIMITS.cache_bytes&&e.documentPageCache.size)e.documentPageCache.delete(e.documentPageCache.keys().next().value);e.documentPageCache.set(key,result);}
- if(!owner){e.assertAllowed(lease);e.platform.toolHub.require(e,'documents');e.platform.toolHub.require(e,'vision');}
- const meta={document_id:found.item.id,version:found.item.version,name:found.item.name,source_sha256:found.item.sha256,image_sha256:hash(Buffer.from(result.data,'base64')),page:result.page,pages:result.pages,width:result.width,height:result.height,mime:'image/png',basis:'rendered_saved_pdf',notice:'這是已保存PDF的實際頁面影像，不是重製文件，也不代表模型已完成排版核對。'};
+ const validate=()=>{if(!owner){e.assertAllowed(lease);e.platform.toolHub.require(e,'documents');e.platform.toolHub.require(e,'vision');if(e.platform.brainBinding?.adapter!=='codex-cli')throw Error('目前大腦接頭尚未驗證影像輸入，沒有假裝看懂；仍可閱讀文字或由Owner預覽。');}const current=ownGeneratedDocument(e,b.document_id,{owner});if(!current||current.item.version!==found.item.version||current.item.sha256!==found.item.sha256)throw Error('排隊期間文件版本已改變，沒有用其他版本替換預覽。');};validate();
+ e.documentPageCache??=new Map();e.documentPageInflight??=new Map();const key=found.item.id+':'+found.item.sha256+':'+page,flightKey=key+':'+(owner?'owner':lease.cycle_id);let result=e.documentPageCache.get(key),cache_hit=!!result,shared_render=false;
+ if(!result){let pending=e.documentPageInflight.get(flightKey);shared_render=!!pending;if(!pending){const abort=new AbortController();e.externalRequests??=new Set();e.externalRequests.add(abort);pending=(async()=>{try{const rendered=await renderPdfPage(found.bytes,page,{signal:abort.signal,timeout:DOCUMENT_VIEW_LIMITS.timeout,deadline:lease?.deadline??Infinity,now:()=>e.now(),validate});validate();while([...e.documentPageCache.values()].reduce((n,x)=>n+x.data.length,0)+rendered.data.length>DOCUMENT_VIEW_LIMITS.cache_bytes&&e.documentPageCache.size)e.documentPageCache.delete(e.documentPageCache.keys().next().value);e.documentPageCache.set(key,rendered);return rendered;}finally{e.externalRequests.delete(abort);e.documentPageInflight.delete(flightKey);}})();e.documentPageInflight.set(flightKey,pending);}result=await pending;}
+ validate();const meta={document_id:found.item.id,version:found.item.version,name:found.item.name,source_sha256:found.item.sha256,image_sha256:hash(Buffer.from(result.data,'base64')),page:result.page,pages:result.pages,width:result.width,height:result.height,mime:'image/png',basis:'rendered_saved_pdf',preview_queue:{cache_hit,shared_render,wait_ms:cache_hit?0:result.queue_wait_ms},notice:'這是已保存PDF的實際頁面影像，不是重製文件，也不代表模型已完成排版核對。'};
  if(!owner)e.store.tx(()=>{e.assertAllowed(lease);e.store.event('hub.document_page_provided',meta,'mcp',lease);});return owner?{...meta,data_base64:result.data}:{...meta,_mcp_image:{type:'image',mimeType:'image/png',data:result.data}};
 }

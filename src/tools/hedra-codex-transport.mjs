@@ -3,8 +3,8 @@ import readline from 'node:readline';
 import {resolveCodex} from '../runtime-binary.mjs';
 import {safeEnv} from '../brain/codex-policy.mjs';
 export function hedraFailure(value){const raw=typeof value==='string'?value:JSON.stringify(value??{});if(/401|unauthenticated|unauthorized|invalid_token|token.expired|login.required/i.test(raw))return Error('Hedra登入授權已失效或被拒絕，請重新連接；目前不能讀取或提交。');if(/402|insufficient.credits|insufficient.balance|subscription.expired|subscription.required/i.test(raw))return Error('Hedra拒絕使用：點數或帳戶使用資格不足，請到Hedra核對餘額與訂閱狀態。');if(/403|forbidden|permission.denied/i.test(raw))return Error('Hedra拒絕存取，請核對帳戶、工作區與服務權限；無法單憑此回應判定訂閱是否過期。');if(/429|rate.limit/i.test(raw))return Error('Hedra暫時限制請求頻率，請稍後再試；不會自動重新生成。');if(/503|502|504|service.unavailable|timeout|timed.out|network|fetch failed/i.test(raw))return Error('暫時無法連上Hedra或服務逾時，請稍後重新檢查；不是已確認的訂閱失效。');return Error('Hedra未提供可核對的成功結果；請檢查連線狀態，不能據此判定訂閱是否過期。');}
-const READ=new Set(['get_balance','list_workspaces','estimate','get_model','get_generations']);
-const WRITE=new Set(['generate_image','generate_video','generate_music']);
+const READ=new Set(['get_balance','list_workspaces','estimate','get_model','get_generations','list_models','list_voices']);
+const WRITE=new Set(['generate_image','generate_video','generate_music','generate_speech','generate_sound_effects']);
 // No model turns, credential export, arbitrary tools or account management.
 export async function hedraSession(fn,{binary=resolveCodex(),timeout=35000,signal,paid=false}={}){
  if(signal?.aborted)throw Error('Hedra連線已取消。');
