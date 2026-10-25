@@ -1,6 +1,6 @@
 # General-installation parity — U00–U05
 
-Candidate: 1.14.0-preview.1. Delivery is independent of the operational controller. This document does not authorize publication or changing existing individuals.
+Source version: 1.14.0-preview.1. Delivery is independent of the operational controller. This document does not authorize publication or changing existing individuals.
 
 | Work | Delivered implementation | Acceptance |
 |---|---|---|
@@ -15,4 +15,4 @@ Candidate: 1.14.0-preview.1. Delivery is independent of the operational controll
 
 No independent human/native-language or second physical-machine validation is claimed. Cross-install synchronization, a multi-installation shared quota coordinator and unnamed cloud-storage services remain outside this implementation. User-owned accounts, models, permissions and budgets are intentionally not distributed.
 
-Owner authorized the clean GitHub source update and hosted CI on 2026-10-26. Publication checks are in progress. Updating the operational controller remains a separate decision.
+Owner authorized the clean GitHub source update and hosted CI on 2026-10-26. The source update and hosted Windows verification are complete; see the version acceptance record. Updating the operational controller remains a separate decision.

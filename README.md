@@ -1,6 +1,6 @@
 # Kinseed
 
-Current source version: **1.14.0-preview.1**. General installation now includes manual/daily reports and archive visibility. Start with [the complete installation guide](docs/PUBLIC_INSTALL_1_14.md), [capability matrix](docs/PUBLIC_CAPABILITY_MATRIX.md), and [upgrade recovery](docs/UPGRADE_RECOVERY.md). This source update is undergoing GitHub verification; no new tag or Release is implied.
+Current source version: **1.14.0-preview.1**. General installation now includes manual/daily reports and archive visibility. Start with [the complete installation guide](docs/PUBLIC_INSTALL_1_14.md), [capability matrix](docs/PUBLIC_CAPABILITY_MATRIX.md), and [upgrade recovery](docs/UPGRADE_RECOVERY.md). The source update passed [hosted Windows verification](https://github.com/AlexZhuang12/Kinseed/actions/runs/40239268158). No new tag or Release is implied.
 
 Windows preview **1.13.0-preview.1**. An Owner-controlled environment for individual identity, memory, daily activity and scoped tools, using Codex or a local-model adapter.
 
