@@ -1,6 +1,10 @@
-## 1.14.0-preview.1 — local candidate
+## 1.14.1-preview.1 — public-reading privacy guard
 
-General-installation parity, reports, archive visibility, time zones and four-language report controls; source-only upgrade/rollback. Not yet published. See docs/RELEASE_1_14_0_PREVIEW.md.
+Fix false positives caused by treating generic URL fragments and common short topic words in peer memory as private disclosures. Preserve strict Owner-message/material checks, credentials/local-path checks, private-network isolation and original permissions/budgets. Add synthetic browser/broker/continuation tests. See docs/RELEASE_1_14_1_PREVIEW.md.
+
+## 1.14.0-preview.1 — published source
+
+General-installation parity, reports, archive visibility, time zones and four-language report controls; source-only upgrade/rollback. Published on main with hosted Windows verification; no tag or Release implied. See docs/RELEASE_1_14_0_PREVIEW.md.
 
 # 1.13.0-local.1 — deferred independent consultation
 

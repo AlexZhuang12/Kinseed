@@ -1,3 +1,4 @@
+import {LOCAL_VERSION} from '../src/v1_2/local-version.mjs';
 import fs from 'node:fs';import path from 'node:path';import {spawn} from 'node:child_process';import {chromium} from 'playwright-core';
 import {exportSource} from './export-source.mjs';import {installDependencies} from './setup-core.mjs';import {serveSetup} from './setup.mjs';
 import {startDevelopment} from './development.mjs';import {id} from '../src/v1_2/store.mjs';
@@ -15,7 +16,7 @@ try{
  const output=fs.openSync(path.join(ev,'clone-cli.log'),'w');child=spawn(process.execPath,['scripts/development.mjs','start'],{cwd:root,windowsHide:true,stdio:['ignore',output,output]});fs.closeSync(output);const session=path.join(root,'.private/development/session.json');await until(()=>fs.existsSync(session));const s=JSON.parse(fs.readFileSync(session));
  const get=async route=>{const r=await fetch(s.endpoint+route,{headers:{Authorization:'Bearer '+s.token}});if(!r.ok)throw Error('CLONE_API '+r.status);return r.json();};
  const post=async(route,body)=>{const r=await fetch(s.endpoint+route,{method:'POST',headers:{Authorization:'Bearer '+s.token,'Content-Type':'application/json'},body:JSON.stringify(body)});if(!r.ok)throw Error('CLONE_API '+r.status);return r.json();};
- const status=await get('/owner/status');check('exported_cli_general_mode',status.engineering===false);check('exported_cli_current_version',status.version==='1.14.0-preview.1');check('exported_cli_report_service',status.local_unification.reports_enabled===true);check('new_install_empty_and_stopped',status.global.stopped&&status.individuals.length===0);
+ const status=await get('/owner/status');check('exported_cli_general_mode',status.engineering===false);check('exported_cli_current_version',status.version===LOCAL_VERSION);check('exported_cli_report_service',status.local_unification.reports_enabled===true);check('new_install_empty_and_stopped',status.global.stopped&&status.individuals.length===0);
  await post('/owner/create',{individual_id:'synthetic-ui-owner',name:'Synthetic UI Owner',test_only:false});
  for(const locale of ['zh-Hant','zh-Hans','en','ja']){
   await page.goto(s.endpoint+'/reports-view?lang='+locale+'#'+s.token);await page.waitForFunction(()=>document.getElementById('reportBrain').textContent.includes('codex-cli'));

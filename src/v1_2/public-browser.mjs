@@ -1,3 +1,4 @@
+import {privateContextMatch} from './outbound-context.mjs';
 import fs from 'node:fs';
 import dns from 'node:dns/promises';
 import https from 'node:https';
@@ -11,7 +12,7 @@ export function publicURL(raw){let u;try{u=new URL(raw);}catch{throw Error('請�
 // This reduces accidental disclosures; arbitrary transformed private prose cannot be perfectly classified.
 export function outboundGuard(raw,protectedTexts=[]){let text=String(raw);for(let i=0;i<3;i++){try{text=decodeURIComponent(text);}catch{break;}}const representations=[text,...(text.match(/[A-Za-z0-9+/_-]{20,}={0,2}/g)??[]).map(x=>{try{return Buffer.from(x,'base64').toString('utf8');}catch{return '';}})];
  if(representations.some(v=>/(?:(?:^|[\s"'=])[a-z]:[\\/]|file:\/\/|bearer\s+[\w.-]{12,}|(?:api[_-]?key|access[_-]?token|password|secret)\s*[=:]\s*[^&\s]{4,})/i.test(v)))throw Error('查詢含有本機路徑或敏感憑證，未送往外站。請改用一般公開問題。');
- for(const source of protectedTexts){const original=typeof source==='string'?source:source?.text,min=typeof source==='string'?8:source?.minMatch??16;if(typeof original!=='string')continue;const s=original.replace(/\s+/g,'');if(s.length<min)continue;for(let i=0;i<=s.length-min;i+=4)if(representations.some(v=>v.replace(/\s+/g,'').includes(s.slice(i,i+min))))throw Error('查詢包含尚未獲准對外透露的私人內容，未送出。請改寫為不含私人資料的問題。');}
+ for(const source of protectedTexts){const original=typeof source==='string'?source:source?.text,min=typeof source==='string'?8:source?.minMatch??16;if(typeof original!=='string')continue;if(source?.match==='private-context'){if(privateContextMatch(original,representations,min))throw Error('查詢包含尚未獲准對外透露的私人內容，未送出。請改寫為不含私人資料的問題。');continue;}const s=original.replace(/\s+/g,'');if(s.length<min)continue;for(let i=0;i<=s.length-min;i+=4)if(representations.some(v=>v.replace(/\s+/g,'').includes(s.slice(i,i+min))))throw Error('查詢包含尚未獲准對外透露的私人內容，未送出。請改寫為不含私人資料的問題。');}
 }
 export function protectedData(platform){const texts=[];for(const e of platform.individuals.values())for(const r of e.store.db.prepare("SELECT body FROM events WHERE json_extract(body,'$.type')='owner.message'").all())texts.push(JSON.parse(r.body).result.text);return texts;}
 export function browserExecutable(){const candidates=[process.env.KINSEED_BROWSER_EXECUTABLE,'C:/Program Files/Google/Chrome/Application/chrome.exe','C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'];const found=candidates.find(x=>x&&fs.existsSync(x));if(!found)throw Error('找不到隔離瀏覽器，請安裝 Chrome 或 Edge；個體其他能力仍可使用。');return found;}
