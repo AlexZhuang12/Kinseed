@@ -1,9 +1,17 @@
-# 1.15.0 CLI 相容性驗收
+# 1.15.0 AI-executed acceptance
 
-狀態：本機候選驗收進行中，GitHub 自動驗收待執行。
+The publication source passed hosted Windows locked installation, all 929 Node tests, 37 browser scripts / 934 checks, source boundaries, secret-shaped source review, deterministic four-language builds and clean source export.
 
-變更：精確支援 0.164.0-alpha.11.1；保留 0.163.0-alpha.10.2。安裝、接頭、預檢統一版本來源。可保存本安裝專用的四檔 CLI，SHA256 校驗、缺檔與被修改時拒用，桌面快取消失時可繼續使用獨立副本。日常生活、原權限及付費工具限制不放寬。
+Hosted run: [Windows synthetic verification 40349509631](https://github.com/AlexZhuang12/Kinseed/actions/runs/40349509631). Tested code commit: 624c18fe76169bc58a5de37413ffd3f1f613a0a7. A documentation-only follow-up records results; tested code is unchanged. A hosted Windows runner is virtual, not a second physical computer.
 
-真實新版 CLI 已用合成個體核對工具委派、MCP、跨輪記憶、非同步諮詢、報告呼叫與取消收尾；Hedra 只讀餘額成功，未生成或扣點。舊版本為既有驗收範圍，本輪沒有重新下載或聲稱重跑舊版本真實模型。
+On the development machine, the complete initial code suite passed 929 Node tests and 37 browser scripts / 926 checks. After the PDF-read fix, the unchanged 33 scripts / 862 checks were retained and all four changed PDF scripts / 72 checks were rerun, giving 37 / 934 without summing overlapping runs. The final hosted run independently reran the complete set. Publication installation additionally passed 24 targeted Node tests and 48 browser installation checks. Clean locked dependency installation, unified source-only rollback/reupgrade with retained new history, and backup verification passed on the same physical machine.
 
-AI 執行驗收；未進行本輪第三方真人、母語審閱、第二台實體 Windows 或實際中斷 Desktop 更新測試。固定副本與控制器程序能否承受宿主強制終止分開說明。
+Real CLI 0.164.0-alpha.11.1 was exercised using synthetic individuals for controlled delegation/MCP, memory across three rounds, asynchronous consultation retrieval, report-purpose text inference and cancellation/confirmed local exit. Hedra was checked read-only; no paid generation or email was part of engineering acceptance. A separately exported clean source actually downloaded the fixed official CLI artifact, verified SHA512, installed with scripts disabled, and resolved its own private binary. Existing credentials were not copied. The previously qualified CLI 0.163.0-alpha.10.2 remains supported, but was not newly downloaded or rerun in this acceptance.
+
+The fixed four-file CLI bundle was matched to installed Desktop resources on the development machine; synthetic tests verify deletion of the original source, corruption, missing files, extra files, links, exact versions and cache invalidation. Checksums establish copy consistency, not independent vendor-signature certification. No actual Desktop/service interruption test or guarantee of controller survival under host termination is claimed.
+
+Diagnosis retained the first 928/929 local run: its only failure expected an obsolete 1.14 version; the test now checks the exact candidate version and the full 929 suite was rerun. Incomplete tests stalled in a restricted execution environment were retained and rerun as the normal Windows user without weakening product isolation.
+
+The first hosted run [40346505251](https://github.com/AlexZhuang12/Kinseed/actions/runs/40346505251) passed all Node tests but failed PDF-page UI waiting. Logs showed browser cleanup longer than the viewer HTTP request window. Only PDF-page read waiting is now bounded at 120 seconds; ordinary requests remain 10 seconds and backend rendering/queue/concurrency/life limits remain unchanged. A synthetic second-page response delayed by 11 seconds verifies waiting without resubmission, with real pixels, previous-page cache, original-document and neighbor isolation checks retained. Raw operational evidence remains private.
+
+AI project self-acceptance only. No independent human, native-language or second physical Windows acceptance is claimed. No personal identities, credentials, runtime, model weights or private evidence are distributed.
