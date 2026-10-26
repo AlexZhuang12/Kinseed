@@ -1,12 +1,12 @@
 # Kinseed
 
-Current source version: **1.14.1-preview.1**. General installation now includes manual/daily reports and archive visibility. Start with [the complete installation guide](docs/PUBLIC_INSTALL_1_14.md), [capability matrix](docs/PUBLIC_CAPABILITY_MATRIX.md), and [upgrade recovery](docs/UPGRADE_RECOVERY.md). The 1.14.1 source passed [hosted Windows verification](https://github.com/AlexZhuang12/Kinseed/actions/runs/40279206742). No new tag or Release is implied.
+Current source version: **1.15.0-preview.1**. General installation now includes manual/daily reports and archive visibility. Start with [the complete installation guide](docs/PUBLIC_INSTALL_1_14.md), [capability matrix](docs/PUBLIC_CAPABILITY_MATRIX.md), and [upgrade recovery](docs/UPGRADE_RECOVERY.md). The 1.15.0 source is undergoing hosted Windows verification. No new tag or Release is implied.
 
 Windows preview. An Owner-controlled environment for individual identity, memory, daily activity and scoped tools, using Codex or a local-model adapter.
 
 Use the [English guide](docs/USER_GUIDE.en.md), [繁體中文](docs/USER_GUIDE.zh-Hant.md), [简体中文](docs/USER_GUIDE.zh-Hans.md) or [日本語](docs/USER_GUIDE.ja.md). On Windows with Node 24.19.x, run the included first-setup CMD after cloning. It installs locked dependencies with install scripts disabled, helps select a brain and prepare tools, and starts your own empty private runtime. Models and logins are yours. No private individual data is included.
 
-See [version notes](docs/RELEASE_1_14_1_PREVIEW.md), [daily consent and recovery](docs/LIFE_AUTHORITY_AND_RECOVERY.md), [acceptance policy](docs/AI_ACCEPTANCE_POLICY.md), [compatibility](docs/COMPATIBILITY.md) and [security reporting](SECURITY.md). This is a preview. Model adapters do not imply full-life qualification of every model.
+See [version notes](docs/RELEASE_1_15_0_PREVIEW.md), [daily consent and recovery](docs/LIFE_AUTHORITY_AND_RECOVERY.md), [acceptance policy](docs/AI_ACCEPTANCE_POLICY.md), [compatibility](docs/COMPATIBILITY.md) and [security reporting](SECURITY.md). This is a preview. Model adapters do not imply full-life qualification of every model.
 
 Apache-2.0 applies to original code; third-party notices remain applicable.
 

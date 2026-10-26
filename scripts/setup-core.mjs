@@ -1,9 +1,10 @@
+import {CODEX_VERSION} from '../src/codex-versions.mjs';
 // No third-party imports: first-run setup works before npm ci.
 import {validTimezone} from '../src/timezone.mjs';
 import fs from 'node:fs';import path from 'node:path';import {createHash,randomUUID} from 'node:crypto';import {spawn,spawnSync} from 'node:child_process';
 import {loadEnvironment,noLinks,APP_ROOT} from './environment.mjs';import {brainSettings,DEFAULT_BRAIN,localEndpoint} from '../src/brain/contract.mjs';import {brainPreflight} from '../src/brain/preflight.mjs';import {localJSON} from '../src/brain/local-http.mjs';import {resolveCodex,npmBinaryCandidates} from '../src/runtime-binary.mjs';
 import {downloadCLI} from './cli-download.mjs';
-export const CLI_VERSION='0.163.0-alpha.10.2';
+export const CLI_VERSION=CODEX_VERSION;
 export const digest=x=>createHash('sha256').update(x).digest('hex');
 export function nodeSupported(v=process.versions.node){const [major,minor,patch]=v.split('.').map(Number);return major===24&&(minor>19||minor===19&&patch>=0);}
 export function configRevision(root){const file=path.join(root,'config/development.local.json');noLinks(root,file);return fs.existsSync(file)?digest(fs.readFileSync(file)):'default-'+digest(fs.readFileSync(path.join(root,'config/development.example.json')));}

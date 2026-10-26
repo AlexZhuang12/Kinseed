@@ -1,3 +1,4 @@
+import {LOCAL_VERSION} from '../src/v1_2/local-version.mjs';
 import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import path from 'node:path';
 import {APP_ROOT,loadEnvironment} from '../scripts/environment.mjs';import {saveChoice,configRevision,draftFromConfig} from '../scripts/setup-core.mjs';
 import {startDevelopment,readSession} from '../scripts/development.mjs';import {Reports} from '../src/v1_2/reports.mjs';
@@ -14,7 +15,7 @@ test('UP01 real setup saves a general installation; own authenticated product ro
  const env=await configured();let now=Date.parse('2026-10-26T14:00:00Z'),modelCalls=0,lifeCalls=0;
  const options={clock:()=>now,preflight:async()=>({ok:true}),reportModel:async p=>{modelCalls++;return syntheticReport(p);},runnerFactory:e=>async args=>{lifeCalls++;await e.tool(args.token,'commit_cycle',{expected_version:e.store.get('a').version,memory:['Synthetic acceptance memory'],plan:[],result:'Synthetic acceptance result',decision:'wait',wait_ms:60000,request_id:id()});return {ok:true,local_exit_confirmed:true};}};
  let app=await startDevelopment(env,options);try{
- const status=(await readSession(env)).status;assert.equal(status.engineering,false);assert.equal(status.local_unification.reports_enabled,true);assert.match(status.version,/1\.14\./);
+ const status=(await readSession(env)).status;assert.equal(status.engineering,false);assert.equal(status.local_unification.reports_enabled,true);assert.equal(status.version,LOCAL_VERSION);
  assert.equal((await fetch(app.endpoint+'/reports')).status,401);assert.equal((await fetch(app.endpoint+'/reports',{headers:{Authorization:'Bearer '+app.ownerToken,Origin:'https://foreign.invalid'}})).status,403);
  await api(app,'/owner/create',{individual_id:'synthetic-public-user',name:'Synthetic public user',test_only:false});
  const answers=emptyAnswers();answers[0].status='custom';answers[0].text='Synthetic general-mode acceptance only.';await api(app,'/owner/import',compile({package_id:'synthetic-public-package',title:'Synthetic',test_only:false,answers}));

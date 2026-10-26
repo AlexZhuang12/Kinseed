@@ -1,5 +1,6 @@
+import {CODEX_VERSION} from '../src/codex-versions.mjs';
 import fs from 'node:fs';import path from 'node:path';import https from 'node:https';import {createHash} from 'node:crypto';import {noLinks} from './environment.mjs';
-export const CLI_DOWNLOAD_VERSION='0.163.0-alpha.10.2';
+export const CLI_DOWNLOAD_VERSION=CODEX_VERSION;
 const origin='https://registry.npmjs.org',maximum=512*1024*1024;
 function response(url,{headers={},timeout=60000}={}){return new Promise((resolve,reject)=>{const r=https.get(url,{headers,agent:false,signal:AbortSignal.timeout(timeout)},resolve);r.on('error',reject);});}
 async function json(url){const r=await response(url,{timeout:15000});if(r.statusCode!==200){r.destroy();throw Error('官方版本資訊暫時無法取得，尚未下載或執行程式。');}const chunks=[];let bytes=0;for await(const b of r){bytes+=b.length;if(bytes>1000000){r.destroy();throw Error('版本資訊過大，未採用。');}chunks.push(b);}return JSON.parse(Buffer.concat(chunks).toString('utf8'));}

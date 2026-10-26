@@ -1,3 +1,7 @@
+## 1.15.0-preview.1 — validated Codex CLI update
+
+Qualify CLI 0.164.0-alpha.11.1, keep the previous validated version, unify installer/runtime version checks, add a private SHA-verified CLI bundle and report actual preflight state. Original consent, tool boundaries and quotas remain. See docs/RELEASE_1_15_0_PREVIEW.md.
+
 ## 1.14.1-preview.1 — public-reading privacy guard
 
 Fix false positives caused by treating generic URL fragments and common short topic words in peer memory as private disclosures. Preserve strict Owner-message/material checks, credentials/local-path checks, private-network isolation and original permissions/budgets. Add synthetic browser/broker/continuation tests. See docs/RELEASE_1_14_1_PREVIEW.md.

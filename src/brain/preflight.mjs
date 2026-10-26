@@ -1,5 +1,5 @@
 import {spawnSync} from 'node:child_process';
-import {resolveCodex} from '../runtime-binary.mjs';
+import {resolveCodexRuntime} from '../runtime-binary.mjs';
 import {safeEnv} from './codex-policy.mjs';
 import {descriptor} from './contract.mjs';
 import {inspectLocalModel} from './local-http.mjs';
@@ -15,5 +15,5 @@ export function codexLoginProblem(r){
 }
 export async function brainPreflight(config){const brain=descriptor(config),result={ok:false,brain,checked_at:new Date().toISOString(),inference_access:'not_yet_verified'};if(!brain.enabled)return {...result,error:'大腦接頭未啟用；開發資料保留，不會開始生活。'};
  if(config.adapter==='ollama-local'){try{const model=await inspectLocalModel(config);return {...result,ok:true,local_model:model,message:'本機模型協定預檢通過；真實推理、容量與工具可靠度尚待實測。'};}catch(e){return {...result,error:'本地模型尚未就緒：'+e.message};}}
- try{if(process.platform!=='win32'||Number(process.versions.node.split('.')[0])!==24)throw Error('需要Windows與Node.js 24。');const binary=resolveCodex(),r=spawnSync(binary,['login','status'],{env:safeEnv(),encoding:'utf8',windowsHide:true,timeout:10000,stdio:['ignore','pipe','pipe']});const problem=codexLoginProblem(r);if(problem)throw Error(problem);return {...result,ok:true,cli_version:'0.163.0-alpha.10.2',authentication:'existing ChatGPT login',message:'接頭與登入預檢通過；即時模型容量仍以實際工作結果為準。'};}catch(e){return {...result,error:'Codex接頭預檢未通過：'+e.message};}
+ try{if(process.platform!=='win32'||Number(process.versions.node.split('.')[0])!==24)throw Error('需要Windows與Node.js 24。');const runtime=resolveCodexRuntime(),r=spawnSync(runtime.binary,['login','status'],{env:safeEnv(),encoding:'utf8',windowsHide:true,timeout:10000,stdio:['ignore','pipe','pipe']});const problem=codexLoginProblem(r);if(problem)throw Error(problem);return {...result,ok:true,cli_version:runtime.version,cli_origin:runtime.origin,cli_integrity:runtime.integrity,authentication:'existing ChatGPT login',message:'接頭與登入預檢通過；即時模型容量仍以實際工作結果為準。'};}catch(e){return {...result,error:'Codex接頭預檢未通過：'+e.message};}
 }

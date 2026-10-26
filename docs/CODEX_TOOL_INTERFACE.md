@@ -1,6 +1,6 @@
 # 受控 Codex／MCP 工具接口（獨立 Windows 候選）
 
-此接口讓任何符合大腦契約的接頭，透過 `delegate_codex` 委派一件作品工作。Codex作為另外的工具執行者，不接替個體身份，也不提交個體記憶。不是官方舊版 Codex MCP server；本版沿用已驗證 CLI 0.163.0-alpha.10.2，執行固定的 Kinseed MCP 代理。
+此接口讓任何符合大腦契約的接頭，透過 `delegate_codex` 委派一件作品工作。Codex作為另外的工具執行者，不接替個體身份，也不提交個體記憶。不是官方舊版 Codex MCP server；本版沿用已驗證 CLI 0.164.0-alpha.11.1（亦保留已驗證的0.163.0-alpha.10.2），執行固定的 Kinseed MCP 代理。
 
 ## Owner 操作
 
