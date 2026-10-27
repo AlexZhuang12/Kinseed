@@ -21,7 +21,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   publish:
-    if: github.ref == 'refs/heads/main' && github.repository == 'AlexZhuang12/Kinseed'
+    if: github.ref == 'refs/heads/main' && github.repository == 'AlexZhuang12/Kinseed' && github.actor == github.repository_owner
     runs-on: windows-latest
     timeout-minutes: 10
     permissions:

@@ -15,7 +15,7 @@ Kinseed currently ships **Windows previews**, not a stable production promise. G
 2. Each main push runs Windows locked installation, Node tests, source/boundary checks, four-language build, browser journeys and source export. Failure produces no ready draft. PRs cannot run the write-enabled draft job.
 3. That exact CI commit builds one source ZIP with its lockfile and five fixed assets. The ZIP is read back against its manifest, and Git blob hashes bind every distributed source file to the actual commit. Raw acceptance logs are not assets.
 4. After verification, the least-privilege draft job prepares or updates only its managed **unpublished** draft. Stale main runs skip; already-published versions are never overwritten. Bump the version for the next delivery. Unexpected Owner-created drafts or assets are not deleted automatically.
-5. Owner reviews the draft tag, **full source SHA**, scope and attachments. Only an explicit Owner-triggered publish action may publish; passing CI alone is not publication authorization.
+5. Owner reviews the draft tag, **full source SHA**, scope and attachments. Only an explicit repository-Owner-triggered publish action may publish; passing CI alone is not publication authorization.
 6. Publishing downloads and verifies the actual draft assets again, checks source blobs, successful main-push CI, tag SHA and immutability, then publishes once. A published/unknown outcome is inspected, not blindly repeated.
 7. Verify anonymously after publication: tag resolution, version, attachment SHA256, archive manifest and download instructions. An invalid release is disclosed and superseded by a new version; immutable attachments are not silently repaired.
 
@@ -41,3 +41,5 @@ Use [the download guide](DOWNLOADS.md). The current preview channel uses the Rel
 - [Releases API](https://docs.github.com/en/rest/releases/releases)
 
 繁中：main供開發；一般使用者從已發布的預覽版下載。驗收通過只自動建立草稿，Owner每次核對特定SHA與附件後才發布。發布後不換附件、不移標籤，修正另發新版。不能將預覽版假裝穩定版，也不能把來源發布當作替使用者更新控制器或恢復生活的授權。
+
+Publishing workflow checks the repository Owner actor. If additional maintainers are granted repository write access in the future, review GitHub environment/reviewer and repository role protections before delegating publishing; workflow checks do not remove permissions granted directly through GitHub roles.
