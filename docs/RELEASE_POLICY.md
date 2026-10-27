@@ -15,7 +15,7 @@ Kinseed currently ships **Windows previews**, not a stable production promise. G
 2. Each main push runs Windows locked installation, Node tests, a current locked-dependency advisory check, source/boundary checks, four-language build, browser journeys and source export. Failure produces no ready draft. PRs cannot run the write-enabled draft job.
 3. That exact CI commit builds one source ZIP with its lockfile and five fixed assets. The ZIP is read back against its manifest, and Git blob hashes bind every distributed source file to the actual commit. Raw acceptance logs are not assets.
 4. After verification, the least-privilege draft job prepares or updates only its managed **unpublished** draft. Stale main runs skip; already-published versions are never overwritten. Bump the version for the next delivery. Unexpected Owner-created drafts or assets are not deleted automatically.
-5. Owner reviews the draft tag, **full source SHA**, scope and attachments. Only an explicit repository-Owner-triggered publish action may publish; passing CI alone is not publication authorization.
+5. Owner reviews the draft tag, **full source SHA**, scope and attachments. Only an explicit repository-Owner invocation of the local publish gate may publish; passing CI alone is not publication authorization.
 6. Publishing downloads and verifies the actual draft assets again, checks source blobs, successful main-push CI, tag SHA and immutability, then publishes once. A published/unknown outcome is inspected, not blindly repeated.
 7. Verify anonymously after publication: tag resolution, version, attachment SHA256, archive manifest and download instructions. An invalid release is disclosed and superseded by a new version; immutable attachments are not silently repaired.
 
@@ -23,7 +23,9 @@ The draft already stores assets persistently. Workflow artifacts are temporary (
 
 ## Owner publishing operation
 
-Use GitHub Actions → **Owner publish verified release** → Run workflow on main. Enter the exact draft tag, the full source SHA from `VERIFICATION.json`, and `PUBLISH`. This publishes the already-reviewed bytes; it does not rebuild them. Local maintainers can use the same `release-github.mjs publish` gate after explicit Owner authorization.
+Optionally use GitHub Actions → **Owner review verified release** → Run workflow on main. Enter the exact draft tag, full source SHA from `VERIFICATION.json`, and `REVIEW`. This verifies but never publishes.
+
+After Owner authorization, run the local Owner CLI gate: `node scripts/release-github.mjs publish tag=vVERSION sha=FULL_SHA confirm=PUBLISH`. Codex can perform this exact operation when explicitly authorized. It downloads/rechecks already-reviewed bytes, checks the successful CI and immutable setting, and publishes without rebuilding. A normal Actions token lacks the Administration-read permission needed for the immutability preflight; no long-lived privileged token is added to Actions.
 
 Release notes must describe changes since the previous published release, supported OS/Node/CLI, setup and upgrades, known limitations, exact CI source and AI acceptance. Human/native-language/second-machine checks not performed remain `NOT_RUN`; no model or paid-service test is invented. AI acceptance is project self-acceptance, not independent certification.
 
@@ -42,6 +44,6 @@ Use [the download guide](DOWNLOADS.md). The current preview channel uses the Rel
 
 繁中：main供開發；一般使用者從已發布的預覽版下載。驗收通過只自動建立草稿，Owner每次核對特定SHA與附件後才發布。發布後不換附件、不移標籤，修正另發新版。不能將預覽版假裝穩定版，也不能把來源發布當作替使用者更新控制器或恢復生活的授權。
 
-Publishing workflow checks the repository Owner actor. If additional maintainers are granted repository write access in the future, review GitHub environment/reviewer and repository role protections before delegating publishing; workflow checks do not remove permissions granted directly through GitHub roles.
+The review workflow and local publish gate check the repository Owner actor. If additional maintainers are granted repository write access in the future, review GitHub environment/reviewer and repository role protections before delegating publishing; workflow checks do not remove permissions granted directly through GitHub roles.
 
 The advisory check fails closed on known reported vulnerabilities or unavailable/malformed results; it never runs audit fix. A reviewed dependency change is a separate versioned change, not a silent release-time update.

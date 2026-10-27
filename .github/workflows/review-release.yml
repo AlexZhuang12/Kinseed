@@ -1,4 +1,4 @@
-name: Owner publish verified release
+name: Owner review verified release
 on:
   workflow_dispatch:
     inputs:
@@ -11,7 +11,7 @@ on:
         required: true
         type: string
       confirmation:
-        description: 'Type PUBLISH to authorize these exact draft assets'
+        description: 'Type REVIEW to verify the exact draft without publishing'
         required: true
         type: string
 permissions:
@@ -25,7 +25,7 @@ jobs:
     runs-on: windows-latest
     timeout-minutes: 10
     permissions:
-      contents: write
+      contents: read
       actions: read
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -36,11 +36,11 @@ jobs:
           node-version: 24.19.0
           package-manager-cache: false
       - run: npm ci --ignore-scripts --no-audit --no-fund
-      - name: Verify exact draft and publish
+      - name: Verify exact draft without publishing
         env:
           GH_TOKEN: ${{ github.token }}
           RELEASE_TAG: ${{ inputs.tag }}
           SOURCE_SHA: ${{ inputs.source_sha }}
           OWNER_CONFIRMATION: ${{ inputs.confirmation }}
         shell: pwsh
-        run: node scripts/release-github.mjs publish "tag=$env:RELEASE_TAG" "sha=$env:SOURCE_SHA" "confirm=$env:OWNER_CONFIRMATION"
+        run: node scripts/release-github.mjs review "tag=$env:RELEASE_TAG" "sha=$env:SOURCE_SHA" "confirm=$env:OWNER_CONFIRMATION"
