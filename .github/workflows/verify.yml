@@ -23,6 +23,12 @@ jobs:
           node-version: 24.19.0
           package-manager-cache: false
       - run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Current locked dependency advisory check
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force .private | Out-Null
+          npm audit --package-lock-only --omit=dev --ignore-scripts --json > .private/release-audit.json
+          exit $LASTEXITCODE
       - name: Node synthetic acceptance
         shell: pwsh
         run: |
