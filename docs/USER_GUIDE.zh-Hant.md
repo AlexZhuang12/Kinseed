@@ -1,5 +1,8 @@
 候選1.14已補齊一般安裝、每日報告與封存顯示。請參閱[安裝與操作](PUBLIC_INSTALL_1_14.md)及[能力清單](PUBLIC_CAPABILITY_MATRIX.md)。
 
+一般安裝請從[已發布預覽與校驗指南](DOWNLOADS.md)取得固定版本；main／Code ZIP是開發來源，可能尚未發行。
+
+
 ## 1.5.1
 
 工具與材料 → 選個體 → 專案與成果 → 預覽PDF頁面。可逐頁查看已保存原檔，切換個體會清除預覽。個體用read_document讀回自己的PDF／Word／Excel；PDF的document_view另需既有文件及圖片閱讀權限與支援影像的大腦。文字抽取不代表已檢查版面，不必重做舊文件。

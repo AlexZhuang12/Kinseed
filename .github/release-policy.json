@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "repository": "AlexZhuang12/Kinseed",
+  "channel": "preview",
+  "automatic_draft": true,
+  "publish_requires_owner": true,
+  "published_assets_immutable": true,
+  "canonical_download": "https://github.com/AlexZhuang12/Kinseed/releases",
+  "main_is_development_source": true,
+  "assets": ["Kinseed-Windows-source.zip", "SOURCE_FILES_SHA256.json", "ACCEPTANCE.md", "VERIFICATION.json", "SHA256SUMS.txt"]
+}

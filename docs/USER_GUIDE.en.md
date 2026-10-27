@@ -1,5 +1,8 @@
 Candidate 1.14 adds the complete general installation, daily reports and archive visibility. See [installation](PUBLIC_INSTALL_1_14.md) and [capabilities](PUBLIC_CAPABILITY_MATRIX.md).
 
+For a fixed installation, use the [newest published preview and checksum guide](DOWNLOADS.md). Main / Code ZIP is development source and may be ahead.
+
+
 ## 1.5.1
 
 Tools and materials → select the individual → Projects and outputs → Preview PDF pages. This renders saved bytes without recreating the document. Switching individuals clears the preview. Individuals use read_document for their own generated PDF, Word and Excel files. document_view additionally requires existing document and vision permissions and a verified image-capable adapter. Extracted text does not prove layout review. Existing documents need no migration.

@@ -1,7 +1,9 @@
 name: Windows synthetic verification
 on:
   push:
+    branches: [main]
   pull_request:
+    branches: [main]
   workflow_dispatch:
 permissions:
   contents: read
@@ -21,7 +23,12 @@ jobs:
           node-version: 24.19.0
           package-manager-cache: false
       - run: npm ci --ignore-scripts --no-audit --no-fund
-      - run: npm test
+      - name: Node synthetic acceptance
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force .private | Out-Null
+          npm test 2>&1 | Tee-Object .private/release-node.log
+          exit $LASTEXITCODE
       - run: npm run boundary:check
       - run: npm run release:check
       - run: npm run ui:check
@@ -29,7 +36,48 @@ jobs:
         shell: pwsh
         run: |
           Get-Item "C:/Program Files/Google/Chrome/Application/chrome.exe" | Select-Object -ExpandProperty VersionInfo | Select-Object ProductVersion, FileVersion
-      - run: npm run test:ui
+      - name: Browser synthetic acceptance
+        shell: pwsh
+        run: |
+          npm run test:ui 2>&1 | Tee-Object .private/release-ui.log
+          exit $LASTEXITCODE
         env:
           DEBUG: pw:browser
       - run: npm run source:export
+      - name: Build and verify release candidate
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main' && github.repository == 'AlexZhuang12/Kinseed'
+        shell: pwsh
+        run: node scripts/release-bundle.mjs build "sha=$env:GITHUB_SHA" "run=https://github.com/$env:GITHUB_REPOSITORY/actions/runs/$env:GITHUB_RUN_ID"
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main' && github.repository == 'AlexZhuang12/Kinseed'
+        with:
+          name: release-candidate-${{ github.sha }}
+          path: .private/release-candidate/*
+          if-no-files-found: error
+          retention-days: 30
+          include-hidden-files: true
+  draft:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && github.repository == 'AlexZhuang12/Kinseed'
+    needs: verify
+    runs-on: windows-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24.19.0
+          package-manager-cache: false
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: release-candidate-${{ github.sha }}
+          path: .private/release-candidate
+      - name: Prepare draft only, never publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/release-github.mjs draft "dir=.private/release-candidate"

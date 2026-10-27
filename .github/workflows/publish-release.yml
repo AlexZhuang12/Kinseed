@@ -1,0 +1,46 @@
+name: Owner publish verified release
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Exact draft tag, for example v1.15.0-preview.1'
+        required: true
+        type: string
+      source_sha:
+        description: 'Full 40-character verified source SHA from draft VERIFICATION.json'
+        required: true
+        type: string
+      confirmation:
+        description: 'Type PUBLISH to authorize these exact draft assets'
+        required: true
+        type: string
+permissions:
+  contents: read
+concurrency:
+  group: owner-publish-release
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main' && github.repository == 'AlexZhuang12/Kinseed'
+    runs-on: windows-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24.19.0
+          package-manager-cache: false
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Verify exact draft and publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ inputs.tag }}
+          SOURCE_SHA: ${{ inputs.source_sha }}
+          OWNER_CONFIRMATION: ${{ inputs.confirmation }}
+        shell: pwsh
+        run: node scripts/release-github.mjs publish "tag=$env:RELEASE_TAG" "sha=$env:SOURCE_SHA" "confirm=$env:OWNER_CONFIRMATION"

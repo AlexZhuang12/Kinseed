@@ -1,5 +1,8 @@
 # General installation: 1.14 preview
 
+Start with [published version downloads and checksums](DOWNLOADS.md). Use one release tag consistently; main is development source.
+
+
 This preview source supplies the general installation flow, daily life, reports and archive visibility using each installation's own data and accounts.
 
 ## First use

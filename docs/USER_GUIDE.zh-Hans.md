@@ -1,5 +1,8 @@
 候选1.14已补齐一般安装、每日报告与归档显示。请参阅[安装与操作](PUBLIC_INSTALL_1_14.md)及[能力清单](PUBLIC_CAPABILITY_MATRIX.md)。
 
+普通安装请从[已发布预览与校验指南](DOWNLOADS.md)取得固定版本；main／Code ZIP是开发来源，可能尚未发行。
+
+
 ## 1.5.1
 
 工具与材料 → 选个体 → 项目与成果 → 预览PDF页面。可逐页查看已保存原文件，切换个体会清除预览。个体用read_document读回自己的PDF／Word／Excel；PDF的document_view另需已有文件及图片阅读权限与支持图像的大脑。文字提取不代表已检查版面，不必重做旧文件。

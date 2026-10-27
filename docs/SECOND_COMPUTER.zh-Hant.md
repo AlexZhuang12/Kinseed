@@ -9,7 +9,7 @@
 - 使用Windows x64；Node.js需要24.19.0以上的24系列版本，其他主版本目前不接受。安裝Node後重新開啟終端機。
 - 安裝Chrome；保留Windows原有沙箱與安全機制。實際OS、安全元件、記憶體與磁碟仍需在該機檢查；型號本身不能證明相容。
 - Codex雲端大腦不需要先下載Whisper、Ollama或大型本地模型。影音、本地轉錄及大型套件屬額外需求，依資源另行開啟。
-- 若要clone，先安裝Git。也可以在[GitHub主分支](https://github.com/AlexZhuang12/Kinseed/tree/main)按Code → Download ZIP再解壓。舊Release附件不一定等於最新main來源。
+- 一般安裝先從[固定版本下載指南](DOWNLOADS.md)取得最新已發布預覽及同版校驗資料。若要clone開發來源才需Git；main的Code ZIP不等於固定發行，可能含未發布更新。
 
 ## 兩種帳號方式共用的步驟
 
