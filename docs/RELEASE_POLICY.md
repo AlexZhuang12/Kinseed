@@ -23,7 +23,7 @@ The draft already stores assets persistently. Workflow artifacts are temporary (
 
 ## Owner publishing operation
 
-Optionally use GitHub Actions → **Owner review verified release** → Run workflow on main. Enter the exact draft tag, full source SHA from `VERIFICATION.json`, and `REVIEW`. This verifies but never publishes.
+Owner may first run the non-publishing local review gate: `node scripts/release-github.mjs review tag=vVERSION sha=FULL_SHA confirm=REVIEW`. It checks the actual draft assets, source tree and successful CI without publishing. Ordinary read-only Actions tokens cannot list unpublished drafts, so this project does not add a redundant privileged review workflow.
 
 After Owner authorization, run the local Owner CLI gate: `node scripts/release-github.mjs publish tag=vVERSION sha=FULL_SHA confirm=PUBLISH`. Codex can perform this exact operation when explicitly authorized. It downloads/rechecks already-reviewed bytes, checks the successful CI and immutable setting, and publishes without rebuilding. A normal Actions token lacks the Administration-read permission needed for the immutability preflight; no long-lived privileged token is added to Actions.
 
@@ -44,6 +44,6 @@ Use [the download guide](DOWNLOADS.md). The current preview channel uses the Rel
 
 繁中：main供開發；一般使用者從已發布的預覽版下載。驗收通過只自動建立草稿，Owner每次核對特定SHA與附件後才發布。發布後不換附件、不移標籤，修正另發新版。不能將預覽版假裝穩定版，也不能把來源發布當作替使用者更新控制器或恢復生活的授權。
 
-The review workflow and local publish gate check the repository Owner actor. If additional maintainers are granted repository write access in the future, review GitHub environment/reviewer and repository role protections before delegating publishing; workflow checks do not remove permissions granted directly through GitHub roles.
+The local review/publish gate checks the repository Owner actor. If additional maintainers are granted repository write access in the future, review GitHub environment/reviewer and repository role protections before delegating publishing; workflow checks do not remove permissions granted directly through GitHub roles.
 
 The advisory check fails closed on known reported vulnerabilities or unavailable/malformed results; it never runs audit fix. A reviewed dependency change is a separate versioned change, not a silent release-time update.
