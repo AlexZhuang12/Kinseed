@@ -456,6 +456,16 @@ globalThis.kinseedArrangeToolHub=function(c){
  target.onchange=()=>run(async()=>{try{sessionStorage.setItem('kinseed-tool-selected-v1',target.value);}catch{}docClose.onclick();mailReview.replaceChildren();preview.hidden=true;readout.textContent='';});reload.onclick=()=>run(()=>{});document.addEventListener('kinseed-control-render',()=>{targets();if(!page.hidden&&!pending)run(()=>{});});journey=globalThis.kinseedArrangeToolHub({page,target,reload,notice,bar,sections,buttons,permissions,permissionBadges,permissionSaved,permissionDraft,permissionBlocker,permissionError,savePermissions,discardPermissions,managePermissions,connectionEnabled,connectionRisk,connectionSaved,connectionDraftState,hedraKinds,hedraLimit,hedraSingle,hedraSaved,hedraState,hedraBudget,reserveDraftState,reserveInput,inspectResult,inspectButton,catalogKind,modelInput,catalogText,referenceList,ws,wsZip,wsModel,wsState,wsRecover,audioEnabled,audioEndpoint,audioModel,audioProtocol,audioSaved,audioSave,audioDiscard,audioJobs,cloudService,cloudFolder,cloudRead,cloudWrite,cloudState,client:clientId,secret:clientSecret,oauthLink,gmailState,mailList,mailReview,audioDirty:()=>audioDirty,jump:key=>{tab=key;paintTabs();refreshHub().catch(e=>notice.textContent=e.message);}});targets();paintTabs();
 })();
 
+// Read-only candidate diagnostics. It never changes an adapter or life authorization.
+(()=>{
+ const box=el('section');box.id='appServerCandidate';box.hidden=true;
+ const heading=el('h3',"接头运行状态"),name=el('p','Codex app-server'),notice=el('p'),help=el('p',"更换接头前，请先等待工作收尾并停止这份控制台；身份、记忆与每日安排不会因选择接头而改写。");notice.id='appServerCandidateNotice';notice.setAttribute('role','status');
+ const update=el('button',"更新接头状态");update.id='appServerCandidateRefresh';const details=el('details'),debug=el('pre');details.append(el('summary',"高端：背景工作与进程"),debug);const readiness=el('p',"登录检查与工作准备分开核对；准备失败保留每日安排。");readiness.id='appServerReadinessNotice';box.append(heading,name,notice,readiness,help,update,details);pageMap.home.append(box);
+ function paint(){const r=status?.app_server;box.hidden=!r;if(!r)return;notice.textContent=r.synthetic?"使用合成替身，没有连接真实模型。":r.production_binding?"已接回原生活与工作计次；登录状态与个体授权分开核对。":r.real_inference_authorized?"真实调用仍受本次授权与额度限制；不会自动切换接头。":"未授权真实调用，已保留设置；不会切换到其他接头。";debug.textContent=pretty({runtime:r,background:status?.background_jobs??null});}
+ update.onclick=async()=>{update.disabled=true;try{await refresh();debug.textContent=pretty(await api('app-server/status'));}catch(e){notice.textContent=e.message;}finally{update.disabled=false;}};
+ const before=refresh;refresh=async function(...args){const result=await before(...args);paint();return result;};document.addEventListener('kinseed-control-render',paint);paint();
+})();
+
 /* Visual revision 02. Presentation only: no requests, storage, permission or life actions. */
 (()=>{
  const style=document.createElement('style');style.id='kinseed-rose-theme';

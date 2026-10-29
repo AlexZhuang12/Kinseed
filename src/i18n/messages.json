@@ -12350,6 +12350,60 @@
       "src/v1_2/network-ui.js"
     ]
   },
+  "m_a8ea8f70ddea3859": {
+    "source": "接頭執行狀態",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_0bb2a131f6a47f58": {
+    "source": "更換接頭前，請先等待工作收尾並停止這份控制台；身份、記憶與每日安排不會因選擇接頭而改寫。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_7370372744853969": {
+    "source": "更新接頭狀態",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_3b5be00b93905381": {
+    "source": "進階：背景工作與程序",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_a44946728667cdc7": {
+    "source": "登入檢查與工作準備分開核對；準備失敗保留每日安排。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_a87ab7bfdcb28f14": {
+    "source": "使用合成替身，沒有連接真實模型。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_074adb8bc4a3e83d": {
+    "source": "已接回原生活與工作計次；登入狀態與個體授權分開核對。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_978ca11bbf84d83a": {
+    "source": "真實呼叫仍受本次授權與額度限制；不會自動切換接頭。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
+  "m_1fcae1b1458babdd": {
+    "source": "未授權真實呼叫，已保留設定；不會切換到其他接頭。",
+    "files": [
+      "src/v1_2/network-ui.js"
+    ]
+  },
   "m_df5d8c67e34bde7d": {
     "source": "Kinseed｜初次設定",
     "files": [
@@ -12544,6 +12598,18 @@
   },
   "m_af8f5393893a9539": {
     "source": "只連接你選定的本機服務；不安裝模型、不自動更換或改用雲端。",
+    "files": [
+      "scripts/setup.html"
+    ]
+  },
+  "m_57add0a782b3485c": {
+    "source": "Codex app-server（獨立候選）",
+    "files": [
+      "scripts/setup.html"
+    ]
+  },
+  "m_6e56aeafbb0bded4": {
+    "source": "這是獨立候選。尚未授權真實提交時只保存選擇，不會呼叫模型或改用exec；不影響正式控制台。",
     "files": [
       "scripts/setup.html"
     ]
@@ -14149,6 +14215,12 @@
   },
   "m_2c830d3d6df1b49d": {
     "source": "自己的控制台已啟動。新個體仍需批准、出生與生活授權；既有個體只依原每日授權及目前條件運作，不會因啟動而新增授權。",
+    "files": [
+      "report/setup display catalog"
+    ]
+  },
+  "m_d339af7d101fb7bf": {
+    "source": "Codex app-server／獨立候選（真實提交需另外授權）",
     "files": [
       "report/setup display catalog"
     ]

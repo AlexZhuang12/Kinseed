@@ -16,7 +16,8 @@
       "enum": [
         1,
         2,
-        3
+        3,
+        4
       ]
     },
     "environment": {
@@ -219,6 +220,43 @@
                   "guided",
                   "stepwise"
                 ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "version": {
+            "const": 4
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "inference": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "enabled",
+              "adapter",
+              "model",
+              "reasoning"
+            ],
+            "properties": {
+              "enabled": {
+                "type": "boolean"
+              },
+              "adapter": {
+                "const": "codex-app-server"
+              },
+              "model": {
+                "const": "gpt-6.1-sol"
+              },
+              "reasoning": {
+                "const": "low"
               }
             }
           }

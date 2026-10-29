@@ -1,3 +1,7 @@
+# 1.16.0-preview.1 — app-server integration
+
+Adds scoped reusable app-server hosts, fresh threads, stage-specific preparation, durable dispatch/recovery and guarded source-only cutover. Retains exec and Owner daily authority. Generic setup does not auto-enable native integration. See docs/RELEASE_NOTES_1_16_0_PREVIEW_1.md and docs/acceptance/APP_SERVER_1_16.md for exact scope and limitations.
+
 ## 1.15.0-preview.1 — validated Codex CLI update
 
 Qualify CLI 0.164.0-alpha.11.1, keep the previous validated version, unify installer/runtime version checks, add a private SHA-verified CLI bundle and report actual preflight state. Original consent, tool boundaries and quotas remain. See docs/RELEASE_1_15_0_PREVIEW.md.

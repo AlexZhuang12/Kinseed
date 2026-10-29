@@ -1,3 +1,4 @@
+import {appServerSettled} from '../brain/app-server/settlement.mjs';
 // Owner consent is durable; execution holds are bounded and independently recorded.
 import {hash} from './store.mjs';
 const optional=(e,key,fallback=null)=>{const r=e.store.db.prepare('SELECT value FROM state WHERE key=?').get(key);return r?JSON.parse(r.value):fallback;};
@@ -36,7 +37,7 @@ export function rememberIncomplete(e,l,result){
 }
 export function recoverSettledCycle(e,l,result,c,failure){
  const record=rememberIncomplete(e,l,result),daily=optional(e,'daily_life');
- if(result.local_exit_confirmed!==true||e.fatal||e.stopping||e.platform.runtimeHold||e.platform.global().stopped||c.stop_lock||c.mode!=='running'||c.version!==l.control_version)return null;
+ if(!(result.local_exit_confirmed===true||appServerSettled(result,l,e.info.individual_id))||e.fatal||e.stopping||e.platform.runtimeHold||e.platform.global().stopped||c.stop_lock||c.mode!=='running'||c.version!==l.control_version)return null;
  if(['authentication','quota'].includes(failure.kind)){holdExecution(e,'provider_access','等待大腦登入或帳號限制恢復；每日生活授權保留。',{until:failure.kind==='authentication'?e.now()+60000:c.authorization_until});if(failure.kind==='authentication')e.platform.dailyPreflightReady=false;return null;}
  if(['tool_forbidden','invalid_stream'].includes(failure.kind)){holdExecution(e,'security','模型回傳或工具範圍需要核對；每日生活授權保留。',{requires_owner:true});return null;}
  if(record.unknown_tools.length){holdExecution(e,'unknown_operation','部分操作結果尚未確認，暫停這些操作；其他已授權工作仍可進行。',{scope:record.operations.some(x=>!x.external&&x.status!=='completed')?'individual':'tools',tools:[...new Set(record.unknown_tools)],requires_owner:true});}

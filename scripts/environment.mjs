@@ -16,11 +16,11 @@ export function loadEnvironment(root=APP_ROOT,config='config/development.local.j
  let file=path.resolve(root,config);noLinks(root,file);if(!fs.existsSync(file)&&config.endsWith('local.json'))file=path.join(root,'config/development.example.json');
  const c=JSON.parse(fs.readFileSync(file));exact(c,['version','environment','dataDirectory','http','reports','inference',...(Object.hasOwn(c,'tools')?['tools']:[]),...(Object.hasOwn(c,'timezone')?['timezone']:[])],'設定');exact(c.http,['host','port'],'控制台');exact(c.reports,['enabled'],'報告');
  if(Object.hasOwn(c,'tools')){exact(c.tools,['codex'],'工具');exact(c.tools.codex,['enabled'],'Codex工具');if(typeof c.tools.codex.enabled!=='boolean')throw Error('Codex工具接頭須明確選擇開啟或關閉。');}
- if(![1,2,3].includes(c.version)||c.environment!=='development')throw Error('這個入口只接受第1至3版development設定。');
+ if(![1,2,3,4].includes(c.version)||c.environment!=='development')throw Error('這個入口只接受第1至4版development設定。');
  if(typeof c.dataDirectory!=='string'||!/^\.private\/[a-z0-9][a-z0-9-]{0,47}$/.test(c.dataDirectory))throw Error('私人資料位置必須是 .private/名稱，不能指向正式runtime或外部路徑。');
  if(c.http.host!=='127.0.0.1'||!Number.isInteger(c.http.port)||c.http.port<0||c.http.port>65535||[47429,47430,47431,62372].includes(c.http.port))throw Error('只允許本機位址與獨立埠號，不能使用正式控制器或報告服務的埠。');
  if(typeof c.reports.enabled!=='boolean')throw Error('報告排程須明確選擇開啟或關閉。');
- let brain;if(c.version===1){exact(c.inference,['enabled'],'模型');if(c.inference.enabled!==false)throw Error('第1版設定不啟用模型。');brain={...DEFAULT_BRAIN};}else {brain=brainSettings(c.inference);if(c.version===2&&brain.adapter!=='codex-cli'||c.version===3&&brain.adapter!=='ollama-local')throw Error('設定版本與大腦接頭不符。');}
+ let brain;if(c.version===1){exact(c.inference,['enabled'],'模型');if(c.inference.enabled!==false)throw Error('第1版設定不啟用模型。');brain={...DEFAULT_BRAIN};}else {brain=brainSettings(c.inference);if(c.version===2&&brain.adapter!=='codex-cli'||c.version===3&&brain.adapter!=='ollama-local'||c.version===4&&brain.adapter!=='codex-app-server')throw Error('設定版本與大腦接頭不符。');}
  if(Object.hasOwn(c,'timezone'))validTimezone(c.timezone);
  const home=path.resolve(root,c.dataDirectory);noLinks(root,home);
  for(const name of ['runtime','reports','logs','session.json','instance.json'])noLinks(root,path.join(home,name));

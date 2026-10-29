@@ -1,0 +1,5 @@
+import fs from 'node:fs';import path from 'node:path';
+import {DEFAULT_BRAIN,brainSettings} from '../src/brain/contract.mjs';
+import {noLinks} from './environment.mjs';
+export function formalBrain(root){const file=path.join(root,'config/formal-brain.local.json');noLinks(root,file);if(!fs.existsSync(file))return {...DEFAULT_BRAIN,enabled:true};const raw=JSON.parse(fs.readFileSync(file));if(raw.schema!==1||Object.keys(raw).sort().join(',')!=='brain,schema')throw Error('FORMAL_BRAIN_CONFIG_SCHEMA');const c=brainSettings(raw.brain);if(!['codex-cli','codex-app-server'].includes(c.adapter))throw Error('FORMAL_BRAIN_ADAPTER_UNSUPPORTED');return c;}
+export function engineeringScope(sourceRoot){const file=path.join(sourceRoot,'.private/engineering-scope.json');noLinks(sourceRoot,file);if(!fs.existsSync(file))return false;const value=JSON.parse(fs.readFileSync(file));if(value.no_real_models!==true||value.no_login!==true||value.formal_actions!==false)throw Error('ENGINEERING_SCOPE_INVALID');return true;}

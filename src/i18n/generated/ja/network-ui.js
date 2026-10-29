@@ -456,6 +456,16 @@ globalThis.kinseedArrangeToolHub=function(c){
  target.onchange=()=>run(async()=>{try{sessionStorage.setItem('kinseed-tool-selected-v1',target.value);}catch{}docClose.onclick();mailReview.replaceChildren();preview.hidden=true;readout.textContent='';});reload.onclick=()=>run(()=>{});document.addEventListener('kinseed-control-render',()=>{targets();if(!page.hidden&&!pending)run(()=>{});});journey=globalThis.kinseedArrangeToolHub({page,target,reload,notice,bar,sections,buttons,permissions,permissionBadges,permissionSaved,permissionDraft,permissionBlocker,permissionError,savePermissions,discardPermissions,managePermissions,connectionEnabled,connectionRisk,connectionSaved,connectionDraftState,hedraKinds,hedraLimit,hedraSingle,hedraSaved,hedraState,hedraBudget,reserveDraftState,reserveInput,inspectResult,inspectButton,catalogKind,modelInput,catalogText,referenceList,ws,wsZip,wsModel,wsState,wsRecover,audioEnabled,audioEndpoint,audioModel,audioProtocol,audioSaved,audioSave,audioDiscard,audioJobs,cloudService,cloudFolder,cloudRead,cloudWrite,cloudState,client:clientId,secret:clientSecret,oauthLink,gmailState,mailList,mailReview,audioDirty:()=>audioDirty,jump:key=>{tab=key;paintTabs();refreshHub().catch(e=>notice.textContent=e.message);}});targets();paintTabs();
 })();
 
+// Read-only candidate diagnostics. It never changes an adapter or life authorization.
+(()=>{
+ const box=el('section');box.id='appServerCandidate';box.hidden=true;
+ const heading=el('h3',"接続ランタイムの状態"),name=el('p','Codex app-server'),notice=el('p'),help=el('p',"接続方式を変更する前に作業の完了を待ち、このコンソールを停止してください。接続方式の選択で身份・記憶・毎日の予定は書き換わりません。");notice.id='appServerCandidateNotice';notice.setAttribute('role','status');
+ const update=el('button',"接続方式の状態を更新");update.id='appServerCandidateRefresh';const details=el('details'),debug=el('pre');details.append(el('summary',"詳細：バックグラウンド作業とプロセス"),debug);const readiness=el('p',"ログインと作業準備は別々に確認します。準備に失敗しても毎日の予定は維持されます。");readiness.id='appServerReadinessNotice';box.append(heading,name,notice,readiness,help,update,details);pageMap.home.append(box);
+ function paint(){const r=status?.app_server;box.hidden=!r;if(!r)return;notice.textContent=r.synthetic?"合成テスト用の代替処理を使用中です。実際のモデルには接続していません。":r.production_binding?"既存の生活と作業の計数を使用します。ログイン状態と個体の許可は別々に確認してください。":r.real_inference_authorized?"実際の呼び出しは今回の許可と利用枠に従います。接続方式は自動変更されません。":"実際の呼び出しは許可されていません。設定を保持し、別の接続方式には切り替えません。";debug.textContent=pretty({runtime:r,background:status?.background_jobs??null});}
+ update.onclick=async()=>{update.disabled=true;try{await refresh();debug.textContent=pretty(await api('app-server/status'));}catch(e){notice.textContent=e.message;}finally{update.disabled=false;}};
+ const before=refresh;refresh=async function(...args){const result=await before(...args);paint();return result;};document.addEventListener('kinseed-control-render',paint);paint();
+})();
+
 /* Visual revision 02. Presentation only: no requests, storage, permission or life actions. */
 (()=>{
  const style=document.createElement('style');style.id='kinseed-rose-theme';

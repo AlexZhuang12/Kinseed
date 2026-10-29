@@ -793,5 +793,10 @@
     "自己的控制台已啟動。新個體仍需批准、出生與生活授權；既有個體只依原每日授權及目前條件運作，不會因啟動而新增授權。",
     "Your console is running. New individuals still need approval, birth and life consent. Existing individuals follow their previous daily consent and current checks; startup grants no new consent.",
     "この環境のコントローラーを起動しました。新しい個体には承認・誕生・生活の許可が必要です。既存の個体は元の毎日の許可と現在の条件に従います。起動だけで新しい許可は与えません。"
+  ],
+  [
+    "Codex app-server／獨立候選（真實提交需另外授權）",
+    "Codex app-server / isolated candidate (real submissions require separate authorization)",
+    "Codex app-server／独立した候補版（実際の送信には別途許可が必要）"
   ]
 ]

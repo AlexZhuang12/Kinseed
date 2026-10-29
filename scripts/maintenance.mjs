@@ -1,3 +1,4 @@
+import {candidateUpgradeGuard} from './candidate-upgrade-guard.mjs';
 import {inspectReportSnapshot} from './report-snapshot.mjs';
 // Cold snapshots only. There is deliberately no database overwrite/restore command.
 import fs from 'node:fs';
@@ -40,7 +41,7 @@ function inspectDatabases(home){
  return out;
 }
 export function createSnapshot(root=APP_ROOT){
- const env=stopped(root);if(!fs.existsSync(path.join(env.home,'instance.json')))throw Error('尚無本副本資料；請先完成設定，不能接管其他資料。');
+ const env=stopped(root);candidateUpgradeGuard(root,root);if(!fs.existsSync(path.join(env.home,'instance.json')))throw Error('尚無本副本資料；請先完成設定，不能接管其他資料。');
  noLinks(root,env.home);const databases=inspectDatabases(env.home),before=fileMap(env.home),revision=fs.existsSync(path.join(root,'config/development.local.json'))?fs.readFileSync(path.join(root,'config/development.local.json')):null;
  const target=path.join(root,'.private/maintenance/'+randomUUID());noLinks(root,target);fs.mkdirSync(target,{recursive:true});
  try{const source=exportSource(root,path.join(target,'source'));for(const rel of Object.keys(before)){const dest=path.join(target,'data',rel);fs.mkdirSync(path.dirname(dest),{recursive:true});fs.copyFileSync(path.join(env.home,rel),dest,fs.constants.COPYFILE_EXCL);}if(revision)fs.writeFileSync(path.join(target,'development.local.json'),revision,{flag:'wx'});

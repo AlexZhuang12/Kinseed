@@ -1,3 +1,4 @@
+import {appServerSettled} from '../brain/app-server/settlement.mjs';
 import {recoverSettledCycle} from './execution-policy.mjs';
 import {zonedDay} from '../timezone.mjs';
 import {windowAt} from '../controller.mjs';
@@ -13,7 +14,7 @@ export function providerFailure(events){
  return {kind:'unknown',message:'本輪結果未完整確認，已保留紀錄並停止重送',retryable:false,terminal:false};
 }
 export function retryDecision(e,l,result,c){
- const p=e.platform,now=e.now(),timedOut=result.cancelled===true&&result.local_exit_confirmed===true&&now>=l.deadline&&!l.quarantined&&!['authentication','quota'].includes(result.provider_failure?.kind)&&(!l.cancel_reason||l.cancel_reason==='DEADLINE_EXCEEDED');
+ const p=e.platform,now=e.now(),timedOut=result.cancelled===true&&(result.local_exit_confirmed===true||appServerSettled(result,l,e.info.individual_id))&&now>=l.deadline&&!l.quarantined&&!['authentication','quota'].includes(result.provider_failure?.kind)&&(!l.cancel_reason||l.cancel_reason==='DEADLINE_EXCEEDED');
  const failure=timedOut?{kind:'timeout',message:'模型回應逾時，本機工作已結束',retryable:true,terminal:true}:result.provider_failure??{kind:'unknown',message:'本輪未完整完成',retryable:false},retries=c.provider_retry?.retries??0;
  c.inference_status={phase:'needs_attention',model:e.brainBinding?.model??INFERENCE_POLICY.model,failure:failure.kind,message:failure.message,at:now,retries};
  if(c.provider_retry)c.provider_retry.active=false;
@@ -23,12 +24,12 @@ export function retryDecision(e,l,result,c){
  if(failure.kind==='local_resource')return recoverSettledCycle(e,l,result,c,failure);
  if(l.cancel_reason&&!timedOut){c.inference_status.phase='interrupted';c.inference_status.message=l.cancel_reason==='STALE_LEASE'?'本輪授權或設定已不相符，已停止；請核對目前狀態後再決定是否恢復':l.cancel_reason==='DEADLINE_EXCEEDED'?'本輪已逾時，但工作尚未確認安全收尾；暫不重試，請查看執行診斷':'本輪已取消，沒有自動重試；請核對停止原因與目前授權';return null;}
  if(l.finished||l.mutation_attempted)return recoverSettledCycle(e,l,result,c,failure);
- const recognized=failure.kind==='capacity'||failure.kind==='transient'&&result.local_exit_confirmed===true||timedOut;
+ const recognized=failure.kind==='capacity'||failure.kind==='transient'&&(result.local_exit_confirmed===true||appServerSettled(result,l,e.info.individual_id))||timedOut;
  const safe=!result.ok&&(!result.cancelled&&result.exit_code===1||timedOut)&&recognized&&failure.retryable===true&&failure.terminal===true&&!l.finished&&!l.mutation_attempted&&!e.fatal&&!e.stopping&&!p.global().stopped&&c.mode==='running'&&!c.stop_lock&&c.version===l.control_version&&(!l.cancel_reason||timedOut);
  if(!safe)return recoverSettledCycle(e,l,result,c,failure);
  // Only an explicitly recognized, settled and side-effect-free failure may end
  // this window without revoking the Owner's future daily authorization.
- const endWindow=message=>{if(result.local_exit_confirmed===true)c.inference_status.phase='window_failed';c.inference_status.message=message;return null;};
+ const endWindow=message=>{if((result.local_exit_confirmed===true||appServerSettled(result,l,e.info.individual_id)))c.inference_status.phase='window_failed';c.inference_status.message=message;return null;};
  const delay=INFERENCE_POLICY.retry_delays_ms[retries];if(delay===undefined)return endWindow('模型仍未恢復，已達3次自動重試上限，本次活動結束；若每日生活仍開啟，將於下個既定時段重新檢查。');
  const at=now+delay,w=windowAt(c,at),g=p.global(),day=zonedDay(at,p.timezone);
  if(at>=c.authorization_until||!w.open)return endWindow('本次活動授權時間不足以重試，本次活動結束；若每日生活仍開啟，將於下個既定時段重新檢查。');

@@ -8,3 +8,6 @@ config/development.local.json
 
 config/.setup-*
 
+
+config/formal-brain.local.json
+config/.formal-brain-save.lock

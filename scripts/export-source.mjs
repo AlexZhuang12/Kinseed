@@ -5,7 +5,7 @@ export function exportSource(root=APP_ROOT,destination=path.join(root,'.private/
  const pkg=JSON.parse(fs.readFileSync(path.join(root,'package.json'))),files=new Set(['package.json','package-lock.json','README.md','.gitignore','.gitattributes']);
  function walk(rel){const file=path.join(root,rel);noLinks(root,file);const info=fs.lstatSync(file);if(info.isSymbolicLink())throw Error('來源含連結，未匯出。');if(info.isDirectory())for(const e of fs.readdirSync(file))walk(path.join(rel,e));else files.add(rel.replaceAll('\\','/'));}
  for(const rel of pkg.files){if(typeof rel!=='string'||path.isAbsolute(rel)||rel.split(/[\\/]/).includes('..')||rel.startsWith('.private')||rel.includes('node_modules'))throw Error('來源清單含不允許的位置。');walk(rel.replace(/[\\/]$/,''));}
- for(const file of files)if(/(?:^|\/)(?:\.private|node_modules|runtime_v1_2|runtime_reports)(?:\/|$)|\.sqlite|\.jsonl$|development\.local\.json/.test(file))throw Error('來源包含私人檔案，未匯出。');
+ for(const file of files)if(/(?:^|\/)(?:\.private|node_modules|runtime_v1_2|runtime_reports)(?:\/|$)|\.sqlite|\.jsonl$|(?:development|formal-brain)\.local\.json/.test(file))throw Error('來源包含私人檔案，未匯出。');
  fs.mkdirSync(destination,{recursive:true});const manifest={};for(const rel of [...files].sort()){noLinks(root,path.join(root,rel));const bytes=fs.readFileSync(path.join(root,rel)),target=path.join(destination,rel);fs.mkdirSync(path.dirname(target),{recursive:true});fs.writeFileSync(target,bytes,{flag:'wx'});manifest[rel]=createHash('sha256').update(bytes).digest('hex');}return {destination,files:manifest,count:Object.keys(manifest).length,lockfile_included:true};
 }
 if(process.argv[1]&&path.resolve(process.argv[1])===import.meta.filename)console.log(JSON.stringify(exportSource(),null,2));

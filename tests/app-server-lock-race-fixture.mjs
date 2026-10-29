@@ -1,0 +1,1 @@
+import {Journal} from '../src/brain/app-server/journal.mjs';let j;try{j=new Journal(process.argv[2]);console.log('acquired');process.stdin.resume();process.stdin.on('end',()=>{j.close();process.exit(0);});}catch(e){console.log('refused:'+e.message);process.exit(0);}

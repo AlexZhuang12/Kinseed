@@ -1,0 +1,62 @@
+[
+  [
+    "Codex app-server（獨立候選）",
+    "Codex app-server (isolated candidate)",
+    "Codex app-server（独立した候補版）"
+  ],
+  [
+    "這是獨立候選。尚未授權真實提交時只保存選擇，不會呼叫模型或改用exec；不影響正式控制台。",
+    "This isolated candidate only saves your selection until real submissions are authorized. It does not call a model, fall back to exec, or affect the production console.",
+    "これは独立した候補版です。実際の送信が許可されるまでは選択のみを保存し、モデル呼び出しやexecへの切り替え、本番コンソールへの影響はありません。"
+  ],
+  [
+    "接頭執行狀態（獨立候選）",
+    "Adapter status (isolated candidate)",
+    "接続方式の状態（独立した候補版）"
+  ],
+  [
+    "更換接頭前，請先等待工作收尾並停止這份控制台；身份、記憶與每日安排不會因選擇接頭而改寫。",
+    "Wait for work to settle and stop this console before changing adapters. Selecting an adapter does not rewrite identities, memory, or daily schedules.",
+    "接続方式を変更する前に作業の完了を待ち、このコンソールを停止してください。接続方式の選択で身份・記憶・毎日の予定は書き換わりません。"
+  ],
+  [
+    "更新接頭狀態",
+    "Refresh adapter status",
+    "接続方式の状態を更新"
+  ],
+  [
+    "進階：背景工作與程序",
+    "Advanced: background jobs and processes",
+    "詳細：バックグラウンド作業とプロセス"
+  ],
+  [
+    "使用合成替身，沒有連接真實模型。",
+    "Using a synthetic peer; no real model is connected.",
+    "合成テスト用の代替処理を使用中です。実際のモデルには接続していません。"
+  ],
+  [
+    "真實呼叫仍受本次授權與額度限制；不會自動切換接頭。",
+    "Real calls remain subject to this authorization and budget. No automatic adapter switching.",
+    "実際の呼び出しは今回の許可と利用枠に従います。接続方式は自動変更されません。"
+  ],
+  [
+    "未授權真實呼叫，已保留設定；不會切換到其他接頭。",
+    "Real calls are not authorized. Settings are retained; no other adapter will be used.",
+    "実際の呼び出しは許可されていません。設定を保持し、別の接続方式には切り替えません。"
+  ],
+  [
+    "接頭執行狀態",
+    "Adapter runtime status",
+    "接続ランタイムの状態"
+  ],
+  [
+    "已接回原生活與工作計次；登入狀態與個體授權分開核對。",
+    "Uses existing life and work accounting; check login and individual authorization separately.",
+    "既存の生活と作業の計数を使用します。ログイン状態と個体の許可は別々に確認してください。"
+  ],
+  [
+    "登入檢查與工作準備分開核對；準備失敗保留每日安排。",
+    "Sign-in and work preparation are checked separately. Preparation failures preserve daily schedules.",
+    "ログインと作業準備は別々に確認します。準備に失敗しても毎日の予定は維持されます。"
+  ]
+]

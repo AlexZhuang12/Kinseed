@@ -1,0 +1,7 @@
+// Local protocol fixture, not a model. It handles the real life prompt without replacing it.
+import {controlledMCP} from '../src/brain/mcp-client.mjs';import {randomUUID} from 'node:crypto';
+let prompt='';for await(const b of process.stdin)prompt+=b;if(!prompt.trim())throw Error('FULL_PROMPT_REQUIRED');
+const send=e=>console.log(JSON.stringify(e));send({type:'thread.started',thread_id:'synthetic-exec-'+randomUUID()});
+const m=controlledMCP({endpoint:process.env.KINSEED_ENDPOINT,token:process.env.KINSEED_CYCLE_TOKEN,cwd:process.cwd()});
+async function call(tool,args={}){send({type:'item.started',item:{type:'mcp_tool_call',server:'kinseed',tool}});const r=await m.tool(tool,args);send({type:'item.completed',item:{type:'mcp_tool_call',server:'kinseed',tool,result:r}});if(r.isError)throw Error('SYNTHETIC_TOOL_REJECTED');return JSON.parse(r.content[0].text);}
+try{await m.initialize();const c=await call('get_context'),n=c.a.version;await call('write_note',{request_id:randomUUID(),name:'synthetic-exec-'+n+'.md',text:'Synthetic exec integration '+n,reason:'Scripted protocol acceptance'});await call('commit_cycle',{request_id:randomUUID(),expected_version:n,memory:[...c.a.memory,'Synthetic exec integration '+n],plan:[],result:'Synthetic exec completed',decision:'wait',wait_ms:10000});send({type:'item.completed',item:{type:'agent_message',text:'Synthetic full-prompt workflow complete.'}});send({type:'turn.completed',usage:{input_tokens:0,output_tokens:0}});}finally{if(!await m.close())process.exitCode=1;}

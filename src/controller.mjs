@@ -90,7 +90,7 @@ export class Controller {
       const a=this.store.get('a');a.active_ms+=Math.max(0,this.now()-l.started);this.store.set('a',a);this.store.event('activity.accounted',{a},'controller',l);
       const c=this.store.get('control');
       const reconciled=l.finished&&!result.ok&&this.reconcileCommitted?.(l,result,c);
-      if(reconciled)this.store.event('cycle.completion_reconciled',{reason:'記憶已交易提交且本機程序已結束，保留原退出結果，不重做本輪'},'controller',l);
+      if(reconciled)this.store.event('cycle.completion_reconciled',{reason:result.adapter==='codex-app-server-candidate'?'記憶已交易提交且本輪與工具已收尾，程序可繼續待命；保留原結果，不重做本輪':'記憶已交易提交且本機程序已結束，保留原退出結果，不重做本輪'},'controller',l);
       if(!l.finished||!result.ok&&!reconciled){const retry=this.onRunnerFailure?.(l,result,c);c.version++;this.store.event('cycle.incomplete',{finished:l.finished,result:'unknown'},'controller',l);if(retry){c.next_wake=retry;c.reason='模型暫時無法服務，等待系統有限重試';this.store.event('provider.retry_scheduled',{retry:c.provider_retry,status:c.inference_status},'controller',l);}else{c.mode='stopped';c.stop_lock=true;c.next_wake=null;c.reason=c.inference_status?.message??(result.cancelled?'已確認本機子程序結束；遠端推理取消未確認':'輪次失敗或缺少完成回報；不自動重送');}}
       else if(!c.stop_lock&&c.mode==='running'&&c.version===l.control_version){this.onRunnerSuccess?.(c);c.next_wake={at:this.now()+(l.decision==='continue'?5000:Math.max(10000,l.wait_ms??60000)),source:l.decision==='continue'?'continue':'schedule',key:l.cycle_id+':next'};this.store.event('trigger.queued',c.next_wake,'controller',l);}
       this.store.set('control',c);this.store.event('control.snapshot',{control:c},'controller',l);this.store.set('lease',null);

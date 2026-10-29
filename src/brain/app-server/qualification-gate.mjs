@@ -1,0 +1,3 @@
+import fs from 'node:fs';import path from 'node:path';import {QualificationBudget}from'./qualification-budget.mjs';
+export function qualificationApproved(file,now=Date.now()){if(!fs.existsSync(file))return false;const state=JSON.parse(fs.readFileSync(file));return state.owner_resumed===true&&state.login_verified===true&&state.model==='gpt-6.1-sol'&&state.reasoning==='low'&&state.maximum_calls===6&&Number.isFinite(state.expires_at)&&state.expires_at>now;}
+export function openQualification(base,{approvalFile=path.join(base,'approval.json')}={}){return new QualificationBudget(path.join(base,'call-ledger'),{authorization:()=>qualificationApproved(approvalFile)});}
